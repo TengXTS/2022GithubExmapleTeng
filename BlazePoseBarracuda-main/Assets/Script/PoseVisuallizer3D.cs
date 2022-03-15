@@ -14,12 +14,28 @@ public class PoseVisuallizer3D : MonoBehaviour
     Material material;
     BlazePoseDetecter detecter;
 
+    [HideInInspector]
     public Vector3 rightWrist;
+    [HideInInspector]
+    public Vector3 leftWrist;
+    [HideInInspector]
     public Vector3 rightElbow;
+    [HideInInspector]
+    public Vector3 leftElbow;
+    [HideInInspector]
     public Vector3 rightShoulder;
+    [HideInInspector]
     public Vector3 leftShoulder;
+    [HideInInspector]
     public Vector3 rightHip;
+    [HideInInspector]
     public Vector3 leftHip;
+    [HideInInspector]
+    public Vector3 leftNeck;
+    [HideInInspector]
+    public Vector3 rightNeck;
+    [HideInInspector]
+    public Vector3 nose;
 
     // Lines count of body's topology.
     const int BODY_LINE_NUM = 35;
@@ -68,13 +84,16 @@ public class PoseVisuallizer3D : MonoBehaviour
         }
         // Debug.Log("---");
         rightWrist = detecter.GetPoseWorldLandmark(16);
+        leftWrist = detecter.GetPoseWorldLandmark(15);
         rightElbow = detecter.GetPoseWorldLandmark(14);
+        leftElbow = detecter.GetPoseWorldLandmark(13);
         rightShoulder = detecter.GetPoseWorldLandmark(12);
         leftShoulder = detecter.GetPoseWorldLandmark(11);
         rightHip = detecter.GetPoseWorldLandmark(24);
         leftHip = detecter.GetPoseWorldLandmark(23);
-        
-
+        leftNeck = detecter.GetPoseWorldLandmark(12);
+        rightNeck = detecter.GetPoseWorldLandmark(11);
+        nose = detecter.GetPoseWorldLandmark(0);
     } 
 
     void OnRenderObject(){

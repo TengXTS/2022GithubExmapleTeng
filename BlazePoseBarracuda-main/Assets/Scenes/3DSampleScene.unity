@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 634180803}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: webcam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 636196911}
   m_Layer: 0
   m_Name: WebCamInput
-  m_TagString: Untagged
+  m_TagString: webcam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -498,6 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765897654}
   - component: {fileID: 765897653}
+  - component: {fileID: 765897655}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -563,6 +564,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+--- !u!114 &765897655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765897651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e623a13ac30ff49afa5cf32366cc2e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lengthAdjust: 0.2
 --- !u!1 &1222800826
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,11 +612,16 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: 33ca7d622658d844e81c06b6a8ac78fd, type: 3}
   humanExistThreshold: 0.5
   rightWrist: {x: 0, y: 0, z: 0}
+  leftWrist: {x: 0, y: 0, z: 0}
   rightElbow: {x: 0, y: 0, z: 0}
+  leftElbow: {x: 0, y: 0, z: 0}
   rightShoulder: {x: 0, y: 0, z: 0}
   leftShoulder: {x: 0, y: 0, z: 0}
   rightHip: {x: 0, y: 0, z: 0}
   leftHip: {x: 0, y: 0, z: 0}
+  leftNeck: {x: 0, y: 0, z: 0}
+  rightNeck: {x: 0, y: 0, z: 0}
+  nose: {x: 0, y: 0, z: 0}
 --- !u!4 &1222800828
 Transform:
   m_ObjectHideFlags: 0
@@ -723,12 +742,12 @@ GameObject:
   - component: {fileID: 2079228996}
   - component: {fileID: 2079228995}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: 2D
+  m_TagString: webcam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2079228995
 MonoBehaviour:
   m_ObjectHideFlags: 0
