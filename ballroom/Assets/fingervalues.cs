@@ -82,24 +82,7 @@ public class fingervalues : MonoBehaviour
     public static float Remap ( float value, float from1, float to1, float from2, float to2) {
         return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
-    
-    
-    
-    
-    //计算骨骼变形后顶点位置的，抄来的，别乱动
-    Mesh originMesh;
-    class Bone
-    {
-        internal Transform bone;
-        internal float weight;
-        internal Vector3 delta;
-    }
-    List<List<Bone>> allBones = new List<List<Bone>>();
-    
-    
-    
-    
-    
+
     void Start()
     {
         fingers = new float[10];
@@ -141,58 +124,8 @@ public class fingervalues : MonoBehaviour
         amount = pCube1.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
         matrices = new Matrix4x4[amount];
         verticesPosition = new Vector3[amount];
-        // verticesPosition = pCube1.GetComponent<ABCD>().verticesPosition;
-        // Debug.Log(verticesPosition[0]);
-        
-        
-        
-        
-        
-        //计算骨骼变形后顶点位置的，抄来的，别乱动
-        SkinnedMeshRenderer skin = pCube1.GetComponent(typeof(SkinnedMeshRenderer)) as SkinnedMeshRenderer;
-        originMesh = skin.sharedMesh;
-        verticesPosition = new Vector3[originMesh.vertexCount];
-        // Debug.Log("{0} vertices, {1} weights, {2} bones"+ mesh.vertexCount+ mesh.boneWeights.Length+ skin.bones.Length);
-        
-        for (int i = 0; i < originMesh.vertexCount; i++)
-        {
-            Vector3 position = originMesh.vertices[i];
-            position = pCube1.transform.TransformPoint(position);
-        
-            BoneWeight weights = originMesh.boneWeights[i];
-            int[] boneIndices = new int[] { weights.boneIndex0, weights.boneIndex1, weights.boneIndex2, weights.boneIndex3 };
-            float[] boneWeights = new float[] { weights.weight0, weights.weight1, weights.weight2, weights.weight3 };
-        
-            List<Bone> bones = new List<Bone>();
-            allBones.Add(bones);
-        
-            for (int j = 0; j < 4; j++)
-            {
-                if (boneWeights[j] > 0)
-                {
-                    Bone bone = new Bone();
-                    bones.Add(bone);
-        
-                    bone.bone = skin.bones[boneIndices[j]];
-                    bone.weight = boneWeights[j];
-                    bone.delta = bone.bone.InverseTransformPoint(position);
-                }
-            }
-            
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        verticesPosition = pCube1.GetComponent<SkinnedVertices>().verticesPosition;
         
     }
     void OnGUI()
@@ -219,32 +152,14 @@ public class fingervalues : MonoBehaviour
         Move();
         Rotate();
         AddElements();
+        // Debug.Log(abc.verticesPosition1[0]);
+
 
 
 
         //摄像机移动
         transform.position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
             MyavatarTransform.position.z - cameraDistance);
-
-
-
-        
-        
-        
-        //计算骨骼变形后顶点位置的，抄来的，别乱动
-        for (int i = 0; i < originMesh.vertexCount; i++)
-        {
-            List<Bone> bones = allBones[i];
-        
-            Vector3 position = Vector3.zero;
-            foreach (Bone bone in bones)
-                position += bone.bone.TransformPoint(bone.delta) * bone.weight;
-            verticesPosition[i] = position;
-        }
-        
-        
-        
-   
 
     }
 
