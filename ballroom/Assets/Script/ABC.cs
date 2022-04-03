@@ -3,11 +3,11 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
  
-public class SkinnedVertices : MonoBehaviour
+public class ABC : MonoBehaviour
 {
-    Mesh mesh;
-    // public List<Vector3> verticesPosition = new List<Vector3>();
+    Mesh originMesh;
     public Vector3[] verticesPosition;
+    
  
     class Bone
     {
@@ -20,16 +20,16 @@ public class SkinnedVertices : MonoBehaviour
     void Start()
     {
         SkinnedMeshRenderer skin = GetComponent(typeof(SkinnedMeshRenderer)) as SkinnedMeshRenderer;
-        mesh = skin.sharedMesh;
-        verticesPosition = new Vector3[mesh.vertexCount];
+        originMesh = skin.sharedMesh;
+        verticesPosition = new Vector3[originMesh.vertexCount];
         // Debug.Log("{0} vertices, {1} weights, {2} bones"+ mesh.vertexCount+ mesh.boneWeights.Length+ skin.bones.Length);
  
-        for (int i = 0; i < mesh.vertexCount; i++)
+        for (int i = 0; i < originMesh.vertexCount; i++)
         {
-            Vector3 position = mesh.vertices[i];
+            Vector3 position = originMesh.vertices[i];
             position = transform.TransformPoint(position);
  
-            BoneWeight weights = mesh.boneWeights[i];
+            BoneWeight weights = originMesh.boneWeights[i];
             int[] boneIndices = new int[] { weights.boneIndex0, weights.boneIndex1, weights.boneIndex2, weights.boneIndex3 };
             float[] boneWeights = new float[] { weights.weight0, weights.weight1, weights.weight2, weights.weight3 };
  
@@ -48,23 +48,14 @@ public class SkinnedVertices : MonoBehaviour
                     bone.delta = bone.bone.InverseTransformPoint(position);
                 }
             }
- 
-            //if (bones.Count > 1)
-            //{
-            //    string msg = string.Format("vertex {0}, {1} bones", i, bones.Count);
- 
-            //    foreach (Bone bone in bones)
-            //        msg += string.Format("\n\t{0} => {1} => {2}", bone.bone.name, bone.weight, bone.delta);
- 
-            //    Debug.Log(msg);
-            //}
+            
         }
     }
 
 
     private void Update()
     {
-        for (int i = 0; i < mesh.vertexCount; i++)
+        for (int i = 0; i < originMesh.vertexCount; i++)
         {
             List<Bone> bones = allBones[i];
 

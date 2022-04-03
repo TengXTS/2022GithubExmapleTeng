@@ -37,7 +37,6 @@ public class fingervalues : MonoBehaviour
     private int amount;
     public float meshScale = 0.1f;
     private Vector3[] verticesPosition;
-    
     private float sliderLength = 10;
     private float floatValue;
     
@@ -83,6 +82,24 @@ public class fingervalues : MonoBehaviour
     public static float Remap ( float value, float from1, float to1, float from2, float to2) {
         return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
+    
+    
+    
+    
+    //计算骨骼变形后顶点位置的，抄来的，别乱动
+    Mesh originMesh;
+    class Bone
+    {
+        internal Transform bone;
+        internal float weight;
+        internal Vector3 delta;
+    }
+    List<List<Bone>> allBones = new List<List<Bone>>();
+    
+    
+    
+    
+    
     void Start()
     {
         fingers = new float[10];
@@ -124,10 +141,59 @@ public class fingervalues : MonoBehaviour
         amount = pCube1.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
         matrices = new Matrix4x4[amount];
         verticesPosition = new Vector3[amount];
-        verticesPosition = pCube1.GetComponent<SkinnedVertices>().verticesPosition;
-
-
-
+        // verticesPosition = pCube1.GetComponent<ABCD>().verticesPosition;
+        // Debug.Log(verticesPosition[0]);
+        
+        
+        
+        
+        
+        //计算骨骼变形后顶点位置的，抄来的，别乱动
+        SkinnedMeshRenderer skin = pCube1.GetComponent(typeof(SkinnedMeshRenderer)) as SkinnedMeshRenderer;
+        originMesh = skin.sharedMesh;
+        verticesPosition = new Vector3[originMesh.vertexCount];
+        // Debug.Log("{0} vertices, {1} weights, {2} bones"+ mesh.vertexCount+ mesh.boneWeights.Length+ skin.bones.Length);
+        
+        for (int i = 0; i < originMesh.vertexCount; i++)
+        {
+            Vector3 position = originMesh.vertices[i];
+            position = pCube1.transform.TransformPoint(position);
+        
+            BoneWeight weights = originMesh.boneWeights[i];
+            int[] boneIndices = new int[] { weights.boneIndex0, weights.boneIndex1, weights.boneIndex2, weights.boneIndex3 };
+            float[] boneWeights = new float[] { weights.weight0, weights.weight1, weights.weight2, weights.weight3 };
+        
+            List<Bone> bones = new List<Bone>();
+            allBones.Add(bones);
+        
+            for (int j = 0; j < 4; j++)
+            {
+                if (boneWeights[j] > 0)
+                {
+                    Bone bone = new Bone();
+                    bones.Add(bone);
+        
+                    bone.bone = skin.bones[boneIndices[j]];
+                    bone.weight = boneWeights[j];
+                    bone.delta = bone.bone.InverseTransformPoint(position);
+                }
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     void OnGUI()
     {
@@ -152,6 +218,7 @@ public class fingervalues : MonoBehaviour
         Float();
         Move();
         Rotate();
+        AddElements();
 
 
 
@@ -160,24 +227,42 @@ public class fingervalues : MonoBehaviour
             MyavatarTransform.position.z - cameraDistance);
 
 
+
+        
+        
+        
+        //计算骨骼变形后顶点位置的，抄来的，别乱动
+        for (int i = 0; i < originMesh.vertexCount; i++)
+        {
+            List<Bone> bones = allBones[i];
+        
+            Vector3 position = Vector3.zero;
+            foreach (Bone bone in bones)
+                position += bone.bone.TransformPoint(bone.delta) * bone.weight;
+            verticesPosition[i] = position;
+        }
+        
+        
+        
+   
+
+    }
+
+
+    private void AddElements()
+    {
         //身上聚合一些元素
         for (int i = 0; i < amount; i++)
         {
-            // Vector3 verticesPosition = localToWorld.MultiplyPoint3x4(MyavatarMeshFilter.mesh.vertices[i]);
-            // Vector3 verticesPosition = MyavatarMeshFilter.mesh.vertices[i];
-
-
             // Quaternion rotation = Quaternion.Euler(Random.Range(-180f, 180f), Random.Range(-180, 180), Random.Range(-180, 180));
             Quaternion rotation = new Quaternion(1,0,0,0);
-
             Vector3 scale = Vector3.one * meshScale;
             matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation, scale);
-            // colors[i] = Color.Lerp(Color.red, Color.blue, Random.value);
         }
+
         Graphics.DrawMeshInstanced(mesh, 0, material, matrices, amount, block);
         //随机大小，顺肢体方向的旋转
         //更改一个更合适的模型，最好是有手肘膝盖的。
-
     }
 
 
