@@ -6,6 +6,7 @@ using UnityEditor.Build.Content;
 using UnityEditor.TextCore.Text;
 using UnityEngine;
 using Random=UnityEngine.Random;
+using System.Linq;
 
 public class fingervalues : MonoBehaviour
 {
@@ -28,6 +29,12 @@ public class fingervalues : MonoBehaviour
     public float rightFootAngleAdjust = 45;
     [Header("肢体长度（暂时）")] 
     public float limbLength = 1;
+    [Header("元素外观")] 
+    public float meshScale = 0.1f;
+    [Range(0.0f, 1.0f)]
+    public float scaleRandom = 0.3f;
+    [Range(0.0f, 180.0f)]
+    public float rotationRandom = 45;
     
     //instance相关
     public Mesh mesh;
@@ -35,8 +42,8 @@ public class fingervalues : MonoBehaviour
     private Matrix4x4[] matrices;
     private MaterialPropertyBlock block;
     private int amount;
-    public float meshScale = 0.1f;
-    private Vector3[] verticesPosition;
+    // private Vector3[] verticesPosition;
+    private List<Vector3> verticesPosition = new List<Vector3>();
     private float sliderLength = 10;
     private float floatValue;
     
@@ -71,12 +78,15 @@ public class fingervalues : MonoBehaviour
     private float rightFootAngle;
 
     private GameObject Myavatar;
-    private GameObject pCube1;
+    private GameObject bodyMesh;
     private Transform MyavatarTransform;
     private float moveRadial;
     private float moveLateral;
-    private float rotateValue;
+    private float bodyRotateValue;
     private float moveNormaliazeRate;
+    private Quaternion[] rotation;
+    private Vector3[] scale;
+
 
     
     public static float Remap ( float value, float from1, float to1, float from2, float to2) {
@@ -119,14 +129,25 @@ public class fingervalues : MonoBehaviour
         fingers[7] = sliderLength / 2;
         fingers[8] = sliderLength / 2;
 
-        pCube1 = GameObject.Find("pCube1");
+        bodyMesh = GameObject.Find("bodyMesh");
         block = new MaterialPropertyBlock();
-        amount = pCube1.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
-        matrices = new Matrix4x4[amount];
-        verticesPosition = new Vector3[amount];
-
-        verticesPosition = pCube1.GetComponent<SkinnedVertices>().verticesPosition;
+        amount = bodyMesh.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
         
+        //简化顶点个数
+        verticesPosition = bodyMesh.GetComponent<SkinnedVertices>().verticesPositionAfterDelete;
+        amount = verticesPosition.Count;
+        matrices = new Matrix4x4[amount];
+        //计算每个element的大小与旋转
+        rotation = new Quaternion[amount];
+        scale = new Vector3[amount];
+        for (int i = 0; i < amount; i++)
+        {
+            rotation[i] = Quaternion.Euler(Random.Range(-rotationRandom, rotationRandom), Random.Range(-rotationRandom, rotationRandom), Random.Range(-rotationRandom, rotationRandom));
+            scale[i] = Vector3.one * Random.Range(1-scaleRandom, 1+scaleRandom);
+        }
+
+        
+
     }
     void OnGUI()
     {
@@ -152,7 +173,6 @@ public class fingervalues : MonoBehaviour
         Move();
         Rotate();
         AddElements();
-        // Debug.Log(abc.verticesPosition1[0]);
 
 
 
@@ -167,16 +187,13 @@ public class fingervalues : MonoBehaviour
     private void AddElements()
     {
         //身上聚合一些元素
+        verticesPosition = bodyMesh.GetComponent<SkinnedVertices>().verticesPositionAfterDelete;
         for (int i = 0; i < amount; i++)
         {
-            // Quaternion rotation = Quaternion.Euler(Random.Range(-180f, 180f), Random.Range(-180, 180), Random.Range(-180, 180));
-            Quaternion rotation = new Quaternion(1,0,0,0);
-            Vector3 scale = Vector3.one * meshScale;
-            matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation, scale);
+            matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation[i], scale[i] * meshScale);
         }
-
         Graphics.DrawMeshInstanced(mesh, 0, material, matrices, amount, block);
-        //随机大小，顺肢体方向的旋转
+
         //更改一个更合适的模型，最好是有手肘膝盖的。
     }
 
@@ -239,12 +256,12 @@ public class fingervalues : MonoBehaviour
     
     void Rotate()
     {
-        rotateValue = fingers[5] - sliderLength / 2;
-        if (-moveTolerance < rotateValue && rotateValue < moveTolerance)
+        bodyRotateValue = fingers[5] - sliderLength / 2;
+        if (-moveTolerance < bodyRotateValue && bodyRotateValue < moveTolerance)
         {
-            rotateValue = 0;
+            bodyRotateValue = 0;
         }
-        MyavatarTransform.Rotate(0f,Mathf.Deg2Rad * rotateValue,0f,Space.Self);
+        MyavatarTransform.Rotate(0f,Mathf.Deg2Rad * bodyRotateValue,0f,Space.Self);
     }
 }
 

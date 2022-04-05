@@ -2,16 +2,20 @@ using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+
  
 public class SkinnedVertices : MonoBehaviour
 {
     Mesh originMesh;
-    public Vector3[] verticesPosition;
-    
- 
+    // public Vector3[] verticesPosition;
+    public List<Vector3> verticesPosition;
+    public List<Vector3> verticesPositionAfterDelete;
+
+
     class Bone
     {
-        internal Transform bone;
+        internal Transform boneTransform;
         internal float weight;
         internal Vector3 delta;
     }
@@ -21,7 +25,8 @@ public class SkinnedVertices : MonoBehaviour
     {
         SkinnedMeshRenderer skin = GetComponent(typeof(SkinnedMeshRenderer)) as SkinnedMeshRenderer;
         originMesh = skin.sharedMesh;
-        verticesPosition = new Vector3[originMesh.vertexCount];
+        // verticesPosition = new Vector3[originMesh.vertexCount];
+        verticesPosition = new List<Vector3>();
  
     for (int i = 0; i < originMesh.vertexCount; i++)
     {
@@ -42,13 +47,16 @@ public class SkinnedVertices : MonoBehaviour
                 Bone bone = new Bone();
                 bones.Add(bone);
     
-                bone.bone = skin.bones[boneIndices[j]];
+                bone.boneTransform = skin.bones[boneIndices[j]];
                 bone.weight = boneWeights[j];
-                bone.delta = bone.bone.InverseTransformPoint(position);
+                bone.delta = bone.boneTransform.InverseTransformPoint(position);
             }
         }
-        
+        verticesPosition.Add(position);
+        verticesPositionAfterDelete = verticesPosition.Distinct().ToList();
+
     }
+  
     }
 
 
@@ -60,9 +68,11 @@ public class SkinnedVertices : MonoBehaviour
 
              Vector3 position = Vector3.zero;
              foreach (Bone bone in bones)
-                 position += bone.bone.TransformPoint(bone.delta) * bone.weight;
+                 position += bone.boneTransform.TransformPoint(bone.delta) * bone.weight;
              verticesPosition[i] = position;
          }
+         verticesPositionAfterDelete = verticesPosition.Distinct().ToList();
+        
      }
 
 
