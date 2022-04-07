@@ -17,16 +17,19 @@ public class FingerValues : MonoBehaviour
     public float cameraDistance = 2f;
     [Header("停止移动容差")]
     public float moveTolerance = 1;
-    [Header("手脚转动范围")]
-    public float handAngle = 180;
-    public float footAngle = 90;
-    [Header("各肢体起始角度")]
-    public float leftHandAngleAdjust = 90;
-    public float rightHandAngleAdjust = -90;
-    public float leftFootAngleAdjust = 45;
-    public float rightFootAngleAdjust = 45;
-    [Header("肢体长度（暂时）")] 
-    public float limbLength = 1;
+
+    //手脚转动起止角度
+    private Quaternion leftHandStartAngle = new Quaternion(0.00048f, 0.78203f, 0.62324f, -0.00103f);
+    private Quaternion leftHandEndAngle = new Quaternion(-0.00039f, 0.99336f, -0.11502f, -0.00106f);
+    private Quaternion rightHandStartAngle = new Quaternion(-0.54521f, -0.00081f, -0.00053f, 0.83830f);
+    private Quaternion rightHandEndAngle = new Quaternion(0.18873f, -0.00095f, 0.00018f, 0.98203f);
+    private Quaternion leftHipStartAngle = new Quaternion(-0.40338f, 0.45920f, 0.73886f, -0.28373f);
+    private Quaternion leftHipEndAngle = new Quaternion(0.32134f, 0.50926f, 0.77806f, 0.17896f);
+    private Quaternion rightHipStartAngle = new Quaternion(-0.48733f, -0.40875f, 0.23933f, 0.73359f);
+    private Quaternion rightHipEndAngle = new Quaternion(-0.47522f, 0.31772f, -0.21946f, 0.79061f);
+    // private Quaternion leftKneeStartAngle = new Quaternion(0.00059f, -0.00002f, 0.00000f, 1.00000f);
+    // private Quaternion leftKneeEndAngle = new Quaternion(0.00056f, -0.31499f, -0.00019f, 0.94909f);
+
     [Header("元素外观")] 
     public float meshScale = 0.1f;
     [Range(0.0f, 1.0f)]
@@ -40,40 +43,32 @@ public class FingerValues : MonoBehaviour
     private Matrix4x4[] matrices;
     private MaterialPropertyBlock block;
     private int amount;
-    // private Vector3[] verticesPosition;
     private List<Vector3> verticesPosition = new List<Vector3>();
     private float sliderLength = 10;
     private float floatValue;
     
-    private GameObject leftHand;
+    // private GameObject leftHand;
     private GameObject leftShoulder;
-    private Transform leftHandTransform;
+    // private Transform leftHandTransform;
     private Transform leftShoulderTransform;
     private Vector3 leftShoulderPosition;
     
-    private GameObject rightHand;
+    // private GameObject rightHand;
     private GameObject rightShoulder;
-    private Transform rightHandTransform;
+    // private Transform rightHandTransform;
     private Transform rightShoulderTransform;
     private Vector3 rightShoulderPosition;
     
     private float leftHandAngle;
     private float rightHandAngle;
     
-    private GameObject leftFoot;
     private GameObject leftHip;
-    private Transform leftFootTransform;
+    private GameObject leftKnee;
     private Transform leftHipTransform;
-    private Vector3 leftHipPosition;
     
-    private GameObject rightFoot;
     private GameObject rightHip;
-    private Transform rightFootTransform;
+    private GameObject rightKnee;
     private Transform rightHipTransform;
-    private Vector3 rightHipPosition;
-
-    private float leftFootAngle;
-    private float rightFootAngle;
 
     private GameObject Myavatar;
     private GameObject bodyMesh;
@@ -95,25 +90,19 @@ public class FingerValues : MonoBehaviour
     {
         fingers = new float[10];
         
-        leftHand = GameObject.Find("leftHand");
-        leftHandTransform = leftHand.GetComponent<Transform>();
         leftShoulder = GameObject.Find("leftShoulder");
         leftShoulderTransform = leftShoulder.GetComponent<Transform>();
         
-        rightHand = GameObject.Find("rightHand");
-        rightHandTransform = rightHand.GetComponent<Transform>();
         rightShoulder = GameObject.Find("rightShoulder");
         rightShoulderTransform = rightShoulder.GetComponent<Transform>();
         
-        leftFoot = GameObject.Find("leftFoot");
-        leftFootTransform = leftFoot.GetComponent<Transform>();
         leftHip = GameObject.Find("leftHip");
         leftHipTransform = leftHip.GetComponent<Transform>();
+        // leftKnee = GameObject.Find("leftKnee");
         
-        rightFoot = GameObject.Find("rightFoot");
-        rightFootTransform = rightFoot.GetComponent<Transform>();
         rightHip = GameObject.Find("rightHip");
         rightHipTransform = rightHip.GetComponent<Transform>();
+        // rightKnee = GameObject.Find("rightKnee");
         
         Myavatar = GameObject.Find("avatar");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
@@ -199,21 +188,22 @@ public class FingerValues : MonoBehaviour
     void LimbControl()
     {
         //最好增加一些变化
-        leftHandAngle = fingers[6]*(handAngle / sliderLength) + leftHandAngleAdjust;
-        leftShoulderPosition = leftShoulderTransform.position;
-        leftHandTransform.position = new Vector3( leftShoulderPosition.x + limbLength * Mathf.Cos(Mathf.Deg2Rad * leftHandAngle),leftShoulderPosition.y - limbLength * Mathf.Sin(Mathf.Deg2Rad * leftHandAngle), leftShoulderPosition.z);
         
-        rightHandAngle = fingers[9]*(handAngle / sliderLength) + rightHandAngleAdjust;
-        rightShoulderPosition = rightShoulderTransform.position;
-        rightHandTransform.position = new Vector3( rightShoulderPosition.x + limbLength * Mathf.Cos(Mathf.Deg2Rad * rightHandAngle),rightShoulderPosition.y + limbLength * Mathf.Sin(Mathf.Deg2Rad * rightHandAngle),rightShoulderPosition.z);
+        leftShoulderTransform.localRotation = Quaternion.Slerp(leftHandStartAngle, leftHandEndAngle, fingers[6] / sliderLength);
+        rightShoulderTransform.localRotation = Quaternion.Slerp(rightHandStartAngle, rightHandEndAngle, fingers[9] / sliderLength);
+        leftHipTransform.localRotation = Quaternion.Slerp(leftHipStartAngle, leftHipEndAngle, fingers[7] / sliderLength);
+        rightHipTransform.localRotation = Quaternion.Slerp(rightHipStartAngle, rightHipEndAngle, fingers[8] / sliderLength);
+        // if (fingers[7] > sliderLength / 2)
+        // {
+        //     leftKnee.GetComponent<Transform>().localRotation = Quaternion.Slerp(leftKneeStartAngle, leftKneeEndAngle,
+        //         Remap(fingers[7], sliderLength / 2, sliderLength, 0, 1));
+        // }
         
-        leftFootAngle = fingers[7]*(footAngle / sliderLength) + leftFootAngleAdjust;
-        leftHipPosition = leftHipTransform.position;
-        leftFootTransform.position = new Vector3( leftHipPosition.x,leftHipPosition.y - limbLength * Mathf.Sin(Mathf.Deg2Rad * leftFootAngle), leftHipPosition.z  + limbLength * Mathf.Cos(Mathf.Deg2Rad * leftFootAngle));
 
-        rightFootAngle = fingers[8]*(footAngle / sliderLength) + rightFootAngleAdjust;
-        rightHipPosition = rightHipTransform.position;
-        rightFootTransform.position = new Vector3( rightHipPosition.x,rightHipPosition.y - limbLength * Mathf.Sin(Mathf.Deg2Rad * rightFootAngle), rightHipPosition.z  + limbLength * Mathf.Cos(Mathf.Deg2Rad * rightFootAngle));
+
+        // Debug.Log(leftKnee.GetComponent<Transform>().localRotation);
+        
+        
     }
 
     void Float()
