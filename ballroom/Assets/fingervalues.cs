@@ -2,13 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.Build.Content;
-using UnityEditor.TextCore.Text;
 using UnityEngine;
 using Random=UnityEngine.Random;
 using System.Linq;
 
-public class fingervalues : MonoBehaviour
+public class FingerValues : MonoBehaviour
 {
     
     public float[] fingers;
