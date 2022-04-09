@@ -6,6 +6,15 @@ using UnityEngine;
 using Random=UnityEngine.Random;
 using System.Linq;
 
+//待办清单
+
+//元素间渐变（接触到某物，然后元素扩散式变化，过渡效果1：变大）
+//
+//开头剧情
+//元素位置随机
+//avatar移动测试（可将slider映射到键盘上）
+//avatar漂浮感
+
 public class FingerValues : MonoBehaviour
 {
     
@@ -39,10 +48,12 @@ public class FingerValues : MonoBehaviour
     
     //instance相关
     public Mesh mesh;
+    public List<GameObject> elementList = new List<GameObject>();
+    private Boolean[] elementListSelect;
     public Material material;
     private Matrix4x4[] matrices;
     private MaterialPropertyBlock block;
-    private int amount;
+    private int verticesAmount;
     private List<Vector3> verticesPosition = new List<Vector3>();
     private float sliderLength = 10;
     private float floatValue;
@@ -70,6 +81,8 @@ public class FingerValues : MonoBehaviour
     private GameObject rightKnee;
     private Transform rightHipTransform;
 
+    //导入新avatar模型时注意：在import设置中开启read/write；gameobject及各关节命名要与目前的保持一致；
+    //element使用的material要开启GPU instance，element的gameobject要全部拖入本脚本的elementList
     private GameObject Myavatar;
     private GameObject bodyMesh;
     private Transform MyavatarTransform;
@@ -89,6 +102,7 @@ public class FingerValues : MonoBehaviour
     void Start()
     {
         fingers = new float[10];
+        elementListSelect = new bool[elementList.Count];
         
         leftShoulder = GameObject.Find("leftShoulder");
         leftShoulderTransform = leftShoulder.GetComponent<Transform>();
@@ -118,19 +132,25 @@ public class FingerValues : MonoBehaviour
 
         bodyMesh = GameObject.Find("bodyMesh");
         block = new MaterialPropertyBlock();
-        amount = bodyMesh.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
+        verticesAmount = bodyMesh.GetComponent<SkinnedMeshRenderer>().sharedMesh.vertexCount;
         
         //简化顶点个数
         verticesPosition = bodyMesh.GetComponent<SkinnedVertices>().verticesPositionAfterDelete;
-        amount = verticesPosition.Count;
-        matrices = new Matrix4x4[amount];
+        verticesAmount = verticesPosition.Count;
+        matrices = new Matrix4x4[verticesAmount];
         //计算每个element的大小与旋转
-        rotation = new Quaternion[amount];
-        scale = new Vector3[amount];
-        for (int i = 0; i < amount; i++)
+        rotation = new Quaternion[verticesAmount];
+        scale = new Vector3[verticesAmount];
+        for (int i = 0; i < verticesAmount; i++)
         {
             rotation[i] = Quaternion.Euler(Random.Range(-rotationRandom, rotationRandom), Random.Range(-rotationRandom, rotationRandom), Random.Range(-rotationRandom, rotationRandom));
             scale[i] = Vector3.one * Random.Range(1-scaleRandom, 1+scaleRandom);
+        }
+        //element标记物碰撞检测
+        foreach (var element in elementList)
+        {
+            element.AddComponent<TriggerDetact>();
+            element.GetComponent<Collider>().isTrigger = true;
         }
 
         
@@ -173,16 +193,31 @@ public class FingerValues : MonoBehaviour
 
     private void AddElements()
     {
-        //身上聚合一些元素
         verticesPosition = bodyMesh.GetComponent<SkinnedVertices>().verticesPositionAfterDelete;
-        for (int i = 0; i < amount; i++)
+        for (int i = 0; i < verticesAmount; i++)
         {
             matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation[i], scale[i] * meshScale);
         }
-        Graphics.DrawMeshInstanced(mesh, 0, material, matrices, amount, block);
 
-        //更改一个更合适的模型，最好是有手肘膝盖的。
+        foreach (var element in elementList)
+        {
+            string colliderName = element.GetComponent<TriggerDetact>().colliderName;
+            if (colliderName != null)
+            {
+                // Debug.Log(colliderName);
+                //目前暂时是变成和标记物一样的东西，之后可能需要不一样的
+                mesh = GameObject.Find(colliderName).GetComponent<MeshFilter>().mesh;
+
+            }
+        }
+
+        
+        Graphics.DrawMeshInstanced(mesh, 0, material, matrices, verticesAmount, block);
+//使用两个draw，先试试上下扫描变换
+//矩阵中，去掉y大的位置，阈值随时间变化
     }
+    
+   
 
 
     void LimbControl()
