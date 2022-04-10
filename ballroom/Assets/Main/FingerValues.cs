@@ -9,23 +9,27 @@ using System.Linq;
 //待办清单
 
 //元素间渐变（接触到某物，然后元素扩散式变化，过渡效果1：变大）
-//
+//列一些可用元素的list
 //开头剧情
 //元素位置随机
 //avatar移动测试（可将slider映射到键盘上）
+//一个新想法：要不要让avatar的视角不freeze，可设置一个键来归零防止转晕
 //avatar漂浮感
+//加入移动速度变化
+
+//各种设置指南：
+//导入新avatar模型时注意：在import/mesh设置中开启read/write；gameobject及各关节命名要与目前的保持一致；取消c4d摄像头
+//element使用的material要开启GPU instance，element的gameobject要全部拖入本脚本的elementList
 
 public class FingerValues : MonoBehaviour
 {
-    
-    public float[] fingers;
+
+    private float[] fingers;
+    private PublicFunctions publicFunctions;
 
 
-    [Header("摄像机控制")]
-    public float cameraHight = 2.5f;
-    public float cameraDistance = 2f;
-    [Header("停止移动容差")]
-    public float moveTolerance = 1;
+
+    private float moveTolerance = 1;
 
     //手脚转动起止角度
     private Quaternion leftHandStartAngle = new Quaternion(0.00048f, 0.78203f, 0.62324f, -0.00103f);
@@ -35,64 +39,55 @@ public class FingerValues : MonoBehaviour
     private Quaternion leftHipStartAngle = new Quaternion(-0.40338f, 0.45920f, 0.73886f, -0.28373f);
     private Quaternion leftHipEndAngle = new Quaternion(0.32134f, 0.50926f, 0.77806f, 0.17896f);
     private Quaternion rightHipStartAngle = new Quaternion(-0.48733f, -0.40875f, 0.23933f, 0.73359f);
+
     private Quaternion rightHipEndAngle = new Quaternion(-0.47522f, 0.31772f, -0.21946f, 0.79061f);
     // private Quaternion leftKneeStartAngle = new Quaternion(0.00059f, -0.00002f, 0.00000f, 1.00000f);
     // private Quaternion leftKneeEndAngle = new Quaternion(0.00056f, -0.31499f, -0.00019f, 0.94909f);
 
-    [Header("元素外观")] 
-    public float meshScale = 0.1f;
-    [Range(0.0f, 1.0f)]
-    public float scaleRandom = 0.3f;
-    [Range(0.0f, 180.0f)]
-    public float rotationRandom = 45;
-    
+    [Header("元素外观")] public float meshScale = 0.1f;
+    [Range(0.0f, 1.0f)] public float scaleRandom = 0.3f;
+    [Range(0.0f, 180.0f)] public float rotationRandom = 45;
+
     //instance相关
-    public Mesh mesh;
+    [Header("初始元素")]public Mesh mesh;
     public List<GameObject> elementList = new List<GameObject>();
-    private Boolean[] elementListSelect;
     public Material material;
     private Matrix4x4[] matrices;
     private MaterialPropertyBlock block;
     private int verticesAmount;
     private List<Vector3> verticesPosition = new List<Vector3>();
-    private float sliderLength = 10;
-    private float floatValue;
-    
+    private float sliderLength;
+
     // private GameObject leftHand;
     private GameObject leftShoulder;
+
     // private Transform leftHandTransform;
     private Transform leftShoulderTransform;
     private Vector3 leftShoulderPosition;
-    
+
     // private GameObject rightHand;
     private GameObject rightShoulder;
+
     // private Transform rightHandTransform;
     private Transform rightShoulderTransform;
     private Vector3 rightShoulderPosition;
-    
+
     private float leftHandAngle;
     private float rightHandAngle;
-    
+
     private GameObject leftHip;
     private GameObject leftKnee;
     private Transform leftHipTransform;
-    
+
     private GameObject rightHip;
     private GameObject rightKnee;
     private Transform rightHipTransform;
 
-    //导入新avatar模型时注意：在import设置中开启read/write；gameobject及各关节命名要与目前的保持一致；
-    //element使用的material要开启GPU instance，element的gameobject要全部拖入本脚本的elementList
-    private GameObject Myavatar;
+
     private GameObject bodyMesh;
-    private Transform MyavatarTransform;
-    private float moveRadial;
-    private float moveLateral;
     private float bodyRotateValue;
-    private float moveNormaliazeRate;
     private Quaternion[] rotation;
     private Vector3[] scale;
-
 
     
     public static float Remap ( float value, float from1, float to1, float from2, float to2) {
@@ -101,8 +96,12 @@ public class FingerValues : MonoBehaviour
 
     void Start()
     {
-        fingers = new float[10];
-        elementListSelect = new bool[elementList.Count];
+        
+        publicFunctions = GameObject.Find("Script").GetComponent<PublicFunctions>();
+        fingers = publicFunctions.fingers;
+        sliderLength = publicFunctions.sliderLength;
+        moveTolerance = publicFunctions.moveTolerance;
+        
         
         leftShoulder = GameObject.Find("leftShoulder");
         leftShoulderTransform = leftShoulder.GetComponent<Transform>();
@@ -118,17 +117,12 @@ public class FingerValues : MonoBehaviour
         rightHipTransform = rightHip.GetComponent<Transform>();
         // rightKnee = GameObject.Find("rightKnee");
         
-        Myavatar = GameObject.Find("avatar");
-        MyavatarTransform = Myavatar.GetComponent<Transform>();
-        
-        fingers[0] = sliderLength / 2;
-        fingers[1] = sliderLength / 2;
-        fingers[2] = sliderLength / 2;
-        fingers[3] = sliderLength / 2;
-        fingers[4] = sliderLength / 2;
-        fingers[5] = sliderLength / 2;
-        fingers[7] = sliderLength / 2;
-        fingers[8] = sliderLength / 2;
+  
+        //手指中位
+        for (int i = 0; i < 10; i++)
+        {
+            fingers[i] = sliderLength / 2;
+        }
 
         bodyMesh = GameObject.Find("bodyMesh");
         block = new MaterialPropertyBlock();
@@ -152,53 +146,36 @@ public class FingerValues : MonoBehaviour
             element.AddComponent<TriggerDetact>();
             element.GetComponent<Collider>().isTrigger = true;
         }
-
-        
-
-    }
-    void OnGUI()
-    {
-        //left
-        for (int i = 0; i < 5; i++)
-        {
-            fingers[i] = GUI.HorizontalSlider(new Rect(25, 25*(i+1), 100, 30), fingers[i], 0.0F, sliderLength);
-        }
-        //right
-        for (int i = 5; i < 10; i++)
-        {
-            fingers[i] = GUI.HorizontalSlider(new Rect(150, 25*(i-4), 100, 30), fingers[i], 0.0F, sliderLength);
-        }
+ 
 
     }
-
-
+    
+    
 
     void Update()
     {
-        LimbControl();
-        Float();
-        Move();
-        Rotate();
-        AddElements();
-
-
-
-
-        //摄像机移动
-        transform.position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
-            MyavatarTransform.position.z - cameraDistance);
-
+        
+            LimbControl();
+            Float();
+            publicFunctions.Move();
+            publicFunctions.Rotate();
+            AddElements();
+        
+        
+     
     }
 
 
     private void AddElements()
     {
+        //元素排列
         verticesPosition = bodyMesh.GetComponent<SkinnedVertices>().verticesPositionAfterDelete;
         for (int i = 0; i < verticesAmount; i++)
         {
             matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation[i], scale[i] * meshScale);
         }
 
+        //元素切换
         foreach (var element in elementList)
         {
             string colliderName = element.GetComponent<TriggerDetact>().colliderName;
@@ -207,7 +184,7 @@ public class FingerValues : MonoBehaviour
                 // Debug.Log(colliderName);
                 //目前暂时是变成和标记物一样的东西，之后可能需要不一样的
                 mesh = GameObject.Find(colliderName).GetComponent<MeshFilter>().mesh;
-
+        
             }
         }
 
@@ -228,6 +205,7 @@ public class FingerValues : MonoBehaviour
         rightShoulderTransform.localRotation = Quaternion.Slerp(rightHandStartAngle, rightHandEndAngle, fingers[9] / sliderLength);
         leftHipTransform.localRotation = Quaternion.Slerp(leftHipStartAngle, leftHipEndAngle, fingers[7] / sliderLength);
         rightHipTransform.localRotation = Quaternion.Slerp(rightHipStartAngle, rightHipEndAngle, fingers[8] / sliderLength);
+        //膝盖
         // if (fingers[7] > sliderLength / 2)
         // {
         //     leftKnee.GetComponent<Transform>().localRotation = Quaternion.Slerp(leftKneeStartAngle, leftKneeEndAngle,
@@ -243,49 +221,16 @@ public class FingerValues : MonoBehaviour
 
     void Float()
     {
-        floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;
+        float floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;
         
         if (-moveTolerance / 3 < floatValue && floatValue < moveTolerance / 3)
         {
             floatValue = 0;
         }
-        MyavatarTransform.Translate(0,floatValue / 100, 0);
+        this.GetComponent<Transform>().Translate(0,floatValue / 100, 0);
     }
 
-    void Move()
-    {
-        moveRadial = fingers[1] - sliderLength / 2;
-        // moveRadial = Remap(moveRadial, -5, 5, -20, 20);
-        moveLateral = fingers[0] - sliderLength / 2;
-
-        if (-moveTolerance  < moveLateral && moveLateral < moveTolerance)
-        {
-            moveLateral = 0;
-        }
-        if (-moveTolerance < moveRadial && moveRadial < moveTolerance)
-        {
-            moveRadial = 0;
-        }
-        if (!((moveLateral == 0) && (moveRadial == 0)))
-        {
-            moveNormaliazeRate = 1 / Mathf.Sqrt(Mathf.Pow(moveLateral, 2) + Mathf.Pow(moveRadial, 2));
-        }
-        else
-        {
-            moveNormaliazeRate = 0;
-        }
-        MyavatarTransform.Translate(moveLateral / 100 * moveNormaliazeRate, 0, moveRadial / 100 * moveNormaliazeRate);
-    }
     
-    void Rotate()
-    {
-        bodyRotateValue = fingers[5] - sliderLength / 2;
-        if (-moveTolerance < bodyRotateValue && bodyRotateValue < moveTolerance)
-        {
-            bodyRotateValue = 0;
-        }
-        MyavatarTransform.Rotate(0f,Mathf.Deg2Rad * bodyRotateValue,0f,Space.Self);
-    }
 }
 
 
