@@ -21,16 +21,13 @@ using System.Linq;
 //导入新avatar模型时注意：在import/mesh设置中开启read/write；gameobject及各关节命名要与目前的保持一致；取消c4d摄像头
 //element使用的material要开启GPU instance，element的gameobject要全部拖入本脚本的elementList
 
-public class FingerValues : MonoBehaviour
+public class Main : MonoBehaviour
 {
 
     private float[] fingers;
     private PublicFunctions publicFunctions;
-
-
-
-    private float moveTolerance = 1;
-
+    private float moveTolerance;
+    
     //手脚转动起止角度
     private Quaternion leftHandStartAngle = new Quaternion(0.00048f, 0.78203f, 0.62324f, -0.00103f);
     private Quaternion leftHandEndAngle = new Quaternion(-0.00039f, 0.99336f, -0.11502f, -0.00106f);
@@ -156,6 +153,7 @@ public class FingerValues : MonoBehaviour
     {
         
             LimbControl();
+            // Float();
             Float();
             publicFunctions.Move();
             publicFunctions.Rotate();

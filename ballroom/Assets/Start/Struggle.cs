@@ -9,6 +9,7 @@ public class Struggle : MonoBehaviour
     private float[] fingers = new float[10];
     private float sliderLength;
     private PublicFunctions publicFunctions;
+    private bool ifInLight;
     
     //挣扎判定
     private bool[,] marks = new bool[10,3];
@@ -24,7 +25,7 @@ public class Struggle : MonoBehaviour
         
         fingers = publicFunctions.fingers;
         sliderLength = publicFunctions.sliderLength;
-   
+        
         //挣扎判定，
         for(int i = 0; i < 10; i++)
         {
@@ -80,6 +81,18 @@ public class Struggle : MonoBehaviour
             publicFunctions.Rotate();
             // Move();
             // Rotate();
+        }
+        
+        //光中漂浮
+        ifInLight = GameObject.Find("Light").GetComponent<FloatInLight>().ifInLight;
+        if (ifInLight == true)
+        {
+            this.GetComponent<Rigidbody>().useGravity = false;
+            this.GetComponent<Rigidbody>().AddForce(0,0.1f,0);
+
+            // publicFunctions.Float();
+            Debug.Log("1");
+            
         }
         
 
