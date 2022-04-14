@@ -83,6 +83,8 @@ public class Struggle : MonoBehaviour
         }
         
 <<<<<<< HEAD:ballroom/Assets/Script/Start/Struggle.cs
+// <<<<<<< HEAD:ballroom/Assets/Script/Start/Struggle.cs
+// <<<<<<< HEAD:ballroom/Assets/Script/Start/Struggle.cs
         //光中漂浮
         ifInLight = GameObject.Find("FloatInLight").GetComponent<FloatInLight>().ifInLight;
         if (ifInLight == true)
@@ -95,6 +97,10 @@ public class Struggle : MonoBehaviour
             
         }
         
+// =======
+// >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景):ballroom/Assets/Start/Struggle.cs
+// =======
+// >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景):ballroom/Assets/Start/Struggle.cs
 =======
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景):ballroom/Assets/Start/Struggle.cs
 
