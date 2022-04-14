@@ -9,7 +9,6 @@ public class Struggle : MonoBehaviour
     private float[] fingers = new float[10];
     private float sliderLength;
     private PublicFunctions publicFunctions;
-    private bool ifInLight;
     
     //挣扎判定
     private bool[,] marks = new bool[10,3];
@@ -25,7 +24,7 @@ public class Struggle : MonoBehaviour
         
         fingers = publicFunctions.fingers;
         sliderLength = publicFunctions.sliderLength;
-        
+   
         //挣扎判定，
         for(int i = 0; i < 10; i++)
         {
@@ -83,6 +82,7 @@ public class Struggle : MonoBehaviour
             // Rotate();
         }
         
+<<<<<<< HEAD:ballroom/Assets/Script/Start/Struggle.cs
         //光中漂浮
         ifInLight = GameObject.Find("FloatInLight").GetComponent<FloatInLight>().ifInLight;
         if (ifInLight == true)
@@ -95,6 +95,8 @@ public class Struggle : MonoBehaviour
             
         }
         
+=======
+>>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景):ballroom/Assets/Start/Struggle.cs
 
         
     }
