@@ -52,6 +52,8 @@ public class PublicFunctions : MonoBehaviour
         myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
             MyavatarTransform.position.z - cameraDistance);
         
+      
+        
         
 
     }

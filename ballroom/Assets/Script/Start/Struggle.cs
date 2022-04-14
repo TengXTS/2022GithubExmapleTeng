@@ -15,6 +15,8 @@ public class Struggle : MonoBehaviour
     private bool[] marksFinal = {false,false,false,false,false,false,false,false,false,false};
     private bool[] marksFinalTrue = {true, true,true, true,true, true,true, true,true, true};
 
+    private bool ifInLight;
+    private bool ifFloat = false;
 
 
 
@@ -42,7 +44,7 @@ public class Struggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        
         
 //挣扎判定main。目前是转两圈，如果要加圈数要全部改。
         for (int i = 0; i < 10; i++)
@@ -73,13 +75,27 @@ public class Struggle : MonoBehaviour
 
         }
 
-        if (marksFinal[0] == true)
+        if (marksFinal[0] == true && ifFloat == false)
         {
             this.GetComponent<Rigidbody>().useGravity = true;
             publicFunctions.Move();
             publicFunctions.Rotate();
             // Move();
             // Rotate();
+        }
+        
+        //光中漂浮
+        ifInLight = GameObject.Find("LightColiider").GetComponent<FloatInLight>().ifInLight;
+        if (ifInLight == true)
+        {
+            this.GetComponent<Rigidbody>().useGravity = false;
+            this.GetComponent<Rigidbody>().AddForce(0,0.2f,0);
+            ifFloat = true;
+            // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX;
+            // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
+            // publicFunctions.Float();
+            Debug.Log("1");
+            
         }
         
 
