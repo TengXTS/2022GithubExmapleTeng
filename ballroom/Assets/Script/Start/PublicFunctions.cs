@@ -39,7 +39,7 @@ public class PublicFunctions : MonoBehaviour
     }
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        // DontDestroyOnLoad(this);
         Myavatar = GameObject.Find("avatar");
         myCamera = GameObject.Find("Main Camera");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
