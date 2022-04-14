@@ -124,160 +124,8 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1001 &108766913
 PrefabInstance:
-=======
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
---- !u!1 &120086399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120086403}
-  - component: {fileID: 120086402}
-  - component: {fileID: 120086401}
-  - component: {fileID: 120086400}
-  m_Layer: 0
-  m_Name: Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &120086400
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120086399}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &120086401
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120086399}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &120086402
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120086399}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &120086403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120086399}
-  m_LocalRotation: {x: -0, y: -0, z: -0.26969734, w: 0.96294516}
-  m_LocalPosition: {x: 9.89, y: 8.1, z: 0.10993513}
-  m_LocalScale: {x: 0.20000003, y: 3.4600005, z: 0.2}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -31.293}
---- !u!1 &1077872503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1077872505}
-  - component: {fileID: 1077872504}
-  m_Layer: 0
-  m_Name: Script
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1077872504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077872503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b261f324e9fb943b4851c6ba6701d104, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fingers:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  sliderLength: 10
-  moveTolerance: 1
-  cameraHight: 0
-  cameraDistance: 10
-  moveSpeed: 1
-  rotateSpeed: 5
---- !u!4 &1077872505
-Transform:
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -1460,15 +1308,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fea1580920760460db550a57bf50a689, type: 3}
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &1577609739
-=======
---- !u!1 &1372951396
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
---- !u!1 &1372951396
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
 =======
 --- !u!1 &1372951396
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
@@ -1480,8 +1320,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 1577609741}
   - component: {fileID: 1577609740}
   - component: {fileID: 1577609742}
@@ -1492,17 +1330,11 @@ GameObject:
   m_Layer: 0
   m_Name: Bondage
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
-  - component: {fileID: 1372951397}
-  m_Layer: 0
-  m_Name: Bondage
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!65 &1577609740
 BoxCollider:
@@ -1557,17 +1389,11 @@ GameObject:
   - component: {fileID: 1672604703}
   m_Layer: 0
   m_Name: Sky and Fog Global Volume
-=======
-  - component: {fileID: 1372951397}
-  m_Layer: 0
-  m_Name: Bondage
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!114 &1672604703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,19 +1415,11 @@ MonoBehaviour:
 =======
 --- !u!4 &1372951397
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
---- !u!4 &1372951397
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
---- !u!4 &1372951397
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1672604702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1612,10 +1430,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
 =======
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
   m_GameObject: {fileID: 1372951396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.09284486, y: -0.28951657, z: 0.10993513}
@@ -1627,12 +1441,6 @@ Transform:
   - {fileID: 1166445118}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1748552697
@@ -1726,8 +1534,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748552697}
 <<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_LocalRotation: {x: -0.99679536, y: -0, z: -0, w: 0.07999484}
   m_LocalPosition: {x: 1.56, y: 24.98, z: 13.5}
   m_LocalScale: {x: 5.75, y: 5.75, z: 5.75}
@@ -1748,26 +1554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4670e4be4501542c092d8b504e3bf841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.79, y: 11.33, z: 0.109935105}
-  m_LocalScale: {x: 0.31, y: 0.31, z: 0.31}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.79, y: 11.33, z: 0.109935105}
-  m_LocalScale: {x: 0.31, y: 0.31, z: 0.31}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
 =======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.79, y: 11.33, z: 0.109935105}

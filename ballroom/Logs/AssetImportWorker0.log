@@ -1495,8 +1495,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-<<<<<<< HEAD
-<<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.002057 seconds.
@@ -3575,10 +3573,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
 Received Import Request.
   Time since last request: 726.662940 seconds.
   path: Assets/Scenes/Main.unity
@@ -3590,10 +3584,4 @@ Received Import Request.
   path: Assets/Scenes/Start.unity
   artifactKey: Guid(0210e294d23df45548995a11973a822a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/Start.unity using Guid(0210e294d23df45548995a11973a822a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8b7700ba453ac2802519b1aaa761a8') in 0.001543 seconds 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
->>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
-=======
 >>>>>>> parent of f4dccfd (strat场景增加漂浮&链接到main场景)
