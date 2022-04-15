@@ -1,9 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
 
 public class NextScene : MonoBehaviour
@@ -14,7 +11,6 @@ public class NextScene : MonoBehaviour
     private Image whiteLight;
 
     private Color c;
-    // image
     void Start()
     {
         whiteLight = GameObject.Find("whiteLight").GetComponent<Image>();
@@ -46,14 +42,14 @@ public class NextScene : MonoBehaviour
         {
             c.a += 0.04f;
             whiteLight.color = c;
-            // Debug.Log(c.a);
+            // Debug.Log("scene1"+c.a);
             this.GetComponent<Transform>().localScale = this.GetComponent<Transform>().localScale + new Vector3(0.01f,0.01f,0.01f);
 
             
-
-            // Debug.Log("1"+ enter);
             yield return new WaitForSeconds(1f);
+
             SceneManager.LoadScene("Main");
+    
         }
 
 

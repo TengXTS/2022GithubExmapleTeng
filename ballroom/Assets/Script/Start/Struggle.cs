@@ -89,7 +89,7 @@ public class Struggle : MonoBehaviour
         if (ifInLight == true)
         {
             this.GetComponent<Rigidbody>().useGravity = false;
-            this.GetComponent<Rigidbody>().AddForce(0,0.2f,0);
+            this.GetComponent<Rigidbody>().AddForce(0,0.6f,0);
             ifFloat = true;
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX;
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
