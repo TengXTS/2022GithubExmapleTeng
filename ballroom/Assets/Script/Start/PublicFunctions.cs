@@ -10,6 +10,7 @@ public class PublicFunctions : MonoBehaviour
     
     [Header("摄像机控制")] public float cameraHight = 0f;
     public float cameraDistance = 10f;
+    public float cameraRotationX = 0f;
     
     [Header("移动速度")] public float moveSpeed = 1;
     [Header("旋转速度")] public float rotateSpeed = 5;
@@ -28,12 +29,12 @@ public class PublicFunctions : MonoBehaviour
         //left
         for (int i = 0; i < 5; i++)
         {
-            fingers[i] = GUI.HorizontalSlider(new Rect(25, 25*(i+1), 100, 30), fingers[i], 0.0F, sliderLength);
+            fingers[i] = GUI.HorizontalSlider(new Rect(85, 25*(i+2), 100, 30), fingers[i], 0.0F, sliderLength);
         }
         //right
         for (int i = 5; i < 10; i++)
         {
-            fingers[i] = GUI.HorizontalSlider(new Rect(150, 25*(i-4), 100, 30), fingers[i], 0.0F, sliderLength);
+            fingers[i] = GUI.HorizontalSlider(new Rect(200, 25*(i-3), 100, 30), fingers[i], 0.0F, sliderLength);
         }
 
     }
@@ -52,7 +53,7 @@ public class PublicFunctions : MonoBehaviour
         myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
             MyavatarTransform.position.z - cameraDistance);
         
-      
+        myCamera.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
         
         
 
