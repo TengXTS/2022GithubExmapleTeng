@@ -11,6 +11,7 @@ Shader "Unlit/NewUnlitShader"
         Tags { "RenderType"="Opaque"             "Queue"="Overlay"
 }
         LOD 100
+        Cull off 
 
         Pass
         {

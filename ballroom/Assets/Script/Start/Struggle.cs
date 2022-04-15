@@ -94,7 +94,7 @@ public class Struggle : MonoBehaviour
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX;
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;
             // publicFunctions.Float();
-            Debug.Log("1");
+            // Debug.Log("1");
             
         }
         
