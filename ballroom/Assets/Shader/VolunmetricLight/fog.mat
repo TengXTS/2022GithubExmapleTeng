@@ -22,13 +22,13 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: bb96483f2d6e04468b76de6b252342d1, type: 3}
         m_Scale: {x: 0.34, y: 0.4}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0, y: -0.6}
     m_Ints: []
     m_Floats:
     - _DownSideFade: 15
-    - _DownSidePos: 13.43
+    - _DownSidePos: 5.29
     - _FresnelPow: 0.5
-    - _Opacity: 0.331
+    - _Opacity: 0.462
     m_Colors:
-    - _MainCol: {r: 0.3066038, g: 0.59974694, b: 1, a: 1}
+    - _MainCol: {r: 0.53092736, g: 0.69371, b: 0.9150943, a: 1}
   m_BuildTextureStacks: []

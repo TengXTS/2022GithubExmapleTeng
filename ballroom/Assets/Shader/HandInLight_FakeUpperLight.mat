@@ -27,6 +27,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FadeTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
@@ -41,6 +45,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BlackBottom: 0.09
+    - _BottomHight: 0
     - _CubemapMip: 0
     - _EmitInt: 1
     - _EnvDiffInt: 0.485
@@ -49,9 +55,10 @@ Material:
     - _SpecPow: 30
     - _SpecularPow: 2.6
     m_Colors:
-    - _EnvDownCol: {r: 0.13394447, g: 0.26742145, b: 0.6603774, a: 0}
-    - _EnvSideCol: {r: 0.10194909, g: 0.16220367, b: 0.2735849, a: 1}
-    - _EnvUpCol: {r: 0.42301533, g: 0.61961687, b: 0.9245283, a: 1}
+    - _BottomColor: {r: 0.11903704, g: 0.14076953, b: 0.23584908, a: 1}
+    - _EnvDownCol: {r: 0.19464225, g: 0.2767618, b: 0.509434, a: 0}
+    - _EnvSideCol: {r: 0.10991457, g: 0.19465637, b: 0.3584906, a: 1}
+    - _EnvUpCol: {r: 0.06790674, g: 0.09297266, b: 0.13207549, a: 1}
     - _LightDirection: {r: 0, g: 360, b: 0, a: 0}
-    - _MainCol: {r: 0.5330188, g: 0.70096827, b: 1, a: 1}
+    - _MainCol: {r: 0.5518868, g: 0.7138101, b: 1, a: 1}
   m_BuildTextureStacks: []
