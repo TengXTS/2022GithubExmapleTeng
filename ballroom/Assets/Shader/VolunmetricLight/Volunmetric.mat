@@ -28,7 +28,7 @@ Material:
     - _DownSideFade: 2.9
     - _DownSidePos: -0.27
     - _FresnelPow: 0.664
-    - _Opacity: 0.747
+    - _Opacity: 0.425
     m_Colors:
-    - _MainCol: {r: 0.5764507, g: 0.67537737, b: 0.9622642, a: 1}
+    - _MainCol: {r: 0.6650944, g: 0.7505295, b: 1, a: 1}
   m_BuildTextureStacks: []

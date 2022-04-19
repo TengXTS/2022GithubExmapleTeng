@@ -14,6 +14,7 @@ public class PublicFunctions : MonoBehaviour
     
     [Header("移动速度")] public float moveSpeed = 1;
     [Header("旋转速度")] public float rotateSpeed = 5;
+    [Header("漂浮速度")] public float floatSpeed = 5;
     
     private GameObject Myavatar;
     private GameObject myCamera;
@@ -59,15 +60,20 @@ public class PublicFunctions : MonoBehaviour
 
     }
     
-    public void Move()
+    public void Move(string option)
     {
 
         
         float moveRadial = fingers[1] - sliderLength / 2;
         float moveLateral = fingers[0] - sliderLength / 2;
         float moveNormaliazeRate;
-
-
+        float floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;
+        
+        
+        if (-moveTolerance / 3 < floatValue && floatValue < moveTolerance / 3)
+        {
+            floatValue = 0;
+        }
         if (-moveTolerance  < moveLateral && moveLateral < moveTolerance)
         {
             moveLateral = 0;
@@ -84,7 +90,18 @@ public class PublicFunctions : MonoBehaviour
         {
             moveNormaliazeRate = 0;
         }
-        MyavatarTransform.Translate(moveLateral / 100 * moveNormaliazeRate * moveSpeed, 0, moveRadial / 100 * moveNormaliazeRate * moveSpeed);
+
+
+        if(option == "Walk")
+        {
+            MyavatarTransform.Translate(moveLateral / 100 * moveNormaliazeRate * moveSpeed, 0,
+                moveRadial / 100 * moveNormaliazeRate * moveSpeed);
+        }
+
+        if (option == "Float")
+        {
+            Myavatar.GetComponent<ConstantForce>().force = new Vector3(moveLateral * moveNormaliazeRate * moveSpeed,floatValue * floatSpeed,moveRadial * moveNormaliazeRate * moveSpeed);
+        }
     }
     
     public void Rotate()

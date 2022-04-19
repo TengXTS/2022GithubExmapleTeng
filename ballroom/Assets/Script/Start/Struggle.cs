@@ -6,6 +6,8 @@ using System.Linq;
 
 public class Struggle : MonoBehaviour
 {
+    [Range(0,1)]
+    public float floatSpeed = 0.2f;
     private float[] fingers = new float[10];
     private float sliderLength;
     private PublicFunctions publicFunctions;
@@ -78,7 +80,7 @@ public class Struggle : MonoBehaviour
         if (marksFinal[0] == true && ifFloat == false)
         {
             this.GetComponent<Rigidbody>().useGravity = true;
-            publicFunctions.Move();
+            publicFunctions.Move("Walk");
             publicFunctions.Rotate();
             // Move();
             // Rotate();
@@ -89,7 +91,7 @@ public class Struggle : MonoBehaviour
         if (ifInLight == true)
         {
             this.GetComponent<Rigidbody>().useGravity = false;
-            this.GetComponent<Rigidbody>().AddForce(0,0.6f,0);
+            this.GetComponent<Rigidbody>().AddForce(0,floatSpeed,0);
             ifFloat = true;
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX;
             // this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ;

@@ -9,13 +9,12 @@ using System.Linq;
 
 //待办清单
 
-//build 之后很卡：光柱细节用贴图做
 //元素间渐变（接触到某物，然后元素扩散式变化，过渡效果1：变大）
-//开头
+//开头:摄像头变换，地面纹理，光柱细节用贴图做，第三人称
 //元素位置随机
 //avatar移动测试（可将slider映射到键盘上）
 //一个新想法：要不要让avatar的视角不freeze，可设置一个键来归零防止转晕
-//avatar漂浮感
+
 //加入移动速度变化
 
 //各种设置指南：
@@ -155,8 +154,7 @@ public class Main : MonoBehaviour
     {
   
             LimbControl();
-            Float();
-            publicFunctions.Move();
+            publicFunctions.Move("Float");
             publicFunctions.Rotate();
             AddElements();
         
@@ -218,18 +216,6 @@ public class Main : MonoBehaviour
         
     }
 
-    void Float()
-    {
-        float floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;
-        
-        if (-moveTolerance / 3 < floatValue && floatValue < moveTolerance / 3)
-        {
-            floatValue = 0;
-        }
-        this.GetComponent<Transform>().Translate(0,floatValue / 100, 0);
-    }
-
- 
 
 }
 

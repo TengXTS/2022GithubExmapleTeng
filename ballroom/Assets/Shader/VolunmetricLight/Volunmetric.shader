@@ -24,6 +24,7 @@ Shader "ballroom/volunmetric" {
                 "LightMode"="ForwardBase"
             }
             ZWrite Off
+
             Blend One OneMinusSrcAlpha          // 修改混合方式One/SrcAlpha OneMinusSrcAlpha
             
             CGPROGRAM
@@ -52,6 +53,7 @@ Shader "ballroom/volunmetric" {
                 float4 posWS : TEXCOORD2;
                 float2 uv : TEXCOORD0;          // UV信息 采样贴图用
                 float3 nDirWS : TEXCOORD1;
+                // float dist;
             };
             // 输入结构>>>顶点Shader>>>输出结构
             VertexOutput vert (VertexInput v) {
@@ -60,6 +62,7 @@ Shader "ballroom/volunmetric" {
                     o.uv = TRANSFORM_TEX(v.uv, _MainTex);       // UV信息 支持TilingOffset
                     o.posWS = mul(unity_ObjectToWorld, v.vertex);
                     o.nDirWS = UnityObjectToWorldNormal(v.normal);
+                    
                 return o;
             }
             // 输出结构>>>像素
@@ -75,9 +78,18 @@ Shader "ballroom/volunmetric" {
 
                 float fresnel = pow(1-pow(max(0.0, 1.0 - vdotn), _FresnelPow), 3) ; 
                 half3 finalRGB = var_MainTex.rgb * _MainCol;
+                // float zDepth = i.pos.z / i.pos.w;
+                // zDepth = zDepth * 0.5 + 0.5; //on OpenGL/ES 也就是oculus
                 half opacity = var_MainTex.a * _Opacity * fresnel * posY / _DownSideFade;
-                return half4(finalRGB * opacity, opacity);                // 返回值
+                float zDepth = distance(_WorldSpaceCameraPos, i.posWS);
+
+                opacity = opacity *  clamp(zDepth/ 5, 0, 1);
+                
+                return half4(finalRGB * opacity, opacity);
+                // return half4(clamp(zDepth,0,1),clamp(zDepth,0,1),clamp(zDepth,0,1),1);
+                // return half4(zDepth, zDepth, zDepth,1);
             }
+            
             ENDCG
         }
     }
