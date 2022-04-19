@@ -46,6 +46,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlackBottom: 0.09
+    - _BottomFade: 4.16
     - _BottomHight: 0
     - _CubemapMip: 0
     - _EmitInt: 1
@@ -55,10 +56,10 @@ Material:
     - _SpecPow: 30
     - _SpecularPow: 2.6
     m_Colors:
-    - _BottomColor: {r: 0.11903704, g: 0.14076953, b: 0.23584908, a: 1}
+    - _BottomColor: {r: 0.125534, g: 0.16329375, b: 0.2924528, a: 1}
     - _EnvDownCol: {r: 0.19464225, g: 0.2767618, b: 0.509434, a: 0}
     - _EnvSideCol: {r: 0.10991457, g: 0.19465637, b: 0.3584906, a: 1}
-    - _EnvUpCol: {r: 0.06790674, g: 0.09297266, b: 0.13207549, a: 1}
+    - _EnvUpCol: {r: 0.29036137, g: 0.4583193, b: 0.7075472, a: 1}
     - _LightDirection: {r: 0, g: 360, b: 0, a: 0}
-    - _MainCol: {r: 0.5518868, g: 0.7138101, b: 1, a: 1}
+    - _MainCol: {r: 0.53733534, g: 0.7003394, b: 0.990566, a: 1}
   m_BuildTextureStacks: []

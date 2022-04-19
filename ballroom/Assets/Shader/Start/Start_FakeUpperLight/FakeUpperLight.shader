@@ -6,6 +6,7 @@ Shader "ballroom/FakeUpperLight" {
         _LightDirection("光方向", vector) = (0,0,0,0)
         _BottomColor("底部颜色", color) = (0.0, 0.0, 0.0, 1.0)
         _BottomHight("底部高度", float) = 0
+        _BottomFade("底部渐隐度", float) = 2
         [Header(Diffuse)]
         _EnvUpCol   ("环境天顶颜色", Color)             = (1.0, 1.0, 1.0, 1.0)
         _EnvSideCol ("环境水平颜色", Color)             = (0.5, 0.5, 0.5, 1.0)
@@ -31,7 +32,7 @@ Shader "ballroom/FakeUpperLight" {
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
-            #include "cginc/MyCginc.cginc"
+            // #include "cginc/MyCginc.cginc"
             #include "AutoLight.cginc"
             // #include "Lighting.cginc"
 
@@ -46,6 +47,7 @@ Shader "ballroom/FakeUpperLight" {
             uniform float3 _MainCol;     // RGB够了 float3
             uniform float _SpecularPow;  // 标量 float
             uniform float _BottomHight;
+            uniform float _BottomFade;
             uniform float3 _BottomColor;
             uniform float4 _LightDirection;
             uniform float3 _EnvDownCol;
@@ -105,7 +107,7 @@ Shader "ballroom/FakeUpperLight" {
                 // float lambert = max(0.0, ndotl);
                 float blinnPhong = pow(max(0.0, ndoth), _SpecularPow);
                 float3 finalRGB = _MainCol * blinnPhong  + envCol;
-                float bottomValue = clamp((i.posWS.y - _BottomHight),0.0,1.0);
+                float bottomValue = clamp((i.posWS.y - _BottomHight) / _BottomFade,0.0,1.0);
                 
                 finalRGB = finalRGB * bottomValue + _BottomColor * (1-bottomValue);
                 float3 fadeValue = tex2D(_FadeTexture, i.uv);

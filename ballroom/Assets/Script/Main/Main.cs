@@ -9,13 +9,16 @@ using System.Linq;
 
 //待办清单
 
+//main场景资产制作：场景建模，元素
+//main场景shader编写：镜子，水面，云层，（特效）
+//avatar要不要一直在上下浮动呢
 //元素间渐变（接触到某物，然后元素扩散式变化，过渡效果1：变大）
-//开头:摄像头变换，地面纹理，光柱细节用贴图做，第三人称
+//开头:摄像头变换，地面纹理，光柱细节用贴图做，空中灰尘,直视光源的光圈，第三人称
+//按键教程文字
 //元素位置随机
 //avatar移动测试（可将slider映射到键盘上）
 //一个新想法：要不要让avatar的视角不freeze，可设置一个键来归零防止转晕
 
-//加入移动速度变化
 
 //各种设置指南：
 //导入新avatar模型时注意：在import/mesh设置中开启read/write；gameobject及各关节命名要与目前的保持一致；取消c4d摄像头
@@ -172,21 +175,30 @@ public class Main : MonoBehaviour
             matrices[i] = Matrix4x4.TRS(verticesPosition[i], rotation[i], scale[i] * meshScale);
         }
 
+        bool anyCollision = false;
+
         //元素切换
         foreach (var element in elementList)
         {
             string colliderName = element.GetComponent<TriggerDetact>().colliderName;
+            bool ifCollision = element.GetComponent<TriggerDetact>().ifCollision;//只有最后一个element的值是有效的。我想要的：任意一个为真则为真
             if (colliderName != null)
             {
                 // Debug.Log(colliderName);
                 //目前暂时是变成和标记物一样的东西，之后可能需要不一样的
                 mesh = GameObject.Find(colliderName).GetComponent<MeshFilter>().mesh;
-        
+            }
+            //检测是否有任何碰撞发生
+            if (ifCollision == true)
+            {
+                anyCollision = true;
             }
         }
 
-        
-        Graphics.DrawMeshInstanced(mesh, 0, material, matrices, verticesAmount, block);
+        if (anyCollision == true)
+        {
+            Graphics.DrawMeshInstanced(mesh, 0, material, matrices, verticesAmount, block);
+        }
 //使用两个draw，先试试上下扫描变换
 //矩阵中，去掉y大的位置，阈值随时间变化
     }

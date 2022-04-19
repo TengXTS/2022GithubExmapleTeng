@@ -5,23 +5,15 @@ using UnityEngine;
 public class TriggerDetact : MonoBehaviour
 {
     public string colliderName;
-    void Start()
-    {
-        
-    }
+    public bool ifCollision;
     void OnTriggerEnter(Collider other)
     {
         colliderName = this.name;
+        ifCollision = true;
     }
     
     void OnTriggerExit(Collider other)
     {
         colliderName = null;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
