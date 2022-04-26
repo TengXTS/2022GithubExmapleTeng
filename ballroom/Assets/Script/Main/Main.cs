@@ -89,6 +89,10 @@ public class Main : MonoBehaviour
     private float bodyRotateValue;
     private Quaternion[] rotation;
     private Vector3[] scale;
+    
+    private GameObject Myavatar;
+    private GameObject myCamera;
+    private Transform MyavatarTransform;
 
     
     public static float Remap ( float value, float from1, float to1, float from2, float to2) {
@@ -147,6 +151,10 @@ public class Main : MonoBehaviour
             element.AddComponent<TriggerDetact>();
             element.GetComponent<Collider>().isTrigger = true;
         }
+        //摄像头
+        Myavatar = GameObject.Find("avatar");
+        myCamera = GameObject.Find("Main Camera");
+        MyavatarTransform = Myavatar.GetComponent<Transform>();
 
 
     }
@@ -160,7 +168,10 @@ public class Main : MonoBehaviour
             publicFunctions.Move("Float");
             publicFunctions.Rotate();
             AddElements();
-        
+            
+            
+            myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + 2,
+            MyavatarTransform.position.z + 1);
         
      
     }
