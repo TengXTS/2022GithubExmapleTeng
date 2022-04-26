@@ -20,20 +20,10 @@ public class Struggle : MonoBehaviour
     private bool ifInLight;
     private bool ifFloat = false;
 
-    private GameObject Myavatar;
-    private GameObject myCamera;
-    private Transform MyavatarTransform;
-    private float cameraHight = -1f;
-    private float cameraHightSpeed = 0.0003f;
-    private float cameraDistance = -11f;
-    private float cameraDistanceSpeed = 0.0003f;
+
 
     void Start()
     {
-        Myavatar = GameObject.Find("avatar");
-        myCamera = GameObject.Find("Main Camera");
-        MyavatarTransform = Myavatar.GetComponent<Transform>();
-
         publicFunctions = GameObject.Find("Script").GetComponent<PublicFunctions>();
         
         fingers = publicFunctions.fingers;
@@ -56,22 +46,6 @@ public class Struggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(ExampleCoroutine());
-
-        cameraHight += cameraHightSpeed;
-        cameraDistance += cameraDistanceSpeed;
-        
-        myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
-            MyavatarTransform.position.z + cameraDistance);
-
-        if (cameraHight >= 2)
-        {
-            StopAllCoroutines();
-            cameraHightSpeed = 0;
-            cameraDistanceSpeed = 0;
-
-        }
-
         
         
 //挣扎判定main。目前是转两圈，如果要加圈数要全部改。
@@ -129,13 +103,6 @@ public class Struggle : MonoBehaviour
 
         
     }
-
-    IEnumerator ExampleCoroutine()
-    {
-        yield return new WaitForSeconds(2f);
-        cameraHightSpeed += 0.000125f;
-        cameraDistanceSpeed += 0.0005f;
-    }
-
+    
 
 }

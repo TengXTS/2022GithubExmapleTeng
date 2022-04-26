@@ -51,9 +51,9 @@ public class PublicFunctions : MonoBehaviour
     void Update()
     {
         //摄像机移动
-        // myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
-        //     MyavatarTransform.position.z - cameraDistance);
-        //
+        myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
+            MyavatarTransform.position.z - cameraDistance);
+        
         myCamera.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
         
         
