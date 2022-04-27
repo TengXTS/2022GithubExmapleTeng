@@ -89,14 +89,19 @@ public class Main : MonoBehaviour
     private float bodyRotateValue;
     private Quaternion[] rotation;
     private Vector3[] scale;
+    //摄像机
+    private GameObject Myavatar;
+    private GameObject myCamera;
+    private Transform MyavatarTransform;
 
     
-    public static float Remap ( float value, float from1, float to1, float from2, float to2) {
-        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
-    }
+
 
     void Start()
     {
+        Myavatar = GameObject.Find("avatar");
+        myCamera = GameObject.Find("Main Camera");
+        MyavatarTransform = Myavatar.GetComponent<Transform>();
 
         publicFunctions = GameObject.Find("Script").GetComponent<PublicFunctions>();
         fingers = publicFunctions.fingers;
@@ -155,6 +160,8 @@ public class Main : MonoBehaviour
 
     void Update()
     {
+        myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + 2,
+            MyavatarTransform.position.z + 1);
   
             LimbControl();
             publicFunctions.Move("Float");

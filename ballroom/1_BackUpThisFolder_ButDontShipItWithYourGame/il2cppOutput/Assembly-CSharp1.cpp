@@ -1,0 +1,16072 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+#include <stdint.h>
+
+
+struct VirtualActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct VirtualFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3>
+struct VirtualFuncInvoker3
+{
+	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+struct GenericVirtualActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+struct GenericInterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct InvokerActionInvoker1;
+template <typename T1>
+struct InvokerActionInvoker1<T1*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1)
+	{
+		void* params[1] = { p1 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+template <typename T1, typename T2>
+struct InvokerActionInvoker2;
+template <typename T1, typename T2>
+struct InvokerActionInvoker2<T1*, T2*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2)
+	{
+		void* params[2] = { p1, p2 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct InvokerActionInvoker3;
+template <typename T1, typename T2, typename T3>
+struct InvokerActionInvoker3<T1*, T2*, T3*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3)
+	{
+		void* params[3] = { p1, p2, p3 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+
+// System.Action`1<UnityEngine.Font>
+struct Action_1_tD91E4D0ED3C2E385D3BDD4B3EA48B5F99D39F1DC;
+// System.Action`1<System.Int32>
+struct Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404;
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A;
+// System.Action`2<System.Int32,System.Int32>
+struct Action_2_tD7438462601D3939500ED67463331FE00CFFBDB8;
+// System.Threading.AsyncLocal`1<System.Globalization.CultureInfo>
+struct AsyncLocal_1_t1D3339EA4C8650D2DEDDF9553E5C932B3DC2CCFD;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>
+struct Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>>
+struct Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D;
+// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<System.String>>
+struct Dictionary_2_t79BA378F246EFA4AD0AFFA017D788423CACA8638;
+// System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>
+struct Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F;
+// System.Collections.Generic.Dictionary`2<System.String,System.Boolean>
+struct Dictionary_2_t17D0D125440AC627FCF80F189C6CBCB02856063C;
+// System.Collections.Generic.Dictionary`2<System.String,System.Int32>
+struct Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588;
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
+// System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>
+struct Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+// System.Collections.Generic.IEnumerable`1<System.String>
+struct IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>
+struct KeyCollection_tB45A861D090B15129521119AE48ED3813820A974;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,System.Action`1<System.String>>
+struct KeyCollection_tDC9905DAB7B3D843994B8AF143B97B5C1D5B6936;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Uduino.BLEDeviceButton_Interface>
+struct KeyCollection_t46DB705E73D9317D54DF4A069F8B495B4F2959F5;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,System.Boolean>
+struct KeyCollection_t95FD5642BC2C9C7777B7A737F21A78E0AFDD8AA0;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,System.String>
+struct KeyCollection_t2EDD317F5771E575ACB63527B5AFB71291040342;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Uduino.UduinoDevice>
+struct KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F;
+// System.Collections.Generic.List`1<Uduino.ArduinoBoardType>
+struct List_1_t3F817FF669514B8DF7E7A03C0D99312CE327F0D6;
+// System.Collections.Generic.List`1<System.Boolean>
+struct List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A;
+// System.Collections.Generic.List`1<UnityEngine.CanvasGroup>
+struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<Uduino.Pin>
+struct List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
+// System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings>
+struct List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B;
+// Uduino.SerializableDictionary`2<System.Object,System.Boolean>
+struct SerializableDictionary_2_t00BE05C5068E75DE3A64E08EE4B3BD6F5F0BBA45;
+// Uduino.SerializableDictionary`2<System.String,System.Boolean>
+struct SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D;
+// UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
+struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+// UnityEngine.Events.UnityEvent`1<System.Object>
+struct UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205;
+// UnityEngine.Events.UnityEvent`1<Uduino.UduinoDevice>
+struct UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB;
+// UnityEngine.Events.UnityEvent`2<System.Object,System.Object>
+struct UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961;
+// UnityEngine.Events.UnityEvent`2<System.String,Uduino.UduinoDevice>
+struct UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>
+struct ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Action`1<System.String>>
+struct ValueCollection_t1BFE2D9246539713D76621C5D038C86BA2DA3F76;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Uduino.BLEDeviceButton_Interface>
+struct ValueCollection_tE0C7EAAA15CD168803529A73ED27A62B68FCAC16;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.Boolean>
+struct ValueCollection_t067B6565DAB51831954BD36DF5F65A806EDBEF99;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,System.String>
+struct ValueCollection_t238D0D2427C6B841A01F522A41540165A2C4AE76;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Uduino.UduinoDevice>
+struct ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,System.Action`1<System.String>>[]
+struct EntryU5BU5D_t17B4B52BA0C980E519D97C6C5B12E911F4167F02;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Uduino.BLEDeviceButton_Interface>[]
+struct EntryU5BU5D_t00EF311640C0C3BA08609573417E5FCB34389007;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,System.Boolean>[]
+struct EntryU5BU5D_t3A6696E01E2E8EE835C72A4B0C9E75120C7A122D;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,System.String>[]
+struct EntryU5BU5D_t1AF33AD0B7330843448956EC4277517081658AE7;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Uduino.UduinoDevice>[]
+struct EntryU5BU5D_t9F6D2ED3AB7C9944432FCCC3CEED24419A60E7C4;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// UnityEngine.Object[]
+struct ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A;
+// Uduino.Pin[]
+struct PinU5BU5D_t001ECE6575B4522255CC06FAD71FCCA6A5A24BFB;
+// UnityEngine.UI.Selectable[]
+struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// System.Type[]
+struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
+// UnityEngine.UIVertex[]
+struct UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F;
+// Uduino.UduinoDevice[]
+struct UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196;
+// Uduino.UduinoWiFiSettings[]
+struct UduinoWiFiSettingsU5BU5D_t28279E5B4CEAEF75CC9C0B1FC0539D1F356C7E88;
+// UnityEngine.Vector2[]
+struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
+// UnityEngine.Vector3[]
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// UnityEngine.UI.AnimationTriggers
+struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
+// Uduino.ArduinoBoardType
+struct ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB;
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
+// Uduino.BLEDeviceButton_Interface
+struct BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30;
+// UnityEngine.Behaviour
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+// System.Reflection.Binder
+struct Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235;
+// Uduino.BoardsTypeList
+struct BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86;
+// UnityEngine.UI.Button
+struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
+// UnityEngine.Canvas
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
+// UnityEngine.CanvasRenderer
+struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
+// UnityEngine.UI.CanvasScaler
+struct CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B;
+// UnityEngine.Component
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+// UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+// System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// System.Exception
+struct Exception_t;
+// System.Threading.ExecutionContext
+struct ExecutionContext_t9D6EDFD92F0B2D391751963E2D77A8B03CB81710;
+// UnityEngine.Font
+struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
+// UnityEngine.UI.FontData
+struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// UnityEngine.UI.Graphic
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
+// System.IAsyncResult
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// System.Collections.IEnumerator
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+// System.Security.Principal.IPrincipal
+struct IPrincipal_tE7AF5096287F6C3472585E124CB38FF2A51EAB5F;
+// UnityEngine.UI.Image
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
+// Uduino.Interface
+struct Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199;
+// System.Threading.InternalThread
+struct InternalThread_tF40B7BFCBD60C82BD8475A22FF5186CA10293687;
+// UnityEngine.Events.InvokableCallList
+struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
+// Uduino.IsActiveDictionnary
+struct IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7;
+// Uduino.IsPresentDictionnary
+struct IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F;
+// SimpleJSON.JSONNode
+struct JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653;
+// System.LocalDataStoreHolder
+struct LocalDataStoreHolder_t789DD474AE5141213C2105CE57830ECFC2D3C03F;
+// System.LocalDataStoreMgr
+struct LocalDataStoreMgr_t205F1783D5CC2B148E829B5882E5406FF9A3AC1E;
+// UnityEngine.Material
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+// System.Reflection.MemberFilter
+struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
+// UnityEngine.Mesh
+struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+// System.MulticastDelegate
+struct MulticastDelegate_t;
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+// UnityEngine.Events.PersistentCallGroup
+struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
+// Uduino.Pin
+struct Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970;
+// System.Collections.Queue
+struct Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC;
+// UnityEngine.UI.RectMask2D
+struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
+// UnityEngine.RectTransform
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// UnityEngine.UI.Selectable
+struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
+// UnityEngine.UI.Slider
+struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
+// UnityEngine.Sprite
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+// System.String
+struct String_t;
+// System.Text.StringBuilder
+struct StringBuilder_t;
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
+// UnityEngine.TextGenerator
+struct TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC;
+// UnityEngine.Texture2D
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
+// System.Threading.Thread
+struct Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F;
+// System.Threading.ThreadStart
+struct ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2;
+// UnityEngine.Transform
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+// System.Type
+struct Type_t;
+// Uduino.UduinoConnection
+struct UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607;
+// Uduino.UduinoDebugCanvas
+struct UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2;
+// Uduino.UduinoDevice
+struct UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0;
+// Uduino.UduinoInterface
+struct UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549;
+// Uduino.UduinoInterface_Bluetooth
+struct UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4;
+// Uduino.UduinoInterface_Serial
+struct UduinoInterface_Serial_t6ADBD8126A9B36CEA09A82A56B394CF5E55ADFF8;
+// Uduino.UduinoInterface_Wifi
+struct UduinoInterface_Wifi_t716C84191C13CF22AC6DCA8D0C2AC67426FE315B;
+// Uduino.UduinoManager
+struct UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C;
+// UnityEngine.Events.UnityAction
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
+// UnityEngine.Events.UnityEvent
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
+// UnityEngine.UI.VertexHelper
+struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
+// UnityEngine.Application/LogCallback
+struct LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413;
+// UnityEngine.UI.Button/ButtonClickedEvent
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
+// UnityEngine.Canvas/WillRenderCanvases
+struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
+// UnityEngine.Font/FontTextureRebuildCallback
+struct FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1;
+// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
+// UnityEngine.RectTransform/ReapplyDrivenProperties
+struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
+// UnityEngine.UI.Slider/SliderEvent
+struct SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555;
+// Uduino.UduinoDevice/OnBoardClosedEvent
+struct OnBoardClosedEvent_tC7409B00630106A53EDEA47DAECBBF759A8B0C96;
+// Uduino.UduinoDevice/OnBoardFoundEvent
+struct OnBoardFoundEvent_t6D2A7A68763EEBAB2D2569209B635CB2048C9221;
+// Uduino.UduinoInterface/<>c__DisplayClass21_0
+struct U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76;
+// Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0
+struct U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703;
+// Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9
+struct U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D;
+// Uduino.UduinoManager/<>c__DisplayClass174_0
+struct U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA;
+// Uduino.UduinoManager/<AutoSendBundle>d__158
+struct U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0;
+// Uduino.UduinoManager/<CoroutineRead>d__173
+struct U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780;
+// Uduino.UduinoManager/<DelayedDiscover>d__94
+struct U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950;
+// Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95
+struct U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D;
+// Uduino.UduinoManager/BoardAlreadyExistException
+struct BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813;
+// Uduino.UduinoManager/OnBoardConnectedDelegate
+struct OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08;
+// Uduino.UduinoManager/OnBoardDisconnectedDelegate
+struct OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5;
+// Uduino.UduinoManager/OnDataReceivedDelegate
+struct OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B;
+// Uduino.UduinoManager/OnValueReceivedDelegate
+struct OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA;
+// Uduino.UduinoManager/eventBoard
+struct eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63;
+// Uduino.UduinoManager/eventValueReceived
+struct eventValueReceived_t6D1E0E69AE8E61341A978DF3492ED83D01EE8D54;
+
+IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AnalogPin_tAF6656A2A9F814B1B3D0664DC08E75D2D2F6FF17_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Font_tC95270EA3198038970422D78B74A7F2E218A96B6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LogType_t9CC0F1B620DFBF3A01E8C2D2316A850D745EF331_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
+IL2CPP_EXTERN_C String_t* _stringLiteral038FF336FB6B15F86234B612AEF4AB4D5D0061BE;
+IL2CPP_EXTERN_C String_t* _stringLiteral07FB1BF710B007086B763C182FE30C27422AD5C3;
+IL2CPP_EXTERN_C String_t* _stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78;
+IL2CPP_EXTERN_C String_t* _stringLiteral0A3B8914440A82C215F061CE683E5592FE863788;
+IL2CPP_EXTERN_C String_t* _stringLiteral0AF31A80C14440335E5DCFC310D4B9A30ABA261D;
+IL2CPP_EXTERN_C String_t* _stringLiteral1209DA8E082EA0AB89D6752F17E2C344724C888F;
+IL2CPP_EXTERN_C String_t* _stringLiteral12636F2EBD87F393513DA17343140116A5D286A4;
+IL2CPP_EXTERN_C String_t* _stringLiteral15F30E0AC0217F04C47A90E499E8480B94E2CD1B;
+IL2CPP_EXTERN_C String_t* _stringLiteral168B8E3988912917C1038CB4AFB91C0C2A82BF97;
+IL2CPP_EXTERN_C String_t* _stringLiteral18A622BC38D01BC0532D3FEBEF525F1AA2465D9E;
+IL2CPP_EXTERN_C String_t* _stringLiteral19DEE56628C563E7C506B307E0C04B49CDB76A75;
+IL2CPP_EXTERN_C String_t* _stringLiteral1B62F159ADC5C3F42A487D6A9DE3129D2F6F99EF;
+IL2CPP_EXTERN_C String_t* _stringLiteral1BE287B115A9DA5EB837A7EEF452874C930CED54;
+IL2CPP_EXTERN_C String_t* _stringLiteral1C4303CE90A80E03466A934F3A49CF1FBA75C709;
+IL2CPP_EXTERN_C String_t* _stringLiteral1C7A9E8795DAC93A625C23D6E9F2BC7332ABF459;
+IL2CPP_EXTERN_C String_t* _stringLiteral1FB774720D72B83E2CD62103406724E1397D31BC;
+IL2CPP_EXTERN_C String_t* _stringLiteral220410A41F294ADE500648D1E9AD5B6091957761;
+IL2CPP_EXTERN_C String_t* _stringLiteral23008763D2D91696D0E2E050A86FACDBFEA53FA4;
+IL2CPP_EXTERN_C String_t* _stringLiteral237E02D6A8761E49B75DCA6E3A3C7F57312A8A28;
+IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
+IL2CPP_EXTERN_C String_t* _stringLiteral2AE73A91BD1476A0789C9F7B25949ADB5B0A3516;
+IL2CPP_EXTERN_C String_t* _stringLiteral2C0EE1D8EBBFA9779231D00E2F504DC2FF9E69DB;
+IL2CPP_EXTERN_C String_t* _stringLiteral31CB8943CE29BA9AF9BB8D5E5D1BCF991D6D8EF5;
+IL2CPP_EXTERN_C String_t* _stringLiteral397E68945FA827DF5F3E3D8D190DB565086E5C27;
+IL2CPP_EXTERN_C String_t* _stringLiteral3B07ED1FD7254C573D66966B0BAECB709363911B;
+IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
+IL2CPP_EXTERN_C String_t* _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5;
+IL2CPP_EXTERN_C String_t* _stringLiteral47681BAF69A4BBD491EAE30F7F6C4E5799CDD6B1;
+IL2CPP_EXTERN_C String_t* _stringLiteral5432701DDDD4699C8DBD00AE7987706FBAF44690;
+IL2CPP_EXTERN_C String_t* _stringLiteral5737874BF1522436D83488AE8A1477D4AB1D0A29;
+IL2CPP_EXTERN_C String_t* _stringLiteral575C4853C6AEA9C34693735A35B0B821C3F04402;
+IL2CPP_EXTERN_C String_t* _stringLiteral584866F4FC822430B72EB0708AD16261B94CCEF3;
+IL2CPP_EXTERN_C String_t* _stringLiteral5972BF4C4C42436699328E28BDDEC6247F41ED84;
+IL2CPP_EXTERN_C String_t* _stringLiteral6580FDD695D838F3D7CB01260141941DCEBC14F7;
+IL2CPP_EXTERN_C String_t* _stringLiteral6695C2E2C669A6AA9B723748271E3E2956B94581;
+IL2CPP_EXTERN_C String_t* _stringLiteral6B9146F8599FB723DBBC0171737941A09EB2AD3A;
+IL2CPP_EXTERN_C String_t* _stringLiteral6BB2958328AF858E6A131F304F1356AF24ED6B62;
+IL2CPP_EXTERN_C String_t* _stringLiteral6CD2848583A4EAD77430A317E3B6DB2BCCDB1003;
+IL2CPP_EXTERN_C String_t* _stringLiteral6CE032B64371F6FEA1278B32519FC32136F8604B;
+IL2CPP_EXTERN_C String_t* _stringLiteral75722FDE6EDF2531ADA3000281ECEC113D27BFB3;
+IL2CPP_EXTERN_C String_t* _stringLiteral7AAED0E3B66DA0D058556342B284D27D05EA4203;
+IL2CPP_EXTERN_C String_t* _stringLiteral7C2F53C1C7701F2AEEB3D7F3C26010C2B8FA2453;
+IL2CPP_EXTERN_C String_t* _stringLiteral7F3B9AC26FFBE3F553F00ED6237AEF127E6D73BC;
+IL2CPP_EXTERN_C String_t* _stringLiteral8225AECE91A62067ECDECFF1108DF51474F57E19;
+IL2CPP_EXTERN_C String_t* _stringLiteral83DF22AD65952708CEE69B99CB54A869A52066AC;
+IL2CPP_EXTERN_C String_t* _stringLiteral8611EF5A0C5591E334B1A7C6ADAE2D5E4417747A;
+IL2CPP_EXTERN_C String_t* _stringLiteral86277043E4DF3BEB9801CB358F2F43DCC254BA91;
+IL2CPP_EXTERN_C String_t* _stringLiteral872832AF3EB23DF490D84F89198394B33CB88A29;
+IL2CPP_EXTERN_C String_t* _stringLiteral8761B88ACBEEB05F9553E27324F9F091C98EFD75;
+IL2CPP_EXTERN_C String_t* _stringLiteral8847398E02BC761787F968F9606E13C7F3A5518E;
+IL2CPP_EXTERN_C String_t* _stringLiteral8AB05959EA4107F1F91A04CDCDE7E8F07C2F52DF;
+IL2CPP_EXTERN_C String_t* _stringLiteral9444E5FDC8DF7E5919A55B4621EF101FB9EA551C;
+IL2CPP_EXTERN_C String_t* _stringLiteral96A731D10E423A5847E163B2242C638CAE14EE15;
+IL2CPP_EXTERN_C String_t* _stringLiteral96BDDFE0CD93D52933ED7BED04E10608BA31A953;
+IL2CPP_EXTERN_C String_t* _stringLiteral9753C5323A561D6CBA5D75771942BE8C1DD08AA5;
+IL2CPP_EXTERN_C String_t* _stringLiteral98567EAC71ABA652FD251EE8484B3C813D481D7A;
+IL2CPP_EXTERN_C String_t* _stringLiteral99C4CE1DB54548F1FB175EDA081648E061EE4674;
+IL2CPP_EXTERN_C String_t* _stringLiteral9BC84D5C7AFC6169940F676B23D430A6C6D6C190;
+IL2CPP_EXTERN_C String_t* _stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03;
+IL2CPP_EXTERN_C String_t* _stringLiteralA7B911F2B07F59FDFBA9FE60A586F381EAF21E89;
+IL2CPP_EXTERN_C String_t* _stringLiteralA7F97E75A1B9ABE21090F40226508D1F9BFFC36F;
+IL2CPP_EXTERN_C String_t* _stringLiteralA9C1A32E67387C64F1045328FB2F8107868A897B;
+IL2CPP_EXTERN_C String_t* _stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352;
+IL2CPP_EXTERN_C String_t* _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D;
+IL2CPP_EXTERN_C String_t* _stringLiteralB598013F46389064D039C38DB16C2B7D0B7B7143;
+IL2CPP_EXTERN_C String_t* _stringLiteralB6B82526B9652AB02591FC47201537B44ABA1651;
+IL2CPP_EXTERN_C String_t* _stringLiteralB6D605A9087410128B41F667A579D1A26C21F6F6;
+IL2CPP_EXTERN_C String_t* _stringLiteralB6F0795DD4F409C92875D0327F58FDEA357047F1;
+IL2CPP_EXTERN_C String_t* _stringLiteralB9C5020B04A1655086BA6596E0745E3B934296FC;
+IL2CPP_EXTERN_C String_t* _stringLiteralBB85D32D8E31C7139BF49A5435CDA90D17D87905;
+IL2CPP_EXTERN_C String_t* _stringLiteralBC617C8649686D59B5C6603843F1BCF04A94E136;
+IL2CPP_EXTERN_C String_t* _stringLiteralC0816DF5449F22731F6E817753D932BE55FF4E80;
+IL2CPP_EXTERN_C String_t* _stringLiteralC2B44060A21C416F3A118C043AD7FAD1BFAE06FE;
+IL2CPP_EXTERN_C String_t* _stringLiteralC569A13659DEEA650CCC0C43CDD68E2AA81687E0;
+IL2CPP_EXTERN_C String_t* _stringLiteralC7A65D175027BE30C72C17083753477DD21DA5BC;
+IL2CPP_EXTERN_C String_t* _stringLiteralC8E3F4E3866FB561021A2810DBDA90ACFDA966DD;
+IL2CPP_EXTERN_C String_t* _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2;
+IL2CPP_EXTERN_C String_t* _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F;
+IL2CPP_EXTERN_C String_t* _stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951;
+IL2CPP_EXTERN_C String_t* _stringLiteralD26DB2D8C30F23686891421CA1BC1B4E74114F58;
+IL2CPP_EXTERN_C String_t* _stringLiteralD4BF6EF94462959607F251297B9C733A7AFBC9E9;
+IL2CPP_EXTERN_C String_t* _stringLiteralD949A21957CD7284B07087EFF80761F44C6E8C8D;
+IL2CPP_EXTERN_C String_t* _stringLiteralD99605E29810F93D7DAE4EFBB764C41AF4E80D32;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralDB5B55A9B215F744DB82517864984D073F2E8F8C;
+IL2CPP_EXTERN_C String_t* _stringLiteralDED602753A6A3D3F964D90724D6B091051F8ECA5;
+IL2CPP_EXTERN_C String_t* _stringLiteralE36628B66A5AA40224EB21CBA4087D80BFF84984;
+IL2CPP_EXTERN_C String_t* _stringLiteralE9C8A19E0C3599EE4EF3C129D1E4A43372366246;
+IL2CPP_EXTERN_C String_t* _stringLiteralEF050796EF2DD4C18D970B062B6AB5ED633A9B8A;
+IL2CPP_EXTERN_C String_t* _stringLiteralF03EB5B2CA5F92EC31886F000CDA410839D18468;
+IL2CPP_EXTERN_C String_t* _stringLiteralF052808765F7EFF523983C4C3B15D21DF9217164;
+IL2CPP_EXTERN_C String_t* _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D;
+IL2CPP_EXTERN_C String_t* _stringLiteralF4C6DDF8719749246F476CB6A5D878BFC9C4F480;
+IL2CPP_EXTERN_C String_t* _stringLiteralF5D8EF422ABD0284BA3EEB3BF58FBA9313575F4E;
+IL2CPP_EXTERN_C String_t* _stringLiteralF63796655196C197C565B5EE1B62874468D88735;
+IL2CPP_EXTERN_C String_t* _stringLiteralF6720DDEF3F4DDFFF6A94D8E2807F586F194898B;
+IL2CPP_EXTERN_C String_t* _stringLiteralF67FF52BAD5C543F3623D3051EA5B4ED8BCD0DEB;
+IL2CPP_EXTERN_C String_t* _stringLiteralF8113682A7490FB76E7BA964F849222FF30968A1;
+IL2CPP_EXTERN_C String_t* _stringLiteralFB37EEF6AD53255F0B9D6C84337B40BA4FE802EF;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m36DC7A29D1AA4D4C881ABE0E6256D2FF51F0F169_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mC9B341A10EDFC10D32CBE77A11155A1EE95D3020_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_mCA46B88F063E9105EDE4ADCA61BD5620782617C7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m9E4C4AC938B492C96E07EEC995D0B71F61190093_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_mD766583F3AA08F13F7B82B8C60CE19EB85ACB5DF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m4EA1F736E9A7713E42D9E80BB58EBC4AFC2E713E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsValue_m0AF20A60F8F61EB9A17DAD98485F1F9F84DDB77E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_m8E87D04E0C15A77BAD2A3D085A3ECD37D6EE13D5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_mB13FDDE0A024C1BC19CD2A55233152EC4423D1D5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Remove_m8EAAC59A0B5CA19D4216DD46D1B0D0013C15B836_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mCF29F28E777ADF0BD4F603F38D32B93CA7E45B3E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m1DBE8BD6A92ED74AFCC4FB67F1D075C92A6CC1A2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m941C16BCE4E384D177FCA349A84B829532E910D3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mE70EA764E548D8933234B1A2530F8214F61FA45A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m0110E77CBF84B8C1FC523C4047D29E10E0FBCAB2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m165595649915DB7B38BB4FD683F7059EDD4B65FA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m1056B9B7A584D30A0E074258330C28F782E8D145_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m29D7FE958899C4EEE1DE68B7087CEAD9A67C0480_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m72A29E6D307E2E8738DFA7CF43C60BF467CF3C49_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mF8A789CBC787AD27022DE04724D66200D03D7896_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisUduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_m5814A5490D1660AB7C99E0097B997F2B8AC6C0CD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisUduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_mB5E5CD25AA227AA2AFFFD20C76DC7023ADA32EAF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mE7D564202FC1AB496122601F59AEE5CD223371FB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mA810A45B22878AFED4B647E7DD283B6015D98ADF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mAA5C39BE96C0E9C38EEA81C717FDF363DA0257F7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m1138055AD6C3CCA1230BCDC8AE134ACFD492602A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE3D24DBB47C13CB100A5E4DB68275BAF4D782310_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CAutoSendBundleU3Ed__158_System_Collections_IEnumerator_Reset_m78AEB46D8407B72479B106AE8D98EE02C62C1A5A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CCoroutineReadU3Ed__173_System_Collections_IEnumerator_Reset_mD5C4EDD3F1CD015E293A7A91EB55181A4A2FE5F0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CDelayedDiscoverU3Ed__94_System_Collections_IEnumerator_Reset_m91EC5B76C30D3F56637C6D66D73B97A5E4DE3431_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CRestartIfBoardNotDetectedU3Ed__95_System_Collections_IEnumerator_Reset_m546F50D94B924AC3A0DEE31647B16625FA714052_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CStartSliderCountdownU3Ed__9_System_Collections_IEnumerator_Reset_mFA72FE20071773788D13F63CA2345EBB479AC51C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__0_m456F0C15EEEB10704B3267E125164E135D6AB592_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__1_m11E7D32131A257D3552B26296AF09AA23B5F0DA7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass174_0_U3CTriggerEventU3Eb__0_m22AA48E728ED4FE3A64AAB5B6E7DA690AD136E8E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass21_0_U3CAddDeviceButtonU3Eb__0_m49952AEC14394DA9910DC0AAAB49C9A8E81D07E2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UduinoManager_AddUduinoBoard_mAD0B94FD86C1A5FE707A16DD0CA62122A7E99215_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UduinoManager_ReadPorts_mA774AF4B36D6AE963E7F86A355D43EC7C15CFDB8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_mCF260970DA256D40D604A2F89F8E7908179C91E9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_2_Invoke_m649C6354CD4D979E508090E6959598DFC82BB9D4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_2__ctor_m28A3D88FD8CCF6460D040860D2E91EA9F36D4651_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* Font_tC95270EA3198038970422D78B74A7F2E218A96B6_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_0_0_0_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+struct UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196;
+struct UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756;
+struct UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>>
+struct Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t17B4B52BA0C980E519D97C6C5B12E911F4167F02* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_tDC9905DAB7B3D843994B8AF143B97B5C1D5B6936* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t1BFE2D9246539713D76621C5D038C86BA2DA3F76* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>
+struct Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t00EF311640C0C3BA08609573417E5FCB34389007* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t46DB705E73D9317D54DF4A069F8B495B4F2959F5* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tE0C7EAAA15CD168803529A73ED27A62B68FCAC16* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Boolean>
+struct Dictionary_2_t17D0D125440AC627FCF80F189C6CBCB02856063C  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t3A6696E01E2E8EE835C72A4B0C9E75120C7A122D* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t95FD5642BC2C9C7777B7A737F21A78E0AFDD8AA0* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t067B6565DAB51831954BD36DF5F65A806EDBEF99* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t1AF33AD0B7330843448956EC4277517081658AE7* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t2EDD317F5771E575ACB63527B5AFB71291040342* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t238D0D2427C6B841A01F522A41540165A2C4AE76* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>
+struct Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t9F6D2ED3AB7C9944432FCCC3CEED24419A60E7C4* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Uduino.UduinoDevice>
+struct KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F  : public RuntimeObject
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection::_dictionary
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* ____dictionary_0;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Uduino.Pin>
+struct List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	PinU5BU5D_t001ECE6575B4522255CC06FAD71FCCA6A5A24BFB* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	PinU5BU5D_t001ECE6575B4522255CC06FAD71FCCA6A5A24BFB* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings>
+struct List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	UduinoWiFiSettingsU5BU5D_t28279E5B4CEAEF75CC9C0B1FC0539D1F356C7E88* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	UduinoWiFiSettingsU5BU5D_t28279E5B4CEAEF75CC9C0B1FC0539D1F356C7E88* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Uduino.UduinoDevice>
+struct ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA  : public RuntimeObject
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection::_dictionary
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* ____dictionary_0;
+};
+
+// Uduino.ArduinoBoardType
+struct ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB  : public RuntimeObject
+{
+	// System.String Uduino.ArduinoBoardType::name
+	String_t* ___name_0;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Int32> Uduino.ArduinoBoardType::pins
+	Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* ___pins_1;
+};
+struct Il2CppArrayBounds;
+
+// Uduino.BLEDeviceButton_Interface
+struct BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30  : public RuntimeObject
+{
+	// UnityEngine.UI.Button Uduino.BLEDeviceButton_Interface::button
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___button_0;
+	// UnityEngine.GameObject Uduino.BLEDeviceButton_Interface::connecting
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___connecting_1;
+	// UnityEngine.GameObject Uduino.BLEDeviceButton_Interface::connect
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___connect_2;
+	// UnityEngine.Transform Uduino.BLEDeviceButton_Interface::connected
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___connected_3;
+	// UnityEngine.GameObject Uduino.BLEDeviceButton_Interface::disconnect
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___disconnect_4;
+};
+
+// Uduino.BoardsTypeList
+struct BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86  : public RuntimeObject
+{
+	// System.Collections.Generic.List`1<Uduino.ArduinoBoardType> Uduino.BoardsTypeList::boardTypes
+	List_1_t3F817FF669514B8DF7E7A03C0D99312CE327F0D6* ___boardTypes_1;
+};
+
+struct BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86_StaticFields
+{
+	// Uduino.BoardsTypeList Uduino.BoardsTypeList::_boards
+	BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* ____boards_0;
+};
+
+// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
+struct CriticalFinalizerObject_t1DCAB623CAEA6529A96F5F3EDE3C7048A6E313C9  : public RuntimeObject
+{
+};
+
+// Uduino.Interface
+struct Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199  : public RuntimeObject
+{
+	// Uduino.UduinoInterface Uduino.Interface::currentInterface
+	UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* ___currentInterface_1;
+};
+
+struct Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_StaticFields
+{
+	// Uduino.Interface Uduino.Interface::_instance
+	Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* ____instance_0;
+};
+
+// SimpleJSON.JSONNode
+struct JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653  : public RuntimeObject
+{
+};
+
+struct JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653_StaticFields
+{
+	// System.Boolean SimpleJSON.JSONNode::forceASCII
+	bool ___forceASCII_0;
+};
+
+struct JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653_ThreadStaticFields
+{
+	// System.Text.StringBuilder SimpleJSON.JSONNode::m_EscapeBuilder
+	StringBuilder_t* ___m_EscapeBuilder_1;
+};
+
+// System.Reflection.MemberInfo
+struct MemberInfo_t  : public RuntimeObject
+{
+};
+
+// System.Collections.Queue
+struct Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC  : public RuntimeObject
+{
+	// System.Object[] System.Collections.Queue::_array
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____array_0;
+	// System.Int32 System.Collections.Queue::_head
+	int32_t ____head_1;
+	// System.Int32 System.Collections.Queue::_tail
+	int32_t ____tail_2;
+	// System.Int32 System.Collections.Queue::_size
+	int32_t ____size_3;
+	// System.Int32 System.Collections.Queue::_growFactor
+	int32_t ____growFactor_4;
+	// System.Int32 System.Collections.Queue::_version
+	int32_t ____version_5;
+	// System.Object System.Collections.Queue::_syncRoot
+	RuntimeObject* ____syncRoot_6;
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// Uduino.UduinoConnection
+struct UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607  : public RuntimeObject
+{
+	// Uduino.UduinoManager Uduino.UduinoConnection::_manager
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ____manager_0;
+	// Uduino.UduinoDevice Uduino.UduinoConnection::connectedDevice
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___connectedDevice_1;
+};
+
+// Uduino.UduinoVersion
+struct UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948  : public RuntimeObject
+{
+};
+
+struct UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields
+{
+	// System.Int32 Uduino.UduinoVersion::major
+	int32_t ___major_0;
+	// System.Int32 Uduino.UduinoVersion::minor
+	int32_t ___minor_1;
+	// System.Int32 Uduino.UduinoVersion::patch
+	int32_t ___patch_2;
+	// System.String Uduino.UduinoVersion::update
+	String_t* ___update_3;
+};
+
+// UnityEngine.Events.UnityEventBase
+struct UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8  : public RuntimeObject
+{
+	// UnityEngine.Events.InvokableCallList UnityEngine.Events.UnityEventBase::m_Calls
+	InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382* ___m_Calls_0;
+	// UnityEngine.Events.PersistentCallGroup UnityEngine.Events.UnityEventBase::m_PersistentCalls
+	PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25* ___m_PersistentCalls_1;
+	// System.Boolean UnityEngine.Events.UnityEventBase::m_CallsDirty
+	bool ___m_CallsDirty_2;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+
+// Uduino.UduinoInterface/<>c__DisplayClass21_0
+struct U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76  : public RuntimeObject
+{
+	// Uduino.UduinoInterface Uduino.UduinoInterface/<>c__DisplayClass21_0::<>4__this
+	UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* ___U3CU3E4__this_0;
+	// System.String Uduino.UduinoInterface/<>c__DisplayClass21_0::name
+	String_t* ___name_1;
+};
+
+// Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0
+struct U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703  : public RuntimeObject
+{
+	// Uduino.UduinoInterface_Bluetooth Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::<>4__this
+	UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* ___U3CU3E4__this_0;
+	// System.String Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::uuid
+	String_t* ___uuid_1;
+	// System.String Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::name
+	String_t* ___name_2;
+};
+
+// Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9
+struct U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D  : public RuntimeObject
+{
+	// System.Int32 Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// Uduino.UduinoInterface_Bluetooth Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::<>4__this
+	UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* ___U3CU3E4__this_2;
+	// UnityEngine.UI.Slider Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::<slider>5__2
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___U3CsliderU3E5__2_3;
+	// System.Int32 Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::<currentCount>5__3
+	int32_t ___U3CcurrentCountU3E5__3_4;
+};
+
+// Uduino.UduinoManager/<>c__DisplayClass174_0
+struct U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA  : public RuntimeObject
+{
+	// Uduino.UduinoManager Uduino.UduinoManager/<>c__DisplayClass174_0::<>4__this
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___U3CU3E4__this_0;
+	// System.String Uduino.UduinoManager/<>c__DisplayClass174_0::data
+	String_t* ___data_1;
+	// Uduino.UduinoDevice Uduino.UduinoManager/<>c__DisplayClass174_0::device
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device_2;
+};
+
+// Uduino.UduinoManager/<AutoSendBundle>d__158
+struct U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0  : public RuntimeObject
+{
+	// System.Int32 Uduino.UduinoManager/<AutoSendBundle>d__158::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Uduino.UduinoManager/<AutoSendBundle>d__158::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// Uduino.UduinoManager Uduino.UduinoManager/<AutoSendBundle>d__158::<>4__this
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___U3CU3E4__this_2;
+};
+
+// Uduino.UduinoManager/<CoroutineRead>d__173
+struct U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780  : public RuntimeObject
+{
+	// System.Int32 Uduino.UduinoManager/<CoroutineRead>d__173::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Uduino.UduinoManager/<CoroutineRead>d__173::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// Uduino.UduinoDevice Uduino.UduinoManager/<CoroutineRead>d__173::target
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target_2;
+	// Uduino.UduinoManager Uduino.UduinoManager/<CoroutineRead>d__173::<>4__this
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___U3CU3E4__this_3;
+};
+
+// Uduino.UduinoManager/<DelayedDiscover>d__94
+struct U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950  : public RuntimeObject
+{
+	// System.Int32 Uduino.UduinoManager/<DelayedDiscover>d__94::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Uduino.UduinoManager/<DelayedDiscover>d__94::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// System.Single Uduino.UduinoManager/<DelayedDiscover>d__94::delay
+	float ___delay_2;
+	// Uduino.UduinoManager Uduino.UduinoManager/<DelayedDiscover>d__94::<>4__this
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___U3CU3E4__this_3;
+};
+
+// Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95
+struct U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D  : public RuntimeObject
+{
+	// System.Int32 Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// Uduino.UduinoManager Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::<>4__this
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___U3CU3E4__this_2;
+};
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	RuntimeObject* ____current_3;
+};
+
+// System.Collections.Generic.List`1/Enumerator<Uduino.Pin>
+struct Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* ____current_3;
+};
+
+// System.Collections.Generic.List`1/Enumerator<System.String>
+struct Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	String_t* ____current_3;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	RuntimeObject* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	RuntimeObject* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,System.Action`1<System.String>>
+struct KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Uduino.BLEDeviceButton_Interface>
+struct KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Uduino.UduinoDevice>
+struct KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___value_1;
+};
+
+// Uduino.SerializableDictionary`2<System.String,System.Boolean>
+struct SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D  : public Dictionary_2_t17D0D125440AC627FCF80F189C6CBCB02856063C
+{
+	// System.Collections.Generic.List`1<TKey> Uduino.SerializableDictionary`2::keys
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___keys_14;
+	// System.Collections.Generic.List`1<TValue> Uduino.SerializableDictionary`2::values
+	List_1_t01207CE5982A7640E56B1F9F672A06F96B09367A* ___values_15;
+};
+
+// UnityEngine.Events.UnityEvent`1<Uduino.UduinoDevice>
+struct UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	// System.Object[] UnityEngine.Events.UnityEvent`1::m_InvokeArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
+// UnityEngine.Events.UnityEvent`2<System.String,Uduino.UduinoDevice>
+struct UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	// System.Object[] UnityEngine.Events.UnityEvent`2::m_InvokeArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17 
+{
+	// System.Char System.Char::m_value
+	Il2CppChar ___m_value_0;
+};
+
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
+{
+	// System.Byte[] System.Char::s_categoryForLatin1
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
+};
+
+// UnityEngine.Color
+struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
+{
+	// System.Single UnityEngine.Color::r
+	float ___r_0;
+	// System.Single UnityEngine.Color::g
+	float ___g_1;
+	// System.Single UnityEngine.Color::b
+	float ___b_2;
+	// System.Single UnityEngine.Color::a
+	float ___a_3;
+};
+
+// UnityEngine.DrivenRectTransformTracker
+struct DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1__padding[1];
+	};
+};
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.Single
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	// System.Single System.Single::m_value
+	float ___m_value_0;
+};
+
+// UnityEngine.UI.SpriteState
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD 
+{
+	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_HighlightedSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite_0;
+	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_PressedSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite_1;
+	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_SelectedSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite_2;
+	// UnityEngine.Sprite UnityEngine.UI.SpriteState::m_DisabledSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite_3;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.UI.SpriteState
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_marshaled_pinvoke
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite_0;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite_1;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite_2;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite_3;
+};
+// Native definition for COM marshalling of UnityEngine.UI.SpriteState
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_marshaled_com
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite_0;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite_1;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite_2;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite_3;
+};
+
+// System.Threading.Thread
+struct Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F  : public CriticalFinalizerObject_t1DCAB623CAEA6529A96F5F3EDE3C7048A6E313C9
+{
+	// System.Threading.InternalThread System.Threading.Thread::internal_thread
+	InternalThread_tF40B7BFCBD60C82BD8475A22FF5186CA10293687* ___internal_thread_6;
+	// System.Object System.Threading.Thread::m_ThreadStartArg
+	RuntimeObject* ___m_ThreadStartArg_7;
+	// System.Object System.Threading.Thread::pending_exception
+	RuntimeObject* ___pending_exception_8;
+	// System.MulticastDelegate System.Threading.Thread::m_Delegate
+	MulticastDelegate_t* ___m_Delegate_10;
+	// System.Threading.ExecutionContext System.Threading.Thread::m_ExecutionContext
+	ExecutionContext_t9D6EDFD92F0B2D391751963E2D77A8B03CB81710* ___m_ExecutionContext_11;
+	// System.Boolean System.Threading.Thread::m_ExecutionContextBelongsToOuterScope
+	bool ___m_ExecutionContextBelongsToOuterScope_12;
+	// System.Security.Principal.IPrincipal System.Threading.Thread::principal
+	RuntimeObject* ___principal_13;
+	// System.Int32 System.Threading.Thread::principal_version
+	int32_t ___principal_version_14;
+};
+
+struct Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_StaticFields
+{
+	// System.LocalDataStoreMgr System.Threading.Thread::s_LocalDataStoreMgr
+	LocalDataStoreMgr_t205F1783D5CC2B148E829B5882E5406FF9A3AC1E* ___s_LocalDataStoreMgr_0;
+	// System.Threading.AsyncLocal`1<System.Globalization.CultureInfo> System.Threading.Thread::s_asyncLocalCurrentCulture
+	AsyncLocal_1_t1D3339EA4C8650D2DEDDF9553E5C932B3DC2CCFD* ___s_asyncLocalCurrentCulture_4;
+	// System.Threading.AsyncLocal`1<System.Globalization.CultureInfo> System.Threading.Thread::s_asyncLocalCurrentUICulture
+	AsyncLocal_1_t1D3339EA4C8650D2DEDDF9553E5C932B3DC2CCFD* ___s_asyncLocalCurrentUICulture_5;
+};
+
+struct Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_ThreadStaticFields
+{
+	// System.LocalDataStoreHolder System.Threading.Thread::s_LocalDataStore
+	LocalDataStoreHolder_t789DD474AE5141213C2105CE57830ECFC2D3C03F* ___s_LocalDataStore_1;
+	// System.Globalization.CultureInfo System.Threading.Thread::m_CurrentCulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___m_CurrentCulture_2;
+	// System.Globalization.CultureInfo System.Threading.Thread::m_CurrentUICulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___m_CurrentUICulture_3;
+	// System.Threading.Thread System.Threading.Thread::current_thread
+	Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* ___current_thread_9;
+};
+
+// Uduino.UduinoWiFiSettings
+struct UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F 
+{
+	// System.String Uduino.UduinoWiFiSettings::ip
+	String_t* ___ip_0;
+	// System.Int32 Uduino.UduinoWiFiSettings::port
+	int32_t ___port_1;
+	// System.Boolean Uduino.UduinoWiFiSettings::enable
+	bool ___enable_2;
+};
+// Native definition for P/Invoke marshalling of Uduino.UduinoWiFiSettings
+struct UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_pinvoke
+{
+	char* ___ip_0;
+	int32_t ___port_1;
+	int32_t ___enable_2;
+};
+// Native definition for COM marshalling of Uduino.UduinoWiFiSettings
+struct UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_com
+{
+	Il2CppChar* ___ip_0;
+	int32_t ___port_1;
+	int32_t ___enable_2;
+};
+
+// UnityEngine.Events.UnityEvent
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	// System.Object[] UnityEngine.Events.UnityEvent::m_InvokeArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
+// UnityEngine.Vector2
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	// System.Single UnityEngine.Vector2::x
+	float ___x_0;
+	// System.Single UnityEngine.Vector2::y
+	float ___y_1;
+};
+
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	// UnityEngine.Vector2 UnityEngine.Vector2::zeroVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector_2;
+	// UnityEngine.Vector2 UnityEngine.Vector2::oneVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector_3;
+	// UnityEngine.Vector2 UnityEngine.Vector2::upVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector_4;
+	// UnityEngine.Vector2 UnityEngine.Vector2::downVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector_5;
+	// UnityEngine.Vector2 UnityEngine.Vector2::leftVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector_6;
+	// UnityEngine.Vector2 UnityEngine.Vector2::rightVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector_7;
+	// UnityEngine.Vector2 UnityEngine.Vector2::positiveInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector_8;
+	// UnityEngine.Vector2 UnityEngine.Vector2::negativeInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector_9;
+};
+
+// UnityEngine.Vector3
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	// System.Single UnityEngine.Vector3::x
+	float ___x_2;
+	// System.Single UnityEngine.Vector3::y
+	float ___y_3;
+	// System.Single UnityEngine.Vector3::z
+	float ___z_4;
+};
+
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
+	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
+	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
+	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
+	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
+	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
+	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
+	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
+	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
+	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
+};
+
+// UnityEngine.Vector4
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 
+{
+	// System.Single UnityEngine.Vector4::x
+	float ___x_1;
+	// System.Single UnityEngine.Vector4::y
+	float ___y_2;
+	// System.Single UnityEngine.Vector4::z
+	float ___z_3;
+	// System.Single UnityEngine.Vector4::w
+	float ___w_4;
+};
+
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
+{
+	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
+	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
+	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
+	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	// System.Single UnityEngine.WaitForSeconds::m_Seconds
+	float ___m_Seconds_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds_0;
+};
+// Native definition for COM marshalling of UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds_0;
+};
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10
+struct __StaticArrayInitTypeSizeU3D10_tC38CF142534A070C2B94C80666D4D49680A1F92A 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D10_tC38CF142534A070C2B94C80666D4D49680A1F92A__padding[10];
+	};
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+struct Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,System.Action`1<System.String>>
+struct Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.BLEDeviceButton_Interface>
+struct Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.UduinoDevice>
+struct Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
+{
+};
+
+struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
+{
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10 <PrivateImplementationDetails>::FFADF8D89D37B3B55FE1847B513CF92E3BE87E4C168708C7851845DF96FB36BE
+	__StaticArrayInitTypeSizeU3D10_tC38CF142534A070C2B94C80666D4D49680A1F92A ___FFADF8D89D37B3B55FE1847B513CF92E3BE87E4C168708C7851845DF96FB36BE_0;
+};
+
+// Uduino.AnalogPin
+struct AnalogPin_tAF6656A2A9F814B1B3D0664DC08E75D2D2F6FF17 
+{
+	// System.Int32 Uduino.AnalogPin::value__
+	int32_t ___value___2;
+};
+
+// System.Reflection.BindingFlags
+struct BindingFlags_t5DC2835E4AE9C1862B3AD172EF35B6A5F4F1812C 
+{
+	// System.Int32 System.Reflection.BindingFlags::value__
+	int32_t ___value___2;
+};
+
+// Uduino.BoardStatus
+struct BoardStatus_t8590B2A96286332E4C6B0F5851E868E23C0A6AC8 
+{
+	// System.Int32 Uduino.BoardStatus::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.ColorBlock
+struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 
+{
+	// UnityEngine.Color UnityEngine.UI.ColorBlock::m_NormalColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_NormalColor_0;
+	// UnityEngine.Color UnityEngine.UI.ColorBlock::m_HighlightedColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_HighlightedColor_1;
+	// UnityEngine.Color UnityEngine.UI.ColorBlock::m_PressedColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_PressedColor_2;
+	// UnityEngine.Color UnityEngine.UI.ColorBlock::m_SelectedColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_SelectedColor_3;
+	// UnityEngine.Color UnityEngine.UI.ColorBlock::m_DisabledColor
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_DisabledColor_4;
+	// System.Single UnityEngine.UI.ColorBlock::m_ColorMultiplier
+	float ___m_ColorMultiplier_5;
+	// System.Single UnityEngine.UI.ColorBlock::m_FadeDuration
+	float ___m_FadeDuration_6;
+};
+
+struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_StaticFields
+{
+	// UnityEngine.UI.ColorBlock UnityEngine.UI.ColorBlock::defaultColorBlock
+	ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 ___defaultColorBlock_7;
+};
+
+// Uduino.ConnectionMethod
+struct ConnectionMethod_t0304C397EBAEDD7CF7BAE1BC3B78C1D2F4E6F64E 
+{
+	// System.Int32 Uduino.ConnectionMethod::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	// System.IntPtr UnityEngine.Coroutine::m_Ptr
+	intptr_t ___m_Ptr_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr_0;
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// Uduino.HardwareReading
+struct HardwareReading_t677E299D2D360CC1FE173EAB3513F193A6D6E70F 
+{
+	// System.Int32 Uduino.HardwareReading::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.HorizontalWrapMode
+struct HorizontalWrapMode_tFBCA6173D94996068BC1CFFCB88108F1BAD39688 
+{
+	// System.Int32 UnityEngine.HorizontalWrapMode::value__
+	int32_t ___value___2;
+};
+
+// Uduino.IsActiveDictionnary
+struct IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7  : public SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D
+{
+};
+
+// Uduino.IsPresentDictionnary
+struct IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F  : public SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D
+{
+};
+
+// Uduino.LogLevel
+struct LogLevel_t9D4F1CC29EC746BBA639B95FDF5F3BCAE4710DC3 
+{
+	// System.Int32 Uduino.LogLevel::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.LogType
+struct LogType_t9CC0F1B620DFBF3A01E8C2D2316A850D745EF331 
+{
+	// System.Int32 UnityEngine.LogType::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	// System.IntPtr UnityEngine.Object::m_CachedPtr
+	intptr_t ___m_CachedPtr_0;
+};
+
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr_0;
+};
+
+// Uduino.PinMode
+struct PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23 
+{
+	// System.Int32 Uduino.PinMode::value__
+	int32_t ___value___2;
+};
+
+// Uduino.Platform
+struct Platform_t6D64E5F125B3DB2F5360A27A1F3FBE26DF571326 
+{
+	// System.Int32 Uduino.Platform::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.RenderMode
+struct RenderMode_tB63553E26C26A0B62C47B995F86AC41768494633 
+{
+	// System.Int32 UnityEngine.RenderMode::value__
+	int32_t ___value___2;
+};
+
+// System.RuntimeTypeHandle
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	// System.IntPtr System.RuntimeTypeHandle::value
+	intptr_t ___value_0;
+};
+
+// Uduino.State
+struct State_tED19ADA388443034F9168656216D0BECE06FC918 
+{
+	// System.Int32 Uduino.State::value__
+	int32_t ___value___2;
+};
+
+// System.StringSplitOptions
+struct StringSplitOptions_t4DD892C76C70DD4800FC1B76054D69826F770062 
+{
+	// System.Int32 System.StringSplitOptions::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.TextAnchor
+struct TextAnchor_tA46E794186AC1CD0F22888652F589EBF7DFDF830 
+{
+	// System.Int32 UnityEngine.TextAnchor::value__
+	int32_t ___value___2;
+};
+
+// System.Threading.ThreadState
+struct ThreadState_t88980884E50F6863016A2A01EBC1549516DB3CB2 
+{
+	// System.Int32 System.Threading.ThreadState::value__
+	int32_t ___value___2;
+};
+
+// Uduino.UduinoInterfaceType
+struct UduinoInterfaceType_t66CBA8C12427FB0D599B1E3238233E7AC9EFE67A 
+{
+	// System.Int32 Uduino.UduinoInterfaceType::value__
+	int32_t ___value___2;
+};
+
+// Uduino.UduinoManagerState
+struct UduinoManagerState_tE0C2CB8962447188E81B3ACCAF75FF5683318FD5 
+{
+	// System.Int32 Uduino.UduinoManagerState::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.VerticalWrapMode
+struct VerticalWrapMode_t16A70E87910F9A8784E74B8F3E0DCEFA3F98DEB3 
+{
+	// System.Int32 UnityEngine.VerticalWrapMode::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.Button/ButtonClickedEvent
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C  : public UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977
+{
+};
+
+// UnityEngine.UI.CanvasScaler/ScaleMode
+struct ScaleMode_t75E9A207156237F5D22C180106611A6AEB45D765 
+{
+	// System.Int32 UnityEngine.UI.CanvasScaler/ScaleMode::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.CanvasScaler/ScreenMatchMode
+struct ScreenMatchMode_t1BE0CA4F6DE4FDCD46F417DF0B7C1E6A19AB75ED 
+{
+	// System.Int32 UnityEngine.UI.CanvasScaler/ScreenMatchMode::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.CanvasScaler/Unit
+struct Unit_tAE478BD661DB092BBD04163BD94D5868EB99666F 
+{
+	// System.Int32 UnityEngine.UI.CanvasScaler/Unit::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.Navigation/Mode
+struct Mode_t2D49D0E10E2FDA0026278C2400C16033888D0542 
+{
+	// System.Int32 UnityEngine.UI.Navigation/Mode::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.Selectable/Transition
+struct Transition_tF856A77C9FAC6D26EA3CA158CF68B739D35397B3 
+{
+	// System.Int32 UnityEngine.UI.Selectable/Transition::value__
+	int32_t ___value___2;
+};
+
+// UnityEngine.UI.Slider/Direction
+struct Direction_t4C81D17BB6C089A0EC1C4934525B86E75E693EFA 
+{
+	// System.Int32 UnityEngine.UI.Slider/Direction::value__
+	int32_t ___value___2;
+};
+
+// Uduino.UduinoManager/eventBoard
+struct eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63  : public UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB
+{
+};
+
+// Uduino.UduinoManager/eventValueReceived
+struct eventValueReceived_t6D1E0E69AE8E61341A978DF3492ED83D01EE8D54  : public UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660
+{
+};
+
+// UnityEngine.Component
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// UnityEngine.Font
+struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+	// UnityEngine.Font/FontTextureRebuildCallback UnityEngine.Font::m_FontTextureRebuildCallback
+	FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1* ___m_FontTextureRebuildCallback_5;
+};
+
+struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6_StaticFields
+{
+	// System.Action`1<UnityEngine.Font> UnityEngine.Font::textureRebuilt
+	Action_1_tD91E4D0ED3C2E385D3BDD4B3EA48B5F99D39F1DC* ___textureRebuilt_4;
+};
+
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+// Uduino.Log
+struct Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF  : public RuntimeObject
+{
+};
+
+struct Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields
+{
+	// Uduino.LogLevel Uduino.Log::_debugLevel
+	int32_t ____debugLevel_0;
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// UnityEngine.UI.Navigation
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C 
+{
+	// UnityEngine.UI.Navigation/Mode UnityEngine.UI.Navigation::m_Mode
+	int32_t ___m_Mode_0;
+	// System.Boolean UnityEngine.UI.Navigation::m_WrapAround
+	bool ___m_WrapAround_1;
+	// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::m_SelectOnUp
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp_2;
+	// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::m_SelectOnDown
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown_3;
+	// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::m_SelectOnLeft
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft_4;
+	// UnityEngine.UI.Selectable UnityEngine.UI.Navigation::m_SelectOnRight
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight_5;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.UI.Navigation
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_pinvoke
+{
+	int32_t ___m_Mode_0;
+	int32_t ___m_WrapAround_1;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp_2;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown_3;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft_4;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight_5;
+};
+// Native definition for COM marshalling of UnityEngine.UI.Navigation
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_com
+{
+	int32_t ___m_Mode_0;
+	int32_t ___m_WrapAround_1;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp_2;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown_3;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft_4;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight_5;
+};
+
+// Uduino.Pin
+struct Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970  : public RuntimeObject
+{
+	// Uduino.UduinoManager Uduino.Pin::manager
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___manager_0;
+	// Uduino.UduinoDevice Uduino.Pin::device
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device_1;
+	// System.String Uduino.Pin::arduinoName
+	String_t* ___arduinoName_2;
+	// Uduino.PinMode Uduino.Pin::pinMode
+	int32_t ___pinMode_3;
+	// Uduino.PinMode Uduino.Pin::prevPinMode
+	int32_t ___prevPinMode_4;
+	// System.Int32 Uduino.Pin::currentPin
+	int32_t ___currentPin_5;
+	// System.Int32 Uduino.Pin::prevPin
+	int32_t ___prevPin_6;
+	// System.Boolean Uduino.Pin::isEditorPin
+	bool ___isEditorPin_7;
+	// System.Boolean Uduino.Pin::isInit
+	bool ___isInit_8;
+	// System.Int32 Uduino.Pin::sendValue
+	int32_t ___sendValue_9;
+	// System.Int32 Uduino.Pin::prevSendValue
+	int32_t ___prevSendValue_10;
+	// System.Int32 Uduino.Pin::lastReadValue
+	int32_t ___lastReadValue_11;
+};
+
+// System.SystemException
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+
+// System.Type
+struct Type_t  : public MemberInfo_t
+{
+	// System.RuntimeTypeHandle System.Type::_impl
+	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl_8;
+};
+
+struct Type_t_StaticFields
+{
+	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
+	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_1;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
+	// System.Object System.Type::Missing
+	RuntimeObject* ___Missing_3;
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
+};
+
+// Uduino.UduinoDevice
+struct UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0  : public RuntimeObject
+{
+	// System.String Uduino.UduinoDevice::name
+	String_t* ___name_0;
+	// System.Int32 Uduino.UduinoDevice::_boardType
+	int32_t ____boardType_1;
+	// System.String Uduino.UduinoDevice::lastRead
+	String_t* ___lastRead_2;
+	// System.String Uduino.UduinoDevice::lastWrite
+	String_t* ___lastWrite_3;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.List`1<System.String>> Uduino.UduinoDevice::bundles
+	Dictionary_2_t79BA378F246EFA4AD0AFFA017D788423CACA8638* ___bundles_4;
+	// System.Action`1<System.String> Uduino.UduinoDevice::callback
+	Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___callback_5;
+	// Uduino.BoardStatus Uduino.UduinoDevice::boardStatus
+	int32_t ___boardStatus_6;
+	// System.Collections.Queue Uduino.UduinoDevice::readQueue
+	Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* ___readQueue_7;
+	// System.Collections.Queue Uduino.UduinoDevice::writeQueue
+	Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* ___writeQueue_8;
+	// System.Int32 Uduino.UduinoDevice::maxQueueLength
+	int32_t ___maxQueueLength_9;
+	// System.Boolean Uduino.UduinoDevice::alwaysRead
+	bool ___alwaysRead_10;
+	// System.Boolean Uduino.UduinoDevice::readAfterCommand
+	bool ___readAfterCommand_11;
+	// System.Boolean Uduino.UduinoDevice::readInEditor
+	bool ___readInEditor_12;
+	// System.String Uduino.UduinoDevice::identity
+	String_t* ___identity_13;
+	// System.Boolean Uduino.UduinoDevice::commandhasBeenSent
+	bool ___commandhasBeenSent_14;
+	// Uduino.UduinoConnection Uduino.UduinoDevice::_connection
+	UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* ____connection_15;
+	// Uduino.UduinoDevice/OnBoardClosedEvent Uduino.UduinoDevice::OnBoardClosed
+	OnBoardClosedEvent_tC7409B00630106A53EDEA47DAECBBF759A8B0C96* ___OnBoardClosed_16;
+	// Uduino.UduinoDevice/OnBoardFoundEvent Uduino.UduinoDevice::OnBoardFound
+	OnBoardFoundEvent_t6D2A7A68763EEBAB2D2569209B635CB2048C9221* ___OnBoardFound_17;
+	// System.Boolean Uduino.UduinoDevice::isApplicationQuitting
+	bool ___isApplicationQuitting_18;
+	// System.Int32 Uduino.UduinoDevice::frameCount
+	int32_t ___frameCount_19;
+	// System.Single Uduino.UduinoDevice::fps
+	float ___fps_20;
+	// System.Single Uduino.UduinoDevice::t
+	float ___t_21;
+	// System.Single Uduino.UduinoDevice::prevtt
+	float ___prevtt_22;
+};
+
+// Uduino.UduinoManager/BoardAlreadyExistException
+struct BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813  : public Exception_t
+{
+};
+
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDelegate_t
+{
+};
+
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.Behaviour
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+
+// System.Threading.ThreadStart
+struct ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.Transform
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// UnityEngine.Events.UnityAction
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.Application/LogCallback
+struct LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413  : public MulticastDelegate_t
+{
+};
+
+// Uduino.UduinoManager/OnBoardConnectedDelegate
+struct OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08  : public MulticastDelegate_t
+{
+};
+
+// Uduino.UduinoManager/OnBoardDisconnectedDelegate
+struct OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5  : public MulticastDelegate_t
+{
+};
+
+// Uduino.UduinoManager/OnDataReceivedDelegate
+struct OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B  : public MulticastDelegate_t
+{
+};
+
+// Uduino.UduinoManager/OnValueReceivedDelegate
+struct OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.Canvas
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_StaticFields
+{
+	// UnityEngine.Canvas/WillRenderCanvases UnityEngine.Canvas::preWillRenderCanvases
+	WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC* ___preWillRenderCanvases_4;
+	// UnityEngine.Canvas/WillRenderCanvases UnityEngine.Canvas::willRenderCanvases
+	WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC* ___willRenderCanvases_5;
+	// System.Action`1<System.Int32> UnityEngine.Canvas::<externBeginRenderOverlays>k__BackingField
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___U3CexternBeginRenderOverlaysU3Ek__BackingField_6;
+	// System.Action`2<System.Int32,System.Int32> UnityEngine.Canvas::<externRenderOverlaysBefore>k__BackingField
+	Action_2_tD7438462601D3939500ED67463331FE00CFFBDB8* ___U3CexternRenderOverlaysBeforeU3Ek__BackingField_7;
+	// System.Action`1<System.Int32> UnityEngine.Canvas::<externEndRenderOverlays>k__BackingField
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___U3CexternEndRenderOverlaysU3Ek__BackingField_8;
+};
+
+// UnityEngine.MonoBehaviour
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+
+// UnityEngine.RectTransform
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1
+{
+};
+
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
+{
+	// UnityEngine.RectTransform/ReapplyDrivenProperties UnityEngine.RectTransform::reapplyDrivenProperties
+	ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24* ___reapplyDrivenProperties_4;
+};
+
+// UnityEngine.EventSystems.UIBehaviour
+struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// Uduino.UduinoDebugCanvas
+struct UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.String Uduino.UduinoDebugCanvas::uduinoLogContent
+	String_t* ___uduinoLogContent_4;
+	// System.Collections.Queue Uduino.UduinoDebugCanvas::uduinoLogQueue
+	Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* ___uduinoLogQueue_5;
+	// UnityEngine.UI.Text Uduino.UduinoDebugCanvas::uduinoLogText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___uduinoLogText_6;
+};
+
+struct UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_StaticFields
+{
+	// Uduino.UduinoDebugCanvas Uduino.UduinoDebugCanvas::Instance
+	UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* ___Instance_7;
+};
+
+// Uduino.UduinoInterface
+struct UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Uduino.UduinoInterfaceType Uduino.UduinoInterface::currentInterfaceType
+	int32_t ___currentInterfaceType_4;
+	// Uduino.UduinoConnection Uduino.UduinoInterface::boardConnection
+	UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* ___boardConnection_5;
+	// UnityEngine.GameObject Uduino.UduinoInterface::fullUI
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fullUI_6;
+	// UnityEngine.GameObject Uduino.UduinoInterface::errorPanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___errorPanel_7;
+	// UnityEngine.GameObject Uduino.UduinoInterface::fullDevicePanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___fullDevicePanel_8;
+	// UnityEngine.GameObject Uduino.UduinoInterface::scanButtonFull
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___scanButtonFull_9;
+	// UnityEngine.GameObject Uduino.UduinoInterface::notFound
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___notFound_10;
+	// UnityEngine.GameObject Uduino.UduinoInterface::boardButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___boardButton_11;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalUI
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalUI_12;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalErrorPanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalErrorPanel_13;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalDevicePanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalDevicePanel_14;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalScanButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalScanButton_15;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalNotFound
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalNotFound_16;
+	// UnityEngine.GameObject Uduino.UduinoInterface::minimalBoardButton
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___minimalBoardButton_17;
+	// UnityEngine.GameObject Uduino.UduinoInterface::debugPanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___debugPanel_18;
+	// UnityEngine.UI.Text Uduino.UduinoInterface::sendValue
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___sendValue_19;
+	// UnityEngine.UI.Text Uduino.UduinoInterface::lastReceivedValue
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___lastReceivedValue_20;
+};
+
+// Uduino.UduinoManager
+struct UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice> Uduino.UduinoManager::uduinoDevices
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* ___uduinoDevices_5;
+	// System.Collections.Generic.List`1<Uduino.Pin> Uduino.UduinoManager::pins
+	List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* ___pins_6;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>> Uduino.UduinoManager::callbacksList
+	Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* ___callbacksList_7;
+	// System.Collections.Generic.Dictionary`2<System.String,System.String> Uduino.UduinoManager::existingExtensionsMap
+	Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* ___existingExtensionsMap_8;
+	// Uduino.IsActiveDictionnary Uduino.UduinoManager::activeExtentionsMap
+	IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7* ___activeExtentionsMap_9;
+	// Uduino.IsPresentDictionnary Uduino.UduinoManager::presentExtentionsMap
+	IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* ___presentExtentionsMap_10;
+	// Uduino.UduinoConnection Uduino.UduinoManager::boardConnection
+	UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* ___boardConnection_11;
+	// Uduino.UduinoManagerState Uduino.UduinoManager::ManagerState
+	int32_t ___ManagerState_12;
+	// System.Object Uduino.UduinoManager::_lockAsync
+	RuntimeObject* ____lockAsync_13;
+	// System.Action Uduino.UduinoManager::_callbacksAsync
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ____callbacksAsync_14;
+	// Uduino.LogLevel Uduino.UduinoManager::debugLevel
+	int32_t ___debugLevel_15;
+	// System.Int32 Uduino.UduinoManager::baudRate
+	int32_t ___baudRate_16;
+	// Uduino.HardwareReading Uduino.UduinoManager::readingMethod
+	int32_t ___readingMethod_17;
+	// System.Boolean Uduino.UduinoManager::limitSendRate
+	bool ___limitSendRate_18;
+	// System.Boolean Uduino.UduinoManager::autoSendIsRunning
+	bool ___autoSendIsRunning_19;
+	// System.Int32 Uduino.UduinoManager::readTimeout
+	int32_t ___readTimeout_20;
+	// System.Int32 Uduino.UduinoManager::writeTimeout
+	int32_t ___writeTimeout_21;
+	// System.Int32 Uduino.UduinoManager::threadIdleDelay
+	int32_t ___threadIdleDelay_22;
+	// System.Boolean Uduino.UduinoManager::alwaysRead
+	bool ___alwaysRead_23;
+	// System.Boolean Uduino.UduinoManager::readAfterCommand
+	bool ___readAfterCommand_24;
+	// System.Boolean Uduino.UduinoManager::skipMessageQueue
+	bool ___skipMessageQueue_25;
+	// System.Int32 Uduino.UduinoManager::messageQueueLength
+	int32_t ___messageQueueLength_26;
+	// System.Int32 Uduino.UduinoManager::defaultArduinoBoardType
+	int32_t ___defaultArduinoBoardType_27;
+	// System.Boolean Uduino.UduinoManager::useCuPort
+	bool ___useCuPort_28;
+	// System.Boolean Uduino.UduinoManager::forcePinEditor
+	bool ___forcePinEditor_29;
+	// System.Int32 Uduino.UduinoManager::sendRateDelay
+	int32_t ___sendRateDelay_30;
+	// System.Int32 Uduino.UduinoManager::discoverTries
+	int32_t ___discoverTries_31;
+	// System.Boolean Uduino.UduinoManager::autoDiscover
+	bool ___autoDiscover_32;
+	// System.Single Uduino.UduinoManager::delayBeforeDiscover
+	float ___delayBeforeDiscover_33;
+	// System.Boolean Uduino.UduinoManager::readLineCharByChar
+	bool ___readLineCharByChar_36;
+	// System.Boolean Uduino.UduinoManager::stopAllOnQuit
+	bool ___stopAllOnQuit_37;
+	// System.Boolean Uduino.UduinoManager::stopAllOnPause
+	bool ___stopAllOnPause_38;
+	// System.Boolean Uduino.UduinoManager::autoReconnect
+	bool ___autoReconnect_39;
+	// System.Single Uduino.UduinoManager::autoReconnectDelay
+	float ___autoReconnectDelay_40;
+	// System.Boolean Uduino.UduinoManager::shouldReconnect
+	bool ___shouldReconnect_41;
+	// System.Collections.Generic.List`1<System.String> Uduino.UduinoManager::blackListedPorts
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___blackListedPorts_42;
+	// Uduino.UduinoManager/eventValueReceived Uduino.UduinoManager::OnDataReceivedEvent
+	eventValueReceived_t6D1E0E69AE8E61341A978DF3492ED83D01EE8D54* ___OnDataReceivedEvent_43;
+	// Uduino.UduinoManager/eventBoard Uduino.UduinoManager::OnBoardConnectedEvent
+	eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63* ___OnBoardConnectedEvent_44;
+	// Uduino.UduinoManager/eventBoard Uduino.UduinoManager::OnBoardDisconnectedEvent
+	eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63* ___OnBoardDisconnectedEvent_45;
+	// Uduino.UduinoManager/OnValueReceivedDelegate Uduino.UduinoManager::OnValueReceived
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* ___OnValueReceived_46;
+	// Uduino.UduinoManager/OnDataReceivedDelegate Uduino.UduinoManager::OnDataReceived
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* ___OnDataReceived_47;
+	// Uduino.UduinoManager/OnBoardConnectedDelegate Uduino.UduinoManager::OnBoardConnected
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* ___OnBoardConnected_48;
+	// Uduino.UduinoManager/OnBoardDisconnectedDelegate Uduino.UduinoManager::OnBoardDisconnected
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* ___OnBoardDisconnected_49;
+	// System.Boolean Uduino.UduinoManager::displayAndroidTextGUI
+	bool ___displayAndroidTextGUI_50;
+	// Uduino.Platform Uduino.UduinoManager::platformType
+	int32_t ___platformType_51;
+	// Uduino.ConnectionMethod Uduino.UduinoManager::connectionMethod
+	int32_t ___connectionMethod_52;
+	// System.Boolean Uduino.UduinoManager::autoConnectToLastDevice
+	bool ___autoConnectToLastDevice_53;
+	// System.Int32 Uduino.UduinoManager::bleScanDuration
+	int32_t ___bleScanDuration_54;
+	// Uduino.UduinoInterfaceType Uduino.UduinoManager::interfaceType
+	int32_t ___interfaceType_55;
+	// System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings> Uduino.UduinoManager::uduinoWiFiBoards
+	List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* ___uduinoWiFiBoards_56;
+	// System.Threading.Thread Uduino.UduinoManager::_thread
+	Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* ____thread_57;
+	// System.Boolean Uduino.UduinoManager::threadRunning
+	bool ___threadRunning_58;
+	// System.Int32 Uduino.UduinoManager::threadRestartTrials
+	int32_t ___threadRestartTrials_59;
+	// System.Boolean Uduino.UduinoManager::isApplicationQuiting
+	bool ___isApplicationQuiting_60;
+};
+
+struct UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields
+{
+	// Uduino.UduinoManager Uduino.UduinoManager::_instance
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ____instance_4;
+	// System.String Uduino.UduinoManager::parametersDelimiter
+	String_t* ___parametersDelimiter_34;
+	// System.String Uduino.UduinoManager::bundleDelimiter
+	String_t* ___bundleDelimiter_35;
+};
+
+// UnityEngine.UI.CanvasScaler
+struct CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	// UnityEngine.UI.CanvasScaler/ScaleMode UnityEngine.UI.CanvasScaler::m_UiScaleMode
+	int32_t ___m_UiScaleMode_4;
+	// System.Single UnityEngine.UI.CanvasScaler::m_ReferencePixelsPerUnit
+	float ___m_ReferencePixelsPerUnit_5;
+	// System.Single UnityEngine.UI.CanvasScaler::m_ScaleFactor
+	float ___m_ScaleFactor_6;
+	// UnityEngine.Vector2 UnityEngine.UI.CanvasScaler::m_ReferenceResolution
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_ReferenceResolution_7;
+	// UnityEngine.UI.CanvasScaler/ScreenMatchMode UnityEngine.UI.CanvasScaler::m_ScreenMatchMode
+	int32_t ___m_ScreenMatchMode_8;
+	// System.Single UnityEngine.UI.CanvasScaler::m_MatchWidthOrHeight
+	float ___m_MatchWidthOrHeight_9;
+	// UnityEngine.UI.CanvasScaler/Unit UnityEngine.UI.CanvasScaler::m_PhysicalUnit
+	int32_t ___m_PhysicalUnit_11;
+	// System.Single UnityEngine.UI.CanvasScaler::m_FallbackScreenDPI
+	float ___m_FallbackScreenDPI_12;
+	// System.Single UnityEngine.UI.CanvasScaler::m_DefaultSpriteDPI
+	float ___m_DefaultSpriteDPI_13;
+	// System.Single UnityEngine.UI.CanvasScaler::m_DynamicPixelsPerUnit
+	float ___m_DynamicPixelsPerUnit_14;
+	// UnityEngine.Canvas UnityEngine.UI.CanvasScaler::m_Canvas
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas_15;
+	// System.Single UnityEngine.UI.CanvasScaler::m_PrevScaleFactor
+	float ___m_PrevScaleFactor_16;
+	// System.Single UnityEngine.UI.CanvasScaler::m_PrevReferencePixelsPerUnit
+	float ___m_PrevReferencePixelsPerUnit_17;
+	// System.Boolean UnityEngine.UI.CanvasScaler::m_PresetInfoIsWorld
+	bool ___m_PresetInfoIsWorld_18;
+};
+
+// UnityEngine.UI.Graphic
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	// UnityEngine.Material UnityEngine.UI.Graphic::m_Material
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_Material_6;
+	// UnityEngine.Color UnityEngine.UI.Graphic::m_Color
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_Color_7;
+	// System.Boolean UnityEngine.UI.Graphic::m_SkipLayoutUpdate
+	bool ___m_SkipLayoutUpdate_8;
+	// System.Boolean UnityEngine.UI.Graphic::m_SkipMaterialUpdate
+	bool ___m_SkipMaterialUpdate_9;
+	// System.Boolean UnityEngine.UI.Graphic::m_RaycastTarget
+	bool ___m_RaycastTarget_10;
+	// UnityEngine.Vector4 UnityEngine.UI.Graphic::m_RaycastPadding
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding_11;
+	// UnityEngine.RectTransform UnityEngine.UI.Graphic::m_RectTransform
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform_12;
+	// UnityEngine.CanvasRenderer UnityEngine.UI.Graphic::m_CanvasRenderer
+	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer_13;
+	// UnityEngine.Canvas UnityEngine.UI.Graphic::m_Canvas
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas_14;
+	// System.Boolean UnityEngine.UI.Graphic::m_VertsDirty
+	bool ___m_VertsDirty_15;
+	// System.Boolean UnityEngine.UI.Graphic::m_MaterialDirty
+	bool ___m_MaterialDirty_16;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyLayoutCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback_17;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyVertsCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback_18;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyMaterialCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback_19;
+	// UnityEngine.Mesh UnityEngine.UI.Graphic::m_CachedMesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh_22;
+	// UnityEngine.Vector2[] UnityEngine.UI.Graphic::m_CachedUvs
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs_23;
+	// UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween> UnityEngine.UI.Graphic::m_ColorTweenRunner
+	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner_24;
+	// System.Boolean UnityEngine.UI.Graphic::<useLegacyMeshGeneration>k__BackingField
+	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField_25;
+};
+
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
+{
+	// UnityEngine.Material UnityEngine.UI.Graphic::s_DefaultUI
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultUI_4;
+	// UnityEngine.Texture2D UnityEngine.UI.Graphic::s_WhiteTexture
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___s_WhiteTexture_5;
+	// UnityEngine.Mesh UnityEngine.UI.Graphic::s_Mesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_20;
+	// UnityEngine.UI.VertexHelper UnityEngine.UI.Graphic::s_VertexHelper
+	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_21;
+};
+
+// UnityEngine.UI.Selectable
+struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	// System.Boolean UnityEngine.UI.Selectable::m_EnableCalled
+	bool ___m_EnableCalled_6;
+	// UnityEngine.UI.Navigation UnityEngine.UI.Selectable::m_Navigation
+	Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C ___m_Navigation_7;
+	// UnityEngine.UI.Selectable/Transition UnityEngine.UI.Selectable::m_Transition
+	int32_t ___m_Transition_8;
+	// UnityEngine.UI.ColorBlock UnityEngine.UI.Selectable::m_Colors
+	ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 ___m_Colors_9;
+	// UnityEngine.UI.SpriteState UnityEngine.UI.Selectable::m_SpriteState
+	SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD ___m_SpriteState_10;
+	// UnityEngine.UI.AnimationTriggers UnityEngine.UI.Selectable::m_AnimationTriggers
+	AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074* ___m_AnimationTriggers_11;
+	// System.Boolean UnityEngine.UI.Selectable::m_Interactable
+	bool ___m_Interactable_12;
+	// UnityEngine.UI.Graphic UnityEngine.UI.Selectable::m_TargetGraphic
+	Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* ___m_TargetGraphic_13;
+	// System.Boolean UnityEngine.UI.Selectable::m_GroupsAllowInteraction
+	bool ___m_GroupsAllowInteraction_14;
+	// System.Int32 UnityEngine.UI.Selectable::m_CurrentIndex
+	int32_t ___m_CurrentIndex_15;
+	// System.Boolean UnityEngine.UI.Selectable::<isPointerInside>k__BackingField
+	bool ___U3CisPointerInsideU3Ek__BackingField_16;
+	// System.Boolean UnityEngine.UI.Selectable::<isPointerDown>k__BackingField
+	bool ___U3CisPointerDownU3Ek__BackingField_17;
+	// System.Boolean UnityEngine.UI.Selectable::<hasSelection>k__BackingField
+	bool ___U3ChasSelectionU3Ek__BackingField_18;
+	// System.Collections.Generic.List`1<UnityEngine.CanvasGroup> UnityEngine.UI.Selectable::m_CanvasGroupCache
+	List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35* ___m_CanvasGroupCache_19;
+};
+
+struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712_StaticFields
+{
+	// UnityEngine.UI.Selectable[] UnityEngine.UI.Selectable::s_Selectables
+	SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9* ___s_Selectables_4;
+	// System.Int32 UnityEngine.UI.Selectable::s_SelectableCount
+	int32_t ___s_SelectableCount_5;
+};
+
+// Uduino.UduinoInterface_Bluetooth
+struct UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4  : public UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549
+{
+	// System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface> Uduino.UduinoInterface_Bluetooth::devicesButtons
+	Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* ___devicesButtons_21;
+};
+
+// Uduino.UduinoInterface_Serial
+struct UduinoInterface_Serial_t6ADBD8126A9B36CEA09A82A56B394CF5E55ADFF8  : public UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549
+{
+};
+
+// Uduino.UduinoInterface_Wifi
+struct UduinoInterface_Wifi_t716C84191C13CF22AC6DCA8D0C2AC67426FE315B  : public UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549
+{
+};
+
+// UnityEngine.UI.Button
+struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098  : public Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712
+{
+	// UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::m_OnClick
+	ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* ___m_OnClick_20;
+};
+
+// UnityEngine.UI.MaskableGraphic
+struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
+{
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculateStencil
+	bool ___m_ShouldRecalculateStencil_26;
+	// UnityEngine.Material UnityEngine.UI.MaskableGraphic::m_MaskMaterial
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial_27;
+	// UnityEngine.UI.RectMask2D UnityEngine.UI.MaskableGraphic::m_ParentMask
+	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask_28;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_Maskable
+	bool ___m_Maskable_29;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IsMaskingGraphic
+	bool ___m_IsMaskingGraphic_30;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IncludeForMasking
+	bool ___m_IncludeForMasking_31;
+	// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent UnityEngine.UI.MaskableGraphic::m_OnCullStateChanged
+	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged_32;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculate
+	bool ___m_ShouldRecalculate_33;
+	// System.Int32 UnityEngine.UI.MaskableGraphic::m_StencilValue
+	int32_t ___m_StencilValue_34;
+	// UnityEngine.Vector3[] UnityEngine.UI.MaskableGraphic::m_Corners
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners_35;
+};
+
+// UnityEngine.UI.Slider
+struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F  : public Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712
+{
+	// UnityEngine.RectTransform UnityEngine.UI.Slider::m_FillRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_FillRect_20;
+	// UnityEngine.RectTransform UnityEngine.UI.Slider::m_HandleRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_HandleRect_21;
+	// UnityEngine.UI.Slider/Direction UnityEngine.UI.Slider::m_Direction
+	int32_t ___m_Direction_22;
+	// System.Single UnityEngine.UI.Slider::m_MinValue
+	float ___m_MinValue_23;
+	// System.Single UnityEngine.UI.Slider::m_MaxValue
+	float ___m_MaxValue_24;
+	// System.Boolean UnityEngine.UI.Slider::m_WholeNumbers
+	bool ___m_WholeNumbers_25;
+	// System.Single UnityEngine.UI.Slider::m_Value
+	float ___m_Value_26;
+	// UnityEngine.UI.Slider/SliderEvent UnityEngine.UI.Slider::m_OnValueChanged
+	SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555* ___m_OnValueChanged_27;
+	// UnityEngine.UI.Image UnityEngine.UI.Slider::m_FillImage
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___m_FillImage_28;
+	// UnityEngine.Transform UnityEngine.UI.Slider::m_FillTransform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_FillTransform_29;
+	// UnityEngine.RectTransform UnityEngine.UI.Slider::m_FillContainerRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_FillContainerRect_30;
+	// UnityEngine.Transform UnityEngine.UI.Slider::m_HandleTransform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_HandleTransform_31;
+	// UnityEngine.RectTransform UnityEngine.UI.Slider::m_HandleContainerRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_HandleContainerRect_32;
+	// UnityEngine.Vector2 UnityEngine.UI.Slider::m_Offset
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Offset_33;
+	// UnityEngine.DrivenRectTransformTracker UnityEngine.UI.Slider::m_Tracker
+	DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 ___m_Tracker_34;
+	// System.Boolean UnityEngine.UI.Slider::m_DelayedUpdateVisuals
+	bool ___m_DelayedUpdateVisuals_35;
+};
+
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	// UnityEngine.UI.FontData UnityEngine.UI.Text::m_FontData
+	FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224* ___m_FontData_36;
+	// System.String UnityEngine.UI.Text::m_Text
+	String_t* ___m_Text_37;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCache
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCache_38;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCacheForLayout
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCacheForLayout_39;
+	// System.Boolean UnityEngine.UI.Text::m_DisableFontTextureRebuiltCallback
+	bool ___m_DisableFontTextureRebuiltCallback_41;
+	// UnityEngine.UIVertex[] UnityEngine.UI.Text::m_TempVerts
+	UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* ___m_TempVerts_42;
+};
+
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
+{
+	// UnityEngine.Material UnityEngine.UI.Text::s_DefaultText
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultText_40;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Uduino.UduinoInterface[]
+struct UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756  : public RuntimeArray
+{
+	ALIGN_FIELD (8) UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* m_Items[1];
+
+	inline UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// UnityEngine.Object[]
+struct ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* m_Items[1];
+
+	inline Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Il2CppChar m_Items[1];
+
+	inline Il2CppChar GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Il2CppChar GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Il2CppChar* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Il2CppChar value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Uduino.UduinoManager[]
+struct UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138  : public RuntimeArray
+{
+	ALIGN_FIELD (8) UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* m_Items[1];
+
+	inline UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Uduino.UduinoDevice[]
+struct UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196  : public RuntimeArray
+{
+	ALIGN_FIELD (8) UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* m_Items[1];
+
+	inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Delegate_t* m_Items[1];
+
+	inline Delegate_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Delegate_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Clear_mCFB5EA7351D5860D2B91592B91A84CA265A41433_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m872899879F710B2E55BC157F35464F03877C8DFA_gshared (RuntimeObject* ___original0, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parent1, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject** ___value1, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Count()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Count_m4DDA9442C238A443489115E22B026AD366851549_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`1<System.Object>::Invoke(T0)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, RuntimeObject* ___arg00, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Item(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA* Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>::CopyTo(TValue[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueCollection_CopyTo_m877ED0CB6A05E77E01BE0B87ADB53084E26B9FF7_gshared (ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___array0, int32_t ___index1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsKey(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::ContainsValue(TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsValue_m51A7764AD04D34D0B2CDB01F960FA1FEBCF6B562_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___value0, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Boolean>::TryGetValue(TKey,TValue&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m9AAE125D6298B2B6B9D2F150C841A70872BF887B_gshared (Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* __this, RuntimeObject* ___key0, bool* ___value1, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Keys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyCollection_tB45A861D090B15129521119AE48ED3813820A974* Dictionary_2_get_Keys_m72D290F90654BFD683FA7AA7C63D9F4F692218B6_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(TKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51_gshared (List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_2__ctor_m36CB65F6682CF6EFB69FE2F1939D331599C453E3_gshared (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A445322811EEC25987525_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`2<System.Object,System.Object>::Invoke(T0,T1)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_2_Invoke_m9815C6864ED92A2000D3CCF1086DC1FF31CAB3AC_gshared (UnityEvent_2_t77BDA795C84FBEFE9D3AE3DCA619B97A9F423961* __this, RuntimeObject* ___arg00, RuntimeObject* ___arg11, const RuntimeMethod* method) ;
+// System.Void Uduino.SerializableDictionary`2<System.Object,System.Boolean>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializableDictionary_2__ctor_m2513124DBDDF72FF5339E5DFC08667C46816BFD3_gshared (SerializableDictionary_2_t00BE05C5068E75DE3A64E08EE4B3BD6F5F0BBA45* __this, const RuntimeMethod* method) ;
+
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, String_t* ___n0, const RuntimeMethod* method) ;
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.BLEDeviceButton_Interface::CanConnect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_CanConnect_m1ABE407F0FC067834329CD82C95B9D29E127F3D7 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::SetActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___value0, const RuntimeMethod* method) ;
+// Uduino.UduinoManager Uduino.UduinoManager::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C (const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth::StopTimer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StopTimer_m72134CBCB34D923214E4EB6F75CDC7EFDAD1E862 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth::ClearPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_ClearPanel_m56994F927ACB30B359C08392C8CBEBDDD2A01F51 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth::DisplayDebugPanel(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, bool ___active0, const RuntimeMethod* method) ;
+// System.Void Uduino.Log::Debug(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969 (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth::StartTimer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StartTimer_mEC2598FFC8255FCAE246E7CECA53FC1789582586 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) ;
+// UnityEngine.UI.Text Uduino.UduinoInterface::getScanButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>::Clear()
+inline void Dictionary_2_Clear_mD766583F3AA08F13F7B82B8C60CE19EB85ACB5DF (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*, const RuntimeMethod*))Dictionary_2_Clear_mCFB5EA7351D5860D2B91592B91A84CA265A41433_gshared)(__this, method);
+}
+// UnityEngine.UI.Slider Uduino.UduinoInterface::getScanSlider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Collections.IEnumerator Uduino.UduinoInterface_Bluetooth::StartSliderCountdown()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoInterface_Bluetooth_StartSliderCountdown_mF3C9F748761435E40F4647326ECAA25A13FDED21 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartSliderCountdownU3Ed__9__ctor_mA2D89F644F058BB836362DCBD1E6AD73CC16AEDA (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+// UnityEngine.Transform Uduino.UduinoInterface::getPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.Object::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Inequality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m0FBE5AC4931D312E5B347BAA603755676E6DA2FE (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
+// UnityEngine.GameObject Uduino.UduinoInterface::getErrorPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0__ctor_m9F0D2D522555E85A2CF13F496C0F4602693B96BA (U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* __this, const RuntimeMethod* method) ;
+// UnityEngine.GameObject Uduino.UduinoInterface::getDeviceButtonPrefab()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getDeviceButtonPrefab_mD5CC39BBC82A217056BDA511005E3BCBB95920D9 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Object::Instantiate<UnityEngine.GameObject>(T,UnityEngine.Transform)
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___original0, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parent1, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m872899879F710B2E55BC157F35464F03877C8DFA_gshared)(___original0, ___parent1, method);
+}
+// UnityEngine.Transform UnityEngine.GameObject::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::set_name(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.UI.Text>()
+inline Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.GameObject::GetComponent<UnityEngine.UI.Button>()
+inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// UnityEngine.GameObject UnityEngine.GameObject::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.BLEDeviceButton_Interface::.ctor(UnityEngine.UI.Button)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface__ctor_mC5E05340CF037447D582C8C76F03060ED1D76B45 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___button0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>::Add(TKey,TValue)
+inline void Dictionary_2_Add_m36DC7A29D1AA4D4C881ABE0E6256D2FF51F0F169 (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* __this, String_t* ___key0, BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*, String_t*, BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+}
+// UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::get_onClick()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityAction::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___call0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933 (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* __this, String_t* ___key0, BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30** ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*, String_t*, BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void Uduino.BLEDeviceButton_Interface::Connecting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Connecting_m03DF234C57A810DF5F76A0F7AD5289F561813326 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.Log::Info(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) ;
+// System.Void Uduino.BLEDeviceButton_Interface::Connected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Connected_mF8DA5ACCFDF42EF0DA235FC63BD04CB8DC886201 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.BLEDeviceButton_Interface::Disconnected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Disconnected_m742B191DF6C7C0F85DC04EB39184AE30C42F332A (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>::GetEnumerator()
+inline Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2 Dictionary_2_GetEnumerator_m8E87D04E0C15A77BAD2A3D085A3ECD37D6EE13D5 (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2 (*) (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.BLEDeviceButton_Interface>::Dispose()
+inline void Enumerator_Dispose_m165595649915DB7B38BB4FD683F7059EDD4B65FA (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.BLEDeviceButton_Interface>::get_Current()
+inline KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 Enumerator_get_Current_mF8A789CBC787AD27022DE04724D66200D03D7896_inline (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 (*) (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Uduino.BLEDeviceButton_Interface>::get_Value()
+inline BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* KeyValuePair_2_get_Value_mAA5C39BE96C0E9C38EEA81C717FDF363DA0257F7_inline (KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336* __this, const RuntimeMethod* method)
+{
+	return ((  BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* (*) (KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.BLEDeviceButton_Interface>::MoveNext()
+inline bool Enumerator_MoveNext_m29D7FE958899C4EEE1DE68B7087CEAD9A67C0480 (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.BLEDeviceButton_Interface>::.ctor()
+inline void Dictionary_2__ctor_mE70EA764E548D8933234B1A2530F8214F61FA45A (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void Uduino.UduinoInterface::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface__ctor_m158FE32E9144C8F72D86D871A65485AB9B1101CE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___seconds0, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::CloseDevice(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseDevice_m4F5C14A5FF222D313D28F7A5EB05EA16C7546CF1 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, const RuntimeMethod* method) ;
+// System.Void Uduino.Interface::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface__ctor_mB88C2E64B64131D822A44FEFCEF555E8E4B6383C (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Application::get_isPlaying()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337 (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+// System.Void Uduino.Interface::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_Create_m8353137CD136FC294913A2E3F4CC980DA77B30E5 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___handle0, const RuntimeMethod* method) ;
+// UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* Object_FindObjectsOfType_m26A7F8711A45112BF7D30F5273B79DE1F3A7C13F (Type_t* ___type0, const RuntimeMethod* method) ;
+// System.Boolean Uduino.UduinoManager::ExtensionIsPresentAndActive(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_ExtensionIsPresentAndActive_m6020EB1547D1C8F156C2AFED71BB24ADCF963475 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___extensionName0, const RuntimeMethod* method) ;
+// UnityEngine.Object UnityEngine.Resources::Load(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Resources_Load_m9608D2902F542C0B7FD52EFED088323448B9FA35 (String_t* ___path0, const RuntimeMethod* method) ;
+// UnityEngine.Object UnityEngine.Object::Instantiate(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Object_Instantiate_m24741FECC461F230DBD3E76CD6AEE2E395CB340D (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___original0, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<Uduino.UduinoInterface>()
+inline UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* GameObject_GetComponent_TisUduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_mB5E5CD25AA227AA2AFFFD20C76DC7023ADA32EAF (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// System.Void UnityEngine.Transform::SetParent(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___p0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface::Destroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Destroy_m5D36E0EA79DA7678D5D28D2FC73777ED7699B7D3 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// System.Boolean Uduino.Interface::isActive()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoInterface/<>c__DisplayClass21_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0__ctor_m322D9620A502540F515169E55904A9B54DFB63BB (U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.UI.Button>()
+inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.UI.Slider>()
+inline Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void Uduino.UduinoManager::DiscoverPorts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DiscoverPorts_m32DCFD6E0F083B859E82151A207A1B533180BF65 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// UnityEngine.GameObject Uduino.UduinoInterface::getNotFound()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<UnityEngine.UI.Text>()
+inline Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// UnityEngine.GameObject Uduino.UduinoInterface::getBoardButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getBoardButton_mC88FB36B87185E0E81216AB77748E4D6076CB183 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::DestroyImmediate(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DestroyImmediate_m8249CABCDF344BE3A67EE765122EBB415DC2BC57 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.String Uduino.Log::RemoveLineEndings(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2 (String_t* ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.String System.String::TrimStart(System.Char[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_TrimStart_m67833D80326BEA11CC3517CE03CD7B16669BCEEC (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___trimChars0, const RuntimeMethod* method) ;
+// System.Boolean System.String::IsNullOrEmpty(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_m54CF0907E7C4F3AFB2E796A13DC751ECBB8DB64A (String_t* ___value0, const RuntimeMethod* method) ;
+// System.String System.Char::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C (Il2CppChar* __this, const RuntimeMethod* method) ;
+// System.String System.String::Replace(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___oldValue0, String_t* ___newValue1, const RuntimeMethod* method) ;
+// SimpleJSON.JSONNode SimpleJSON.JSON::Parse(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* JSON_Parse_m9E6F3A67011C765E4352E350D1F400C9A52DC5F6 (String_t* ___aJSON0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoDebugCanvas::CreateCanvasAndText()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_CreateCanvasAndText_mD4E52C8B6005CB91ADF068C59ACCAF22ED51A64F (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Application/LogCallback::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LogCallback__ctor_m327A4C69691F8A4B01D405858E48B8A7D9D2A79D (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Application::add_logMessageReceived(UnityEngine.Application/LogCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_add_logMessageReceived_m9185431F0B315A8CE2AA6D7B8DA764BDA350918B (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* ___value0, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0 (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Application::remove_logMessageReceived(UnityEngine.Application/LogCallback)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_remove_logMessageReceived_m44CDFD932D3A105FD92D6DEC0592F1E5285631C6 (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* ___value0, const RuntimeMethod* method) ;
+// System.String System.Enum::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_mF8B69BE42B5C5ABCAD3C176FBBE3010E0815D65D (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
+// System.String[] System.String::Split(System.Char,System.StringSplitOptions)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4 (String_t* __this, Il2CppChar ___separator0, int32_t ___options1, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.Screen::get_height()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m624DD2D53F34087064E3B9D09AC2207DB4E86CA8 (const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoDebugCanvas::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_Clear_m5B86206A019E6F0F0EC6EE5BBAEF8267B932B94C (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<UnityEngine.Canvas>()
+inline Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Void UnityEngine.Canvas::set_renderMode(UnityEngine.RenderMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_set_renderMode_mD73E953F8A115CF469508448A00D0EDAFAF5AB47 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<UnityEngine.UI.CanvasScaler>()
+inline CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Void UnityEngine.UI.CanvasScaler::set_scaleFactor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CanvasScaler_set_scaleFactor_mD53E8CAE41E8C1B0DF53CCF14D5941FF8EA3488B (CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* __this, float ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.CanvasScaler::set_dynamicPixelsPerUnit(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void CanvasScaler_set_dynamicPixelsPerUnit_m7A081D5FD963F751140DCF1E5190ED4E51308CA2_inline (CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* __this, float ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Canvas::set_sortingOrder(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_set_sortingOrder_m70D89DB61A3C0589C0FAB525E613DE9D0C799AAC (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::set_parent(UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___value0, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<UnityEngine.UI.Text>()
+inline Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Void UnityEngine.UI.Text::set_alignment(UnityEngine.TextAnchor)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Text_set_alignment_m9FAD6C1C270FA28C610AB1E07414FBF96403157A (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Text::set_horizontalOverflow(UnityEngine.HorizontalWrapMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Text_set_horizontalOverflow_m10AAFBA65FD7F4B1934B5D628B3E70D75D02FFD6 (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Text::set_verticalOverflow(UnityEngine.VerticalWrapMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Text_set_verticalOverflow_m72A544DEAE0EBFCCBDE8174DF4C10C903DA8444F (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// UnityEngine.Object UnityEngine.Resources::GetBuiltinResource(System.Type,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Resources_GetBuiltinResource_m8761B94EA68B13EC714994F6536B356A1AEF4538 (Type_t* ___type0, String_t* ___path1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Text::set_font(UnityEngine.Font)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Text_set_font_mA0D2999281A72029A5BC7294A886C5674F07DC5F (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* __this, Font_tC95270EA3198038970422D78B74A7F2E218A96B6* ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Text::set_fontSize(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Text_set_fontSize_m426338B0A2CDA58609028FFD471EF5F2C9F364D4 (Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// UnityEngine.Color UnityEngine.Color::get_black()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mBF96B603B41BED9BAFAA10CE8D946D24260F9729_inline (const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<UnityEngine.RectTransform>()
+inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// System.Int32 UnityEngine.Screen::get_width()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mCA5D955A53CF6D29C8C7118D517D0FC84AE8056C (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_sizeDelta(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_pivot(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_anchorMin(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_anchorMax(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_anchoredPosition(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___value0, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.Transform::get_localScale()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Queue::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue__ctor_mFCCBE2B4FFBD3F33D6FBE2D010C9A0CA976784CB (Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.Log::Warning(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8 (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.GameObject::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<Uduino.UduinoManager>()
+inline UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* GameObject_AddComponent_TisUduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_m5814A5490D1660AB7C99E0097B997F2B8AC6C0CD (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// System.Void Uduino.Log::Error(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::StopAllCoroutines()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::StartThread(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StartThread_mC32B06EEB8CA3F57E6CB69860EF6DE64EB7FFBC2 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, bool ___isForced0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::StopThread()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// Uduino.UduinoDevice[] Uduino.UduinoManager::GetAllBoard()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* UduinoManager_GetAllBoard_m8140F72B762381E616F465566BCEAB39BA5569BB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Collections.IEnumerator Uduino.UduinoManager::CoroutineRead(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoManager_CoroutineRead_mA7FF57228C45FC49EB873151654259452D3B757E (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m10C4B693B96175C42B0FD00911E072701C220DB4 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___methodName0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::StopCoroutine(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_m1DA0B9343DCDB53221A6CD707CBF0827A6FFF17F (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___methodName0, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116 (Delegate_t* ___source0, Delegate_t* ___value1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::set_Instance(Uduino.UduinoManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_Instance_m07D289D9529F7F64E864DCF0D7285BE6F1F014D9 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___value0, const RuntimeMethod* method) ;
+// Uduino.Interface Uduino.Interface::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* Interface_get_Instance_mB030474712C9EA79D35DB43B84EE2514C416BB89 (const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::FullReset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.Log::SetLogLevel(Uduino.LogLevel)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Log_SetLogLevel_mAFB681C6D7A7DD1C220E4D4C1B9BA0E67F8C566F_inline (int32_t ___level0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::DiscoverWithDelay(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DiscoverWithDelay_m7ED72FB1901947151F9223758DA35772C68FD99C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, float ___delay0, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.String,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_mD754B72714F15210DDA429A096D853852FF437AB (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___methodName0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/<DelayedDiscover>d__94::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDelayedDiscoverU3Ed__94__ctor_mCC5404B89F6577171AEC7B3AD035F76F3BDD127E (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRestartIfBoardNotDetectedU3Ed__95__ctor_m7C2BA58897EA88BD33660740E16ABE4B9414F16A (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::get_Count()
+inline int32_t Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2_get_Count_m4DDA9442C238A443489115E22B026AD366851549_gshared)(__this, method);
+}
+// System.Void Uduino.UduinoManager::CloseAllDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseAllDevices_m5E176430F0908AAB2E609D296B10982C1112FAE8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// Uduino.UduinoConnection Uduino.UduinoConnection::GetFinder(Uduino.UduinoManager,Uduino.Platform,Uduino.ConnectionMethod)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* UduinoConnection_GetFinder_m7A68F659A2C18CE03272C49476BD1C906B12110E (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___manager0, int32_t ___p1, int32_t ___m2, const RuntimeMethod* method) ;
+// System.Void System.Threading.Monitor::Exit(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9 (RuntimeObject* ___obj0, const RuntimeMethod* method) ;
+// System.Void System.Threading.Monitor::Enter(System.Object,System.Boolean&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4 (RuntimeObject* ___obj0, bool* ___lockTaken1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::StartReading(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StartReading_m9A1F61FEC1A62283C894339762B2C6E17E58FAD6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::InitAllArduinos()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllArduinos_mF1A765604E6B52A929A243D06FBCDA4371B6A806 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/OnBoardConnectedDelegate::Invoke(Uduino.UduinoDevice)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_inline (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`1<Uduino.UduinoDevice>::Invoke(T0)
+inline void UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202 (UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___arg00, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*))UnityEvent_1_Invoke_m6CDC8B0639CE8935E2E13D10B2C8E500968130B6_gshared)(__this, ___arg00, method);
+}
+// System.String Uduino.UduinoDevice::getIdentity()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* UduinoDevice_getIdentity_mF3394683CBF93A4755CBD11A6A8337CAB53063E4_inline (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___values0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::Add(TKey,TValue)
+inline void Dictionary_2_Add_mC9B341A10EDFC10D32CBE77A11155A1EE95D3020 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, String_t* ___key0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void Uduino.UduinoManager/BoardAlreadyExistException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoardAlreadyExistException__ctor_m666F892055104ECAA15394D08BB56F11D73DE8A6 (BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813* __this, String_t* ___msg0, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::GetEnumerator()
+inline Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.UduinoDevice>::Dispose()
+inline void Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.UduinoDevice>::get_Current()
+inline KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 (*) (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Uduino.UduinoDevice>::get_Value()
+inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline (KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3* __this, const RuntimeMethod* method)
+{
+	return ((  UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* (*) (KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,Uduino.UduinoDevice>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mE7D564202FC1AB496122601F59AEE5CD223371FB_inline (KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,Uduino.UduinoDevice>::MoveNext()
+inline bool Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06 (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Boolean Uduino.UduinoManager::UduinoTargetExists(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_UduinoTargetExists_mE8D18D75E9C980FEF5A2E1F9B997A23723C4D899 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::get_Item(TKey)
+inline UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m4AAAECBE902A211BF2126E6AFA280AEF73A3E0D6_gshared)(__this, ___key0, method);
+}
+// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::get_Values()
+inline ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	return ((  ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Uduino.UduinoDevice>::CopyTo(TValue[],System.Int32)
+inline void ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE (ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* __this, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* ___array0, int32_t ___index1, const RuntimeMethod* method)
+{
+	((  void (*) (ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA*, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*, int32_t, const RuntimeMethod*))ValueCollection_CopyTo_m877ED0CB6A05E77E01BE0B87ADB53084E26B9FF7_gshared)(__this, ___array0, ___index1, method);
+}
+// System.Boolean Uduino.UduinoManager::UduinoTargetExists(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_UduinoTargetExists_mE4824DFA8752C227F10078AA80F77F13702262DD (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mCF29F28E777ADF0BD4F603F38D32B93CA7E45B3E (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, String_t* ___key0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0** ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::ContainsKey(TKey)
+inline bool Dictionary_2_ContainsKey_m4EA1F736E9A7713E42D9E80BB58EBC4AFC2E713E (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m703047C213F7AB55C9DC346596287773A1F670CD_gshared)(__this, ___key0, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::ContainsValue(TValue)
+inline bool Dictionary_2_ContainsValue_m0AF20A60F8F61EB9A17DAD98485F1F9F84DDB77E (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___value0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*))Dictionary_2_ContainsValue_m51A7764AD04D34D0B2CDB01F960FA1FEBCF6B562_gshared)(__this, ___value0, method);
+}
+// System.Void Uduino.UduinoManager::SetBoardType(Uduino.UduinoDevice,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetBoardType_m100B8ACC231654ADB9D3CC0A9E192C1647CD3410 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___type1, const RuntimeMethod* method) ;
+// Uduino.BoardsTypeList Uduino.BoardsTypeList::get_Boards()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB (const RuntimeMethod* method) ;
+// System.Int32 Uduino.BoardsTypeList::GetBoardIdFromName(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BoardsTypeList_GetBoardIdFromName_mBBC17CE3DC49E5E2BB434FE84CF0A036D7182FAB (BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::SetBoardType(Uduino.UduinoDevice,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetBoardType_m8DA735585D961E7195983D0ED56FAADE3872ADE8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___boardTypeId1, const RuntimeMethod* method) ;
+// System.Boolean Uduino.UduinoManager::GetBoard(Uduino.UduinoDevice,Uduino.UduinoDevice[]&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** ___devices1, const RuntimeMethod* method) ;
+// Uduino.ArduinoBoardType Uduino.BoardsTypeList::GetBoardFromName(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* BoardsTypeList_GetBoardFromName_m6864B73B71EE8C2BD9BC087230AB6A768E1A6A53 (BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Int32 Uduino.ArduinoBoardType::GetPin(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArduinoBoardType_GetPin_m715C1325CEC6946F6AA957C3E8CCA083A617D778 (ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* __this, String_t* ___id0, const RuntimeMethod* method) ;
+// System.Int32 Uduino.ArduinoBoardType::GetPin(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArduinoBoardType_GetPin_m0756211D53BCB27E8D1EA22CB5457A80B05202D0 (ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* __this, int32_t ___id0, const RuntimeMethod* method) ;
+// Uduino.ArduinoBoardType Uduino.BoardsTypeList::GetBoardFromId(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* BoardsTypeList_GetBoardFromId_m2DBC7B3ABA3C9D07544B66C868EBB4C2BDAB0CB0 (BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* __this, int32_t ___boardId0, const RuntimeMethod* method) ;
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+// System.Int32 Uduino.UduinoManager::GetPinFromBoard(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_GetPinFromBoard_m7382C9C13DDD42FB5BE68261E8B7853951EA60DB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___pin0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::pinMode(Uduino.UduinoDevice,System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) ;
+// System.Int32 Uduino.UduinoManager::PinValueToBoardValue(Uduino.AnalogPin,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___boardType1, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Uduino.Pin>::GetEnumerator()
+inline Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75 (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 (*) (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<Uduino.Pin>::Dispose()
+inline void Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+// T System.Collections.Generic.List`1/Enumerator<Uduino.Pin>::get_Current()
+inline Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2* __this, const RuntimeMethod* method)
+{
+	return ((  Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* (*) (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+// System.Boolean Uduino.Pin::PinTargetExists(Uduino.UduinoDevice,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87 (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___parentArduinoTarget0, int32_t ___currentPinTarget1, const RuntimeMethod* method) ;
+// System.Void Uduino.Pin::OverridePinMode(Uduino.PinMode,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pin_OverridePinMode_mE7801609FEC3CCCF923C80E331A9C13F8D781AD0 (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, int32_t ___mode0, bool ___useInit1, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<Uduino.Pin>::MoveNext()
+inline bool Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871 (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+// System.Void Uduino.Pin::.ctor(Uduino.UduinoDevice,System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pin__ctor_mEEFC631D95FB17F0DF21552B1113F6450F78074C (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___arduinoParent0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Uduino.Pin>::Add(T)
+inline void List_1_Add_m1138055AD6C3CCA1230BCDC8AE134ACFD492602A_inline (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* __this, Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B*, Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void Uduino.Pin::Init(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pin_Init_m99AC3EFBEBF1827AD5FBDC55EC2B1B3329584E1C (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, bool ___useInit0, const RuntimeMethod* method) ;
+// System.Type System.Object::GetType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.String System.Enum::GetName(System.Type,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_GetName_m4979EACFA1491E66FBCAD1DFDD78B5A678111E41 (Type_t* ___enumType0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::pinMode(System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_m4F92F3E359AB3D17DB12828BDFA14325A1D5C842 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___mode1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::SendBundle(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SendBundle_m44087F083729C719A6368283A528E103D8902AC5 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___bundleName0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::InitAllPins()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllPins_m6EBAEB38BF1F96D0D7E739343CD23B16D2E6D2F7 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::InitAllCallbacks()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllCallbacks_mD7C02C4037130151CEA5D6673CF95AEA966111E5 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>>::GetEnumerator()
+inline Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C Dictionary_2_GetEnumerator_mB13FDDE0A024C1BC19CD2A55233152EC4423D1D5 (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C (*) (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,System.Action`1<System.String>>::Dispose()
+inline void Enumerator_Dispose_m0110E77CBF84B8C1FC523C4047D29E10E0FBCAB2 (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,System.Action`1<System.String>>::get_Current()
+inline KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 Enumerator_get_Current_m72A29E6D307E2E8738DFA7CF43C60BF467CF3C49_inline (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 (*) (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,System.Action`1<System.String>>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_inline (KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.Boolean Uduino.UduinoManager::GetBoard(System.String,Uduino.UduinoDevice[]&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___name0, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** ___devices1, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,System.Action`1<System.String>>::get_Value()
+inline Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* KeyValuePair_2_get_Value_mA810A45B22878AFED4B647E7DD283B6015D98ADF_inline (KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917* __this, const RuntimeMethod* method)
+{
+	return ((  Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* (*) (KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,System.Action`1<System.String>>::MoveNext()
+inline bool Enumerator_MoveNext_m1056B9B7A584D30A0E074258330C28F782E8D145 (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Void Uduino.Pin::SendPinValue(System.Int32,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pin_SendPinValue_m047100B7E8BE59C845DE44D86B187A5142B30C07 (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, int32_t ___sendValue0, String_t* ___typeOfPin1, String_t* ___bundle2, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::arduinoWrite(Uduino.UduinoDevice,System.Int32,System.Int32,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___value2, String_t* ___typeOfPin3, String_t* ___bundle4, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::digitalWrite(Uduino.UduinoDevice,System.Int32,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_digitalWrite_m529836DAEB7886854531EA84F2C6F5CB6A76CBCB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___value2, String_t* ___bundle3, const RuntimeMethod* method) ;
+// System.Int32 Uduino.UduinoManager::digitalRead(Uduino.UduinoDevice,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_digitalRead_m4949DF563F731EF497E4594F06670EF23835F13B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) ;
+// System.Int32 Uduino.UduinoManager::analogRead(Uduino.UduinoDevice,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_analogRead_m4EF12F5600ABA034344F7E1F514211B1EEDCC0F4 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoDevice::AddToBundle(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDevice_AddToBundle_m48825EF05C36840AFA2FA7151D0EB18A277FD8D7 (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* __this, String_t* ___message0, String_t* ___bundle1, const RuntimeMethod* method) ;
+// System.String Uduino.UduinoManager::DirectReadFromArduino(Uduino.UduinoDevice,System.String,System.Action`1<System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_DirectReadFromArduino_m326966EDE30233F529F5E9445C85A24E78E524F6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___targetDevice0, String_t* ___message1, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action2, String_t* ___bundle3, const RuntimeMethod* method) ;
+// System.String Uduino.UduinoManager::BuildMessageParameters(System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_BuildMessageParameters_mEC6BEF98C679579E190352948285EC0C0ECBCF84 (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___parameters0, const RuntimeMethod* method) ;
+// Uduino.UduinoDevice Uduino.UduinoManager::GetBoard(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* UduinoManager_GetBoard_mD20418B8C26BEF956308F0DC1634AD3EE5C191E7 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::sendCommand(Uduino.UduinoDevice,System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_sendCommand_m102DDD91C2310B54DFF5E98CF3A1AD7C8B27BE59 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___command1, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___value2, const RuntimeMethod* method) ;
+// System.Boolean Uduino.UduinoManager::sendCommand(Uduino.UduinoDevice,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_sendCommand_m488382E83AA091FAEA3E33F31819C36739419C8C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___message1, String_t* ___bundle2, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>>::Add(TKey,TValue)
+inline void Dictionary_2_Add_mCA46B88F063E9105EDE4ADCA61BD5620782617C7 (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* __this, String_t* ___key0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D*, String_t*, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void Uduino.UduinoManager::SetReadCallback(Uduino.UduinoDevice,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetReadCallback_m5CD59885FA8DF1C2FE7CB12DACDD9FF507D6C693 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___callback1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoDevice::SendBundle(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDevice_SendBundle_m09E680E9F78165DD30694A6DC4CB19EEC1B201D5 (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* __this, String_t* ___bundleName0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::SendBundle(Uduino.UduinoDevice,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SendBundle_m08D2163304F16F9BB79B842C6445A930D3420D11 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___bundleName1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/<AutoSendBundle>d__158::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAutoSendBundleU3Ed__158__ctor_m8D78C399578EC0481409F19CFA67D937A33D1A30 (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::TryGetValue(TKey,TValue&)
+inline bool Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E (Dictionary_2_t17D0D125440AC627FCF80F189C6CBCB02856063C* __this, String_t* ___key0, bool* ___value1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t17D0D125440AC627FCF80F189C6CBCB02856063C*, String_t*, bool*, const RuntimeMethod*))Dictionary_2_TryGetValue_m9AAE125D6298B2B6B9D2F150C841A70872BF887B_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Boolean Uduino.UduinoManager::IsRunning()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool UduinoManager_IsRunning_m05261CF3CBCF190F3325333FA4D5C321B83F10AF_inline (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void System.Threading.ThreadStart::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71 (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void System.Threading.Thread::.ctor(System.Threading.ThreadStart)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Thread__ctor_m1FA23A179DF4F5B659689D6FA40DE903086212E2 (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* ___start0, const RuntimeMethod* method) ;
+// System.Void System.Threading.Thread::Start()
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, const RuntimeMethod* method) ;
+// System.Void System.Threading.Thread::set_IsBackground(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Thread_set_IsBackground_m45F00BD4C46F9B8A7C46A20A170B22BABB8FBA30 (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, bool ___value0, const RuntimeMethod* method) ;
+// System.Void System.Action::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
+// System.Threading.ThreadState System.Threading.Thread::get_ThreadState()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Thread_get_ThreadState_mEEA2DF3EBB42CC1B30E9B6B6732579E799A243A8 (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, const RuntimeMethod* method) ;
+// System.String System.Single::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.AndroidJNI::AttachCurrentThread()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AndroidJNI_AttachCurrentThread_mD5647083E547A77F9377BDB78106D426878A00E7 (const RuntimeMethod* method) ;
+// System.Void System.Threading.Thread::Sleep(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Thread_Sleep_m63B7D29DC735584F4D80373E48C91B34FF32D1A0 (int32_t ___millisecondsTimeout0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/<CoroutineRead>d__173::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCoroutineReadU3Ed__173__ctor_mD60DA2B0781A5B5EB321DAAAF418339314ADD1F0 (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/<>c__DisplayClass174_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass174_0__ctor_m34D528D848A071D3FCB966BE91537AB00C4BC188 (U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager::InvokeAsync(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InvokeAsync_m43F222CBD87FF326BA8A0725394C795527659AEB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___callback0, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::get_Keys()
+inline KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F* Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	return ((  KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F* (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2_get_Keys_m72D290F90654BFD683FA7AA7C63D9F4F692218B6_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.String>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
+inline void List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, RuntimeObject*, const RuntimeMethod*))List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared)(__this, ___collection0, method);
+}
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.String>::GetEnumerator()
+inline Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<System.String>::Dispose()
+inline void Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7 (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+// T System.Collections.Generic.List`1/Enumerator<System.String>::get_Current()
+inline String_t* Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+// System.Void Uduino.UduinoManager::CloseDevice(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseDevice_mE3CDD8284077A792BDD39FBC375A691803B344AA (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1/Enumerator<System.String>::MoveNext()
+inline bool Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::Clear()
+inline void Dictionary_2_Clear_m9E4C4AC938B492C96E07EEC995D0B71F61190093 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2_Clear_mCFB5EA7351D5860D2B91592B91A84CA265A41433_gshared)(__this, method);
+}
+// System.Void Uduino.Pin::Destroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pin_Destroy_mCA0AD86D0495E5FB511D01611267687D56A0621B (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.Interface::RemoveDeviceButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_RemoveDeviceButton_mC71A76591FE69414F204DC0664740573ECE956FF (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void Uduino.Interface::UduinoDisconnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_UduinoDisconnected_m9AE2A4FDC0629DC0519684332808378F6EEF142D (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/OnBoardDisconnectedDelegate::Invoke(Uduino.UduinoDevice)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_inline (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::Remove(TKey)
+inline bool Dictionary_2_Remove_m8EAAC59A0B5CA19D4216DD46D1B0D0013C15B836 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, String_t*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___key0, method);
+}
+// System.Void Uduino.UduinoManager::DisableThread()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DisableThread_mEC708E811500DF7AD3A20020D54A426502ABE642 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Uduino.UduinoDevice>::.ctor()
+inline void Dictionary_2__ctor_m941C16BCE4E384D177FCA349A84B829532E910D3 (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Uduino.Pin>::.ctor()
+inline void List_1__ctor_mE3D24DBB47C13CB100A5E4DB68275BAF4D782310 (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.Action`1<System.String>>::.ctor()
+inline void Dictionary_2__ctor_m1DBE8BD6A92ED74AFCC4FB67F1D075C92A6CC1A2 (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor()
+inline void Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(TKey,TValue)
+inline void Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, String_t* ___key0, String_t* ___value1, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*, String_t*, String_t*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+}
+// System.Void Uduino.IsActiveDictionnary::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsActiveDictionnary__ctor_mDE82022306954DF532F35E6D92127D8595C444C4 (IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.IsPresentDictionnary::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsPresentDictionnary__ctor_m29DF97F4B0DED41FBB74E2CF5653D748F47D4C6B (IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.String>::.ctor()
+inline void List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings>::.ctor()
+inline void List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51 (List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B*, const RuntimeMethod*))List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51_gshared)(__this, method);
+}
+// System.Void System.Exception::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F (Exception_t* __this, String_t* ___message0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`2<System.String,Uduino.UduinoDevice>::.ctor()
+inline void UnityEvent_2__ctor_m28A3D88FD8CCF6460D040860D2E91EA9F36D4651 (UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660* __this, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660*, const RuntimeMethod*))UnityEvent_2__ctor_m36CB65F6682CF6EFB69FE2F1939D331599C453E3_gshared)(__this, method);
+}
+// System.Void UnityEngine.Events.UnityEvent`1<Uduino.UduinoDevice>::.ctor()
+inline void UnityEvent_1__ctor_mCF260970DA256D40D604A2F89F8E7908179C91E9 (UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB* __this, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_1_t7CA2D22E5E996F61F92D16CF06FED024C8C1E2AB*, const RuntimeMethod*))UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A445322811EEC25987525_gshared)(__this, method);
+}
+// System.Boolean Uduino.UduinoManager::get_LimitSendRate()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool UduinoManager_get_LimitSendRate_mBD4B166BF7BB3B558F13D7E330584A77809364F1_inline (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoDevice::SendAllBundles()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDevice_SendAllBundles_mAE0BC65CC9774BB5EE415A4038660B3DA7F2CBF3 (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* __this, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/OnDataReceivedDelegate::Invoke(System.String,Uduino.UduinoDevice)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_inline (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) ;
+// System.Void Uduino.UduinoManager/OnValueReceivedDelegate::Invoke(System.String,Uduino.UduinoDevice)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_inline (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent`2<System.String,Uduino.UduinoDevice>::Invoke(T0,T1)
+inline void UnityEvent_2_Invoke_m649C6354CD4D979E508090E6959598DFC82BB9D4 (UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660* __this, String_t* ___arg00, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___arg11, const RuntimeMethod* method)
+{
+	((  void (*) (UnityEvent_2_t7F2EC85CF8C5AB320FC2423309D80FB661024660*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*))UnityEvent_2_Invoke_m9815C6864ED92A2000D3CCF1086DC1FF31CAB3AC_gshared)(__this, ___arg00, ___arg11, method);
+}
+// System.Void Uduino.SerializableDictionary`2<System.String,System.Boolean>::.ctor()
+inline void SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3 (SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (SerializableDictionary_2_t5834D7E49682EDF1ADAAA05122968CB823D6F10D*, const RuntimeMethod*))SerializableDictionary_2__ctor_m2513124DBDDF72FF5339E5DFC08667C46816BFD3_gshared)(__this, method);
+}
+// System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.BLEDeviceButton_Interface::.ctor(UnityEngine.UI.Button)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface__ctor_mC5E05340CF037447D582C8C76F03060ED1D76B45 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___button0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral15F30E0AC0217F04C47A90E499E8480B94E2CD1B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8611EF5A0C5591E334B1A7C6ADAE2D5E4417747A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6D605A9087410128B41F667A579D1A26C21F6F6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD949A21957CD7284B07087EFF80761F44C6E8C8D);
+		s_Il2CppMethodInitialized = true;
+	}
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_0 = NULL;
+	{
+		// public BLEDeviceButton_Interface(Button button)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// this.button = button;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = ___button0;
+		__this->___button_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___button_0), (void*)L_0);
+		// Transform mainT = button.transform;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_1 = ___button0;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		V_0 = L_2;
+		// this.connect = mainT.Find("Connect").gameObject;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = V_0;
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_3, _stringLiteral15F30E0AC0217F04C47A90E499E8480B94E2CD1B, NULL);
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		__this->___connect_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___connect_2), (void*)L_5);
+		// this.connecting = mainT.Find("Connecting").gameObject;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = V_0;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_6, _stringLiteralD949A21957CD7284B07087EFF80761F44C6E8C8D, NULL);
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		__this->___connecting_1 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___connecting_1), (void*)L_8);
+		// this.connected = mainT.Find("Connected");
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9 = V_0;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_9, _stringLiteralB6D605A9087410128B41F667A579D1A26C21F6F6, NULL);
+		__this->___connected_3 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___connected_3), (void*)L_10);
+		// this.disconnect = mainT.Find("Disconnect").gameObject;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = V_0;
+		NullCheck(L_11);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_11, _stringLiteral8611EF5A0C5591E334B1A7C6ADAE2D5E4417747A, NULL);
+		NullCheck(L_12);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+		L_13 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_12, NULL);
+		__this->___disconnect_4 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___disconnect_4), (void*)L_13);
+		// CanConnect();
+		BLEDeviceButton_Interface_CanConnect_m1ABE407F0FC067834329CD82C95B9D29E127F3D7(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.BLEDeviceButton_Interface::CanConnect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_CanConnect_m1ABE407F0FC067834329CD82C95B9D29E127F3D7 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) 
+{
+	{
+		// connect.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___connect_2;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// disconnect.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___disconnect_4;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
+		// connecting.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___connecting_1;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// connected.gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = __this->___connected_3;
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		// button.enabled = true;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___button_0;
+		NullCheck(L_5);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_5, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.BLEDeviceButton_Interface::Connecting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Connecting_m03DF234C57A810DF5F76A0F7AD5289F561813326 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) 
+{
+	{
+		// connect.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___connect_2;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// connecting.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___connecting_1;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// button.enabled = false;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___button_0;
+		NullCheck(L_2);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_2, (bool)0, NULL);
+		// disconnect.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___disconnect_4;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.BLEDeviceButton_Interface::Connected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Connected_mF8DA5ACCFDF42EF0DA235FC63BD04CB8DC886201 (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) 
+{
+	{
+		// connecting.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___connecting_1;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// connected.gameObject.SetActive(true);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___connected_3;
+		NullCheck(L_1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.BLEDeviceButton_Interface::Disconnected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BLEDeviceButton_Interface_Disconnected_m742B191DF6C7C0F85DC04EB39184AE30C42F332A (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* __this, const RuntimeMethod* method) 
+{
+	{
+		// CanConnect();
+		BLEDeviceButton_Interface_CanConnect_m1ABE407F0FC067834329CD82C95B9D29E127F3D7(__this, NULL);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface_Bluetooth::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_Awake_m1FB4FF2149285E2E1A37F420708A655BE909E9F6 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// switch(UduinoManager.Instance.interfaceType)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0053;
+			}
+			case 1:
+			{
+				goto IL_0039;
+			}
+			case 2:
+			{
+				goto IL_001f;
+			}
+		}
+	}
+	{
+		goto IL_006b;
+	}
+
+IL_001f:
+	{
+		// minimalUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___minimalUI_12;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// fullUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___fullUI_6;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
+		// break;
+		goto IL_006b;
+	}
+
+IL_0039:
+	{
+		// minimalUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___minimalUI_12;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
+		// fullUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___fullUI_6;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// break;
+		goto IL_006b;
+	}
+
+IL_0053:
+	{
+		// minimalUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___minimalUI_12;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
+		// fullUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___fullUI_6;
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
+	}
+
+IL_006b:
+	{
+		// StopTimer();
+		UduinoInterface_Bluetooth_StopTimer_m72134CBCB34D923214E4EB6F75CDC7EFDAD1E862(__this, NULL);
+		// ClearPanel();
+		UduinoInterface_Bluetooth_ClearPanel_m56994F927ACB30B359C08392C8CBEBDDD2A01F51(__this, NULL);
+		// DisplayDebugPanel(false);
+		UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5(__this, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::Read()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_Read_m8B5986423984A7F2C78E58B3AED612B6D9ACB032 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::SendValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_SendValue_m13CC100B01E1651BD92492FF15C92C8D61817C3D (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	{
+		// boardConnection.PluginWrite(sendValue.text);
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___boardConnection_5;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___sendValue_19;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_1);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Uduino.UduinoConnection::PluginWrite(System.String) */, L_0, L_2);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::LastReceviedValue(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_LastReceviedValue_mDB3AA5B490301346601C31176103A0488FF2CE2C (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// lastReceivedValue.text = value;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___lastReceivedValue_20;
+		String_t* L_1 = ___value0;
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_1);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::SearchDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_SearchDevices_m3ED98BAFA3AFE1F5650B6BA3971081EEB1F2BE77 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral31CB8943CE29BA9AF9BB8D5E5D1BCF991D6D8EF5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (boardConnection != null)
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___boardConnection_5;
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// boardConnection.ScanForDevices();
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_1 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___boardConnection_5;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(10 /* System.Void Uduino.UduinoConnection::ScanForDevices() */, L_1);
+		return;
+	}
+
+IL_0014:
+	{
+		// Log.Debug("Board connection not created");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteral31CB8943CE29BA9AF9BB8D5E5D1BCF991D6D8EF5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::StartSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StartSearching_mBEE5AE887F79B1DEB620FE7DABEB09FFD79D8C83 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Clear_mD766583F3AA08F13F7B82B8C60CE19EB85ACB5DF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEF050796EF2DD4C18D970B062B6AB5ED633A9B8A);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// ClearPanel();
+		UduinoInterface_Bluetooth_ClearPanel_m56994F927ACB30B359C08392C8CBEBDDD2A01F51(__this, NULL);
+		// StartTimer();
+		UduinoInterface_Bluetooth_StartTimer_mEC2598FFC8255FCAE246E7CECA53FC1789582586(__this, NULL);
+		// DisplayDebugPanel(false);
+		UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5(__this, (bool)0, NULL);
+		// NoDeviceFound(false);
+		VirtualActionInvoker1< bool >::Invoke(13 /* System.Void Uduino.UduinoInterface::NoDeviceFound(System.Boolean) */, __this, (bool)0);
+		// getScanButton().text = "Scanning...";
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0;
+		L_0 = UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteralEF050796EF2DD4C18D970B062B6AB5ED633A9B8A);
+		// devicesButtons.Clear();
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_1 = __this->___devicesButtons_21;
+		NullCheck(L_1);
+		Dictionary_2_Clear_mD766583F3AA08F13F7B82B8C60CE19EB85ACB5DF(L_1, Dictionary_2_Clear_mD766583F3AA08F13F7B82B8C60CE19EB85ACB5DF_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::StopSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StopSearching_mBBC209A2313A0DEA9F394BE888AD6DC15FACCBB7 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral99C4CE1DB54548F1FB175EDA081648E061EE4674);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// getScanButton().text = "Scan for devices";
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0;
+		L_0 = UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteral99C4CE1DB54548F1FB175EDA081648E061EE4674);
+		// getScanSlider().value = 0;
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_1;
+		L_1 = UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE(__this, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_1, (0.0f));
+		// getScanSlider().gameObject.SetActive(false);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_2;
+		L_2 = UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE(__this, NULL);
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::StartTimer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StartTimer_mEC2598FFC8255FCAE246E7CECA53FC1789582586 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	{
+		// StartCoroutine(StartSliderCountdown());
+		RuntimeObject* L_0;
+		L_0 = UduinoInterface_Bluetooth_StartSliderCountdown_mF3C9F748761435E40F4647326ECAA25A13FDED21(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_1;
+		L_1 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator Uduino.UduinoInterface_Bluetooth::StartSliderCountdown()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoInterface_Bluetooth_StartSliderCountdown_mF3C9F748761435E40F4647326ECAA25A13FDED21 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* L_0 = (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D*)il2cpp_codegen_object_new(U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CStartSliderCountdownU3Ed__9__ctor_mA2D89F644F058BB836362DCBD1E6AD73CC16AEDA(L_0, 0, NULL);
+		U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		return L_1;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::SendCommand(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_SendCommand_m28D2BED603E6D95DA06FF4120768C5946012D966 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___t0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// boardConnection.PluginWrite(t + "\r\n");
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___boardConnection_5;
+		String_t* L_1 = ___t0;
+		String_t* L_2;
+		L_2 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(L_1, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Uduino.UduinoConnection::PluginWrite(System.String) */, L_0, L_2);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::StopTimer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_StopTimer_m72134CBCB34D923214E4EB6F75CDC7EFDAD1E862 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	{
+		// getScanSlider().value = 0;
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_0;
+		L_0 = UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_0, (0.0f));
+		// getScanSlider().gameObject.SetActive(false);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_1;
+		L_1 = UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE(__this, NULL);
+		NullCheck(L_1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_1, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::ClearPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_ClearPanel_m56994F927ACB30B359C08392C8CBEBDDD2A01F51 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8225AECE91A62067ECDECFF1108DF51474F57E19);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF67FF52BAD5C543F3623D3051EA5B4ED8BCD0DEB);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_1 = NULL;
+	RuntimeObject* V_2 = NULL;
+	{
+		// foreach (Transform child in getPanel())
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0(__this, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404(L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_006b:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_2 = V_0;
+					V_2 = ((RuntimeObject*)IsInst((RuntimeObject*)L_2, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_3 = V_2;
+					if (!L_3)
+					{
+						goto IL_007b;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_2;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_007b:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0061_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (Transform child in getPanel())
+				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
+				RuntimeObject* L_6;
+				L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_5);
+				V_1 = ((Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)CastclassClass((RuntimeObject*)L_6, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_il2cpp_TypeInfo_var));
+				// if (child.gameObject.name != "NotFound")
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = V_1;
+				NullCheck(L_7);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+				L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+				NullCheck(L_8);
+				String_t* L_9;
+				L_9 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_8, NULL);
+				bool L_10;
+				L_10 = String_op_Inequality_m0FBE5AC4931D312E5B347BAA603755676E6DA2FE(L_9, _stringLiteral8225AECE91A62067ECDECFF1108DF51474F57E19, NULL);
+				if (!L_10)
+				{
+					goto IL_0061_1;
+				}
+			}
+			{
+				// if (child.gameObject.name == "Device")
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = V_1;
+				NullCheck(L_11);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+				L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
+				NullCheck(L_12);
+				String_t* L_13;
+				L_13 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_12, NULL);
+				bool L_14;
+				L_14 = String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0(L_13, _stringLiteralF67FF52BAD5C543F3623D3051EA5B4ED8BCD0DEB, NULL);
+				if (!L_14)
+				{
+					goto IL_0056_1;
+				}
+			}
+			{
+				// child.gameObject.SetActive(false);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15 = V_1;
+				NullCheck(L_15);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+				L_16 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_15, NULL);
+				NullCheck(L_16);
+				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_16, (bool)0, NULL);
+				goto IL_0061_1;
+			}
+
+IL_0056_1:
+			{
+				// Destroy(child.gameObject);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = V_1;
+				NullCheck(L_17);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18;
+				L_18 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_17, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_18, NULL);
+			}
+
+IL_0061_1:
+			{
+				// foreach (Transform child in getPanel())
+				RuntimeObject* L_19 = V_0;
+				NullCheck(L_19);
+				bool L_20;
+				L_20 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_19);
+				if (L_20)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_007c;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_007c:
+	{
+		// getErrorPanel().SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21;
+		L_21 = UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51(__this, NULL);
+		NullCheck(L_21);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::AddDeviceButton(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_AddDeviceButton_mACD2AF5D3AFFC5FCE2D5FDD6B4BA2E2740DECE1E (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___name0, String_t* ___uuid1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m36DC7A29D1AA4D4C881ABE0E6256D2FF51F0F169_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__0_m456F0C15EEEB10704B3267E125164E135D6AB592_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__1_m11E7D32131A257D3552B26296AF09AA23B5F0DA7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AE73A91BD1476A0789C9F7B25949ADB5B0A3516);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* V_0 = NULL;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* V_1 = NULL;
+	BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* V_2 = NULL;
+	{
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_0 = (U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass13_0__ctor_m9F0D2D522555E85A2CF13F496C0F4602693B96BA(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_2 = V_0;
+		String_t* L_3 = ___uuid1;
+		NullCheck(L_2);
+		L_2->___uuid_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___uuid_1), (void*)L_3);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_4 = V_0;
+		String_t* L_5 = ___name0;
+		NullCheck(L_4);
+		L_4->___name_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&L_4->___name_2), (void*)L_5);
+		// if (UduinoManager.Instance.interfaceType == UduinoInterfaceType.None)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_6;
+		L_6 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___interfaceType_55;
+		if (L_7)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0028:
+	{
+		// GameObject deviceBtn = Instantiate(getDeviceButtonPrefab(), getPanel());
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = UduinoInterface_getDeviceButtonPrefab_mD5CC39BBC82A217056BDA511005E3BCBB95920D9(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
+		L_10 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934(L_8, L_9, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934_RuntimeMethod_var);
+		// deviceBtn.transform.name = name;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10;
+		NullCheck(L_11);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_11, NULL);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_13 = V_0;
+		NullCheck(L_13);
+		String_t* L_14 = L_13->___name_2;
+		NullCheck(L_12);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_12, L_14, NULL);
+		// deviceBtn.transform.Find("DeviceName").transform.GetComponent<Text>().text = name;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = L_11;
+		NullCheck(L_15);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_15, NULL);
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_16, _stringLiteral2AE73A91BD1476A0789C9F7B25949ADB5B0A3516, NULL);
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_17, NULL);
+		NullCheck(L_18);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_19;
+		L_19 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_18, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_20 = V_0;
+		NullCheck(L_20);
+		String_t* L_21 = L_20->___name_2;
+		NullCheck(L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_19, L_21);
+		// Button btn = deviceBtn.GetComponent<Button>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = L_15;
+		NullCheck(L_22);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23;
+		L_23 = GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290(L_22, GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290_RuntimeMethod_var);
+		V_1 = L_23;
+		// deviceBtn.gameObject.SetActive(true);
+		NullCheck(L_22);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
+		L_24 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_22, NULL);
+		NullCheck(L_24);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_24, (bool)1, NULL);
+		// BLEDeviceButton_Interface deviceInterface = new BLEDeviceButton_Interface(btn);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_25 = V_1;
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_26 = (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30*)il2cpp_codegen_object_new(BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30_il2cpp_TypeInfo_var);
+		NullCheck(L_26);
+		BLEDeviceButton_Interface__ctor_mC5E05340CF037447D582C8C76F03060ED1D76B45(L_26, L_25, NULL);
+		V_2 = L_26;
+		// devicesButtons.Add(name, deviceInterface);
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_27 = __this->___devicesButtons_21;
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_28 = V_0;
+		NullCheck(L_28);
+		String_t* L_29 = L_28->___name_2;
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_30 = V_2;
+		NullCheck(L_27);
+		Dictionary_2_Add_m36DC7A29D1AA4D4C881ABE0E6256D2FF51F0F169(L_27, L_29, L_30, Dictionary_2_Add_m36DC7A29D1AA4D4C881ABE0E6256D2FF51F0F169_RuntimeMethod_var);
+		// btn.onClick.AddListener(() => boardConnection.ConnectPeripheral(uuid, name));
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_31 = V_1;
+		NullCheck(L_31);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_32;
+		L_32 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_31, NULL);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_33 = V_0;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_34 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_34);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_34, L_33, (intptr_t)((void*)U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__0_m456F0C15EEEB10704B3267E125164E135D6AB592_RuntimeMethod_var), NULL);
+		NullCheck(L_32);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_32, L_34, NULL);
+		// deviceInterface.disconnect.GetComponent<Button>().onClick.AddListener(() => UduinoManager.Instance.CloseDevice(name));
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_35 = V_2;
+		NullCheck(L_35);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36 = L_35->___disconnect_4;
+		NullCheck(L_36);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_37;
+		L_37 = GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290(L_36, GameObject_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mB997CBF78A37938DC1624352E12D0205078CB290_RuntimeMethod_var);
+		NullCheck(L_37);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_38;
+		L_38 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_37, NULL);
+		U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* L_39 = V_0;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_40 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_40);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_40, L_39, (intptr_t)((void*)U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__1_m11E7D32131A257D3552B26296AF09AA23B5F0DA7_RuntimeMethod_var), NULL);
+		NullCheck(L_38);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_38, L_40, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::DisplayDebugPanel(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	{
+		// debugPanel.SetActive(active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)__this)->___debugPanel_18;
+		bool L_1 = ___active0;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::UduinoConnecting(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_UduinoConnecting_m95CFF3C2A87EEBD20D3FE96E2AC6687D2DEBA8AF (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral07FB1BF710B007086B763C182FE30C27422AD5C3);
+		s_Il2CppMethodInitialized = true;
+	}
+	BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* V_0 = NULL;
+	{
+		// BLEDeviceButton_Interface currentDeviceBtn = null;
+		V_0 = (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30*)NULL;
+		// if (devicesButtons.TryGetValue(name, out currentDeviceBtn))
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_0 = __this->___devicesButtons_21;
+		String_t* L_1 = ___name0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// currentDeviceBtn.Connecting();
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_3 = V_0;
+		NullCheck(L_3);
+		BLEDeviceButton_Interface_Connecting_m03DF234C57A810DF5F76A0F7AD5289F561813326(L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// Log.Info("connecting to " + name);
+		String_t* L_4 = ___name0;
+		String_t* L_5;
+		L_5 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral07FB1BF710B007086B763C182FE30C27422AD5C3, L_4, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::UduinoConnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_UduinoConnected_m2FBEE4DC3F2AEDFAD57D88ACC6AD432030C23F98 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* V_0 = NULL;
+	{
+		// BLEDeviceButton_Interface currentDeviceBtn = null;
+		V_0 = (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30*)NULL;
+		// if(devicesButtons.TryGetValue(name, out currentDeviceBtn)) {
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_0 = __this->___devicesButtons_21;
+		String_t* L_1 = ___name0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		// DisplayDebugPanel(true);
+		UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5(__this, (bool)1, NULL);
+		// currentDeviceBtn.Connected();
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_3 = V_0;
+		NullCheck(L_3);
+		BLEDeviceButton_Interface_Connected_mF8DA5ACCFDF42EF0DA235FC63BD04CB8DC886201(L_3, NULL);
+	}
+
+IL_001f:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::UduinoDisconnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth_UduinoDisconnected_m4359B844A05DCF00DB51E4AB8FE22DBA23C15309 (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m8E87D04E0C15A77BAD2A3D085A3ECD37D6EE13D5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m165595649915DB7B38BB4FD683F7059EDD4B65FA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m29D7FE958899C4EEE1DE68B7087CEAD9A67C0480_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mF8A789CBC787AD27022DE04724D66200D03D7896_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mAA5C39BE96C0E9C38EEA81C717FDF363DA0257F7_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* V_0 = NULL;
+	Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		// BLEDeviceButton_Interface currentDeviceBtn = null;
+		V_0 = (BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30*)NULL;
+		// if (devicesButtons.TryGetValue(name, out currentDeviceBtn))
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_0 = __this->___devicesButtons_21;
+		String_t* L_1 = ___name0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mA723A3DBB239ACADD6DC0D789DBCC45A98802933_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// DisplayDebugPanel(false);
+		UduinoInterface_Bluetooth_DisplayDebugPanel_m16678C94D08EAEEFE3DE0A0966F55CF76B0E45D5(__this, (bool)0, NULL);
+		// currentDeviceBtn.Disconnected();
+		BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_3 = V_0;
+		NullCheck(L_3);
+		BLEDeviceButton_Interface_Disconnected_m742B191DF6C7C0F85DC04EB39184AE30C42F332A(L_3, NULL);
+		return;
+	}
+
+IL_0020:
+	{
+		// foreach(KeyValuePair<string, BLEDeviceButton_Interface> a in devicesButtons)
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_4 = __this->___devicesButtons_21;
+		NullCheck(L_4);
+		Enumerator_tA4BD8F3870A35D34CC2CA6AFC847A6B8C45DE7A2 L_5;
+		L_5 = Dictionary_2_GetEnumerator_m8E87D04E0C15A77BAD2A3D085A3ECD37D6EE13D5(L_4, Dictionary_2_GetEnumerator_m8E87D04E0C15A77BAD2A3D085A3ECD37D6EE13D5_RuntimeMethod_var);
+		V_1 = L_5;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_004d:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m165595649915DB7B38BB4FD683F7059EDD4B65FA((&V_1), Enumerator_Dispose_m165595649915DB7B38BB4FD683F7059EDD4B65FA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0042_1;
+			}
+
+IL_002e_1:
+			{
+				// foreach(KeyValuePair<string, BLEDeviceButton_Interface> a in devicesButtons)
+				KeyValuePair_2_t0634B94B562F111FD4B143639F0C42296B747336 L_6;
+				L_6 = Enumerator_get_Current_mF8A789CBC787AD27022DE04724D66200D03D7896_inline((&V_1), Enumerator_get_Current_mF8A789CBC787AD27022DE04724D66200D03D7896_RuntimeMethod_var);
+				V_2 = L_6;
+				// a.Value.Disconnected();
+				BLEDeviceButton_Interface_t9668D0CCF99C4E978CF0B81A503F9339741E6A30* L_7;
+				L_7 = KeyValuePair_2_get_Value_mAA5C39BE96C0E9C38EEA81C717FDF363DA0257F7_inline((&V_2), KeyValuePair_2_get_Value_mAA5C39BE96C0E9C38EEA81C717FDF363DA0257F7_RuntimeMethod_var);
+				NullCheck(L_7);
+				BLEDeviceButton_Interface_Disconnected_m742B191DF6C7C0F85DC04EB39184AE30C42F332A(L_7, NULL);
+			}
+
+IL_0042_1:
+			{
+				// foreach(KeyValuePair<string, BLEDeviceButton_Interface> a in devicesButtons)
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m29D7FE958899C4EEE1DE68B7087CEAD9A67C0480((&V_1), Enumerator_MoveNext_m29D7FE958899C4EEE1DE68B7087CEAD9A67C0480_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_002e_1;
+				}
+			}
+			{
+				goto IL_005b;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_005b:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Bluetooth__ctor_mB05F94CF6AF34DA266752650977CEE997E655CED (UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mE70EA764E548D8933234B1A2530F8214F61FA45A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public Dictionary<string, BLEDeviceButton_Interface> devicesButtons = new Dictionary<string, BLEDeviceButton_Interface>();
+		Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F* L_0 = (Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F*)il2cpp_codegen_object_new(Dictionary_2_tC884E3860D37C814B6B6E0B3716BF75C9E0BAF5F_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_mE70EA764E548D8933234B1A2530F8214F61FA45A(L_0, Dictionary_2__ctor_mE70EA764E548D8933234B1A2530F8214F61FA45A_RuntimeMethod_var);
+		__this->___devicesButtons_21 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___devicesButtons_21), (void*)L_0);
+		UduinoInterface__ctor_m158FE32E9144C8F72D86D871A65485AB9B1101CE(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartSliderCountdownU3Ed__9__ctor_mA2D89F644F058BB836362DCBD1E6AD73CC16AEDA (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartSliderCountdownU3Ed__9_System_IDisposable_Dispose_mB6A95BF613E86EA8D65B8CDC31A83E5A35EA6968 (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartSliderCountdownU3Ed__9_MoveNext_mBCCB8DDFA64B1C694BB38CB39ABFB9F3855BFDF6 (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// Slider slider = getScanSlider();
+		UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* L_4 = V_1;
+		NullCheck(L_4);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_5;
+		L_5 = UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE(L_4, NULL);
+		__this->___U3CsliderU3E5__2_3 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsliderU3E5__2_3), (void*)L_5);
+		// slider.gameObject.SetActive(true);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_6 = __this->___U3CsliderU3E5__2_3;
+		NullCheck(L_6);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
+		// int currentCount = 0 ;
+		__this->___U3CcurrentCountU3E5__3_4 = 0;
+		goto IL_0096;
+	}
+
+IL_0044:
+	{
+		// yield return new WaitForSeconds(0.01f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_8 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_8, (0.00999999978f), NULL);
+		__this->___U3CU3E2__current_1 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_8);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_005d:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// slider.value = (float)((float)currentCount / (float)(UduinoManager.Instance.bleScanDuration * 100));
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_9 = __this->___U3CsliderU3E5__2_3;
+		int32_t L_10 = __this->___U3CcurrentCountU3E5__3_4;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_11;
+		L_11 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_11);
+		int32_t L_12 = L_11->___bleScanDuration_54;
+		NullCheck(L_9);
+		VirtualActionInvoker1< float >::Invoke(47 /* System.Void UnityEngine.UI.Slider::set_value(System.Single) */, L_9, ((float)((float)(((float)L_10)/((float)((int32_t)il2cpp_codegen_multiply(L_12, ((int32_t)100))))))));
+		// currentCount++;
+		int32_t L_13 = __this->___U3CcurrentCountU3E5__3_4;
+		V_2 = L_13;
+		int32_t L_14 = V_2;
+		__this->___U3CcurrentCountU3E5__3_4 = ((int32_t)il2cpp_codegen_add(L_14, 1));
+	}
+
+IL_0096:
+	{
+		// while (currentCount < UduinoManager.Instance.bleScanDuration * 100)
+		int32_t L_15 = __this->___U3CcurrentCountU3E5__3_4;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_16;
+		L_16 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_16);
+		int32_t L_17 = L_16->___bleScanDuration_54;
+		if ((((int32_t)L_15) < ((int32_t)((int32_t)il2cpp_codegen_multiply(L_17, ((int32_t)100))))))
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		// StopTimer();
+		UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* L_18 = V_1;
+		NullCheck(L_18);
+		UduinoInterface_Bluetooth_StopTimer_m72134CBCB34D923214E4EB6F75CDC7EFDAD1E862(L_18, NULL);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartSliderCountdownU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m54563A121C73BB5B708133EA9223409F8D989C6D (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartSliderCountdownU3Ed__9_System_Collections_IEnumerator_Reset_mFA72FE20071773788D13F63CA2345EBB479AC51C (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CStartSliderCountdownU3Ed__9_System_Collections_IEnumerator_Reset_mFA72FE20071773788D13F63CA2345EBB479AC51C_RuntimeMethod_var)));
+	}
+}
+// System.Object Uduino.UduinoInterface_Bluetooth/<StartSliderCountdown>d__9::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartSliderCountdownU3Ed__9_System_Collections_IEnumerator_get_Current_m1B2FFE60BCFA93B50D08132239CE893206F548EF (U3CStartSliderCountdownU3Ed__9_t2729C6DD12664CA3EFCE7B0DD277427528F6E45D* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0__ctor_m9F0D2D522555E85A2CF13F496C0F4602693B96BA (U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::<AddDeviceButton>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__0_m456F0C15EEEB10704B3267E125164E135D6AB592 (U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* __this, const RuntimeMethod* method) 
+{
+	{
+		// btn.onClick.AddListener(() => boardConnection.ConnectPeripheral(uuid, name));
+		UduinoInterface_Bluetooth_t74E896DD1204B39605053528A3396FCFF050C1A4* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_1 = ((UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)L_0)->___boardConnection_5;
+		String_t* L_2 = __this->___uuid_1;
+		String_t* L_3 = __this->___name_2;
+		NullCheck(L_1);
+		bool L_4;
+		L_4 = VirtualFuncInvoker2< bool, String_t*, String_t* >::Invoke(14 /* System.Boolean Uduino.UduinoConnection::ConnectPeripheral(System.String,System.String) */, L_1, L_2, L_3);
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface_Bluetooth/<>c__DisplayClass13_0::<AddDeviceButton>b__1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass13_0_U3CAddDeviceButtonU3Eb__1_m11E7D32131A257D3552B26296AF09AA23B5F0DA7 (U3CU3Ec__DisplayClass13_0_tC353E2035E07964A84FC6235FB9DCDD7B801C703* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// deviceInterface.disconnect.GetComponent<Button>().onClick.AddListener(() => UduinoManager.Instance.CloseDevice(name));
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		String_t* L_1 = __this->___name_2;
+		NullCheck(L_0);
+		UduinoManager_CloseDevice_m4F5C14A5FF222D313D28F7A5EB05EA16C7546CF1(L_0, L_1, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Uduino.Interface Uduino.Interface::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* Interface_get_Instance_mB030474712C9EA79D35DB43B84EE2514C416BB89 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (_instance == null)
+		Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_0 = ((Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_StaticFields*)il2cpp_codegen_static_fields_for(Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var))->____instance_0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// _instance = new Interface();
+		Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_1 = (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199*)il2cpp_codegen_object_new(Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Interface__ctor_mB88C2E64B64131D822A44FEFCEF555E8E4B6383C(L_1, NULL);
+		((Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_StaticFields*)il2cpp_codegen_static_fields_for(Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var))->____instance_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_StaticFields*)il2cpp_codegen_static_fields_for(Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var))->____instance_0), (void*)L_1);
+	}
+
+IL_0011:
+	{
+		// return _instance;
+		Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_2 = ((Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_StaticFields*)il2cpp_codegen_static_fields_for(Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199_il2cpp_TypeInfo_var))->____instance_0;
+		return L_2;
+	}
+}
+// System.Boolean Uduino.Interface::isActive()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	try
+	{// begin try (depth: 1)
+		{
+			// if (Application.isPlaying)
+			bool L_0;
+			L_0 = Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337(NULL);
+			if (!L_0)
+			{
+				goto IL_002f_1;
+			}
+		}
+		{
+			// if (UduinoManager.Instance.interfaceType == UduinoInterfaceType.None)
+			il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+			UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_1;
+			L_1 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+			NullCheck(L_1);
+			int32_t L_2 = L_1->___interfaceType_55;
+			if (L_2)
+			{
+				goto IL_0017_1;
+			}
+		}
+		{
+			// return false;
+			V_0 = (bool)0;
+			goto IL_0066;
+		}
+
+IL_0017_1:
+		{
+			// if (currentInterface == null) Create();
+			UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_3 = __this->___currentInterface_1;
+			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+			bool L_4;
+			L_4 = Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_4)
+			{
+				goto IL_002b_1;
+			}
+		}
+		{
+			// if (currentInterface == null) Create();
+			Interface_Create_m8353137CD136FC294913A2E3F4CC980DA77B30E5(__this, NULL);
+		}
+
+IL_002b_1:
+		{
+			// return true;
+			V_0 = (bool)1;
+			goto IL_0066;
+		}
+
+IL_002f_1:
+		{
+			// } catch {
+			goto IL_0064;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0031;
+		}
+		throw e;
+	}
+
+CATCH_0031:
+	{// begin catch(System.Object)
+		{
+			// } catch {
+			// Debug.Log("Catch error");
+			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
+			Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5737874BF1522436D83488AE8A1477D4AB1D0A29)), NULL);
+			// if (UduinoManager.Instance.interfaceType == UduinoInterfaceType.None)
+			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var)));
+			UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_5;
+			L_5 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+			NullCheck(L_5);
+			int32_t L_6 = L_5->___interfaceType_55;
+			if (L_6)
+			{
+				goto IL_004c;
+			}
+		}
+		{
+			// return false;
+			V_0 = (bool)0;
+			IL2CPP_POP_ACTIVE_EXCEPTION();
+			goto IL_0066;
+		}
+
+IL_004c:
+		{
+			// if (currentInterface == null) Create();
+			UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_7 = __this->___currentInterface_1;
+			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var)));
+			bool L_8;
+			L_8 = Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_8)
+			{
+				goto IL_0060;
+			}
+		}
+		{
+			// if (currentInterface == null) Create();
+			Interface_Create_m8353137CD136FC294913A2E3F4CC980DA77B30E5(__this, NULL);
+		}
+
+IL_0060:
+		{
+			// return true;
+			V_0 = (bool)1;
+			IL2CPP_POP_ACTIVE_EXCEPTION();
+			goto IL_0066;
+		}
+	}// end catch (depth: 1)
+
+IL_0064:
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0066:
+	{
+		// }
+		bool L_9 = V_0;
+		return L_9;
+	}
+}
+// System.Void Uduino.Interface::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_Create_m8353137CD136FC294913A2E3F4CC980DA77B30E5 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisUduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_mB5E5CD25AA227AA2AFFFD20C76DC7023ADA32EAF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral397E68945FA827DF5F3E3D8D190DB565086E5C27);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral575C4853C6AEA9C34693735A35B0B821C3F04402);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6695C2E2C669A6AA9B723748271E3E2956B94581);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* V_0 = NULL;
+	UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* V_1 = NULL;
+	bool V_2 = false;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_3 = NULL;
+	UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* V_4 = NULL;
+	int32_t V_5 = 0;
+	UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* V_6 = NULL;
+	{
+		// UduinoInterface[] _interfaces = MonoBehaviour.FindObjectsOfType(typeof(UduinoInterface)) as UduinoInterface[];
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_0 = { reinterpret_cast<intptr_t> (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_0_0_0_var) };
+		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
+		Type_t* L_1;
+		L_1 = Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_2;
+		L_2 = Object_FindObjectsOfType_m26A7F8711A45112BF7D30F5273B79DE1F3A7C13F(L_1, NULL);
+		V_0 = ((UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756*)IsInst((RuntimeObject*)L_2, UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756_il2cpp_TypeInfo_var));
+		// if (_interfaces.Length == 0 && UduinoManager.Instance.interfaceType != UduinoInterfaceType.None)
+		UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* L_3 = V_0;
+		NullCheck(L_3);
+		if ((((RuntimeArray*)L_3)->max_length))
+		{
+			goto IL_00b7;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_4;
+		L_4 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___interfaceType_55;
+		if (!L_5)
+		{
+			goto IL_00b7;
+		}
+	}
+	{
+		// UduinoInterface targetInterface = null;
+		V_1 = (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549*)NULL;
+		// bool useBLE = false;
+		V_2 = (bool)0;
+		// if (UduinoManager.Instance.ExtensionIsPresentAndActive("UduinoDevice_AndroidBluetoothLE"))
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_6;
+		L_6 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_6);
+		bool L_7;
+		L_7 = UduinoManager_ExtensionIsPresentAndActive_m6020EB1547D1C8F156C2AFED71BB24ADCF963475(L_6, _stringLiteral397E68945FA827DF5F3E3D8D190DB565086E5C27, NULL);
+		if (!L_7)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		// useBLE = true;
+		V_2 = (bool)1;
+	}
+
+IL_0042:
+	{
+		// GameObject tmpInterface = null;
+		V_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+		// if (useBLE)
+		bool L_8 = V_2;
+		if (!L_8)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		// tmpInterface = (GameObject)Object.Instantiate(Resources.Load("UduinoInterface_Bluetooth"));
+		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_9;
+		L_9 = Resources_Load_m9608D2902F542C0B7FD52EFED088323448B9FA35(_stringLiteral575C4853C6AEA9C34693735A35B0B821C3F04402, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_10;
+		L_10 = Object_Instantiate_m24741FECC461F230DBD3E76CD6AEE2E395CB340D(L_9, NULL);
+		V_3 = ((GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)CastclassSealed((RuntimeObject*)L_10, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var));
+		goto IL_0073;
+	}
+
+IL_005e:
+	{
+		// tmpInterface = (GameObject)Object.Instantiate(Resources.Load("UduinoInterface"));
+		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_11;
+		L_11 = Resources_Load_m9608D2902F542C0B7FD52EFED088323448B9FA35(_stringLiteral6695C2E2C669A6AA9B723748271E3E2956B94581, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_12;
+		L_12 = Object_Instantiate_m24741FECC461F230DBD3E76CD6AEE2E395CB340D(L_11, NULL);
+		V_3 = ((GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)CastclassSealed((RuntimeObject*)L_12, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var));
+	}
+
+IL_0073:
+	{
+		// targetInterface = tmpInterface.GetComponent<UduinoInterface>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_3;
+		NullCheck(L_13);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_14;
+		L_14 = GameObject_GetComponent_TisUduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_mB5E5CD25AA227AA2AFFFD20C76DC7023ADA32EAF(L_13, GameObject_GetComponent_TisUduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549_mB5E5CD25AA227AA2AFFFD20C76DC7023ADA32EAF_RuntimeMethod_var);
+		V_1 = L_14;
+		// tmpInterface.gameObject.name = "UduinoInterface";
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = V_3;
+		NullCheck(L_15);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_15, NULL);
+		NullCheck(L_16);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_16, _stringLiteral6695C2E2C669A6AA9B723748271E3E2956B94581, NULL);
+		// tmpInterface.transform.SetParent(UduinoManager.Instance.transform);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_3;
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_17, NULL);
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_19;
+		L_19 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_19);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_19, NULL);
+		NullCheck(L_18);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_18, L_20, NULL);
+		// targetInterface.currentInterfaceType = UduinoManager.Instance.interfaceType;
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_21 = V_1;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_22;
+		L_22 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_22);
+		int32_t L_23 = L_22->___interfaceType_55;
+		NullCheck(L_21);
+		L_21->___currentInterfaceType_4 = L_23;
+		// currentInterface = targetInterface;
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_24 = V_1;
+		__this->___currentInterface_1 = L_24;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentInterface_1), (void*)L_24);
+		return;
+	}
+
+IL_00b7:
+	{
+		// foreach(UduinoInterface ui in _interfaces)
+		UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* L_25 = V_0;
+		V_4 = L_25;
+		V_5 = 0;
+		goto IL_00f7;
+	}
+
+IL_00bf:
+	{
+		// foreach(UduinoInterface ui in _interfaces)
+		UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* L_26 = V_4;
+		int32_t L_27 = V_5;
+		NullCheck(L_26);
+		int32_t L_28 = L_27;
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_29 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
+		V_6 = L_29;
+		// if (UduinoManager.Instance.interfaceType != UduinoInterfaceType.None && currentInterface == null)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_30;
+		L_30 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_30);
+		int32_t L_31 = L_30->___interfaceType_55;
+		if (!L_31)
+		{
+			goto IL_00ea;
+		}
+	}
+	{
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_32 = __this->___currentInterface_1;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_33;
+		L_33 = Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536(L_32, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_33)
+		{
+			goto IL_00ea;
+		}
+	}
+	{
+		// currentInterface = ui;
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_34 = V_6;
+		__this->___currentInterface_1 = L_34;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentInterface_1), (void*)L_34);
+		goto IL_00f1;
+	}
+
+IL_00ea:
+	{
+		// ui.Destroy();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_35 = V_6;
+		NullCheck(L_35);
+		UduinoInterface_Destroy_m5D36E0EA79DA7678D5D28D2FC73777ED7699B7D3(L_35, NULL);
+	}
+
+IL_00f1:
+	{
+		int32_t L_36 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add(L_36, 1));
+	}
+
+IL_00f7:
+	{
+		// foreach(UduinoInterface ui in _interfaces)
+		int32_t L_37 = V_5;
+		UduinoInterfaceU5BU5D_tF9670BF9185222B40A5EDDC55A79BD9F6B86A756* L_38 = V_4;
+		NullCheck(L_38);
+		if ((((int32_t)L_37) < ((int32_t)((int32_t)(((RuntimeArray*)L_38)->max_length)))))
+		{
+			goto IL_00bf;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::SetConnection(Uduino.UduinoConnection)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_SetConnection_m40BA40E56B5B36FAB34F1D1FF014F93930918BE7 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* ___connection0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.SetConnection( connection);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.SetConnection( connection);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_2 = ___connection0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* >::Invoke(5 /* System.Void Uduino.UduinoInterface::SetConnection(Uduino.UduinoConnection) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::AddDeviceButton(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_AddDeviceButton_m73FF1027728D4DED1EAA90E4B2BE556754C79E98 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, String_t* ___uuid1, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.AddDeviceButton(name, uuid);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.AddDeviceButton(name, uuid);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		String_t* L_3 = ___uuid1;
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, String_t* >::Invoke(6 /* System.Void Uduino.UduinoInterface::AddDeviceButton(System.String,System.String) */, L_1, L_2, L_3);
+	}
+
+IL_0015:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::SendCommand(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_SendCommand_m7092C52F038419F52C159888466C446B5CF4D21E (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___t0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.SendCommand(t);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.SendCommand(t);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___t0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(7 /* System.Void Uduino.UduinoInterface::SendCommand(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::Read()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_Read_mA632EAD29DBA5FE79BFBF66DDEAEA5998A17ED39 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.Read();
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.Read();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(8 /* System.Void Uduino.UduinoInterface::Read() */, L_1);
+	}
+
+IL_0013:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::SendValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_SendValue_mCF115CA5446D75FFF4BD169E028783DAED64B668 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.SendValue();
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.SendValue();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(9 /* System.Void Uduino.UduinoInterface::SendValue() */, L_1);
+	}
+
+IL_0013:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::LastReceviedValue(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_LastReceviedValue_m115C0AB34451C7DC7004BFE5F9C5B263606FCC8F (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.LastReceviedValue(value);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.LastReceviedValue(value);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___value0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(10 /* System.Void Uduino.UduinoInterface::LastReceviedValue(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::StartSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_StartSearching_mF9C1722F58425DFD47CB90BFE5D9CF364CB514A3 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.StartSearching();
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.StartSearching();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(11 /* System.Void Uduino.UduinoInterface::StartSearching() */, L_1);
+	}
+
+IL_0013:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::StopSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_StopSearching_mBF523CBD87F090E621982ACA8642F8C8EDA2DEA5 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.StopSearching();
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.StopSearching();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(12 /* System.Void Uduino.UduinoInterface::StopSearching() */, L_1);
+	}
+
+IL_0013:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::NoDeviceFound(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_NoDeviceFound_m4C563A35CA61D47A938B860B9799940B0EDBF037 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.NoDeviceFound(active);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.NoDeviceFound(active);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		bool L_2 = ___active0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< bool >::Invoke(13 /* System.Void Uduino.UduinoInterface::NoDeviceFound(System.Boolean) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::DisplayError(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_DisplayError_m669D1D7A91A94E198C8C83410B489DE1D4D33726 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___message0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.DisplayError(message);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.DisplayError(message);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___message0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(14 /* System.Void Uduino.UduinoInterface::DisplayError(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::DetectDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_DetectDevice_m4896A600608D057FE22D66CCE5168E36A7268ED4 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.DetectDevice();
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.DetectDevice();
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(15 /* System.Void Uduino.UduinoInterface::DetectDevice() */, L_1);
+	}
+
+IL_0013:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::BoardNotFound(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_BoardNotFound_m55EEF8B599834A6EFBAFA9D46764C9146AC21CFE (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___message0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.BoardNotFound(message);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.BoardNotFound(message);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___message0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(16 /* System.Void Uduino.UduinoInterface::BoardNotFound(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::UduinoConnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_UduinoConnected_m67AF98268A38FA8D37B978FE6AAFBB0019BFB811 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.UduinoConnected(name);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.UduinoConnected(name);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(19 /* System.Void Uduino.UduinoInterface::UduinoConnected(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::DisconnectUduino(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_DisconnectUduino_mB36CD5E46FC8C7709012518B7D9183C7D5C11C4E (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.DisconnectUduino(name);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.DisconnectUduino(name);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(17 /* System.Void Uduino.UduinoInterface::DisconnectUduino(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::RemoveDeviceButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_RemoveDeviceButton_mC71A76591FE69414F204DC0664740573ECE956FF (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.RemoveDeviceButton(name);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.RemoveDeviceButton(name);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(18 /* System.Void Uduino.UduinoInterface::RemoveDeviceButton(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::UduinoDisconnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_UduinoDisconnected_m9AE2A4FDC0629DC0519684332808378F6EEF142D (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.UduinoDisconnected(name);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.UduinoDisconnected(name);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(20 /* System.Void Uduino.UduinoInterface::UduinoDisconnected(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::UduinoConnecting(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface_UduinoConnecting_m4EF9819347A54C6ED5F7B92CD20B385896C91A23 (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// if (isActive()) currentInterface.UduinoConnecting(name);
+		bool L_0;
+		L_0 = Interface_isActive_mA1B7E909AD6E324C74C8493C860190312904A457(__this, NULL);
+		if (!L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// if (isActive()) currentInterface.UduinoConnecting(name);
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_1 = __this->___currentInterface_1;
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(21 /* System.Void Uduino.UduinoInterface::UduinoConnecting(System.String) */, L_1, L_2);
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Interface::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Interface__ctor_mB88C2E64B64131D822A44FEFCEF555E8E4B6383C (Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Awake_m3E66EF2BC4AB5FE0A766A1EE647A0C969DFF212B (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		// OnAwake();
+		VirtualActionInvoker0::Invoke(4 /* System.Void Uduino.UduinoInterface::OnAwake() */, __this);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Create_m04D99772A8C02B587ADFE185F7C40BDD293907FF (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		// public void Create() { }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::OnAwake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_OnAwake_m4ACCE60A807D5A56C25645B5F2D0783DD5639DA6 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// switch (UduinoManager.Instance.interfaceType)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0053;
+			}
+			case 1:
+			{
+				goto IL_0039;
+			}
+			case 2:
+			{
+				goto IL_001f;
+			}
+		}
+	}
+	{
+		goto IL_0054;
+	}
+
+IL_001f:
+	{
+		// minimalUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___minimalUI_12;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// fullUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___fullUI_6;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
+		// break;
+		goto IL_0054;
+	}
+
+IL_0039:
+	{
+		// minimalUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___minimalUI_12;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
+		// fullUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___fullUI_6;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// break;
+		goto IL_0054;
+	}
+
+IL_0053:
+	{
+		// return;
+		return;
+	}
+
+IL_0054:
+	{
+		// debugPanel.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___debugPanel_18;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
+		// getDeviceButtonPrefab().SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = UduinoInterface_getDeviceButtonPrefab_mD5CC39BBC82A217056BDA511005E3BCBB95920D9(__this, NULL);
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::SetConnection(Uduino.UduinoConnection)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_SetConnection_mB9DB0C47B5A23F738E9350CF82E45621617D214A (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* ___connection0, const RuntimeMethod* method) 
+{
+	{
+		// boardConnection = connection;
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = ___connection0;
+		__this->___boardConnection_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___boardConnection_5), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::AddDeviceButton(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_AddDeviceButton_mD157DA1C8C0753636F256954C10C9EECFE7AC9EF (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, String_t* ___uuid1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass21_0_U3CAddDeviceButtonU3Eb__0_m49952AEC14394DA9910DC0AAAB49C9A8E81D07E2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2AE73A91BD1476A0789C9F7B25949ADB5B0A3516);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8611EF5A0C5591E334B1A7C6ADAE2D5E4417747A);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_0 = (U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass21_0__ctor_m322D9620A502540F515169E55904A9B54DFB63BB(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_2 = V_0;
+		String_t* L_3 = ___name0;
+		NullCheck(L_2);
+		L_2->___name_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___name_1), (void*)L_3);
+		// if (UduinoManager.Instance.interfaceType == UduinoInterfaceType.None)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_4;
+		L_4 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___interfaceType_55;
+		if (L_5)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0021:
+	{
+		// GameObject deviceBtn = GameObject.Instantiate(getDeviceButtonPrefab(), getPanel());
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = UduinoInterface_getDeviceButtonPrefab_mD5CC39BBC82A217056BDA511005E3BCBB95920D9(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934(L_6, L_7, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m002192C406088F7BA156339AAA9B1BB5D69BE934_RuntimeMethod_var);
+		// deviceBtn.transform.name = name;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_9, NULL);
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_11 = V_0;
+		NullCheck(L_11);
+		String_t* L_12 = L_11->___name_1;
+		NullCheck(L_10);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_10, L_12, NULL);
+		// deviceBtn.transform.Find("DeviceName").transform.GetComponent<Text>().text = name;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = L_9;
+		NullCheck(L_13);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
+		L_14 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_13, NULL);
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_14, _stringLiteral2AE73A91BD1476A0789C9F7B25949ADB5B0A3516, NULL);
+		NullCheck(L_15);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_15, NULL);
+		NullCheck(L_16);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_17;
+		L_17 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_16, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_18 = V_0;
+		NullCheck(L_18);
+		String_t* L_19 = L_18->___name_1;
+		NullCheck(L_17);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, L_19);
+		// deviceBtn.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = L_13;
+		NullCheck(L_20);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_20, (bool)1, NULL);
+		// NoDeviceFound(false);
+		VirtualActionInvoker1< bool >::Invoke(13 /* System.Void Uduino.UduinoInterface::NoDeviceFound(System.Boolean) */, __this, (bool)0);
+		// deviceBtn.transform.Find("Disconnect").GetComponent<Button>().onClick.AddListener(() => this.DisconnectUduino(name));
+		NullCheck(L_20);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21;
+		L_21 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_20, NULL);
+		NullCheck(L_21);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22;
+		L_22 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_21, _stringLiteral8611EF5A0C5591E334B1A7C6ADAE2D5E4417747A, NULL);
+		NullCheck(L_22);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23;
+		L_23 = Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB(L_22, Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var);
+		NullCheck(L_23);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_24;
+		L_24 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_23, NULL);
+		U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* L_25 = V_0;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_26 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_26);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_26, L_25, (intptr_t)((void*)U3CU3Ec__DisplayClass21_0_U3CAddDeviceButtonU3Eb__0_m49952AEC14394DA9910DC0AAAB49C9A8E81D07E2_RuntimeMethod_var), NULL);
+		NullCheck(L_24);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_24, L_26, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::SendCommand(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_SendCommand_mB4D53D9674C4F2DDAC459DB212F7441BEC553ED6 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___t0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A3B8914440A82C215F061CE683E5592FE863788);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("Wrong !! ");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(_stringLiteral0A3B8914440A82C215F061CE683E5592FE863788, NULL);
+		// boardConnection.PluginWrite(t + "\r\n");
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = __this->___boardConnection_5;
+		String_t* L_1 = ___t0;
+		String_t* L_2;
+		L_2 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(L_1, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Uduino.UduinoConnection::PluginWrite(System.String) */, L_0, L_2);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::Read()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Read_m5B11A171B6918BCEC438C299FE3382B2ADA1C6CD (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		// public virtual void Read() { }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::SendValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_SendValue_mD0C48D91043413AF9946254EA0A1A2156E99A03D (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		// boardConnection.PluginWrite(sendValue.text);
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = __this->___boardConnection_5;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___sendValue_19;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_1);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Uduino.UduinoConnection::PluginWrite(System.String) */, L_0, L_2);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::LastReceviedValue(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_LastReceviedValue_mA474A73B66F8E3ED6AAA2D3F0F9D7E279FB58203 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// lastReceivedValue.text = value;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___lastReceivedValue_20;
+		String_t* L_1 = ___value0;
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_1);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::StartSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_StartSearching_m3303F5104CF8D17F7AD46B0F87D9B04A589CFFFA (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1BE287B115A9DA5EB837A7EEF452874C930CED54);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// NoDeviceFound(false);
+		VirtualActionInvoker1< bool >::Invoke(13 /* System.Void Uduino.UduinoInterface::NoDeviceFound(System.Boolean) */, __this, (bool)0);
+		// getScanButton().text = "Finding boards...";
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0;
+		L_0 = UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteral1BE287B115A9DA5EB837A7EEF452874C930CED54);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::StopSearching()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_StopSearching_mAB8667E60B7EFC0E656A3A2E7F606DDCB6A41CB3 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF052808765F7EFF523983C4C3B15D21DF9217164);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// getScanButton().text = "Discover Boards";
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0;
+		L_0 = UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80(__this, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteralF052808765F7EFF523983C4C3B15D21DF9217164);
+		// }
+		return;
+	}
+}
+// UnityEngine.UI.Text Uduino.UduinoInterface::getScanButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* UduinoInterface_getScanButton_m6FD2DE247DA1341F7BC74E80B264442B30209B80 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDED602753A6A3D3F964D90724D6B091051F8ECA5);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ?
+		//         scanButtonFull.transform.Find("ScanText").GetComponent<Text>() :
+		//         minimalScanButton.transform.Find("ScanText").GetComponent<Text>();
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalScanButton_15;
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_3, _stringLiteralDED602753A6A3D3F964D90724D6B091051F8ECA5, NULL);
+		NullCheck(L_4);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_5;
+		L_5 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_4, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		return L_5;
+	}
+
+IL_0028:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___scanButtonFull_9;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_7, _stringLiteralDED602753A6A3D3F964D90724D6B091051F8ECA5, NULL);
+		NullCheck(L_8);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_9;
+		L_9 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_8, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// UnityEngine.UI.Slider Uduino.UduinoInterface::getScanSlider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* UduinoInterface_getScanSlider_mC7F216BCC0B31907C596F836E82ABF2F6EE5ADFE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA7F97E75A1B9ABE21090F40226508D1F9BFFC36F);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ?
+		//         scanButtonFull.transform.Find("Slider").GetComponent<Slider>() :
+		//         minimalScanButton.transform.Find("Slider").GetComponent<Slider>();
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalScanButton_15;
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_3, _stringLiteralA7F97E75A1B9ABE21090F40226508D1F9BFFC36F, NULL);
+		NullCheck(L_4);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_5;
+		L_5 = Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA(L_4, Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA_RuntimeMethod_var);
+		return L_5;
+	}
+
+IL_0028:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___scanButtonFull_9;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_7, _stringLiteralA7F97E75A1B9ABE21090F40226508D1F9BFFC36F, NULL);
+		NullCheck(L_8);
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_9;
+		L_9 = Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA(L_8, Component_GetComponent_TisSlider_t87EA570E3D6556CABF57456C2F3873FFD86E652F_mCE53A354B934E9BDB2E8D3094F4E33EBA8FFAFBA_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// UnityEngine.GameObject Uduino.UduinoInterface::getDeviceButtonPrefab()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getDeviceButtonPrefab_mD5CC39BBC82A217056BDA511005E3BCBB95920D9 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ? boardButton : minimalBoardButton;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalBoardButton_17;
+		return L_2;
+	}
+
+IL_0014:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___boardButton_11;
+		return L_3;
+	}
+}
+// UnityEngine.Transform Uduino.UduinoInterface::getPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ?
+		//         fullDevicePanel.transform :
+		//         minimalDevicePanel.transform;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalDevicePanel_14;
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
+		return L_3;
+	}
+
+IL_0019:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___fullDevicePanel_8;
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
+		return L_5;
+	}
+}
+// UnityEngine.GameObject Uduino.UduinoInterface::getErrorPanel()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ? errorPanel : minimalErrorPanel;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalErrorPanel_13;
+		return L_2;
+	}
+
+IL_0014:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___errorPanel_7;
+		return L_3;
+	}
+}
+// UnityEngine.GameObject Uduino.UduinoInterface::getNotFound()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return UduinoManager.Instance.interfaceType == UduinoInterfaceType.Full ? notFound : minimalNotFound;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___interfaceType_55;
+		if ((((int32_t)L_1) == ((int32_t)2)))
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___minimalNotFound_16;
+		return L_2;
+	}
+
+IL_0014:
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___notFound_10;
+		return L_3;
+	}
+}
+// UnityEngine.GameObject Uduino.UduinoInterface::getBoardButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* UduinoInterface_getBoardButton_mC88FB36B87185E0E81216AB77748E4D6076CB183 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// return getPanel().transform.Find(name).gameObject;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = UduinoInterface_getPanel_mE0F191B222A708A01514FA85B17CD55B5C9964A0(__this, NULL);
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		String_t* L_2 = ___name0;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_1, L_2, NULL);
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		return L_4;
+	}
+}
+// System.Void Uduino.UduinoInterface::Detect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Detect_mB546CED720D6027F19B1E9FBF6D6E95B761A4B61 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// UduinoManager.Instance.DiscoverPorts();
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_0);
+		UduinoManager_DiscoverPorts_m32DCFD6E0F083B859E82151A207A1B533180BF65(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::NoDeviceFound(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_NoDeviceFound_m943C8378747C86FAA36E3D266944957639B10E20 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	{
+		// getNotFound().SetActive(active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE(__this, NULL);
+		bool L_1 = ___active0;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::DisplayError(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_DisplayError_m599C21D783B2BDB270FE91230E377B66CA2FF1AA (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6CD2848583A4EAD77430A317E3B6DB2BCCDB1003);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral96A731D10E423A5847E163B2242C638CAE14EE15);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6F0795DD4F409C92875D0327F58FDEA357047F1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (message == "")
+		String_t* L_0 = ___message0;
+		bool L_1;
+		L_1 = String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0(L_0, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// getErrorPanel().SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51(__this, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		return;
+	}
+
+IL_001a:
+	{
+		// getErrorPanel().SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51(__this, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+		// getErrorPanel().transform.Find("Content").Find("ErrorMessage").Find("ErrorText").GetComponent<Text>().text = message;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = UduinoInterface_getErrorPanel_m88CB20ACB6A2EC25FF4EA30F57E0A9525602DB51(__this, NULL);
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_5, _stringLiteralB6F0795DD4F409C92875D0327F58FDEA357047F1, NULL);
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_6, _stringLiteral6CD2848583A4EAD77430A317E3B6DB2BCCDB1003, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932(L_7, _stringLiteral96A731D10E423A5847E163B2242C638CAE14EE15, NULL);
+		NullCheck(L_8);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_9;
+		L_9 = Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888(L_8, Component_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mB85C5C0EEF6535E3FC0DBFC14E39FA5A51B6F888_RuntimeMethod_var);
+		String_t* L_10 = ___message0;
+		NullCheck(L_9);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_9, L_10);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::DetectDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_DetectDevice_mD1F744C1A733841DBAC5BD90C712EBE38C229629 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		// boardConnection.Discover();
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = __this->___boardConnection_5;
+		NullCheck(L_0);
+		VirtualActionInvoker0::Invoke(11 /* System.Void Uduino.UduinoConnection::Discover() */, L_0);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::BoardNotFound(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_BoardNotFound_m6320E1EFBABB3BA793F8D7E9316FC172F94FEA86 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___message0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// StopSearching();
+		VirtualActionInvoker0::Invoke(12 /* System.Void Uduino.UduinoInterface::StopSearching() */, __this);
+		// debugPanel.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___debugPanel_18;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// getNotFound().SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE(__this, NULL);
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// getNotFound().GetComponent<Text>().text = message;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE(__this, NULL);
+		NullCheck(L_2);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3;
+		L_3 = GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F(L_2, GameObject_GetComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mBE6B722369FF149589D3D42A6A8435A9C5045B3F_RuntimeMethod_var);
+		String_t* L_4 = ___message0;
+		NullCheck(L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_4);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::DisconnectUduino(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_DisconnectUduino_m4D43E171A82017D942041AE663D042D4DF83F8C1 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// UduinoManager.Instance.CloseDevice(name);
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0;
+		L_0 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		String_t* L_1 = ___name0;
+		NullCheck(L_0);
+		UduinoManager_CloseDevice_m4F5C14A5FF222D313D28F7A5EB05EA16C7546CF1(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::RemoveDeviceButton(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_RemoveDeviceButton_m80F9421992F9BD84AAA3D311588807C7A1BFDC4D (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF8113682A7490FB76E7BA964F849222FF30968A1);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// BoardNotFound("Board disconnected");
+		VirtualActionInvoker1< String_t* >::Invoke(16 /* System.Void Uduino.UduinoInterface::BoardNotFound(System.String) */, __this, _stringLiteralF8113682A7490FB76E7BA964F849222FF30968A1);
+	}
+	try
+	{// begin try (depth: 1)
+		// Destroy(getBoardButton(name));
+		String_t* L_0 = ___name0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = UduinoInterface_getBoardButton_mC88FB36B87185E0E81216AB77748E4D6076CB183(__this, L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_1, NULL);
+		// } catch(System.Exception e)
+		goto IL_0021;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0019;
+		}
+		throw e;
+	}
+
+CATCH_0019:
+	{// begin catch(System.Exception)
+		// Log.Debug(e);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var)));
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), (bool)0, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0021;
+	}// end catch (depth: 1)
+
+IL_0021:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::UduinoConnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_UduinoConnected_mBA1D90DA75FBA342C3381B9BA2588F14FA0D6EEF (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// StopSearching();
+		VirtualActionInvoker0::Invoke(12 /* System.Void Uduino.UduinoInterface::StopSearching() */, __this);
+		// debugPanel.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___debugPanel_18;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// getNotFound().SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = UduinoInterface_getNotFound_mD689AA8391D930EE3BAC687DA9B7F2731F5E9BFE(__this, NULL);
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::UduinoDisconnected(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_UduinoDisconnected_m7271437707957A66140F965E85470B1C7C722864 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// public virtual void UduinoDisconnected(string name) { }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::UduinoConnecting(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_UduinoConnecting_mC578F3E1E54DCBAD773275B6CCAB51C71D0BC890 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// public virtual void UduinoConnecting(string name) { }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::Destroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Destroy_m5D36E0EA79DA7678D5D28D2FC73777ED7699B7D3 (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (this.gameObject != null && this.gameObject != UduinoManager.Instance.gameObject)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_3;
+		L_3 = UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C(NULL);
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_5;
+		L_5 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_2, L_4, NULL);
+		if (!L_5)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// DestroyImmediate(this.gameObject);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DestroyImmediate_m8249CABCDF344BE3A67EE765122EBB415DC2BC57(L_6, NULL);
+		return;
+	}
+
+IL_0031:
+	{
+		// DestroyImmediate(this);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DestroyImmediate_m8249CABCDF344BE3A67EE765122EBB415DC2BC57(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface__ctor_m158FE32E9144C8F72D86D871A65485AB9B1101CE (UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface/<>c__DisplayClass21_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0__ctor_m322D9620A502540F515169E55904A9B54DFB63BB (U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Uduino.UduinoInterface/<>c__DisplayClass21_0::<AddDeviceButton>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0_U3CAddDeviceButtonU3Eb__0_m49952AEC14394DA9910DC0AAAB49C9A8E81D07E2 (U3CU3Ec__DisplayClass21_0_t4241FE5ED78F5A13CA3526DDEC45CEDCAD3F6F76* __this, const RuntimeMethod* method) 
+{
+	{
+		// deviceBtn.transform.Find("Disconnect").GetComponent<Button>().onClick.AddListener(() => this.DisconnectUduino(name));
+		UduinoInterface_t594A84DFFE5173EA4CE5A6F731F04B29F020C549* L_0 = __this->___U3CU3E4__this_0;
+		String_t* L_1 = __this->___name_1;
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(17 /* System.Void Uduino.UduinoInterface::DisconnectUduino(System.String) */, L_0, L_1);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface_Serial::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Serial__ctor_m82E04CEFE9B8C8913A39EF971206E09B0A9A4755 (UduinoInterface_Serial_t6ADBD8126A9B36CEA09A82A56B394CF5E55ADFF8* __this, const RuntimeMethod* method) 
+{
+	{
+		UduinoInterface__ctor_m158FE32E9144C8F72D86D871A65485AB9B1101CE(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoInterface_Wifi::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoInterface_Wifi__ctor_mD5C2A40F20D4FC4F0C17AB3C930BF5F3EDD37F30 (UduinoInterface_Wifi_t716C84191C13CF22AC6DCA8D0C2AC67426FE315B* __this, const RuntimeMethod* method) 
+{
+	{
+		UduinoInterface__ctor_m158FE32E9144C8F72D86D871A65485AB9B1101CE(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.Log::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log__cctor_m741BCF643E8D9A5A9BB117737AFD02D2E1AA32F3 (const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Log::Error(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		bool L_0 = ___removeNewLines1;
+		if (!L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_1);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2(L_2, NULL);
+	}
+
+IL_000f:
+	{
+		// if ((int)_debugLevel <= (int)LogLevel.Error && (int)_debugLevel != 0)
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_4 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if ((((int32_t)L_4) > ((int32_t)4)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if (!L_5)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// UnityEngine.Debug.LogError(message);
+		RuntimeObject* L_6 = ___message0;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogError_m059825802BB6AF7EA9693FEBEEB0D85F59A3E38E(L_6, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Log::Warning(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8 (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		bool L_0 = ___removeNewLines1;
+		if (!L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_1);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2(L_2, NULL);
+	}
+
+IL_000f:
+	{
+		// if ((int)_debugLevel <= (int)LogLevel.Warning && (int)_debugLevel != 0)
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_4 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if ((((int32_t)L_4) > ((int32_t)3)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if (!L_5)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// UnityEngine.Debug.LogWarning(message);
+		RuntimeObject* L_6 = ___message0;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogWarning_mEF15C6B17CE4E1FA7E379CDB82CE40FCD89A3F28(L_6, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Log::Info(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		bool L_0 = ___removeNewLines1;
+		if (!L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_1);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2(L_2, NULL);
+	}
+
+IL_000f:
+	{
+		// if ((int)_debugLevel <= (int)LogLevel.Info && (int)_debugLevel != 0)
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_4 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if ((((int32_t)L_4) > ((int32_t)2)))
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if (!L_5)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		// UnityEngine.Debug.Log(((string)message).RemoveLineEndings());
+		RuntimeObject* L_6 = ___message0;
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		String_t* L_7;
+		L_7 = Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2(((String_t*)CastclassSealed((RuntimeObject*)L_6, String_t_il2cpp_TypeInfo_var)), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(L_7, NULL);
+	}
+
+IL_002e:
+	{
+		// }
+		return;
+	}
+}
+// System.String Uduino.Log::TrimStartString(System.String,System.Char[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Log_TrimStartString_m560B5441AF734D955E80FD0786F21D6EA639CDED (String_t* ___sourceString0, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___trimed1, const RuntimeMethod* method) 
+{
+	{
+		// sourceString = sourceString.TrimStart(trimed);
+		String_t* L_0 = ___sourceString0;
+		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = ___trimed1;
+		NullCheck(L_0);
+		String_t* L_2;
+		L_2 = String_TrimStart_m67833D80326BEA11CC3517CE03CD7B16669BCEEC(L_0, L_1, NULL);
+		___sourceString0 = L_2;
+		// return sourceString;
+		String_t* L_3 = ___sourceString0;
+		return L_3;
+	}
+}
+// System.Void Uduino.Log::Debug(System.Object,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969 (RuntimeObject* ___message0, bool ___removeNewLines1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		bool L_0 = ___removeNewLines1;
+		if (!L_0)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// if (removeNewLines) message.ToString().RemoveLineEndings();
+		RuntimeObject* L_1 = ___message0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_1);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		String_t* L_3;
+		L_3 = Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2(L_2, NULL);
+	}
+
+IL_000f:
+	{
+		// if ((int)_debugLevel <= (int)LogLevel.Debug && (int)_debugLevel !=0)
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_4 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if ((((int32_t)L_4) > ((int32_t)1)))
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		int32_t L_5 = ((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0;
+		if (!L_5)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// UnityEngine.Debug.Log(message);
+		RuntimeObject* L_6 = ___message0;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(L_6, NULL);
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.Log::SetLogLevel(Uduino.LogLevel)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_SetLogLevel_mAFB681C6D7A7DD1C220E4D4C1B9BA0E67F8C566F (int32_t ___level0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _debugLevel = level;
+		int32_t L_0 = ___level0;
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0 = L_0;
+		// }
+		return;
+	}
+}
+// System.String Uduino.Log::RemoveLineEndings(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Log_RemoveLineEndings_mC6371D7922271844E0C9A516563092DD6256C4F2 (String_t* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDB5B55A9B215F744DB82517864984D073F2E8F8C);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	Il2CppChar V_2 = 0x0;
+	{
+		// if (System.String.IsNullOrEmpty(value))
+		String_t* L_0 = ___value0;
+		bool L_1;
+		L_1 = String_IsNullOrEmpty_m54CF0907E7C4F3AFB2E796A13DC751ECBB8DB64A(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// return value;
+		String_t* L_2 = ___value0;
+		return L_2;
+	}
+
+IL_000a:
+	{
+		// string lineSeparator = ((char)0x2028).ToString();
+		V_2 = ((int32_t)8232);
+		String_t* L_3;
+		L_3 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&V_2), NULL);
+		V_0 = L_3;
+		// string paragraphSeparator = ((char)0x2029).ToString();
+		V_2 = ((int32_t)8233);
+		String_t* L_4;
+		L_4 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&V_2), NULL);
+		V_1 = L_4;
+		// return value.Replace("\r\n", string.Empty).Replace("\n", string.Empty).Replace("\r", string.Empty).Replace(lineSeparator, string.Empty).Replace(paragraphSeparator, string.Empty);
+		String_t* L_5 = ___value0;
+		String_t* L_6 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_5);
+		String_t* L_7;
+		L_7 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_5, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5, L_6, NULL);
+		String_t* L_8 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_7);
+		String_t* L_9;
+		L_9 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_7, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_8, NULL);
+		String_t* L_10 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_9);
+		String_t* L_11;
+		L_11 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_9, _stringLiteralDB5B55A9B215F744DB82517864984D073F2E8F8C, L_10, NULL);
+		String_t* L_12 = V_0;
+		String_t* L_13 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_11);
+		String_t* L_14;
+		L_14 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_11, L_12, L_13, NULL);
+		String_t* L_15 = V_1;
+		String_t* L_16 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		NullCheck(L_14);
+		String_t* L_17;
+		L_17 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_14, L_15, L_16, NULL);
+		return L_17;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoDebugCanvas::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_Awake_m88B667E00E636159E5A599C450A5E6316769D1DC (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral584866F4FC822430B72EB0708AD16261B94CCEF3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBB85D32D8E31C7139BF49A5435CDA90D17D87905);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// string t = "{ \"devices\":[{\"uuid\":\"F0:07:2C:E5:EC:70\",\"name\":\"BlendMicro\"}]}";
+		// var parsedData = JSON.Parse(t);
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_0;
+		L_0 = JSON_Parse_m9E6F3A67011C765E4352E350D1F400C9A52DC5F6(_stringLiteral584866F4FC822430B72EB0708AD16261B94CCEF3, NULL);
+		V_0 = L_0;
+		// for (int i = 0; i < parsedData["devices"].Count; i++)
+		V_1 = 0;
+		goto IL_0038;
+	}
+
+IL_000f:
+	{
+		// Debug.Log(parsedData["devices"][i]["name"].ToString());
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_1 = V_0;
+		NullCheck(L_1);
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_2;
+		L_2 = VirtualFuncInvoker1< JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653*, String_t* >::Invoke(7 /* SimpleJSON.JSONNode SimpleJSON.JSONNode::get_Item(System.String) */, L_1, _stringLiteralBB85D32D8E31C7139BF49A5435CDA90D17D87905);
+		int32_t L_3 = V_1;
+		NullCheck(L_2);
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_4;
+		L_4 = VirtualFuncInvoker1< JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653*, int32_t >::Invoke(5 /* SimpleJSON.JSONNode SimpleJSON.JSONNode::get_Item(System.Int32) */, L_2, L_3);
+		NullCheck(L_4);
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_5;
+		L_5 = VirtualFuncInvoker1< JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653*, String_t* >::Invoke(7 /* SimpleJSON.JSONNode SimpleJSON.JSONNode::get_Item(System.String) */, L_4, _stringLiteralCE18B047107AA23D1AA9B2ED32D316148E02655F);
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_5);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m86567BCF22BBE7809747817453CACA0E41E68219(L_6, NULL);
+		// for (int i = 0; i < parsedData["devices"].Count; i++)
+		int32_t L_7 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_7, 1));
+	}
+
+IL_0038:
+	{
+		// for (int i = 0; i < parsedData["devices"].Count; i++)
+		int32_t L_8 = V_1;
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_9 = V_0;
+		NullCheck(L_9);
+		JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653* L_10;
+		L_10 = VirtualFuncInvoker1< JSONNode_tDBF6A862594425AD5621BB6756DF7BBD6CDC7653*, String_t* >::Invoke(7 /* SimpleJSON.JSONNode SimpleJSON.JSONNode::get_Item(System.String) */, L_9, _stringLiteralBB85D32D8E31C7139BF49A5435CDA90D17D87905);
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(11 /* System.Int32 SimpleJSON.JSONNode::get_Count() */, L_10);
+		if ((((int32_t)L_8) < ((int32_t)L_11)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// Instance = this;
+		((UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_StaticFields*)il2cpp_codegen_static_fields_for(UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_il2cpp_TypeInfo_var))->___Instance_7 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_StaticFields*)il2cpp_codegen_static_fields_for(UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2_il2cpp_TypeInfo_var))->___Instance_7), (void*)__this);
+		// CreateCanvasAndText();
+		UduinoDebugCanvas_CreateCanvasAndText_mD4E52C8B6005CB91ADF068C59ACCAF22ED51A64F(__this, NULL);
+		// Application.logMessageReceived += HandleLog;
+		LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* L_12 = (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413*)il2cpp_codegen_object_new(LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		LogCallback__ctor_m327A4C69691F8A4B01D405858E48B8A7D9D2A79D(L_12, __this, (intptr_t)((void*)UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4_RuntimeMethod_var), NULL);
+		Application_add_logMessageReceived_m9185431F0B315A8CE2AA6D7B8DA764BDA350918B(L_12, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::Log(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_Log_mA23A387CD5D87DF0463F39C5D7BD9F9A22861EBD (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, String_t* ___m0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// uduinoLogText.text += "\n" + m;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___uduinoLogText_6;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = L_0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_1);
+		String_t* L_3 = ___m0;
+		String_t* L_4;
+		L_4 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(L_2, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_3, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_4);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_OnEnable_m1A7B3237AECDE1E93956BB6D6A73CF38C65764F4 (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_OnDisable_mC6904C6F6B731522DFC03F62BD5230D2E1466986 (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Application.logMessageReceived -= HandleLog;
+		LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413* L_0 = (LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413*)il2cpp_codegen_object_new(LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		LogCallback__ctor_m327A4C69691F8A4B01D405858E48B8A7D9D2A79D(L_0, __this, (intptr_t)((void*)UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4_RuntimeMethod_var), NULL);
+		Application_remove_logMessageReceived_m44CDFD932D3A105FD92D6DEC0592F1E5285631C6(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::Clear()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_Clear_m5B86206A019E6F0F0EC6EE5BBAEF8267B932B94C (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// uduinoLogContent = "";
+		__this->___uduinoLogContent_4 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogContent_4), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		// uduinoLogQueue.Clear();
+		Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* L_0 = __this->___uduinoLogQueue_5;
+		NullCheck(L_0);
+		VirtualActionInvoker0::Invoke(12 /* System.Void System.Collections.Queue::Clear() */, L_0);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::HandleLog(System.String,System.String,UnityEngine.LogType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_HandleLog_m63713D941E3390B5D56FB03038F93ADCDD41CBA4 (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, String_t* ___logString0, String_t* ___stackTrace1, int32_t ___type2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LogType_t9CC0F1B620DFBF3A01E8C2D2316A850D745EF331_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1209DA8E082EA0AB89D6752F17E2C344724C888F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD26DB2D8C30F23686891421CA1BC1B4E74114F58);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	String_t* V_2 = NULL;
+	RuntimeObject* V_3 = NULL;
+	{
+		// uduinoLogContent = logString;
+		String_t* L_0 = ___logString0;
+		__this->___uduinoLogContent_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogContent_4), (void*)L_0);
+		// string newString = "\n [" + type + "] : " + uduinoLogContent;
+		Il2CppFakeBox<int32_t> L_1(LogType_t9CC0F1B620DFBF3A01E8C2D2316A850D745EF331_il2cpp_TypeInfo_var, (&___type2));
+		String_t* L_2;
+		L_2 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_1), NULL);
+		String_t* L_3 = __this->___uduinoLogContent_4;
+		String_t* L_4;
+		L_4 = String_Concat_mF8B69BE42B5C5ABCAD3C176FBBE3010E0815D65D(_stringLiteralD26DB2D8C30F23686891421CA1BC1B4E74114F58, L_2, _stringLiteral1209DA8E082EA0AB89D6752F17E2C344724C888F, L_3, NULL);
+		V_0 = L_4;
+		// uduinoLogQueue.Enqueue(newString);
+		Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* L_5 = __this->___uduinoLogQueue_5;
+		String_t* L_6 = V_0;
+		NullCheck(L_5);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void System.Collections.Queue::Enqueue(System.Object) */, L_5, L_6);
+		// if (type == LogType.Exception)
+		int32_t L_7 = ___type2;
+		if ((!(((uint32_t)L_7) == ((uint32_t)4))))
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		// newString = "\n" + stackTrace;
+		String_t* L_8 = ___stackTrace1;
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_8, NULL);
+		V_0 = L_9;
+		// uduinoLogQueue.Enqueue(newString);
+		Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* L_10 = __this->___uduinoLogQueue_5;
+		String_t* L_11 = V_0;
+		NullCheck(L_10);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void System.Collections.Queue::Enqueue(System.Object) */, L_10, L_11);
+	}
+
+IL_0052:
+	{
+		// uduinoLogContent = string.Empty;
+		String_t* L_12 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+		__this->___uduinoLogContent_4 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogContent_4), (void*)L_12);
+		// foreach (string mylog in uduinoLogQueue)
+		Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* L_13 = __this->___uduinoLogQueue_5;
+		NullCheck(L_13);
+		RuntimeObject* L_14;
+		L_14 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(15 /* System.Collections.IEnumerator System.Collections.Queue::GetEnumerator() */, L_13);
+		V_1 = L_14;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0093:
+			{// begin finally (depth: 1)
+				{
+					RuntimeObject* L_15 = V_1;
+					V_3 = ((RuntimeObject*)IsInst((RuntimeObject*)L_15, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_16 = V_3;
+					if (!L_16)
+					{
+						goto IL_00a3;
+					}
+				}
+				{
+					RuntimeObject* L_17 = V_3;
+					NullCheck(L_17);
+					InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_17);
+				}
+
+IL_00a3:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0089_1;
+			}
+
+IL_006b_1:
+			{
+				// foreach (string mylog in uduinoLogQueue)
+				RuntimeObject* L_18 = V_1;
+				NullCheck(L_18);
+				RuntimeObject* L_19;
+				L_19 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_18);
+				V_2 = ((String_t*)CastclassSealed((RuntimeObject*)L_19, String_t_il2cpp_TypeInfo_var));
+				// uduinoLogContent += mylog;
+				String_t* L_20 = __this->___uduinoLogContent_4;
+				String_t* L_21 = V_2;
+				String_t* L_22;
+				L_22 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(L_20, L_21, NULL);
+				__this->___uduinoLogContent_4 = L_22;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogContent_4), (void*)L_22);
+			}
+
+IL_0089_1:
+			{
+				// foreach (string mylog in uduinoLogQueue)
+				RuntimeObject* L_23 = V_1;
+				NullCheck(L_23);
+				bool L_24;
+				L_24 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_23);
+				if (L_24)
+				{
+					goto IL_006b_1;
+				}
+			}
+			{
+				goto IL_00a4;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00a4:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_Update_m53D68726CF09729923CE144A2FAAC07CA968F8A4 (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (uduinoLogText != null)
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_0 = __this->___uduinoLogText_6;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// uduinoLogText.text = uduinoLogContent;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___uduinoLogText_6;
+		String_t* L_3 = __this->___uduinoLogContent_4;
+		NullCheck(L_2);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, L_3);
+		// if (uduinoLogContent.Split('\n').Length - 1 > Screen.height / 20) // Clear queue
+		String_t* L_4 = __this->___uduinoLogContent_4;
+		NullCheck(L_4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5;
+		L_5 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_4, ((int32_t)10), 0, NULL);
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = Screen_get_height_m624DD2D53F34087064E3B9D09AC2207DB4E86CA8(NULL);
+		if ((((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_5)->max_length)), 1))) <= ((int32_t)((int32_t)(L_6/((int32_t)20))))))
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// Clear();
+		UduinoDebugCanvas_Clear_m5B86206A019E6F0F0EC6EE5BBAEF8267B932B94C(__this, NULL);
+	}
+
+IL_0041:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::CreateCanvasAndText()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas_CreateCanvasAndText_mD4E52C8B6005CB91ADF068C59ACCAF22ED51A64F (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Font_tC95270EA3198038970422D78B74A7F2E218A96B6_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Font_tC95270EA3198038970422D78B74A7F2E218A96B6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1C4303CE90A80E03466A934F3A49CF1FBA75C709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1FB774720D72B83E2CD62103406724E1397D31BC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC8E3F4E3866FB561021A2810DBDA90ACFDA966DD);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	Font_tC95270EA3198038970422D78B74A7F2E218A96B6* V_1 = NULL;
+	{
+		// this.transform.name = "UduinoDebugCanvas";
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_0, _stringLiteral1FB774720D72B83E2CD62103406724E1397D31BC, NULL);
+		// Canvas canvas = this.gameObject.AddComponent<Canvas>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_1);
+		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_2;
+		L_2 = GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5(L_1, GameObject_AddComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m13C85FD585C0679530F8B35D0B39D965702FD0F5_RuntimeMethod_var);
+		// canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_3 = L_2;
+		NullCheck(L_3);
+		Canvas_set_renderMode_mD73E953F8A115CF469508448A00D0EDAFAF5AB47(L_3, 0, NULL);
+		// CanvasScaler cs = this.gameObject.AddComponent<CanvasScaler>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_4);
+		CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* L_5;
+		L_5 = GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A(L_4, GameObject_AddComponent_TisCanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B_m1D199D3A55BF0356D541CB3048142A8D7E52521A_RuntimeMethod_var);
+		// cs.scaleFactor = 1.0f;
+		CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* L_6 = L_5;
+		NullCheck(L_6);
+		CanvasScaler_set_scaleFactor_mD53E8CAE41E8C1B0DF53CCF14D5941FF8EA3488B(L_6, (1.0f), NULL);
+		// cs.dynamicPixelsPerUnit = 10f;
+		NullCheck(L_6);
+		CanvasScaler_set_dynamicPixelsPerUnit_m7A081D5FD963F751140DCF1E5190ED4E51308CA2_inline(L_6, (10.0f), NULL);
+		// canvas.sortingOrder = 500;
+		NullCheck(L_3);
+		Canvas_set_sortingOrder_m70D89DB61A3C0589C0FAB525E613DE9D0C799AAC(L_3, ((int32_t)500), NULL);
+		// GameObject textDebug = new GameObject();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_7, NULL);
+		V_0 = L_7;
+		// textDebug.name = "UduinoDebugText";
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = V_0;
+		NullCheck(L_8);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_8, _stringLiteralC8E3F4E3866FB561021A2810DBDA90ACFDA966DD, NULL);
+		// textDebug.transform.parent = this.transform;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_9, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_10);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_10, L_11, NULL);
+		// uduinoLogText = textDebug.AddComponent<Text>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
+		NullCheck(L_12);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_13;
+		L_13 = GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9(L_12, GameObject_AddComponent_TisText_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_mFECE312B08FC5FD0A081E51ACA01FAEFD6B841A9_RuntimeMethod_var);
+		__this->___uduinoLogText_6 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogText_6), (void*)L_13);
+		// uduinoLogText.alignment = TextAnchor.UpperLeft;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_14 = __this->___uduinoLogText_6;
+		NullCheck(L_14);
+		Text_set_alignment_m9FAD6C1C270FA28C610AB1E07414FBF96403157A(L_14, 0, NULL);
+		// uduinoLogText.horizontalOverflow = HorizontalWrapMode.Wrap;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_15 = __this->___uduinoLogText_6;
+		NullCheck(L_15);
+		Text_set_horizontalOverflow_m10AAFBA65FD7F4B1934B5D628B3E70D75D02FFD6(L_15, 0, NULL);
+		// uduinoLogText.verticalOverflow = VerticalWrapMode.Overflow;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_16 = __this->___uduinoLogText_6;
+		NullCheck(L_16);
+		Text_set_verticalOverflow_m72A544DEAE0EBFCCBDE8174DF4C10C903DA8444F(L_16, 1, NULL);
+		// Font ArialFont = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_17 = { reinterpret_cast<intptr_t> (Font_tC95270EA3198038970422D78B74A7F2E218A96B6_0_0_0_var) };
+		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
+		Type_t* L_18;
+		L_18 = Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E(L_17, NULL);
+		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_19;
+		L_19 = Resources_GetBuiltinResource_m8761B94EA68B13EC714994F6536B356A1AEF4538(L_18, _stringLiteral1C4303CE90A80E03466A934F3A49CF1FBA75C709, NULL);
+		V_1 = ((Font_tC95270EA3198038970422D78B74A7F2E218A96B6*)CastclassSealed((RuntimeObject*)L_19, Font_tC95270EA3198038970422D78B74A7F2E218A96B6_il2cpp_TypeInfo_var));
+		// uduinoLogText.font = ArialFont;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_20 = __this->___uduinoLogText_6;
+		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_21 = V_1;
+		NullCheck(L_20);
+		Text_set_font_mA0D2999281A72029A5BC7294A886C5674F07DC5F(L_20, L_21, NULL);
+		// uduinoLogText.fontSize = 20;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_22 = __this->___uduinoLogText_6;
+		NullCheck(L_22);
+		Text_set_fontSize_m426338B0A2CDA58609028FFD471EF5F2C9F364D4(L_22, ((int32_t)20), NULL);
+		// uduinoLogText.enabled = true;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_23 = __this->___uduinoLogText_6;
+		NullCheck(L_23);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_23, (bool)1, NULL);
+		// uduinoLogText.color = Color.black;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_24 = __this->___uduinoLogText_6;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25;
+		L_25 = Color_get_black_mBF96B603B41BED9BAFAA10CE8D946D24260F9729_inline(NULL);
+		NullCheck(L_24);
+		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_24, L_25);
+		// textDebug.GetComponent<RectTransform>().sizeDelta = new Vector2(Screen.width,Screen.height);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = V_0;
+		NullCheck(L_26);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_27;
+		L_27 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_26, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		int32_t L_28;
+		L_28 = Screen_get_width_mCA5D955A53CF6D29C8C7118D517D0FC84AE8056C(NULL);
+		int32_t L_29;
+		L_29 = Screen_get_height_m624DD2D53F34087064E3B9D09AC2207DB4E86CA8(NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_30;
+		memset((&L_30), 0, sizeof(L_30));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_30), ((float)L_28), ((float)L_29), /*hidden argument*/NULL);
+		NullCheck(L_27);
+		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_27, L_30, NULL);
+		// textDebug.GetComponent<RectTransform>().pivot = new Vector2(0, 1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_31 = V_0;
+		NullCheck(L_31);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_32;
+		L_32 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_31, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_33;
+		memset((&L_33), 0, sizeof(L_33));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_33), (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_32);
+		RectTransform_set_pivot_m79D0177D383D432A93C2615F1932B739B1C6E146(L_32, L_33, NULL);
+		// textDebug.GetComponent<RectTransform>().anchorMin = new Vector2(0, 1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = V_0;
+		NullCheck(L_34);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_35;
+		L_35 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_34, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_36;
+		memset((&L_36), 0, sizeof(L_36));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_36), (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_35);
+		RectTransform_set_anchorMin_m931442ABE3368D6D4309F43DF1D64AB64B0F52E3(L_35, L_36, NULL);
+		// textDebug.GetComponent<RectTransform>().anchorMax = new Vector2(0, 1);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_37 = V_0;
+		NullCheck(L_37);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_38;
+		L_38 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_37, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_39;
+		memset((&L_39), 0, sizeof(L_39));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_39), (0.0f), (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_38);
+		RectTransform_set_anchorMax_m52829ABEDD229ABD3DA20BCA676FA1DCA4A39B7D(L_38, L_39, NULL);
+		// textDebug.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = V_0;
+		NullCheck(L_40);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_41;
+		L_41 = GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4(L_40, GameObject_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m1592DCB5AA07291F73A76006F0913A64DFB8A9C4_RuntimeMethod_var);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_42;
+		memset((&L_42), 0, sizeof(L_42));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_42), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_41);
+		RectTransform_set_anchoredPosition_mF903ACE04F6959B1CD67E2B94FABC0263068F965(L_41, L_42, NULL);
+		// this.gameObject.transform.localScale = new Vector3(
+		//                                      1.0f / this.transform.localScale.x * 0.1f,
+		//                                      1.0f / this.transform.localScale.y * 0.1f,
+		//                                      1.0f / this.transform.localScale.z * 0.1f);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_43;
+		L_43 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_43);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_44;
+		L_44 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_43, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_45;
+		L_45 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_45);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46;
+		L_46 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_45, NULL);
+		float L_47 = L_46.___x_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_48;
+		L_48 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_48);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_49;
+		L_49 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_48, NULL);
+		float L_50 = L_49.___y_3;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_51;
+		L_51 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_51);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
+		L_52 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_51, NULL);
+		float L_53 = L_52.___z_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_54;
+		memset((&L_54), 0, sizeof(L_54));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_54), ((float)il2cpp_codegen_multiply(((float)((1.0f)/L_47)), (0.100000001f))), ((float)il2cpp_codegen_multiply(((float)((1.0f)/L_50)), (0.100000001f))), ((float)il2cpp_codegen_multiply(((float)((1.0f)/L_53)), (0.100000001f))), /*hidden argument*/NULL);
+		NullCheck(L_44);
+		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_44, L_54, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoDebugCanvas::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoDebugCanvas__ctor_mAE2A3668FA4D96406E1243D2C1773831FE9C12A2 (UduinoDebugCanvas_tEEC020258E29A0640E9AC1027BD9FC0DDD207AF2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// string uduinoLogContent = "";
+		__this->___uduinoLogContent_4 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogContent_4), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		// Queue uduinoLogQueue = new Queue();
+		Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC* L_0 = (Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC*)il2cpp_codegen_object_new(Queue_t82FD2BE12D138AF4D22C801CB5044DAEC2BA66BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Queue__ctor_mFCCBE2B4FFBD3F33D6FBE2D010C9A0CA976784CB(L_0, NULL);
+		__this->___uduinoLogQueue_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoLogQueue_5), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Conversion methods for marshalling of: Uduino.UduinoWiFiSettings
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_pinvoke(const UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F& unmarshaled, UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_pinvoke& marshaled)
+{
+	marshaled.___ip_0 = il2cpp_codegen_marshal_string(unmarshaled.___ip_0);
+	marshaled.___port_1 = unmarshaled.___port_1;
+	marshaled.___enable_2 = static_cast<int32_t>(unmarshaled.___enable_2);
+}
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_pinvoke_back(const UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_pinvoke& marshaled, UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F& unmarshaled)
+{
+	unmarshaled.___ip_0 = il2cpp_codegen_marshal_string_result(marshaled.___ip_0);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___ip_0), (void*)il2cpp_codegen_marshal_string_result(marshaled.___ip_0));
+	int32_t unmarshaledport_temp_1 = 0;
+	unmarshaledport_temp_1 = marshaled.___port_1;
+	unmarshaled.___port_1 = unmarshaledport_temp_1;
+	bool unmarshaledenable_temp_2 = false;
+	unmarshaledenable_temp_2 = static_cast<bool>(marshaled.___enable_2);
+	unmarshaled.___enable_2 = unmarshaledenable_temp_2;
+}
+// Conversion method for clean up from marshalling of: Uduino.UduinoWiFiSettings
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_pinvoke_cleanup(UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_pinvoke& marshaled)
+{
+	il2cpp_codegen_marshal_free(marshaled.___ip_0);
+	marshaled.___ip_0 = NULL;
+}
+// Conversion methods for marshalling of: Uduino.UduinoWiFiSettings
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_com(const UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F& unmarshaled, UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_com& marshaled)
+{
+	marshaled.___ip_0 = il2cpp_codegen_marshal_bstring(unmarshaled.___ip_0);
+	marshaled.___port_1 = unmarshaled.___port_1;
+	marshaled.___enable_2 = static_cast<int32_t>(unmarshaled.___enable_2);
+}
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_com_back(const UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_com& marshaled, UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F& unmarshaled)
+{
+	unmarshaled.___ip_0 = il2cpp_codegen_marshal_bstring_result(marshaled.___ip_0);
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___ip_0), (void*)il2cpp_codegen_marshal_bstring_result(marshaled.___ip_0));
+	int32_t unmarshaledport_temp_1 = 0;
+	unmarshaledport_temp_1 = marshaled.___port_1;
+	unmarshaled.___port_1 = unmarshaledport_temp_1;
+	bool unmarshaledenable_temp_2 = false;
+	unmarshaledenable_temp_2 = static_cast<bool>(marshaled.___enable_2);
+	unmarshaled.___enable_2 = unmarshaledenable_temp_2;
+}
+// Conversion method for clean up from marshalling of: Uduino.UduinoWiFiSettings
+IL2CPP_EXTERN_C void UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshal_com_cleanup(UduinoWiFiSettings_t592606EFE551F26BA81F067C70063F428577AA6F_marshaled_com& marshaled)
+{
+	il2cpp_codegen_marshal_free_bstring(marshaled.___ip_0);
+	marshaled.___ip_0 = NULL;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Uduino.UduinoManager Uduino.UduinoManager::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* UduinoManager_get_Instance_mD8DECC4584AC27B54BB0BE9ACA30ABC83873CF7C (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisUduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_m5814A5490D1660AB7C99E0097B997F2B8AC6C0CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Type_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9444E5FDC8DF7E5919A55B4621EF101FB9EA551C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBC617C8649686D59B5C6603843F1BCF04A94E136);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138* V_0 = NULL;
+	{
+		// if (_instance != null)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0 = ((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// return _instance;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_2 = ((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4;
+		return L_2;
+	}
+
+IL_0013:
+	{
+		// UduinoManager[] uduinoManagers = FindObjectsOfType(typeof(UduinoManager)) as UduinoManager[];
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_3 = { reinterpret_cast<intptr_t> (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_0_0_0_var) };
+		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
+		Type_t* L_4;
+		L_4 = Type_GetTypeFromHandle_m2570A2A5B32A5E9D9F0F38B37459DA18736C823E(L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_5;
+		L_5 = Object_FindObjectsOfType_m26A7F8711A45112BF7D30F5273B79DE1F3A7C13F(L_4, NULL);
+		V_0 = ((UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138*)IsInst((RuntimeObject*)L_5, UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138_il2cpp_TypeInfo_var));
+		// if (uduinoManagers.Length == 0 )
+		UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138* L_6 = V_0;
+		NullCheck(L_6);
+		if ((((RuntimeArray*)L_6)->max_length))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		// Log.Warning("UduinoManager not present on the scene. Creating a new one.");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(_stringLiteralBC617C8649686D59B5C6603843F1BCF04A94E136, (bool)0, NULL);
+		// UduinoManager manager = new GameObject("Uduino").AddComponent<UduinoManager>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		GameObject__ctor_m37D512B05D292F954792225E6C6EEE95293A9B88(L_7, _stringLiteral9444E5FDC8DF7E5919A55B4621EF101FB9EA551C, NULL);
+		NullCheck(L_7);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_8;
+		L_8 = GameObject_AddComponent_TisUduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_m5814A5490D1660AB7C99E0097B997F2B8AC6C0CD(L_7, GameObject_AddComponent_TisUduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_m5814A5490D1660AB7C99E0097B997F2B8AC6C0CD_RuntimeMethod_var);
+		// _instance = manager;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4), (void*)L_8);
+		// return _instance;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_9 = ((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4;
+		return L_9;
+	}
+
+IL_0051:
+	{
+		// return uduinoManagers[0];
+		UduinoManagerU5BU5D_t1ACA2E4775E44F022A07B7127FF988F36E085138* L_10 = V_0;
+		NullCheck(L_10);
+		int32_t L_11 = 0;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_12 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		return L_12;
+	}
+}
+// System.Void Uduino.UduinoManager::set_Instance(Uduino.UduinoManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_Instance_m07D289D9529F7F64E864DCF0D7285BE6F1F014D9 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF63796655196C197C565B5EE1B62874468D88735);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (_instance == null)
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0 = ((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mD3DB0D72CE0250C84033DC2A90AEF9D59896E536(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// _instance = value;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_2 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4), (void*)L_2);
+		return;
+	}
+
+IL_0014:
+	{
+		// Log.Error("You can only use one UduinoManager. Destroying the new one attached to the GameObject " + value.gameObject.name);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_3 = ___value0;
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		NullCheck(L_4);
+		String_t* L_5;
+		L_5 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_4, NULL);
+		String_t* L_6;
+		L_6 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteralF63796655196C197C565B5EE1B62874468D88735, L_5, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD(L_6, (bool)0, NULL);
+		// Destroy(value);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_7 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_7, NULL);
+		// }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::get_BaudRate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_get_BaudRate_m8A7A459B4052548FBAC1F5D3747F84B9A0563181 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return baudRate; }
+		int32_t L_0 = __this->___baudRate_16;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_BaudRate(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_BaudRate_m33B086266FB37389709AEF425250470579CAF0C0 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// set { baudRate = value; }
+		int32_t L_0 = ___value0;
+		__this->___baudRate_16 = L_0;
+		// set { baudRate = value; }
+		return;
+	}
+}
+// Uduino.HardwareReading Uduino.UduinoManager::get_ReadingMethod()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_get_ReadingMethod_mB19297CB7D343FCE132C5C89D84D3F1DF9DC4A95 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return readingMethod; }
+		int32_t L_0 = __this->___readingMethod_17;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_ReadingMethod(Uduino.HardwareReading)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_ReadingMethod_m08EAD88E6B10581D04E2EF8E1F64A1DC2C45AFC2 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	int32_t V_1 = 0;
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* V_2 = NULL;
+	{
+		// if (Application.isPlaying && readingMethod != value)
+		bool L_0;
+		L_0 = Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337(NULL);
+		if (!L_0)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		int32_t L_1 = __this->___readingMethod_17;
+		int32_t L_2 = ___value0;
+		if ((((int32_t)L_1) == ((int32_t)L_2)))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		// if (readingMethod == HardwareReading.Thread)
+		int32_t L_3 = __this->___readingMethod_17;
+		if (L_3)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		// StopAllCoroutines();
+		MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318(__this, NULL);
+		// StartThread();
+		UduinoManager_StartThread_mC32B06EEB8CA3F57E6CB69860EF6DE64EB7FFBC2(__this, (bool)0, NULL);
+		goto IL_0054;
+	}
+
+IL_0027:
+	{
+		// StopThread();
+		UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91(__this, NULL);
+		// foreach (UduinoDevice device in GetAllBoard())
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_4;
+		L_4 = UduinoManager_GetAllBoard_m8140F72B762381E616F465566BCEAB39BA5569BB(__this, NULL);
+		V_0 = L_4;
+		V_1 = 0;
+		goto IL_004e;
+	}
+
+IL_0038:
+	{
+		// foreach (UduinoDevice device in GetAllBoard())
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_5 = V_0;
+		int32_t L_6 = V_1;
+		NullCheck(L_5);
+		int32_t L_7 = L_6;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+		V_2 = L_8;
+		// StartCoroutine(CoroutineRead(device));
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_9 = V_2;
+		RuntimeObject* L_10;
+		L_10 = UduinoManager_CoroutineRead_mA7FF57228C45FC49EB873151654259452D3B757E(__this, L_9, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_11;
+		L_11 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_10, NULL);
+		int32_t L_12 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+	}
+
+IL_004e:
+	{
+		// foreach (UduinoDevice device in GetAllBoard())
+		int32_t L_13 = V_1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_14 = V_0;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))
+		{
+			goto IL_0038;
+		}
+	}
+
+IL_0054:
+	{
+		// readingMethod = value;
+		int32_t L_15 = ___value0;
+		__this->___readingMethod_17 = L_15;
+		// }
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager::get_LimitSendRate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_get_LimitSendRate_mBD4B166BF7BB3B558F13D7E330584A77809364F1 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return limitSendRate; }
+		bool L_0 = __this->___limitSendRate_18;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_LimitSendRate(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_LimitSendRate_m6E5755B0C69731B3AC5921D0F26815A653E1E71C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral86277043E4DF3BEB9801CB358F2F43DCC254BA91);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB6B82526B9652AB02591FC47201537B44ABA1651);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (limitSendRate == value)
+		bool L_0 = __this->___limitSendRate_18;
+		bool L_1 = ___value0;
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000a:
+	{
+		// if (Application.isPlaying)
+		bool L_2;
+		L_2 = Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337(NULL);
+		if (!L_2)
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		// if (value && !autoSendIsRunning)
+		bool L_3 = ___value0;
+		if (!L_3)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		bool L_4 = __this->___autoSendIsRunning_19;
+		if (L_4)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// Log.Debug("Start auto read");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteral86277043E4DF3BEB9801CB358F2F43DCC254BA91, (bool)0, NULL);
+		// StartCoroutine("AutoSendBundle");
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m10C4B693B96175C42B0FD00911E072701C220DB4(__this, _stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352, NULL);
+		// autoSendIsRunning = true;
+		__this->___autoSendIsRunning_19 = (bool)1;
+		goto IL_0059;
+	}
+
+IL_003c:
+	{
+		// Log.Debug("Stop auto read");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteralB6B82526B9652AB02591FC47201537B44ABA1651, (bool)0, NULL);
+		// StopCoroutine("AutoSendBundle");
+		MonoBehaviour_StopCoroutine_m1DA0B9343DCDB53221A6CD707CBF0827A6FFF17F(__this, _stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352, NULL);
+		// autoSendIsRunning = false;
+		__this->___autoSendIsRunning_19 = (bool)0;
+	}
+
+IL_0059:
+	{
+		// limitSendRate = value;
+		bool L_6 = ___value0;
+		__this->___limitSendRate_18 = L_6;
+		// }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::get_SendRateDelay()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_get_SendRateDelay_m3D2CC5E2FFB6A543C22B18416AFC6BA790F2606F (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return sendRateDelay; }
+		int32_t L_0 = __this->___sendRateDelay_30;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_SendRateDelay(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_SendRateDelay_mD5B224820AA2D38EA60CD54FC9CF2A23841085C7 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// set { sendRateDelay = value; }
+		int32_t L_0 = ___value0;
+		__this->___sendRateDelay_30 = L_0;
+		// set { sendRateDelay = value; }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::get_DiscoverTries()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_get_DiscoverTries_m0745BD271FD93146973C666BCEDF0B540709E4FE (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return discoverTries; }
+		int32_t L_0 = __this->___discoverTries_31;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_DiscoverTries(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_DiscoverTries_m83F7AD3357AFDB0366E3AB342A76FC041B9DE5E2 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		// set { discoverTries = value; }
+		int32_t L_0 = ___value0;
+		__this->___discoverTries_31 = L_0;
+		// set { discoverTries = value; }
+		return;
+	}
+}
+// System.Collections.Generic.List`1<System.String> Uduino.UduinoManager::get_BlackListedPorts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* UduinoManager_get_BlackListedPorts_m2D813F30A2ACFF450C65E2EFEF9BBE406C9F306E (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return blackListedPorts; }
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_0 = __this->___blackListedPorts_42;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_BlackListedPorts(System.Collections.Generic.List`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_BlackListedPorts_m23C1146F015C6BF06895F56362969ADDB676942D (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// set { blackListedPorts = value; }
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_0 = ___value0;
+		__this->___blackListedPorts_42 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___blackListedPorts_42), (void*)L_0);
+		// set { blackListedPorts = value; }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::add_OnValueReceived(Uduino.UduinoManager/OnValueReceivedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_add_OnValueReceived_m87B6DECE5E9435D3A64C3B398EFE7663091DA9B3 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_0 = NULL;
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_1 = NULL;
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_2 = NULL;
+	{
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_0 = __this->___OnValueReceived_46;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_1 = V_0;
+		V_1 = L_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_2 = V_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C(L_2, L_3, NULL);
+		V_2 = ((OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)CastclassSealed((RuntimeObject*)L_4, OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA_il2cpp_TypeInfo_var));
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA** L_5 = (&__this->___OnValueReceived_46);
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_6 = V_2;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_7 = V_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_9 = V_0;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)L_9) == ((RuntimeObject*)(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::remove_OnValueReceived(Uduino.UduinoManager/OnValueReceivedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_remove_OnValueReceived_m036FB784DE28C096A1C29D0069B08333B9E3A43D (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_0 = NULL;
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_1 = NULL;
+	OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* V_2 = NULL;
+	{
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_0 = __this->___OnValueReceived_46;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_1 = V_0;
+		V_1 = L_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_2 = V_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116(L_2, L_3, NULL);
+		V_2 = ((OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)CastclassSealed((RuntimeObject*)L_4, OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA_il2cpp_TypeInfo_var));
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA** L_5 = (&__this->___OnValueReceived_46);
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_6 = V_2;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_7 = V_1;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_9 = V_0;
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)L_9) == ((RuntimeObject*)(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::add_OnDataReceived(Uduino.UduinoManager/OnDataReceivedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_add_OnDataReceived_mF970C5C20843C82CEC47EB06B28B7DC5E2C01BBE (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_0 = NULL;
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_1 = NULL;
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_2 = NULL;
+	{
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_0 = __this->___OnDataReceived_47;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_1 = V_0;
+		V_1 = L_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_2 = V_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C(L_2, L_3, NULL);
+		V_2 = ((OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)CastclassSealed((RuntimeObject*)L_4, OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B_il2cpp_TypeInfo_var));
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B** L_5 = (&__this->___OnDataReceived_47);
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_6 = V_2;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_7 = V_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_9 = V_0;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)L_9) == ((RuntimeObject*)(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::remove_OnDataReceived(Uduino.UduinoManager/OnDataReceivedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_remove_OnDataReceived_mC84D14C3C702A01BEBC85FF4DAFAC74B07546AFC (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_0 = NULL;
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_1 = NULL;
+	OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* V_2 = NULL;
+	{
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_0 = __this->___OnDataReceived_47;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_1 = V_0;
+		V_1 = L_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_2 = V_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116(L_2, L_3, NULL);
+		V_2 = ((OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)CastclassSealed((RuntimeObject*)L_4, OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B_il2cpp_TypeInfo_var));
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B** L_5 = (&__this->___OnDataReceived_47);
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_6 = V_2;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_7 = V_1;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_9 = V_0;
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)L_9) == ((RuntimeObject*)(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::add_OnBoardConnected(Uduino.UduinoManager/OnBoardConnectedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_add_OnBoardConnected_mC364545DEEBF39CDCE5E1E5B78EBC26A8C47CD45 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_0 = NULL;
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_1 = NULL;
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_2 = NULL;
+	{
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_0 = __this->___OnBoardConnected_48;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_1 = V_0;
+		V_1 = L_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_2 = V_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C(L_2, L_3, NULL);
+		V_2 = ((OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)CastclassSealed((RuntimeObject*)L_4, OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08_il2cpp_TypeInfo_var));
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08** L_5 = (&__this->___OnBoardConnected_48);
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_6 = V_2;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_7 = V_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_9 = V_0;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)L_9) == ((RuntimeObject*)(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::remove_OnBoardConnected(Uduino.UduinoManager/OnBoardConnectedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_remove_OnBoardConnected_mCBC904D2DC82A30D676E52C8751BD8235BD16B59 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_0 = NULL;
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_1 = NULL;
+	OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* V_2 = NULL;
+	{
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_0 = __this->___OnBoardConnected_48;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_1 = V_0;
+		V_1 = L_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_2 = V_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116(L_2, L_3, NULL);
+		V_2 = ((OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)CastclassSealed((RuntimeObject*)L_4, OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08_il2cpp_TypeInfo_var));
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08** L_5 = (&__this->___OnBoardConnected_48);
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_6 = V_2;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_7 = V_1;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_9 = V_0;
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)L_9) == ((RuntimeObject*)(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::add_OnBoardDisconnected(Uduino.UduinoManager/OnBoardDisconnectedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_add_OnBoardDisconnected_mBD59BEB776DF95AF83DC432D42BEF6C1ADA0689F (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_0 = NULL;
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_1 = NULL;
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_2 = NULL;
+	{
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_0 = __this->___OnBoardDisconnected_49;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_1 = V_0;
+		V_1 = L_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_2 = V_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C(L_2, L_3, NULL);
+		V_2 = ((OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)CastclassSealed((RuntimeObject*)L_4, OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5_il2cpp_TypeInfo_var));
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5** L_5 = (&__this->___OnBoardDisconnected_49);
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_6 = V_2;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_7 = V_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_9 = V_0;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)L_9) == ((RuntimeObject*)(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::remove_OnBoardDisconnected(Uduino.UduinoManager/OnBoardDisconnectedDelegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_remove_OnBoardDisconnected_m19A1B0EA3CDADBBB3FEBE245ECFFAEC49B8B0DB9 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_0 = NULL;
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_1 = NULL;
+	OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* V_2 = NULL;
+	{
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_0 = __this->___OnBoardDisconnected_49;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_1 = V_0;
+		V_1 = L_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_2 = V_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_3 = ___value0;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m40506877934EC1AD4ADAE57F5E97AF0BC0F96116(L_2, L_3, NULL);
+		V_2 = ((OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)CastclassSealed((RuntimeObject*)L_4, OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5_il2cpp_TypeInfo_var));
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5** L_5 = (&__this->___OnBoardDisconnected_49);
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_6 = V_2;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_7 = V_1;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_8;
+		L_8 = InterlockedCompareExchangeImpl<OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_9 = V_0;
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_10 = V_1;
+		if ((!(((RuntimeObject*)(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)L_9) == ((RuntimeObject*)(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+// System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings> Uduino.UduinoManager::get_UduinoWiFiBoards()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* UduinoManager_get_UduinoWiFiBoards_m8AD29D2F40B762428AAD0FE082E43224DFC93508 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return uduinoWiFiBoards; }
+		List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* L_0 = __this->___uduinoWiFiBoards_56;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::set_UduinoWiFiBoards(System.Collections.Generic.List`1<Uduino.UduinoWiFiSettings>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_set_UduinoWiFiBoards_mAA260D117267FC7CC354180CAEB2AF78CEFCBB2F (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// set { uduinoWiFiBoards = value; }
+		List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* L_0 = ___value0;
+		__this->___uduinoWiFiBoards_56 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoWiFiBoards_56), (void*)L_0);
+		// set { uduinoWiFiBoards = value; }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Awake_m1C282CAFF2DB0A5E4EF4966BD0CEC0E998DAA619 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Instance = this;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		UduinoManager_set_Instance_m07D289D9529F7F64E864DCF0D7285BE6F1F014D9(__this, NULL);
+		// Interface.Instance.Create();
+		Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_0;
+		L_0 = Interface_get_Instance_mB030474712C9EA79D35DB43B84EE2514C416BB89(NULL);
+		NullCheck(L_0);
+		Interface_Create_m8353137CD136FC294913A2E3F4CC980DA77B30E5(L_0, NULL);
+		// FullReset();
+		UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3(__this, NULL);
+		// Log.SetLogLevel(debugLevel);
+		int32_t L_1 = __this->___debugLevel_15;
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_SetLogLevel_mAFB681C6D7A7DD1C220E4D4C1B9BA0E67F8C566F_inline(L_1, NULL);
+		// if (autoDiscover)
+		bool L_2 = __this->___autoDiscover_32;
+		if (!L_2)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		// DiscoverWithDelay(0);
+		UduinoManager_DiscoverWithDelay_m7ED72FB1901947151F9223758DA35772C68FD99C(__this, (0.0f), NULL);
+	}
+
+IL_0034:
+	{
+		// StopCoroutine("AutoSendBundle");
+		MonoBehaviour_StopCoroutine_m1DA0B9343DCDB53221A6CD707CBF0827A6FFF17F(__this, _stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352, NULL);
+		// if (limitSendRate)
+		bool L_3 = __this->___limitSendRate_18;
+		if (!L_3)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		// StartCoroutine("AutoSendBundle");
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_4;
+		L_4 = MonoBehaviour_StartCoroutine_m10C4B693B96175C42B0FD00911E072701C220DB4(__this, _stringLiteralACA441AD582D3D8F93BA8761B2685F453315D352, NULL);
+	}
+
+IL_0053:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::DiscoverWithDelay(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DiscoverWithDelay_m7ED72FB1901947151F9223758DA35772C68FD99C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, float ___delay0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B07ED1FD7254C573D66966B0BAECB709363911B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// StartCoroutine("DelayedDiscover", delay);
+		float L_0 = ___delay0;
+		float L_1 = L_0;
+		RuntimeObject* L_2 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_1);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
+		L_3 = MonoBehaviour_StartCoroutine_mD754B72714F15210DDA429A096D853852FF437AB(__this, _stringLiteral3B07ED1FD7254C573D66966B0BAECB709363911B, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator Uduino.UduinoManager::DelayedDiscover(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoManager_DelayedDiscover_m689190128AE4D3D8E93574A0AFF98569240B6965 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, float ___delay0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* L_0 = (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950*)il2cpp_codegen_object_new(U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CDelayedDiscoverU3Ed__94__ctor_mCC5404B89F6577171AEC7B3AD035F76F3BDD127E(L_0, 0, NULL);
+		U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
+		U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* L_2 = L_1;
+		float L_3 = ___delay0;
+		NullCheck(L_2);
+		L_2->___delay_2 = L_3;
+		return L_2;
+	}
+}
+// System.Collections.IEnumerator Uduino.UduinoManager::RestartIfBoardNotDetected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoManager_RestartIfBoardNotDetected_mF9F89FE0CFBDA9F9E0774A2C3BD06C69ED034BF0 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* L_0 = (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D*)il2cpp_codegen_object_new(U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CRestartIfBoardNotDetectedU3Ed__95__ctor_m7C2BA58897EA88BD33660740E16ABE4B9414F16A(L_0, 0, NULL);
+		U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		return L_1;
+	}
+}
+// System.Void Uduino.UduinoManager::UpdateManagerState()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_UpdateManagerState_m5355B753FEBB4D263B9900622B272F8DE4733741 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (uduinoDevices.Count == 0)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// ManagerState = UduinoManagerState.Idle;
+		__this->___ManagerState_12 = 0;
+	}
+
+IL_0014:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::DiscoverPorts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DiscoverPorts_m32DCFD6E0F083B859E82151A207A1B533180BF65 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF03EB5B2CA5F92EC31886F000CDA410839D18468);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// CloseAllDevices();
+		UduinoManager_CloseAllDevices_m5E176430F0908AAB2E609D296B10982C1112FAE8(__this, NULL);
+		// if (boardConnection == null || !Application.isPlaying)
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_0 = __this->___boardConnection_11;
+		if (!L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		bool L_1;
+		L_1 = Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337(NULL);
+		if (L_1)
+		{
+			goto IL_002d;
+		}
+	}
+
+IL_0015:
+	{
+		// boardConnection = UduinoConnection.GetFinder(this, platformType, connectionMethod);
+		int32_t L_2 = __this->___platformType_51;
+		int32_t L_3 = __this->___connectionMethod_52;
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_4;
+		L_4 = UduinoConnection_GetFinder_m7A68F659A2C18CE03272C49476BD1C906B12110E(__this, L_2, L_3, NULL);
+		__this->___boardConnection_11 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___boardConnection_11), (void*)L_4);
+	}
+
+IL_002d:
+	{
+		// if (boardConnection != null)
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_5 = __this->___boardConnection_11;
+		if (!L_5)
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		// ManagerState = UduinoManagerState.Discovering;
+		__this->___ManagerState_12 = 1;
+		// boardConnection.FindBoards(this);
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_6 = __this->___boardConnection_11;
+		NullCheck(L_6);
+		VirtualActionInvoker1< UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* >::Invoke(5 /* System.Void Uduino.UduinoConnection::FindBoards(Uduino.UduinoManager) */, L_6, __this);
+		return;
+	}
+
+IL_0049:
+	{
+		// Log.Warning("You didn't select any platform. Disabling Uduino.");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(_stringLiteralF03EB5B2CA5F92EC31886F000CDA410839D18468, (bool)0, NULL);
+		// this.enabled = false;
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(__this, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::AddUduinoBoard(System.String,Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_AddUduinoBoard_mAD0B94FD86C1A5FE707A16DD0CA62122A7E99215 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___name0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___board1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_mC9B341A10EDFC10D32CBE77A11155A1EE95D3020_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral168B8E3988912917C1038CB4AFB91C0C2A82BF97);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral18A622BC38D01BC0532D3FEBEF525F1AA2465D9E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral872832AF3EB23DF490D84F89198394B33CB88A29);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral98567EAC71ABA652FD251EE8484B3C813D481D7A);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* V_0 = NULL;
+	bool V_1 = false;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// lock (uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		V_0 = L_0;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00c8:
+			{// begin finally (depth: 1)
+				{
+					bool L_1 = V_1;
+					if (!L_1)
+					{
+						goto IL_00d1;
+					}
+				}
+				{
+					Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_2 = V_0;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_2, NULL);
+				}
+
+IL_00d1:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_3 = V_0;
+				Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_3, (&V_1), NULL);
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_0074_1:
+					{// begin finally (depth: 2)
+						{
+							// board.alwaysRead = alwaysRead;
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___board1;
+							bool L_5 = __this->___alwaysRead_23;
+							NullCheck(L_4);
+							L_4->___alwaysRead_10 = L_5;
+							// board.readAfterCommand = readAfterCommand;
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = ___board1;
+							bool L_7 = __this->___readAfterCommand_24;
+							NullCheck(L_6);
+							L_6->___readAfterCommand_11 = L_7;
+							// StartReading(board);
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8 = ___board1;
+							UduinoManager_StartReading_m9A1F61FEC1A62283C894339762B2C6E17E58FAD6(__this, L_8, NULL);
+							// InitAllArduinos();
+							UduinoManager_InitAllArduinos_mF1A765604E6B52A929A243D06FBCDA4371B6A806(__this, NULL);
+							// board.WriteToArduino("connected", instant: true);
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_9 = ___board1;
+							NullCheck(L_9);
+							bool L_10;
+							L_10 = VirtualFuncInvoker3< bool, String_t*, RuntimeObject*, bool >::Invoke(6 /* System.Boolean Uduino.UduinoDevice::WriteToArduino(System.String,System.Object,System.Boolean) */, L_9, _stringLiteral872832AF3EB23DF490D84F89198394B33CB88A29, NULL, (bool)1);
+							// if (OnBoardConnected != null)
+							OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_11 = __this->___OnBoardConnected_48;
+							if (!L_11)
+							{
+								goto IL_00bb_1;
+							}
+						}
+						{
+							// OnBoardConnected(board);
+							OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* L_12 = __this->___OnBoardConnected_48;
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_13 = ___board1;
+							NullCheck(L_12);
+							OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_inline(L_12, L_13, NULL);
+						}
+
+IL_00bb_1:
+						{
+							// OnBoardConnectedEvent.Invoke(board);
+							eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63* L_14 = __this->___OnBoardConnectedEvent_44;
+							UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_15 = ___board1;
+							NullCheck(L_14);
+							UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202(L_14, L_15, UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202_RuntimeMethod_var);
+							// }
+							return;
+						}
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					try
+					{// begin try (depth: 3)
+						// Log.Info("Board <color=#ff3355>" + name + "</color> <color=#2196F3>[" + board.getIdentity() + "]</color> detected.");
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_16;
+						NullCheck(L_17);
+						ArrayElementTypeCheck (L_17, _stringLiteral168B8E3988912917C1038CB4AFB91C0C2A82BF97);
+						(L_17)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral168B8E3988912917C1038CB4AFB91C0C2A82BF97);
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = L_17;
+						String_t* L_19 = ___name0;
+						NullCheck(L_18);
+						ArrayElementTypeCheck (L_18, L_19);
+						(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_19);
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_18;
+						NullCheck(L_20);
+						ArrayElementTypeCheck (L_20, _stringLiteral98567EAC71ABA652FD251EE8484B3C813D481D7A);
+						(L_20)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral98567EAC71ABA652FD251EE8484B3C813D481D7A);
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
+						UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_22 = ___board1;
+						NullCheck(L_22);
+						String_t* L_23;
+						L_23 = UduinoDevice_getIdentity_mF3394683CBF93A4755CBD11A6A8337CAB53063E4_inline(L_22, NULL);
+						NullCheck(L_21);
+						ArrayElementTypeCheck (L_21, L_23);
+						(L_21)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_23);
+						StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = L_21;
+						NullCheck(L_24);
+						ArrayElementTypeCheck (L_24, _stringLiteral18A622BC38D01BC0532D3FEBEF525F1AA2465D9E);
+						(L_24)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteral18A622BC38D01BC0532D3FEBEF525F1AA2465D9E);
+						String_t* L_25;
+						L_25 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_24, NULL);
+						il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+						Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(L_25, (bool)0, NULL);
+						// uduinoDevices.Add(name, board);
+						Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_26 = __this->___uduinoDevices_5;
+						String_t* L_27 = ___name0;
+						UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_28 = ___board1;
+						NullCheck(L_26);
+						Dictionary_2_Add_mC9B341A10EDFC10D32CBE77A11155A1EE95D3020(L_26, L_27, L_28, Dictionary_2_Add_mC9B341A10EDFC10D32CBE77A11155A1EE95D3020_RuntimeMethod_var);
+						// ManagerState = UduinoManagerState.BoardDetected;
+						__this->___ManagerState_12 = 2;
+						// }
+						goto IL_00d2;
+					}// end try (depth: 3)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+						{
+							IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+							goto CATCH_005d_2;
+						}
+						throw e;
+					}
+
+CATCH_005d_2:
+					{// begin catch(System.Exception)
+						// catch (Exception)
+						// throw new BoardAlreadyExistException("Board with the name " + name + " is already connected ! Try to change the name of one of the arduino board");
+						String_t* L_29 = ___name0;
+						String_t* L_30;
+						L_30 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFB37EEF6AD53255F0B9D6C84337B40BA4FE802EF)), L_29, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral7C2F53C1C7701F2AEEB3D7F3C26010C2B8FA2453)), NULL);
+						BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813* L_31 = (BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813_il2cpp_TypeInfo_var)));
+						NullCheck(L_31);
+						BoardAlreadyExistException__ctor_m666F892055104ECAA15394D08BB56F11D73DE8A6(L_31, L_30, NULL);
+						IL2CPP_RAISE_MANAGED_EXCEPTION(L_31, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&UduinoManager_AddUduinoBoard_mAD0B94FD86C1A5FE707A16DD0CA62122A7E99215_RuntimeMethod_var)));
+					}// end catch (depth: 3)
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00d2:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::GetPortState()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_GetPortState_mB5E89A7315A7F27714054327BFC8D6253CC80ABE (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mE7D564202FC1AB496122601F59AEE5CD223371FB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD99605E29810F93D7DAE4EFBB764C41AF4E80D32);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE9C8A19E0C3599EE4EF3C129D1E4A43372366246);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// if (uduinoDevices.Count == 0)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// Log.Info("Trying to close and no port are currently open");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(_stringLiteralE9C8A19E0C3599EE4EF3C129D1E4A43372366246, (bool)0, NULL);
+	}
+
+IL_0018:
+	{
+		// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_2 = __this->___uduinoDevices_5;
+		NullCheck(L_2);
+		Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_3;
+		L_3 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_2, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		V_0 = L_3;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0061:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC((&V_0), Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0056_1;
+			}
+
+IL_0026_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_4;
+				L_4 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_0), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+				V_1 = L_4;
+				// Log.Info("" + uduino.Value.getIdentity() + " (" + uduino.Key + ")");
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_5;
+				L_5 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_1), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+				NullCheck(L_5);
+				String_t* L_6;
+				L_6 = UduinoDevice_getIdentity_mF3394683CBF93A4755CBD11A6A8337CAB53063E4_inline(L_5, NULL);
+				String_t* L_7;
+				L_7 = KeyValuePair_2_get_Key_mE7D564202FC1AB496122601F59AEE5CD223371FB_inline((&V_1), KeyValuePair_2_get_Key_mE7D564202FC1AB496122601F59AEE5CD223371FB_RuntimeMethod_var);
+				String_t* L_8;
+				L_8 = String_Concat_mF8B69BE42B5C5ABCAD3C176FBBE3010E0815D65D(L_6, _stringLiteralD99605E29810F93D7DAE4EFBB764C41AF4E80D32, L_7, _stringLiteralB3F14BF976EFD974E34846B742502C802FABAE9D, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+				Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(L_8, (bool)0, NULL);
+			}
+
+IL_0056_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				bool L_9;
+				L_9 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_0), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+				if (L_9)
+				{
+					goto IL_0026_1;
+				}
+			}
+			{
+				goto IL_006f;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_006f:
+	{
+		// }
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager::hasBoardConnected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_hasBoardConnected_mAAC5C51F9D2FE4132F4DEF621B2E30E4C4381556 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return uduinoDevices.Count == 0 ? false : true;
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (!L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_000f:
+	{
+		return (bool)0;
+	}
+}
+// System.Boolean Uduino.UduinoManager::GetBoard(System.String,Uduino.UduinoDevice[]&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___name0, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** ___devices1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (UduinoTargetExists(name))
+		String_t* L_0 = ___name0;
+		bool L_1;
+		L_1 = UduinoManager_UduinoTargetExists_mE8D18D75E9C980FEF5A2E1F9B997A23723C4D899(__this, L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		// devices = new UduinoDevice[1];
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_2 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = (UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)SZArrayNew(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var, (uint32_t)1);
+		*((RuntimeObject**)L_2) = (RuntimeObject*)L_3;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_2, (void*)(RuntimeObject*)L_3);
+		// devices[0] = uduinoDevices[name];
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_4 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_5 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_4);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_6 = __this->___uduinoDevices_5;
+		String_t* L_7 = ___name0;
+		NullCheck(L_6);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8;
+		L_8 = Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78(L_6, L_7, Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_8);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)L_8);
+		// return true;
+		return (bool)1;
+	}
+
+IL_0023:
+	{
+		// devices = new UduinoDevice[uduinoDevices.Count];
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_9 = ___devices1;
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_10 = __this->___uduinoDevices_5;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_10, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_12 = (UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)SZArrayNew(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var, (uint32_t)L_11);
+		*((RuntimeObject**)L_9) = (RuntimeObject*)L_12;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_9, (void*)(RuntimeObject*)L_12);
+		// uduinoDevices.Values.CopyTo(devices, 0);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_13 = __this->___uduinoDevices_5;
+		NullCheck(L_13);
+		ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* L_14;
+		L_14 = Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF(L_13, Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_15 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_16 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_15);
+		NullCheck(L_14);
+		ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE(L_14, L_16, 0, ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		// if (devices.Length == 0) return false;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_17 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_18 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_17);
+		NullCheck(L_18);
+		if ((((RuntimeArray*)L_18)->max_length))
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// if (devices.Length == 0) return false;
+		return (bool)0;
+	}
+
+IL_004f:
+	{
+		// else return true;
+		return (bool)1;
+	}
+}
+// Uduino.UduinoDevice[] Uduino.UduinoManager::GetAllBoard()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* UduinoManager_GetAllBoard_m8140F72B762381E616F465566BCEAB39BA5569BB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	{
+		// UduinoDevice[] devices = new UduinoDevice[uduinoDevices.Count];
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = (UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)SZArrayNew(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var, (uint32_t)L_1);
+		V_0 = L_2;
+		// uduinoDevices.Values.CopyTo(devices, 0);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_3 = __this->___uduinoDevices_5;
+		NullCheck(L_3);
+		ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* L_4;
+		L_4 = Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF(L_3, Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_5 = V_0;
+		NullCheck(L_4);
+		ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE(L_4, L_5, 0, ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		// return devices;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Boolean Uduino.UduinoManager::GetBoard(Uduino.UduinoDevice,Uduino.UduinoDevice[]&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** ___devices1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (UduinoTargetExists(device))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___device0;
+		bool L_1;
+		L_1 = UduinoManager_UduinoTargetExists_mE4824DFA8752C227F10078AA80F77F13702262DD(__this, L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// devices = new UduinoDevice[1];
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_2 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = (UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)SZArrayNew(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var, (uint32_t)1);
+		*((RuntimeObject**)L_2) = (RuntimeObject*)L_3;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_2, (void*)(RuntimeObject*)L_3);
+		// devices[0] = device;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_4 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_5 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_4);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = ___device0;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)L_6);
+		// return true;
+		return (bool)1;
+	}
+
+IL_0018:
+	{
+		// devices = new UduinoDevice[uduinoDevices.Count];
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_7 = ___devices1;
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_8 = __this->___uduinoDevices_5;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_8, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_10 = (UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196*)SZArrayNew(UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196_il2cpp_TypeInfo_var, (uint32_t)L_9);
+		*((RuntimeObject**)L_7) = (RuntimeObject*)L_10;
+		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_7, (void*)(RuntimeObject*)L_10);
+		// uduinoDevices.Values.CopyTo(devices, 0);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_11 = __this->___uduinoDevices_5;
+		NullCheck(L_11);
+		ValueCollection_tB673A6DAE34385E1277A5FAB1D7EFF7C97690DEA* L_12;
+		L_12 = Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF(L_11, Dictionary_2_get_Values_m889E0140DB4C1855325DEA7C797D860FA96F38FF_RuntimeMethod_var);
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_13 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_14 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_13);
+		NullCheck(L_12);
+		ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE(L_12, L_14, 0, ValueCollection_CopyTo_mDD966A57FD8712CAA778289224B7CB8D5B551BEE_RuntimeMethod_var);
+		// if (devices.Length == 0) return false;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196** L_15 = ___devices1;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_16 = *((UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196**)L_15);
+		NullCheck(L_16);
+		if ((((RuntimeArray*)L_16)->max_length))
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		// if (devices.Length == 0) return false;
+		return (bool)0;
+	}
+
+IL_0044:
+	{
+		// else return true;
+		return (bool)1;
+	}
+}
+// Uduino.UduinoDevice Uduino.UduinoManager::GetBoard(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* UduinoManager_GetBoard_mD20418B8C26BEF956308F0DC1634AD3EE5C191E7 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mCF29F28E777ADF0BD4F603F38D32B93CA7E45B3E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0AF31A80C14440335E5DCFC310D4B9A30ABA261D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5432701DDDD4699C8DBD00AE7987706FBAF44690);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* V_0 = NULL;
+	{
+		// if (UduinoTargetExists(name))
+		String_t* L_0 = ___name0;
+		bool L_1;
+		L_1 = UduinoManager_UduinoTargetExists_mE8D18D75E9C980FEF5A2E1F9B997A23723C4D899(__this, L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// UduinoDevice device = null;
+		V_0 = (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL;
+		// uduinoDevices.TryGetValue(name, out device);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_2 = __this->___uduinoDevices_5;
+		String_t* L_3 = ___name0;
+		NullCheck(L_2);
+		bool L_4;
+		L_4 = Dictionary_2_TryGetValue_mCF29F28E777ADF0BD4F603F38D32B93CA7E45B3E(L_2, L_3, (&V_0), Dictionary_2_TryGetValue_mCF29F28E777ADF0BD4F603F38D32B93CA7E45B3E_RuntimeMethod_var);
+		// return device;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_5 = V_0;
+		return L_5;
+	}
+
+IL_001c:
+	{
+		// Log.Warning("No board with the name " + name + " is found in the board list.");
+		String_t* L_6 = ___name0;
+		String_t* L_7;
+		L_7 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteral5432701DDDD4699C8DBD00AE7987706FBAF44690, L_6, _stringLiteral0AF31A80C14440335E5DCFC310D4B9A30ABA261D, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(L_7, (bool)0, NULL);
+		// return null;
+		return (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL;
+	}
+}
+// System.Boolean Uduino.UduinoManager::UduinoTargetExists(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_UduinoTargetExists_mE8D18D75E9C980FEF5A2E1F9B997A23723C4D899 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m4EA1F736E9A7713E42D9E80BB58EBC4AFC2E713E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (target == "" || target == null) return false;
+		String_t* L_0 = ___target0;
+		bool L_1;
+		L_1 = String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0(L_0, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+		if (L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		String_t* L_2 = ___target0;
+		if (L_2)
+		{
+			goto IL_0012;
+		}
+	}
+
+IL_0010:
+	{
+		// if (target == "" || target == null) return false;
+		return (bool)0;
+	}
+
+IL_0012:
+	{
+		// if (uduinoDevices.ContainsKey(target))
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_3 = __this->___uduinoDevices_5;
+		String_t* L_4 = ___target0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = Dictionary_2_ContainsKey_m4EA1F736E9A7713E42D9E80BB58EBC4AFC2E713E(L_3, L_4, Dictionary_2_ContainsKey_m4EA1F736E9A7713E42D9E80BB58EBC4AFC2E713E_RuntimeMethod_var);
+		if (!L_5)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0022:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Boolean Uduino.UduinoManager::UduinoTargetExists(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_UduinoTargetExists_mE4824DFA8752C227F10078AA80F77F13702262DD (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsValue_m0AF20A60F8F61EB9A17DAD98485F1F9F84DDB77E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7AAED0E3B66DA0D058556342B284D27D05EA4203);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF5D8EF422ABD0284BA3EEB3BF58FBA9313575F4E);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* G_B7_0 = NULL;
+	String_t* G_B7_1 = NULL;
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* G_B6_0 = NULL;
+	String_t* G_B6_1 = NULL;
+	String_t* G_B8_0 = NULL;
+	String_t* G_B8_1 = NULL;
+	{
+		// if (target == null) return false;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		if (L_0)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		// if (target == null) return false;
+		return (bool)0;
+	}
+
+IL_0005:
+	{
+		// if (uduinoDevices.ContainsValue(target))
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_1 = __this->___uduinoDevices_5;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_2 = ___target0;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = Dictionary_2_ContainsValue_m0AF20A60F8F61EB9A17DAD98485F1F9F84DDB77E(L_1, L_2, Dictionary_2_ContainsValue_m0AF20A60F8F61EB9A17DAD98485F1F9F84DDB77E_RuntimeMethod_var);
+		if (!L_3)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0015:
+	{
+		// if (target != null)
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+		if (!L_4)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		// Log.Warning("The object " + target + " cannot be found. Are you sure it's connected and correctly detected ?");
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_5 = ___target0;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = L_5;
+		G_B6_0 = L_6;
+		G_B6_1 = _stringLiteralF5D8EF422ABD0284BA3EEB3BF58FBA9313575F4E;
+		if (L_6)
+		{
+			G_B7_0 = L_6;
+			G_B7_1 = _stringLiteralF5D8EF422ABD0284BA3EEB3BF58FBA9313575F4E;
+			goto IL_0025;
+		}
+	}
+	{
+		G_B8_0 = ((String_t*)(NULL));
+		G_B8_1 = G_B6_1;
+		goto IL_002a;
+	}
+
+IL_0025:
+	{
+		NullCheck(G_B7_0);
+		String_t* L_7;
+		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B7_0);
+		G_B8_0 = L_7;
+		G_B8_1 = G_B7_1;
+	}
+
+IL_002a:
+	{
+		String_t* L_8;
+		L_8 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(G_B8_1, G_B8_0, _stringLiteral7AAED0E3B66DA0D058556342B284D27D05EA4203, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(L_8, (bool)0, NULL);
+	}
+
+IL_003a:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void Uduino.UduinoManager::SetBoardType(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetBoardType_m391C7F1B36D0552CC0B966852C793B5BB61AE8F6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___type0, const RuntimeMethod* method) 
+{
+	{
+		// SetBoardType(null, type);
+		String_t* L_0 = ___type0;
+		UduinoManager_SetBoardType_m100B8ACC231654ADB9D3CC0A9E192C1647CD3410(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::SetBoardType(Uduino.UduinoDevice,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetBoardType_m100B8ACC231654ADB9D3CC0A9E192C1647CD3410 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___type1, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		// int boardTypeId = BoardsTypeList.Boards.GetBoardIdFromName(type);
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_0;
+		L_0 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		String_t* L_1 = ___type1;
+		NullCheck(L_0);
+		int32_t L_2;
+		L_2 = BoardsTypeList_GetBoardIdFromName_mBBC17CE3DC49E5E2BB434FE84CF0A036D7182FAB(L_0, L_1, NULL);
+		V_0 = L_2;
+		// SetBoardType(target, boardTypeId);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_3 = ___target0;
+		int32_t L_4 = V_0;
+		UduinoManager_SetBoardType_m8DA735585D961E7195983D0ED56FAADE3872ADE8(__this, L_3, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::SetBoardType(Uduino.UduinoDevice,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetBoardType_m8DA735585D961E7195983D0ED56FAADE3872ADE8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___boardTypeId1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8761B88ACBEEB05F9553E27324F9F091C98EFD75);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		// if (GetBoard(target, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_0, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_001e;
+	}
+
+IL_0011:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		// device._boardType = boardTypeId;
+		int32_t L_7 = ___boardTypeId1;
+		NullCheck(L_6);
+		L_6->____boardType_1 = L_7;
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_001e:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_9 = V_2;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0025:
+	{
+		// Log.Info("Setting board type to a non-existant board");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(_stringLiteral8761B88ACBEEB05F9553E27324F9F091C98EFD75, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::GetPinNumberFromBoardType(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_GetPinNumberFromBoardType_m330FD92CDF69CC8492A9C92DE5E3AFDC3D916C0E (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___boardType0, String_t* ___pin1, const RuntimeMethod* method) 
+{
+	{
+		// return BoardsTypeList.Boards.GetBoardFromName(boardType).GetPin(pin);
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_0;
+		L_0 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		String_t* L_1 = ___boardType0;
+		NullCheck(L_0);
+		ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* L_2;
+		L_2 = BoardsTypeList_GetBoardFromName_m6864B73B71EE8C2BD9BC087230AB6A768E1A6A53(L_0, L_1, NULL);
+		String_t* L_3 = ___pin1;
+		NullCheck(L_2);
+		int32_t L_4;
+		L_4 = ArduinoBoardType_GetPin_m715C1325CEC6946F6AA957C3E8CCA083A617D778(L_2, L_3, NULL);
+		return L_4;
+	}
+}
+// System.Int32 Uduino.UduinoManager::GetPinNumberFromBoardType(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_GetPinNumberFromBoardType_m93A332E7383DAFA5757FFA76EE0D6303371ECB53 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___boardType0, int32_t ___pin1, const RuntimeMethod* method) 
+{
+	{
+		// return BoardsTypeList.Boards.GetBoardFromName(boardType).GetPin(pin);
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_0;
+		L_0 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		String_t* L_1 = ___boardType0;
+		NullCheck(L_0);
+		ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* L_2;
+		L_2 = BoardsTypeList_GetBoardFromName_m6864B73B71EE8C2BD9BC087230AB6A768E1A6A53(L_0, L_1, NULL);
+		int32_t L_3 = ___pin1;
+		NullCheck(L_2);
+		int32_t L_4;
+		L_4 = ArduinoBoardType_GetPin_m0756211D53BCB27E8D1EA22CB5457A80B05202D0(L_2, L_3, NULL);
+		return L_4;
+	}
+}
+// System.Int32 Uduino.UduinoManager::GetPinFromBoard(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_GetPinFromBoard_m7382C9C13DDD42FB5BE68261E8B7853951EA60DB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___pin0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		// if(uduinoDevices.Count == 0)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// return BoardsTypeList.Boards.GetBoardFromId(defaultArduinoBoardType).GetPin(pin);
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_2;
+		L_2 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		int32_t L_3 = __this->___defaultArduinoBoardType_27;
+		NullCheck(L_2);
+		ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* L_4;
+		L_4 = BoardsTypeList_GetBoardFromId_m2DBC7B3ABA3C9D07544B66C868EBB4C2BDAB0CB0(L_2, L_3, NULL);
+		String_t* L_5 = ___pin0;
+		NullCheck(L_4);
+		int32_t L_6;
+		L_6 = ArduinoBoardType_GetPin_m715C1325CEC6946F6AA957C3E8CCA083A617D778(L_4, L_5, NULL);
+		return L_6;
+	}
+
+IL_0024:
+	{
+		// var e = uduinoDevices.GetEnumerator();
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_7 = __this->___uduinoDevices_5;
+		NullCheck(L_7);
+		Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_8;
+		L_8 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_7, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		V_0 = L_8;
+		// e.MoveNext();
+		bool L_9;
+		L_9 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_0), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		// UduinoDevice anElement = e.Current.Value;
+		KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_10;
+		L_10 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_0), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		V_2 = L_10;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_11;
+		L_11 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_2), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		// int currentBoardType = anElement._boardType;
+		NullCheck(L_11);
+		int32_t L_12 = L_11->____boardType_1;
+		V_1 = L_12;
+		// return BoardsTypeList.Boards.GetBoardFromId(currentBoardType).GetPin(pin);
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_13;
+		L_13 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		int32_t L_14 = V_1;
+		NullCheck(L_13);
+		ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* L_15;
+		L_15 = BoardsTypeList_GetBoardFromId_m2DBC7B3ABA3C9D07544B66C868EBB4C2BDAB0CB0(L_13, L_14, NULL);
+		String_t* L_16 = ___pin0;
+		NullCheck(L_15);
+		int32_t L_17;
+		L_17 = ArduinoBoardType_GetPin_m715C1325CEC6946F6AA957C3E8CCA083A617D778(L_15, L_16, NULL);
+		return L_17;
+	}
+}
+// System.Int32 Uduino.UduinoManager::GetPinFromBoard(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_GetPinFromBoard_mA5D7CD24C3BA158499E7B94E742D6F0077E6DB3B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* G_B2_0 = NULL;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* G_B2_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* G_B1_1 = NULL;
+	{
+		// return GetPinFromBoard(pin+"");
+		String_t* L_0;
+		L_0 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin0), NULL);
+		String_t* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = __this;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = __this;
+			goto IL_0011;
+		}
+	}
+	{
+		G_B2_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0011:
+	{
+		NullCheck(G_B2_1);
+		int32_t L_2;
+		L_2 = UduinoManager_GetPinFromBoard_m7382C9C13DDD42FB5BE68261E8B7853951EA60DB(G_B2_1, G_B2_0, NULL);
+		return L_2;
+	}
+}
+// System.Boolean Uduino.UduinoManager::isConnected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_isConnected_mF5905E1346E536D5BE5FC942284E499EF795754A (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return uduinoDevices.Count != 0;
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		return (bool)((!(((uint32_t)L_1) <= ((uint32_t)0)))? 1 : 0);
+	}
+}
+// System.Void Uduino.UduinoManager::pinMode(System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_m4F92F3E359AB3D17DB12828BDFA14325A1D5C842 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___mode1, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(null, pin, mode);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___mode1;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::pinMode(Uduino.AnalogPin,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_mCA441C2CA751DF84A3C06C5C7519BB6DBD68EB2D (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___mode1, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(null, PinValueToBoardValue(pin), mode);
+		int32_t L_0 = ___pin0;
+		int32_t L_1;
+		L_1 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_0, (-1), NULL);
+		int32_t L_2 = ___mode1;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::pinMode(Uduino.UduinoDevice,Uduino.AnalogPin,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_mD950E7FA527D1942A817759F6384B2D12DC6B7F3 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(target, PinValueToBoardValue(pin, target._boardType), mode);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_2 = ___target0;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->____boardType_1;
+		int32_t L_4;
+		L_4 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_1, L_3, NULL);
+		int32_t L_5 = ___mode2;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, L_0, L_4, L_5, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::pinMode(Uduino.UduinoDevice,System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m1138055AD6C3CCA1230BCDC8AE134ACFD492602A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral19DEE56628C563E7C506B307E0C04B49CDB76A75);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1B62F159ADC5C3F42A487D6A9DE3129D2F6F99EF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral220410A41F294ADE500648D1E9AD5B6091957761);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5972BF4C4C42436699328E28BDDEC6247F41ED84);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6B9146F8599FB723DBBC0171737941A09EB2AD3A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6CE032B64371F6FEA1278B32519FC32136F8604B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA7B911F2B07F59FDFBA9FE60A586F381EAF21E89);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB598013F46389064D039C38DB16C2B7D0B7B7143);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC7A65D175027BE30C72C17083753477DD21DA5BC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF4C6DDF8719749246F476CB6A5D878BFC9C4F480);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_2 = NULL;
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_3 = NULL;
+	String_t* V_4 = NULL;
+	String_t* G_B18_0 = NULL;
+	{
+		// bool pinExists = false;
+		V_0 = (bool)0;
+		// foreach (Pin pinTarget in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0116:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_1), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0108_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_1), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				V_2 = L_2;
+				// if (pinTarget.PinTargetExists(target, pin))
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_3 = V_2;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+				int32_t L_5 = ___pin1;
+				NullCheck(L_3);
+				bool L_6;
+				L_6 = Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87(L_3, L_4, L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_0108_1;
+				}
+			}
+			{
+				// pinExists = true;
+				V_0 = (bool)1;
+				// if ( pinTarget.pinMode != mode) {
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_7 = V_2;
+				NullCheck(L_7);
+				int32_t L_8 = L_7->___pinMode_3;
+				int32_t L_9 = ___mode2;
+				if ((((int32_t)L_8) == ((int32_t)L_9)))
+				{
+					goto IL_00c5_1;
+				}
+			}
+			{
+				// Log.Debug("Override pinMode for the pin <color=#4CAF50>" + pin + "</color> from <color=#2e7d32>" + pinTarget.pinMode + "</color> to <color=#2e7d32>" + mode + "</color>.");
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
+				NullCheck(L_11);
+				ArrayElementTypeCheck (L_11, _stringLiteral220410A41F294ADE500648D1E9AD5B6091957761);
+				(L_11)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral220410A41F294ADE500648D1E9AD5B6091957761);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_11;
+				String_t* L_13;
+				L_13 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin1), NULL);
+				NullCheck(L_12);
+				ArrayElementTypeCheck (L_12, L_13);
+				(L_12)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_13);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_12;
+				NullCheck(L_14);
+				ArrayElementTypeCheck (L_14, _stringLiteral1B62F159ADC5C3F42A487D6A9DE3129D2F6F99EF);
+				(L_14)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral1B62F159ADC5C3F42A487D6A9DE3129D2F6F99EF);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = L_14;
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_16 = V_2;
+				NullCheck(L_16);
+				int32_t* L_17 = (&L_16->___pinMode_3);
+				Il2CppFakeBox<int32_t> L_18(PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var, L_17);
+				String_t* L_19;
+				L_19 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_18), NULL);
+				NullCheck(L_15);
+				ArrayElementTypeCheck (L_15, L_19);
+				(L_15)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_19);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = L_15;
+				NullCheck(L_20);
+				ArrayElementTypeCheck (L_20, _stringLiteralF4C6DDF8719749246F476CB6A5D878BFC9C4F480);
+				(L_20)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralF4C6DDF8719749246F476CB6A5D878BFC9C4F480);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_20;
+				Il2CppFakeBox<int32_t> L_22(PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var, (&___mode2));
+				String_t* L_23;
+				L_23 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_22), NULL);
+				NullCheck(L_21);
+				ArrayElementTypeCheck (L_21, L_23);
+				(L_21)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_23);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = L_21;
+				NullCheck(L_24);
+				ArrayElementTypeCheck (L_24, _stringLiteral6B9146F8599FB723DBBC0171737941A09EB2AD3A);
+				(L_24)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral6B9146F8599FB723DBBC0171737941A09EB2AD3A);
+				String_t* L_25;
+				L_25 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_24, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+				Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(L_25, (bool)0, NULL);
+				// if ((target == null && uduinoDevices.Count != 0) || (target != null && UduinoTargetExists(target)))
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_26 = ___target0;
+				if (L_26)
+				{
+					goto IL_00a5_1;
+				}
+			}
+			{
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_27 = __this->___uduinoDevices_5;
+				NullCheck(L_27);
+				int32_t L_28;
+				L_28 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_27, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+				if (L_28)
+				{
+					goto IL_00b1_1;
+				}
+			}
+
+IL_00a5_1:
+			{
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_29 = ___target0;
+				if (!L_29)
+				{
+					goto IL_00bb_1;
+				}
+			}
+			{
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_30 = ___target0;
+				bool L_31;
+				L_31 = UduinoManager_UduinoTargetExists_mE4824DFA8752C227F10078AA80F77F13702262DD(__this, L_30, NULL);
+				if (!L_31)
+				{
+					goto IL_00bb_1;
+				}
+			}
+
+IL_00b1_1:
+			{
+				// pinTarget.OverridePinMode(mode);
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_32 = V_2;
+				int32_t L_33 = ___mode2;
+				NullCheck(L_32);
+				Pin_OverridePinMode_mE7801609FEC3CCCF923C80E331A9C13F8D781AD0(L_32, L_33, (bool)0, NULL);
+				goto IL_0108_1;
+			}
+
+IL_00bb_1:
+			{
+				// pinTarget.OverridePinMode(mode, true);
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_34 = V_2;
+				int32_t L_35 = ___mode2;
+				NullCheck(L_34);
+				Pin_OverridePinMode_mE7801609FEC3CCCF923C80E331A9C13F8D781AD0(L_34, L_35, (bool)1, NULL);
+				goto IL_0108_1;
+			}
+
+IL_00c5_1:
+			{
+				// Log.Debug("pinMode of <color=#4CAF50>" + pin + "</color> already set to <color=#2e7d32>" + mode + "</color>");
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_37 = L_36;
+				NullCheck(L_37);
+				ArrayElementTypeCheck (L_37, _stringLiteralC7A65D175027BE30C72C17083753477DD21DA5BC);
+				(L_37)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteralC7A65D175027BE30C72C17083753477DD21DA5BC);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = L_37;
+				String_t* L_39;
+				L_39 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin1), NULL);
+				NullCheck(L_38);
+				ArrayElementTypeCheck (L_38, L_39);
+				(L_38)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_39);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_40 = L_38;
+				NullCheck(L_40);
+				ArrayElementTypeCheck (L_40, _stringLiteral5972BF4C4C42436699328E28BDDEC6247F41ED84);
+				(L_40)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral5972BF4C4C42436699328E28BDDEC6247F41ED84);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_41 = L_40;
+				Il2CppFakeBox<int32_t> L_42(PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var, (&___mode2));
+				String_t* L_43;
+				L_43 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_42), NULL);
+				NullCheck(L_41);
+				ArrayElementTypeCheck (L_41, L_43);
+				(L_41)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_43);
+				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_44 = L_41;
+				NullCheck(L_44);
+				ArrayElementTypeCheck (L_44, _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+				(L_44)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+				String_t* L_45;
+				L_45 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_44, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+				Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(L_45, (bool)0, NULL);
+			}
+
+IL_0108_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				bool L_46;
+				L_46 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_1), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_46)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_0124;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0124:
+	{
+		// if (!pinExists)
+		bool L_47 = V_0;
+		if (L_47)
+		{
+			goto IL_0224;
+		}
+	}
+	{
+		// Pin newPin = new Pin(target, pin, mode);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_48 = ___target0;
+		int32_t L_49 = ___pin1;
+		int32_t L_50 = ___mode2;
+		Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_51 = (Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970*)il2cpp_codegen_object_new(Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970_il2cpp_TypeInfo_var);
+		NullCheck(L_51);
+		Pin__ctor_mEEFC631D95FB17F0DF21552B1113F6450F78074C(L_51, L_48, L_49, L_50, NULL);
+		V_3 = L_51;
+		// pins.Add(newPin);
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_52 = __this->___pins_6;
+		Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_53 = V_3;
+		NullCheck(L_52);
+		List_1_Add_m1138055AD6C3CCA1230BCDC8AE134ACFD492602A_inline(L_52, L_53, List_1_Add_m1138055AD6C3CCA1230BCDC8AE134ACFD492602A_RuntimeMethod_var);
+		// string arduinoTarget = target != null ? " on the arduino <color=#ff3355>" + target.name + "</color> " : " ";
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_54 = ___target0;
+		if (L_54)
+		{
+			goto IL_0149;
+		}
+	}
+	{
+		G_B18_0 = _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
+		goto IL_015e;
+	}
+
+IL_0149:
+	{
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_55 = ___target0;
+		NullCheck(L_55);
+		String_t* L_56 = L_55->___name_0;
+		String_t* L_57;
+		L_57 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteralB598013F46389064D039C38DB16C2B7D0B7B7143, L_56, _stringLiteralA7B911F2B07F59FDFBA9FE60A586F381EAF21E89, NULL);
+		G_B18_0 = L_57;
+	}
+
+IL_015e:
+	{
+		V_4 = G_B18_0;
+		// if ((target == null && uduinoDevices.Count != 0) || //if target is not set but at least one card is connected
+		//    (target != null && UduinoTargetExists(target)))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_58 = ___target0;
+		if (L_58)
+		{
+			goto IL_0170;
+		}
+	}
+	{
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_59 = __this->___uduinoDevices_5;
+		NullCheck(L_59);
+		int32_t L_60;
+		L_60 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_59, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_60)
+		{
+			goto IL_017c;
+		}
+	}
+
+IL_0170:
+	{
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_61 = ___target0;
+		if (!L_61)
+		{
+			goto IL_01d4;
+		}
+	}
+	{
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_62 = ___target0;
+		bool L_63;
+		L_63 = UduinoManager_UduinoTargetExists_mE4824DFA8752C227F10078AA80F77F13702262DD(__this, L_62, NULL);
+		if (!L_63)
+		{
+			goto IL_01d4;
+		}
+	}
+
+IL_017c:
+	{
+		// Log.Debug("Set pinMode of <color=#4CAF50>" + pin + "</color>" + arduinoTarget + "to <color=#2e7d32>" + mode + "</color>");
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_64 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_65 = L_64;
+		NullCheck(L_65);
+		ArrayElementTypeCheck (L_65, _stringLiteral6CE032B64371F6FEA1278B32519FC32136F8604B);
+		(L_65)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral6CE032B64371F6FEA1278B32519FC32136F8604B);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_66 = L_65;
+		String_t* L_67;
+		L_67 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin1), NULL);
+		NullCheck(L_66);
+		ArrayElementTypeCheck (L_66, L_67);
+		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_67);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_68 = L_66;
+		NullCheck(L_68);
+		ArrayElementTypeCheck (L_68, _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		(L_68)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_69 = L_68;
+		String_t* L_70 = V_4;
+		NullCheck(L_69);
+		ArrayElementTypeCheck (L_69, L_70);
+		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_70);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_71 = L_69;
+		NullCheck(L_71);
+		ArrayElementTypeCheck (L_71, _stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951);
+		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_72 = L_71;
+		Il2CppFakeBox<int32_t> L_73(PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var, (&___mode2));
+		String_t* L_74;
+		L_74 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_73), NULL);
+		NullCheck(L_72);
+		ArrayElementTypeCheck (L_72, L_74);
+		(L_72)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_74);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_75 = L_72;
+		NullCheck(L_75);
+		ArrayElementTypeCheck (L_75, _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		(L_75)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		String_t* L_76;
+		L_76 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_75, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(L_76, (bool)0, NULL);
+		// newPin.Init();
+		Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_77 = V_3;
+		NullCheck(L_77);
+		Pin_Init_m99AC3EFBEBF1827AD5FBDC55EC2B1B3329584E1C(L_77, (bool)0, NULL);
+		return;
+	}
+
+IL_01d4:
+	{
+		// Log.Debug("Added to queue PinMode of <color=#4CAF50>" + pin + "</color>" + arduinoTarget + "to <color=#2e7d32>" + mode + "</color>");
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_78 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_79 = L_78;
+		NullCheck(L_79);
+		ArrayElementTypeCheck (L_79, _stringLiteral19DEE56628C563E7C506B307E0C04B49CDB76A75);
+		(L_79)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral19DEE56628C563E7C506B307E0C04B49CDB76A75);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_80 = L_79;
+		String_t* L_81;
+		L_81 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin1), NULL);
+		NullCheck(L_80);
+		ArrayElementTypeCheck (L_80, L_81);
+		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_81);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_82 = L_80;
+		NullCheck(L_82);
+		ArrayElementTypeCheck (L_82, _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		(L_82)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_83 = L_82;
+		String_t* L_84 = V_4;
+		NullCheck(L_83);
+		ArrayElementTypeCheck (L_83, L_84);
+		(L_83)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_84);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_85 = L_83;
+		NullCheck(L_85);
+		ArrayElementTypeCheck (L_85, _stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951);
+		(L_85)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralD119569FEEC107CD2351DF4CA4321BFF1CCAF951);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_86 = L_85;
+		Il2CppFakeBox<int32_t> L_87(PinMode_t917A40F4589866C97F9C176A7E7AF187CBF4EC23_il2cpp_TypeInfo_var, (&___mode2));
+		String_t* L_88;
+		L_88 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_87), NULL);
+		NullCheck(L_86);
+		ArrayElementTypeCheck (L_86, L_88);
+		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_88);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_89 = L_86;
+		NullCheck(L_89);
+		ArrayElementTypeCheck (L_89, _stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		(L_89)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteralCBE844AF922BC0AC1AB4CA94466DC7FD7038D0E2);
+		String_t* L_90;
+		L_90 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_89, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(L_90, (bool)0, NULL);
+	}
+
+IL_0224:
+	{
+		// }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::PinValueToBoardValue(Uduino.AnalogPin,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___boardType1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AnalogPin_tAF6656A2A9F814B1B3D0664DC08E75D2D2F6FF17_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if(boardType == -1) boardType = defaultArduinoBoardType;
+		int32_t L_0 = ___boardType1;
+		if ((!(((uint32_t)L_0) == ((uint32_t)(-1)))))
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		// if(boardType == -1) boardType = defaultArduinoBoardType;
+		int32_t L_1 = __this->___defaultArduinoBoardType_27;
+		___boardType1 = L_1;
+	}
+
+IL_000c:
+	{
+		// return BoardsTypeList.Boards.GetBoardFromId(boardType).GetPin(Enum.GetName(pin.GetType(), pin));
+		BoardsTypeList_tD0556B7CCE16A8E558D3541C17F8566D03EB5C86* L_2;
+		L_2 = BoardsTypeList_get_Boards_m9B2355F3DC58D45CC0D5DE7C0506ADF810E0BAAB(NULL);
+		int32_t L_3 = ___boardType1;
+		NullCheck(L_2);
+		ArduinoBoardType_t99C827A1324DF141A876DE7C1954B55A6B71EECB* L_4;
+		L_4 = BoardsTypeList_GetBoardFromId_m2DBC7B3ABA3C9D07544B66C868EBB4C2BDAB0CB0(L_2, L_3, NULL);
+		int32_t L_5 = ___pin0;
+		int32_t L_6 = L_5;
+		RuntimeObject* L_7 = Box(AnalogPin_tAF6656A2A9F814B1B3D0664DC08E75D2D2F6FF17_il2cpp_TypeInfo_var, &L_6);
+		Type_t* L_8;
+		L_8 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_7, NULL);
+		int32_t L_9 = ___pin0;
+		int32_t L_10 = L_9;
+		RuntimeObject* L_11 = Box(AnalogPin_tAF6656A2A9F814B1B3D0664DC08E75D2D2F6FF17_il2cpp_TypeInfo_var, &L_10);
+		il2cpp_codegen_runtime_class_init_inline(Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_il2cpp_TypeInfo_var);
+		String_t* L_12;
+		L_12 = Enum_GetName_m4979EACFA1491E66FBCAD1DFDD78B5A678111E41(L_8, L_11, NULL);
+		NullCheck(L_4);
+		int32_t L_13;
+		L_13 = ArduinoBoardType_GetPin_m715C1325CEC6946F6AA957C3E8CCA083A617D778(L_4, L_12, NULL);
+		return L_13;
+	}
+}
+// System.Void Uduino.UduinoManager::InitPin(System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitPin_m468E8629D0CD83F3BD028F678DCFB502D8F3DBF9 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___mode1, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(null, pin, mode);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___mode1;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitPin(Uduino.AnalogPin,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitPin_mDD6D048E7513F3A53B2878F9B08CE8A06DEFD508 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___mode1, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(null, (int)pin, mode);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___mode1;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitPin(Uduino.UduinoDevice,System.Int32,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitPin_mECF0C90297C718F2DF2CF869C15249AF7DD23C5B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) 
+{
+	{
+		// pinMode(target, pin, mode);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		int32_t L_2 = ___mode2;
+		UduinoManager_pinMode_m954B30A7D27E02B219FCA058392CBC00A50C67E4(__this, L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitPin(System.String,Uduino.AnalogPin,Uduino.PinMode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitPin_mAE19E9F602BF7FE88CC83F6278C9C4C6A8FF6546 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, int32_t ___pin1, int32_t ___mode2, const RuntimeMethod* method) 
+{
+	{
+		// pinMode((int)pin, mode);
+		int32_t L_0 = ___pin1;
+		int32_t L_1 = ___mode2;
+		UduinoManager_pinMode_m4F92F3E359AB3D17DB12828BDFA14325A1D5C842(__this, L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitAllPins()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllPins_m6EBAEB38BF1F96D0D7E739343CD23B16D2E6D2F7 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1C7A9E8795DAC93A625C23D6E9F2BC7332ABF459);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral83DF22AD65952708CEE69B99CB54A869A52066AC);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// foreach(Pin pin in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0026:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_0), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_001b_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach(Pin pin in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_0), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				// pin.Init(true);
+				NullCheck(L_2);
+				Pin_Init_m99AC3EFBEBF1827AD5FBDC55EC2B1B3329584E1C(L_2, (bool)1, NULL);
+			}
+
+IL_001b_1:
+			{
+				// foreach(Pin pin in pins)
+				bool L_3;
+				L_3 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_0), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_3)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0034;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0034:
+	{
+		// Log.Debug("Init all pins not already initialized.");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteral83DF22AD65952708CEE69B99CB54A869A52066AC, (bool)0, NULL);
+		// SendBundle("init");
+		UduinoManager_SendBundle_m44087F083729C719A6368283A528E103D8902AC5(__this, _stringLiteral1C7A9E8795DAC93A625C23D6E9F2BC7332ABF459, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitAllArduinos()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllArduinos_mF1A765604E6B52A929A243D06FBCDA4371B6A806 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// InitAllPins();
+		UduinoManager_InitAllPins_m6EBAEB38BF1F96D0D7E739343CD23B16D2E6D2F7(__this, NULL);
+		// InitAllCallbacks();
+		UduinoManager_InitAllCallbacks_mD7C02C4037130151CEA5D6673CF95AEA966111E5(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InitAllCallbacks()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InitAllCallbacks_mD7C02C4037130151CEA5D6673CF95AEA966111E5 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_mB13FDDE0A024C1BC19CD2A55233152EC4423D1D5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m0110E77CBF84B8C1FC523C4047D29E10E0FBCAB2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m1056B9B7A584D30A0E074258330C28F782E8D145_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m72A29E6D307E2E8738DFA7CF43C60BF467CF3C49_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mA810A45B22878AFED4B647E7DD283B6015D98ADF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_2 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_3 = NULL;
+	int32_t V_4 = 0;
+	{
+		// foreach (KeyValuePair<string, Action<string>> callback in callbacksList)
+		Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* L_0 = __this->___callbacksList_7;
+		NullCheck(L_0);
+		Enumerator_t74F848CD5787E71EA12E7A528A43488230857B0C L_1;
+		L_1 = Dictionary_2_GetEnumerator_mB13FDDE0A024C1BC19CD2A55233152EC4423D1D5(L_0, Dictionary_2_GetEnumerator_mB13FDDE0A024C1BC19CD2A55233152EC4423D1D5_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0069:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m0110E77CBF84B8C1FC523C4047D29E10E0FBCAB2((&V_0), Enumerator_Dispose_m0110E77CBF84B8C1FC523C4047D29E10E0FBCAB2_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_005e_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (KeyValuePair<string, Action<string>> callback in callbacksList)
+				KeyValuePair_2_t52FE145E78F96421B8E8FE7F074DC9082CF66917 L_2;
+				L_2 = Enumerator_get_Current_m72A29E6D307E2E8738DFA7CF43C60BF467CF3C49_inline((&V_0), Enumerator_get_Current_m72A29E6D307E2E8738DFA7CF43C60BF467CF3C49_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (GetBoard(callback.Key, out devices) || callback.Key == "")
+				String_t* L_3;
+				L_3 = KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_inline((&V_1), KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_RuntimeMethod_var);
+				bool L_4;
+				L_4 = UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062(__this, L_3, (&V_2), NULL);
+				if (L_4)
+				{
+					goto IL_003a_1;
+				}
+			}
+			{
+				String_t* L_5;
+				L_5 = KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_inline((&V_1), KeyValuePair_2_get_Key_mA6BFE76F9C2B17FD7AE71E8D5DB852A4D39BEC71_RuntimeMethod_var);
+				bool L_6;
+				L_6 = String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0(L_5, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
+				if (!L_6)
+				{
+					goto IL_005e_1;
+				}
+			}
+
+IL_003a_1:
+			{
+				// foreach (UduinoDevice device in devices)
+				UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_7 = V_2;
+				V_3 = L_7;
+				V_4 = 0;
+				goto IL_0057_1;
+			}
+
+IL_0041_1:
+			{
+				// foreach (UduinoDevice device in devices)
+				UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_8 = V_3;
+				int32_t L_9 = V_4;
+				NullCheck(L_8);
+				int32_t L_10 = L_9;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
+				// device.callback = callback.Value;
+				Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_12;
+				L_12 = KeyValuePair_2_get_Value_mA810A45B22878AFED4B647E7DD283B6015D98ADF_inline((&V_1), KeyValuePair_2_get_Value_mA810A45B22878AFED4B647E7DD283B6015D98ADF_RuntimeMethod_var);
+				NullCheck(L_11);
+				L_11->___callback_5 = L_12;
+				Il2CppCodeGenWriteBarrier((void**)(&L_11->___callback_5), (void*)L_12);
+				int32_t L_13 = V_4;
+				V_4 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+			}
+
+IL_0057_1:
+			{
+				// foreach (UduinoDevice device in devices)
+				int32_t L_14 = V_4;
+				UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_15 = V_3;
+				NullCheck(L_15);
+				if ((((int32_t)L_14) < ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
+				{
+					goto IL_0041_1;
+				}
+			}
+
+IL_005e_1:
+			{
+				// foreach (KeyValuePair<string, Action<string>> callback in callbacksList)
+				bool L_16;
+				L_16 = Enumerator_MoveNext_m1056B9B7A584D30A0E074258330C28F782E8D145((&V_0), Enumerator_MoveNext_m1056B9B7A584D30A0E074258330C28F782E8D145_RuntimeMethod_var);
+				if (L_16)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0077;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0077:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::arduinoWrite(Uduino.UduinoDevice,System.Int32,System.Int32,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___value2, String_t* ___typeOfPin3, String_t* ___bundle4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9753C5323A561D6CBA5D75771942BE8C1DD08AA5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2B44060A21C416F3A118C043AD7FAD1BFAE06FE);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_2 = NULL;
+	{
+		// bool onPinExists = false;
+		V_0 = (bool)0;
+		// foreach (Pin pinTarget in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003a:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_1), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002f_1;
+			}
+
+IL_0010_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_1), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				V_2 = L_2;
+				// if (pinTarget.PinTargetExists(target, pin))
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_3 = V_2;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+				int32_t L_5 = ___pin1;
+				NullCheck(L_3);
+				bool L_6;
+				L_6 = Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87(L_3, L_4, L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_002f_1;
+				}
+			}
+			{
+				// pinTarget.SendPinValue(value, typeOfPin, bundle);
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_7 = V_2;
+				int32_t L_8 = ___value2;
+				String_t* L_9 = ___typeOfPin3;
+				String_t* L_10 = ___bundle4;
+				NullCheck(L_7);
+				Pin_SendPinValue_m047100B7E8BE59C845DE44D86B187A5142B30C07(L_7, L_8, L_9, L_10, NULL);
+				// onPinExists = true;
+				V_0 = (bool)1;
+			}
+
+IL_002f_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				bool L_11;
+				L_11 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_1), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_11)
+				{
+					goto IL_0010_1;
+				}
+			}
+			{
+				goto IL_0048;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0048:
+	{
+		// if (!onPinExists)
+		bool L_12 = V_0;
+		if (L_12)
+		{
+			goto IL_0067;
+		}
+	}
+	{
+		// Log.Info("You are trying to send a message to the pin " + pin + " but this pin is not initialized. \r\nUse the function UduinoManager.Instance.InitPin(..)");
+		String_t* L_13;
+		L_13 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___pin1), NULL);
+		String_t* L_14;
+		L_14 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteral9753C5323A561D6CBA5D75771942BE8C1DD08AA5, L_13, _stringLiteralC2B44060A21C416F3A118C043AD7FAD1BFAE06FE, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Info_mE8402069B4FA317A825839914D6134CC7A6033FD(L_14, (bool)0, NULL);
+	}
+
+IL_0067:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::digitalWrite(Uduino.UduinoDevice,System.Int32,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_digitalWrite_m529836DAEB7886854531EA84F2C6F5CB6A76CBCB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___value2, String_t* ___bundle3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (value <= 150) value = 0;
+		int32_t L_0 = ___value2;
+		if ((((int32_t)L_0) > ((int32_t)((int32_t)150))))
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// if (value <= 150) value = 0;
+		___value2 = 0;
+		goto IL_0014;
+	}
+
+IL_000d:
+	{
+		// else value = 255;
+		___value2 = ((int32_t)255);
+	}
+
+IL_0014:
+	{
+		// arduinoWrite(target,pin,value,"d", bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1 = ___target0;
+		int32_t L_2 = ___pin1;
+		int32_t L_3 = ___value2;
+		String_t* L_4 = ___bundle3;
+		UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93(__this, L_1, L_2, L_3, _stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03, L_4, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::digitalWrite(System.Int32,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_digitalWrite_m98C76698A8F5FFD78A0B899FE135C7A74581D54A (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___value1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	{
+		// digitalWrite(null, pin, value, bundle);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___value1;
+		String_t* L_2 = ___bundle2;
+		UduinoManager_digitalWrite_m529836DAEB7886854531EA84F2C6F5CB6A76CBCB(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::digitalWrite(System.Int32,Uduino.State,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_digitalWrite_mEB5AAF0AE3EB8CAEBA2856A0C4FC0CE937D82359 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___state1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// arduinoWrite(null, pin, (int)state * 255,"d", bundle);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___state1;
+		String_t* L_2 = ___bundle2;
+		UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, ((int32_t)il2cpp_codegen_multiply((int32_t)L_1, ((int32_t)255))), _stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::digitalWrite(Uduino.UduinoDevice,System.Int32,Uduino.State,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_digitalWrite_mA3FF63B71873294FE91595C89EBA472DD2974668 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___state2, String_t* ___bundle3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// arduinoWrite(target, pin, (int)state * 255, "d", bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		int32_t L_2 = ___state2;
+		String_t* L_3 = ___bundle3;
+		UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93(__this, L_0, L_1, ((int32_t)il2cpp_codegen_multiply((int32_t)L_2, ((int32_t)255))), _stringLiteralA02431CF7C501A5B368C91E41283419D8FA9FB03, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::analogWrite(System.Int32,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_analogWrite_mE6D68AE27E09A3545D96FF077D95184C4530269C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, int32_t ___value1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// arduinoWrite(null, pin, value, "a", bundle);
+		int32_t L_0 = ___pin0;
+		int32_t L_1 = ___value1;
+		String_t* L_2 = ___bundle2;
+		UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, _stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::analogWrite(Uduino.UduinoDevice,System.Int32,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_analogWrite_m9A9BB3EAFF4D6DE2D95680A5972DDFCCDDCA8285 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___value2, String_t* ___bundle3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// arduinoWrite(target, pin, value, "a", bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		int32_t L_2 = ___value2;
+		String_t* L_3 = ___bundle3;
+		UduinoManager_arduinoWrite_m139A48E1A16FC3A84142C92AAF3305A745A2BD93(__this, L_0, L_1, L_2, _stringLiteral0A04B971B03DA607CE6C455184037B660CA89F78, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Int32 Uduino.UduinoManager::digitalRead(Uduino.UduinoDevice,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_digitalRead_m4949DF563F731EF497E4594F06670EF23835F13B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_2 = NULL;
+	{
+		// int readVal = 0;
+		V_0 = 0;
+		// foreach (Pin pinTarget in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0037:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_1), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002c_1;
+			}
+
+IL_0010_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_1), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				V_2 = L_2;
+				// if (pinTarget.PinTargetExists(target, pin))
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_3 = V_2;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+				int32_t L_5 = ___pin1;
+				NullCheck(L_3);
+				bool L_6;
+				L_6 = Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87(L_3, L_4, L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_002c_1;
+				}
+			}
+			{
+				// readVal = pinTarget.SendRead(bundle, digital: true);
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_7 = V_2;
+				String_t* L_8 = ___bundle2;
+				NullCheck(L_7);
+				int32_t L_9;
+				L_9 = VirtualFuncInvoker3< int32_t, String_t*, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, bool >::Invoke(6 /* System.Int32 Uduino.Pin::SendRead(System.String,System.Action`1<System.String>,System.Boolean) */, L_7, L_8, (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)NULL, (bool)1);
+				V_0 = L_9;
+			}
+
+IL_002c_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				bool L_10;
+				L_10 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_1), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_10)
+				{
+					goto IL_0010_1;
+				}
+			}
+			{
+				goto IL_0045;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0045:
+	{
+		// return readVal;
+		int32_t L_11 = V_0;
+		return L_11;
+	}
+}
+// System.Int32 Uduino.UduinoManager::digitalRead(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_digitalRead_m1720191426905756F368F6752089889F8579B600 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, String_t* ___bundle1, const RuntimeMethod* method) 
+{
+	{
+		// return digitalRead(null, pin, bundle);
+		int32_t L_0 = ___pin0;
+		String_t* L_1 = ___bundle1;
+		int32_t L_2;
+		L_2 = UduinoManager_digitalRead_m4949DF563F731EF497E4594F06670EF23835F13B(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Int32 Uduino.UduinoManager::digitalRead(Uduino.AnalogPin,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_digitalRead_mC49875D6030D27CDACE6837A4F18114421ADA937 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, String_t* ___bundle1, const RuntimeMethod* method) 
+{
+	{
+		// return digitalRead(null, PinValueToBoardValue(pin), bundle);
+		int32_t L_0 = ___pin0;
+		int32_t L_1;
+		L_1 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_0, (-1), NULL);
+		String_t* L_2 = ___bundle1;
+		int32_t L_3;
+		L_3 = UduinoManager_digitalRead_m4949DF563F731EF497E4594F06670EF23835F13B(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Int32 Uduino.UduinoManager::digitalRead(Uduino.UduinoDevice,Uduino.AnalogPin,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_digitalRead_m07409773D153E03A7AC2AD6AFA27DE71D57AEE54 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	{
+		// return digitalRead(target, PinValueToBoardValue(pin, target._boardType), bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_2 = ___target0;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->____boardType_1;
+		int32_t L_4;
+		L_4 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_1, L_3, NULL);
+		String_t* L_5 = ___bundle2;
+		int32_t L_6;
+		L_6 = UduinoManager_digitalRead_m4949DF563F731EF497E4594F06670EF23835F13B(__this, L_0, L_4, L_5, NULL);
+		return L_6;
+	}
+}
+// System.Int32 Uduino.UduinoManager::analogRead(Uduino.UduinoDevice,System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_analogRead_m4EF12F5600ABA034344F7E1F514211B1EEDCC0F4 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_2 = NULL;
+	{
+		// int readVal = -1;
+		V_0 = (-1);
+		// foreach (Pin pinTarget in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0037:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_1), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002c_1;
+			}
+
+IL_0010_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_1), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				V_2 = L_2;
+				// if (pinTarget.PinTargetExists(target, pin))
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_3 = V_2;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+				int32_t L_5 = ___pin1;
+				NullCheck(L_3);
+				bool L_6;
+				L_6 = Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87(L_3, L_4, L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_002c_1;
+				}
+			}
+			{
+				// readVal = pinTarget.SendRead(bundle);
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_7 = V_2;
+				String_t* L_8 = ___bundle2;
+				NullCheck(L_7);
+				int32_t L_9;
+				L_9 = VirtualFuncInvoker3< int32_t, String_t*, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, bool >::Invoke(6 /* System.Int32 Uduino.Pin::SendRead(System.String,System.Action`1<System.String>,System.Boolean) */, L_7, L_8, (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*)NULL, (bool)0);
+				V_0 = L_9;
+			}
+
+IL_002c_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				bool L_10;
+				L_10 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_1), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_10)
+				{
+					goto IL_0010_1;
+				}
+			}
+			{
+				goto IL_0045;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0045:
+	{
+		// return readVal;
+		int32_t L_11 = V_0;
+		return L_11;
+	}
+}
+// System.Int32 Uduino.UduinoManager::analogRead(Uduino.UduinoDevice,Uduino.AnalogPin,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_analogRead_m0AFBEE34347272E0E9839E12660EA675FE04F290 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	{
+		// return analogRead(target, PinValueToBoardValue(pin, target._boardType), bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		int32_t L_1 = ___pin1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_2 = ___target0;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->____boardType_1;
+		int32_t L_4;
+		L_4 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_1, L_3, NULL);
+		String_t* L_5 = ___bundle2;
+		int32_t L_6;
+		L_6 = UduinoManager_analogRead_m4EF12F5600ABA034344F7E1F514211B1EEDCC0F4(__this, L_0, L_4, L_5, NULL);
+		return L_6;
+	}
+}
+// System.Int32 Uduino.UduinoManager::analogRead(System.Int32,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_analogRead_mAF749A5A5C5EAB7568057D15B80B10178982BC53 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, String_t* ___bundle1, const RuntimeMethod* method) 
+{
+	{
+		// return analogRead(null, pin, bundle);
+		int32_t L_0 = ___pin0;
+		String_t* L_1 = ___bundle1;
+		int32_t L_2;
+		L_2 = UduinoManager_analogRead_m4EF12F5600ABA034344F7E1F514211B1EEDCC0F4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Int32 Uduino.UduinoManager::analogRead(Uduino.AnalogPin,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_analogRead_mBAC10662BAF552EF6B8E9252C18B0AA86E84BE78 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, String_t* ___bundle1, const RuntimeMethod* method) 
+{
+	{
+		// return analogRead(null, PinValueToBoardValue(pin), bundle);
+		int32_t L_0 = ___pin0;
+		int32_t L_1;
+		L_1 = UduinoManager_PinValueToBoardValue_mA5915AEB02B0B74CC133F991CAA926A04B070DF8(__this, L_0, (-1), NULL);
+		String_t* L_2 = ___bundle1;
+		int32_t L_3;
+		L_3 = UduinoManager_analogRead_m4EF12F5600ABA034344F7E1F514211B1EEDCC0F4(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Int32 Uduino.UduinoManager::dispatchValueForPin(Uduino.UduinoDevice,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UduinoManager_dispatchValueForPin_mCF9C7154F6B4DE415D14891C68D82C56E425F178 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, int32_t ___pin1, int32_t ___readVal2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_1 = NULL;
+	{
+		// foreach (Pin pinTarget in pins)
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_0 = __this->___pins_6;
+		NullCheck(L_0);
+		Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_1;
+		L_1 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_0, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0032:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_0), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0027_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_2;
+				L_2 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_0), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (pinTarget.PinTargetExists(target, pin))
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_3 = V_1;
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = ___target0;
+				int32_t L_5 = ___pin1;
+				NullCheck(L_3);
+				bool L_6;
+				L_6 = Pin_PinTargetExists_mAD55094A030D2093D751AA98A5F254F4B6E1DB87(L_3, L_4, L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_0027_1;
+				}
+			}
+			{
+				// pinTarget.lastReadValue = readVal;
+				Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_7 = V_1;
+				int32_t L_8 = ___readVal2;
+				NullCheck(L_7);
+				L_7->___lastReadValue_11 = L_8;
+			}
+
+IL_0027_1:
+			{
+				// foreach (Pin pinTarget in pins)
+				bool L_9;
+				L_9 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_0), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+				if (L_9)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0040;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		// return readVal;
+		int32_t L_10 = ___readVal2;
+		return L_10;
+	}
+}
+// System.String Uduino.UduinoManager::Read(Uduino.UduinoDevice,System.String,System.Action`1<System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_Read_mFC6F8AA31F92151ED6C9DD26544DF042446D938C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___message1, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action2, String_t* ___bundle3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	String_t* V_1 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		// string readVal = "";
+		V_1 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// if (bundle != null)
+		String_t* L_0 = ___bundle3;
+		if (!L_0)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		// if(GetBoard(target,out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1 = ___target0;
+		bool L_2;
+		L_2 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_1, (&V_0), NULL);
+		if (!L_2)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		// foreach(UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_0;
+		V_2 = L_3;
+		V_3 = 0;
+		goto IL_0038;
+	}
+
+IL_001b:
+	{
+		// foreach(UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_4 = V_2;
+		int32_t L_5 = V_3;
+		NullCheck(L_4);
+		int32_t L_6 = L_5;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		// device.callback = action;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8 = L_7;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_9 = ___action2;
+		NullCheck(L_8);
+		L_8->___callback_5 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&L_8->___callback_5), (void*)L_9);
+		// device.AddToBundle(message, bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_10 = L_8;
+		String_t* L_11 = ___message1;
+		String_t* L_12 = ___bundle3;
+		NullCheck(L_10);
+		UduinoDevice_AddToBundle_m48825EF05C36840AFA2FA7151D0EB18A277FD8D7(L_10, L_11, L_12, NULL);
+		// readVal =  device.lastRead;
+		NullCheck(L_10);
+		String_t* L_13 = L_10->___lastRead_2;
+		V_1 = L_13;
+		int32_t L_14 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_14, 1));
+	}
+
+IL_0038:
+	{
+		// foreach(UduinoDevice device in devices)
+		int32_t L_15 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_16 = V_2;
+		NullCheck(L_16);
+		if ((((int32_t)L_15) < ((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length)))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		goto IL_006d;
+	}
+
+IL_0040:
+	{
+		// if (GetBoard(target, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_17 = ___target0;
+		bool L_18;
+		L_18 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_17, (&V_0), NULL);
+		if (!L_18)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_19 = V_0;
+		V_2 = L_19;
+		V_3 = 0;
+		goto IL_0067;
+	}
+
+IL_0051:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_20 = V_2;
+		int32_t L_21 = V_3;
+		NullCheck(L_20);
+		int32_t L_22 = L_21;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		// device.callback = action;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_24 = L_23;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_25 = ___action2;
+		NullCheck(L_24);
+		L_24->___callback_5 = L_25;
+		Il2CppCodeGenWriteBarrier((void**)(&L_24->___callback_5), (void*)L_25);
+		// readVal = device.ReadFromArduino(message);
+		String_t* L_26 = ___message1;
+		NullCheck(L_24);
+		String_t* L_27;
+		L_27 = VirtualFuncInvoker2< String_t*, String_t*, bool >::Invoke(8 /* System.String Uduino.UduinoDevice::ReadFromArduino(System.String,System.Boolean) */, L_24, L_26, (bool)0);
+		V_1 = L_27;
+		int32_t L_28 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_28, 1));
+	}
+
+IL_0067:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_29 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_30 = V_2;
+		NullCheck(L_30);
+		if ((((int32_t)L_29) < ((int32_t)((int32_t)(((RuntimeArray*)L_30)->max_length)))))
+		{
+			goto IL_0051;
+		}
+	}
+
+IL_006d:
+	{
+		// return readVal;
+		String_t* L_31 = V_1;
+		return L_31;
+	}
+}
+// System.String Uduino.UduinoManager::Read(System.String,System.Action`1<System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_Read_m96DFCF5D555F7350D455C872B0F70DBDBFAA311A (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___message0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	String_t* V_1 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		// string readVal = "";
+		V_1 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// if (bundle != null)
+		String_t* L_0 = ___bundle2;
+		if (!L_0)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		// if (GetBoard("", out devices))
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062(__this, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_2 = L_2;
+		V_3 = 0;
+		goto IL_003a;
+	}
+
+IL_001e:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_2;
+		int32_t L_4 = V_3;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		// device.callback = action;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_7 = L_6;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_8 = ___action1;
+		NullCheck(L_7);
+		L_7->___callback_5 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_7->___callback_5), (void*)L_8);
+		// device.AddToBundle(message, bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_9 = L_7;
+		String_t* L_10 = ___message0;
+		String_t* L_11 = ___bundle2;
+		NullCheck(L_9);
+		UduinoDevice_AddToBundle_m48825EF05C36840AFA2FA7151D0EB18A277FD8D7(L_9, L_10, L_11, NULL);
+		// readVal = device.lastRead;
+		NullCheck(L_9);
+		String_t* L_12 = L_9->___lastRead_2;
+		V_1 = L_12;
+		int32_t L_13 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+	}
+
+IL_003a:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_14 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_15 = V_2;
+		NullCheck(L_15);
+		if ((((int32_t)L_14) < ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		goto IL_0073;
+	}
+
+IL_0042:
+	{
+		// if (GetBoard("", out devices))
+		bool L_16;
+		L_16 = UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062(__this, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, (&V_0), NULL);
+		if (!L_16)
+		{
+			goto IL_0073;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_17 = V_0;
+		V_2 = L_17;
+		V_3 = 0;
+		goto IL_006d;
+	}
+
+IL_0057:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_18 = V_2;
+		int32_t L_19 = V_3;
+		NullCheck(L_18);
+		int32_t L_20 = L_19;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_21 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
+		// device.callback = action;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_22 = L_21;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_23 = ___action1;
+		NullCheck(L_22);
+		L_22->___callback_5 = L_23;
+		Il2CppCodeGenWriteBarrier((void**)(&L_22->___callback_5), (void*)L_23);
+		// readVal = device.ReadFromArduino(message);
+		String_t* L_24 = ___message0;
+		NullCheck(L_22);
+		String_t* L_25;
+		L_25 = VirtualFuncInvoker2< String_t*, String_t*, bool >::Invoke(8 /* System.String Uduino.UduinoDevice::ReadFromArduino(System.String,System.Boolean) */, L_22, L_24, (bool)0);
+		V_1 = L_25;
+		int32_t L_26 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_26, 1));
+	}
+
+IL_006d:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_27 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_28 = V_2;
+		NullCheck(L_28);
+		if ((((int32_t)L_27) < ((int32_t)((int32_t)(((RuntimeArray*)L_28)->max_length)))))
+		{
+			goto IL_0057;
+		}
+	}
+
+IL_0073:
+	{
+		// return readVal;
+		String_t* L_29 = V_1;
+		return L_29;
+	}
+}
+// System.String Uduino.UduinoManager::DirectReadFromArduino(Uduino.UduinoDevice,System.String,System.Action`1<System.String>,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_DirectReadFromArduino_m326966EDE30233F529F5E9445C85A24E78E524F6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___targetDevice0, String_t* ___message1, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action2, String_t* ___bundle3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_2 = NULL;
+	int32_t V_3 = 0;
+	{
+		// string val = "";
+		V_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// if (bundle != null)
+		String_t* L_0 = ___bundle3;
+		if (!L_0)
+		{
+			goto IL_0032;
+		}
+	}
+	{
+		// if (GetBoard(targetDevice, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1 = ___targetDevice0;
+		bool L_2;
+		L_2 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_1, (&V_1), NULL);
+		if (!L_2)
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		V_2 = L_3;
+		V_3 = 0;
+		goto IL_002a;
+	}
+
+IL_001b:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_4 = V_2;
+		int32_t L_5 = V_3;
+		NullCheck(L_4);
+		int32_t L_6 = L_5;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		// device.AddToBundle(message, bundle);
+		String_t* L_8 = ___message1;
+		String_t* L_9 = ___bundle3;
+		NullCheck(L_7);
+		UduinoDevice_AddToBundle_m48825EF05C36840AFA2FA7151D0EB18A277FD8D7(L_7, L_8, L_9, NULL);
+		int32_t L_10 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_10, 1));
+	}
+
+IL_002a:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_11 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_12 = V_2;
+		NullCheck(L_12);
+		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))
+		{
+			goto IL_001b;
+		}
+	}
+	{
+		goto IL_005f;
+	}
+
+IL_0032:
+	{
+		// if (GetBoard(targetDevice, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_13 = ___targetDevice0;
+		bool L_14;
+		L_14 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_13, (&V_1), NULL);
+		if (!L_14)
+		{
+			goto IL_005f;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_15 = V_1;
+		V_2 = L_15;
+		V_3 = 0;
+		goto IL_0059;
+	}
+
+IL_0043:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_16 = V_2;
+		int32_t L_17 = V_3;
+		NullCheck(L_16);
+		int32_t L_18 = L_17;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_19 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_18));
+		// device.callback = action;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_20 = L_19;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_21 = ___action2;
+		NullCheck(L_20);
+		L_20->___callback_5 = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&L_20->___callback_5), (void*)L_21);
+		// val = device.ReadFromArduino(message);
+		String_t* L_22 = ___message1;
+		NullCheck(L_20);
+		String_t* L_23;
+		L_23 = VirtualFuncInvoker2< String_t*, String_t*, bool >::Invoke(8 /* System.String Uduino.UduinoDevice::ReadFromArduino(System.String,System.Boolean) */, L_20, L_22, (bool)0);
+		V_0 = L_23;
+		int32_t L_24 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_24, 1));
+	}
+
+IL_0059:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_25 = V_3;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_26 = V_2;
+		NullCheck(L_26);
+		if ((((int32_t)L_25) < ((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))))
+		{
+			goto IL_0043;
+		}
+	}
+
+IL_005f:
+	{
+		// return val;
+		String_t* L_27 = V_0;
+		return L_27;
+	}
+}
+// System.Void Uduino.UduinoManager::Read(System.Int32,System.String,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Read_mFF9BC9579DBF02A3CC78AA488B0F7A72E74ADC6A (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, String_t* ___target1, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action2, const RuntimeMethod* method) 
+{
+	{
+		// DirectReadFromArduino(action: action);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = ___action2;
+		String_t* L_1;
+		L_1 = UduinoManager_DirectReadFromArduino_m326966EDE30233F529F5E9445C85A24E78E524F6(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, (String_t*)NULL, L_0, (String_t*)NULL, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::Read(System.Int32,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Read_mF2032C5BEA7B695D0E3B8858E416A5DC3B076F42 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, int32_t ___pin0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action1, const RuntimeMethod* method) 
+{
+	{
+		// DirectReadFromArduino(action: action);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = ___action1;
+		String_t* L_1;
+		L_1 = UduinoManager_DirectReadFromArduino_m326966EDE30233F529F5E9445C85A24E78E524F6(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, (String_t*)NULL, L_0, (String_t*)NULL, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager::sendCommand(Uduino.UduinoDevice,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_sendCommand_m488382E83AA091FAEA3E33F31819C36739419C8C (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___message1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC0816DF5449F22731F6E817753D932BE55FF4E80);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	int32_t V_2 = 0;
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* V_3 = NULL;
+	{
+		// if (GetBoard(target, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_0, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_0045;
+	}
+
+IL_0011:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		V_3 = L_6;
+		// if (bundle != null || limitSendRate)
+		String_t* L_7 = ___bundle2;
+		if (L_7)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		bool L_8 = __this->___limitSendRate_18;
+		if (!L_8)
+		{
+			goto IL_0039;
+		}
+	}
+
+IL_0020:
+	{
+		// if (limitSendRate) bundle = "LimitSend";
+		bool L_9 = __this->___limitSendRate_18;
+		if (!L_9)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// if (limitSendRate) bundle = "LimitSend";
+		___bundle2 = _stringLiteralC0816DF5449F22731F6E817753D932BE55FF4E80;
+	}
+
+IL_002f:
+	{
+		// device.AddToBundle(message, bundle);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_10 = V_3;
+		String_t* L_11 = ___message1;
+		String_t* L_12 = ___bundle2;
+		NullCheck(L_10);
+		UduinoDevice_AddToBundle_m48825EF05C36840AFA2FA7151D0EB18A277FD8D7(L_10, L_11, L_12, NULL);
+		// return true;
+		return (bool)1;
+	}
+
+IL_0039:
+	{
+		// device.WriteToArduino(message);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_13 = V_3;
+		String_t* L_14 = ___message1;
+		NullCheck(L_13);
+		bool L_15;
+		L_15 = VirtualFuncInvoker3< bool, String_t*, RuntimeObject*, bool >::Invoke(6 /* System.Boolean Uduino.UduinoDevice::WriteToArduino(System.String,System.Object,System.Boolean) */, L_13, L_14, NULL, (bool)0);
+		// return true;
+		return (bool)1;
+	}
+
+IL_0045:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_16 = V_2;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_17 = V_1;
+		NullCheck(L_17);
+		if ((((int32_t)L_16) < ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))))
+		{
+			goto IL_0011;
+		}
+	}
+
+IL_004b:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void Uduino.UduinoManager::sendCommand(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_sendCommand_mE6736FB202B38232C418B41EA3D1AF6A1AF39F96 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___command0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___value1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_1;
+		L_1 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_0, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC((&V_0), Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002b_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_2;
+				L_2 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_0), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+				V_1 = L_2;
+				// uduino.Value.WriteToArduino(command, BuildMessageParameters(value));
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_3;
+				L_3 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_1), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+				String_t* L_4 = ___command0;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = ___value1;
+				il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+				String_t* L_6;
+				L_6 = UduinoManager_BuildMessageParameters_mEC6BEF98C679579E190352948285EC0C0ECBCF84(L_5, NULL);
+				NullCheck(L_3);
+				bool L_7;
+				L_7 = VirtualFuncInvoker3< bool, String_t*, RuntimeObject*, bool >::Invoke(6 /* System.Boolean Uduino.UduinoDevice::WriteToArduino(System.String,System.Object,System.Boolean) */, L_3, L_4, L_6, (bool)0);
+			}
+
+IL_002b_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_0), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0044;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0044:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::sendCommand(Uduino.UduinoDevice,System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_sendCommand_m102DDD91C2310B54DFF5E98CF3A1AD7C8B27BE59 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___command1, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___value2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// if(target == null)
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		if (L_0)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_1 = __this->___uduinoDevices_5;
+		NullCheck(L_1);
+		Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_2;
+		L_2 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_1, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		V_0 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0039:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC((&V_0), Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002e_1;
+			}
+
+IL_0011_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_3;
+				L_3 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_0), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+				V_1 = L_3;
+				// uduino.Value.WriteToArduino(command, BuildMessageParameters(value));
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4;
+				L_4 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_1), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+				String_t* L_5 = ___command1;
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = ___value2;
+				il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+				String_t* L_7;
+				L_7 = UduinoManager_BuildMessageParameters_mEC6BEF98C679579E190352948285EC0C0ECBCF84(L_6, NULL);
+				NullCheck(L_4);
+				bool L_8;
+				L_8 = VirtualFuncInvoker3< bool, String_t*, RuntimeObject*, bool >::Invoke(6 /* System.Boolean Uduino.UduinoDevice::WriteToArduino(System.String,System.Object,System.Boolean) */, L_4, L_5, L_7, (bool)0);
+			}
+
+IL_002e_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				bool L_9;
+				L_9 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_0), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+				if (L_9)
+				{
+					goto IL_0011_1;
+				}
+			}
+			{
+				goto IL_0056;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0047:
+	{
+		// target.WriteToArduino(command, BuildMessageParameters(value));
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_10 = ___target0;
+		String_t* L_11 = ___command1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_12 = ___value2;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		String_t* L_13;
+		L_13 = UduinoManager_BuildMessageParameters_mEC6BEF98C679579E190352948285EC0C0ECBCF84(L_12, NULL);
+		NullCheck(L_10);
+		bool L_14;
+		L_14 = VirtualFuncInvoker3< bool, String_t*, RuntimeObject*, bool >::Invoke(6 /* System.Boolean Uduino.UduinoDevice::WriteToArduino(System.String,System.Object,System.Boolean) */, L_10, L_11, L_13, (bool)0);
+	}
+
+IL_0056:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::Write(System.String,System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Write_m2D8FD69772570B0DEFD3BA086874338EB7941551 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, String_t* ___command1, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___value2, const RuntimeMethod* method) 
+{
+	{
+		// sendCommand(GetBoard(target), command, value);
+		String_t* L_0 = ___target0;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1;
+		L_1 = UduinoManager_GetBoard_mD20418B8C26BEF956308F0DC1634AD3EE5C191E7(__this, L_0, NULL);
+		String_t* L_2 = ___command1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = ___value2;
+		UduinoManager_sendCommand_m102DDD91C2310B54DFF5E98CF3A1AD7C8B27BE59(__this, L_1, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::Write(System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Write_m23E3BFF9BE82448BB19C9C27AC95F1EBFFAC06E0 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, String_t* ___message1, String_t* ___bundle2, const RuntimeMethod* method) 
+{
+	{
+		// sendCommand(GetBoard(target), message, bundle);
+		String_t* L_0 = ___target0;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1;
+		L_1 = UduinoManager_GetBoard_mD20418B8C26BEF956308F0DC1634AD3EE5C191E7(__this, L_0, NULL);
+		String_t* L_2 = ___message1;
+		String_t* L_3 = ___bundle2;
+		bool L_4;
+		L_4 = UduinoManager_sendCommand_m488382E83AA091FAEA3E33F31819C36739419C8C(__this, L_1, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.String Uduino.UduinoManager::BuildMessageParameters(System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoManager_BuildMessageParameters_mEC6BEF98C679579E190352948285EC0C0ECBCF84 (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___parameters0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	int32_t V_1 = 0;
+	RuntimeObject* G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	RuntimeObject* G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	String_t* G_B4_0 = NULL;
+	String_t* G_B4_1 = NULL;
+	{
+		// string outputMessage = null;
+		V_0 = (String_t*)NULL;
+		// for(int i =0;i < parameters.Length;i++)
+		V_1 = 0;
+		goto IL_0034;
+	}
+
+IL_0006:
+	{
+		// outputMessage += parameters[i];
+		String_t* L_0 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = ___parameters0;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		RuntimeObject* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		RuntimeObject* L_5 = L_4;
+		G_B2_0 = L_5;
+		G_B2_1 = L_0;
+		if (L_5)
+		{
+			G_B3_0 = L_5;
+			G_B3_1 = L_0;
+			goto IL_0011;
+		}
+	}
+	{
+		G_B4_0 = ((String_t*)(NULL));
+		G_B4_1 = G_B2_1;
+		goto IL_0016;
+	}
+
+IL_0011:
+	{
+		NullCheck(G_B3_0);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B3_0);
+		G_B4_0 = L_6;
+		G_B4_1 = G_B3_1;
+	}
+
+IL_0016:
+	{
+		String_t* L_7;
+		L_7 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(G_B4_1, G_B4_0, NULL);
+		V_0 = L_7;
+		// if (i != parameters.Length - 1)
+		int32_t L_8 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = ___parameters0;
+		NullCheck(L_9);
+		if ((((int32_t)L_8) == ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_9)->max_length)), 1)))))
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		// outputMessage += parametersDelimiter;
+		String_t* L_10 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		String_t* L_11 = ((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->___parametersDelimiter_34;
+		String_t* L_12;
+		L_12 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(L_10, L_11, NULL);
+		V_0 = L_12;
+	}
+
+IL_0030:
+	{
+		// for(int i =0;i < parameters.Length;i++)
+		int32_t L_13 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_13, 1));
+	}
+
+IL_0034:
+	{
+		// for(int i =0;i < parameters.Length;i++)
+		int32_t L_14 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_15 = ___parameters0;
+		NullCheck(L_15);
+		if ((((int32_t)L_14) < ((int32_t)((int32_t)(((RuntimeArray*)L_15)->max_length)))))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		// return outputMessage;
+		String_t* L_16 = V_0;
+		return L_16;
+	}
+}
+// System.Void Uduino.UduinoManager::SetReadCallback(Uduino.UduinoDevice,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetReadCallback_m5CD59885FA8DF1C2FE7CB12DACDD9FF507D6C693 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___callback1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_mCA46B88F063E9105EDE4ADCA61BD5620782617C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	int32_t V_2 = 0;
+	String_t* V_3 = NULL;
+	{
+		// if (GetBoard(target, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_0, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_001e;
+	}
+
+IL_0011:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		// device.callback = callback;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_7 = ___callback1;
+		NullCheck(L_6);
+		L_6->___callback_5 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&L_6->___callback_5), (void*)L_7);
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_001e:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_9 = V_2;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0025:
+	{
+		// string targetName = "";
+		V_3 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// if (target != null)
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_11 = ___target0;
+		if (!L_11)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		// targetName = target.name;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_12 = ___target0;
+		NullCheck(L_12);
+		String_t* L_13 = L_12->___name_0;
+		V_3 = L_13;
+	}
+
+IL_0035:
+	{
+		// callbacksList.Add(targetName, callback);
+		Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* L_14 = __this->___callbacksList_7;
+		String_t* L_15 = V_3;
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_16 = ___callback1;
+		NullCheck(L_14);
+		Dictionary_2_Add_mCA46B88F063E9105EDE4ADCA61BD5620782617C7(L_14, L_15, L_16, Dictionary_2_Add_mCA46B88F063E9105EDE4ADCA61BD5620782617C7_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::SetReadCallback(System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SetReadCallback_mA85C33A227DE88CB7668DAA108EC289C78F90C9B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___callback0, const RuntimeMethod* method) 
+{
+	{
+		// SetReadCallback(null, callback);
+		Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_0 = ___callback0;
+		UduinoManager_SetReadCallback_m5CD59885FA8DF1C2FE7CB12DACDD9FF507D6C693(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::SendBundle(Uduino.UduinoDevice,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SendBundle_m08D2163304F16F9BB79B842C6445A930D3420D11 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, String_t* ___bundleName1, const RuntimeMethod* method) 
+{
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		// if (GetBoard(target, out devices))
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m5CDE64DAE91BECD8E84E2202E2F5774F20CF8765(__this, L_0, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_001e;
+	}
+
+IL_0011:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		// device.SendBundle(bundleName);
+		String_t* L_7 = ___bundleName1;
+		NullCheck(L_6);
+		UduinoDevice_SendBundle_m09E680E9F78165DD30694A6DC4CB19EEC1B201D5(L_6, L_7, NULL);
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_001e:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_9 = V_2;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
+		{
+			goto IL_0011;
+		}
+	}
+
+IL_0024:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::SendBundle(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_SendBundle_m44087F083729C719A6368283A528E103D8902AC5 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___bundleName0, const RuntimeMethod* method) 
+{
+	{
+		// SendBundle(null, bundleName);
+		String_t* L_0 = ___bundleName0;
+		UduinoManager_SendBundle_m08D2163304F16F9BB79B842C6445A930D3420D11(__this, (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)NULL, L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator Uduino.UduinoManager::AutoSendBundle()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoManager_AutoSendBundle_mA51BC80C61A3AAD1AB400B0B82AF6994B39A0CBF (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* L_0 = (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0*)il2cpp_codegen_object_new(U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CAutoSendBundleU3Ed__158__ctor_m8D78C399578EC0481409F19CFA67D937A33D1A30(L_0, 0, NULL);
+		U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		return L_1;
+	}
+}
+// System.Void Uduino.UduinoManager::AlwaysRead(System.String,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_AlwaysRead_m9C7E1C15CB2DF529A68E7BAC402F2510CFB2DE1D (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___action1, const RuntimeMethod* method) 
+{
+	{
+		// public void AlwaysRead(string target, Action<string> action) { }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::AlwaysRead(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_AlwaysRead_mFFF8259DDB890300486FFA93F3093D6B7819E914 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, const RuntimeMethod* method) 
+{
+	{
+		// public void AlwaysRead(string target) { }
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager::ExtensionIsPresentAndActive(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_ExtensionIsPresentAndActive_m6020EB1547D1C8F156C2AFED71BB24ADCF963475 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___extensionName0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		// bool isPresent = false;
+		V_0 = (bool)0;
+		// bool isActive = false;
+		V_1 = (bool)0;
+		// presentExtentionsMap.TryGetValue(extensionName, out isPresent);
+		IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* L_0 = __this->___presentExtentionsMap_10;
+		String_t* L_1 = ___extensionName0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var);
+		// if(isPresent)
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		// activeExtentionsMap.TryGetValue(extensionName, out isActive);
+		IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7* L_4 = __this->___activeExtentionsMap_9;
+		String_t* L_5 = ___extensionName0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E(L_4, L_5, (&V_1), Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var);
+	}
+
+IL_0025:
+	{
+		// return isPresent && isActive;
+		bool L_7 = V_0;
+		bool L_8 = V_1;
+		return (bool)((int32_t)((int32_t)L_7&(int32_t)L_8));
+	}
+}
+// System.Boolean Uduino.UduinoManager::ExtensionIsPresent(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_ExtensionIsPresent_m48FD6B61C17A5C03E0000E5C3798736ECC317798 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___extensionName0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// bool isPresent = false;
+		V_0 = (bool)0;
+		// presentExtentionsMap.TryGetValue(extensionName, out isPresent);
+		IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* L_0 = __this->___presentExtentionsMap_10;
+		String_t* L_1 = ___extensionName0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mF3B5E05F3C15CF53A05AB1002D93376293F6B23E_RuntimeMethod_var);
+		// return isPresent;
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Uduino.UduinoManager::StartReading(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StartReading_m9A1F61FEC1A62283C894339762B2C6E17E58FAD6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) 
+{
+	{
+		// if (readingMethod == HardwareReading.Coroutines)
+		int32_t L_0 = __this->___readingMethod_17;
+		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// StartCoroutine(CoroutineRead(target));
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1 = ___target0;
+		RuntimeObject* L_2;
+		L_2 = UduinoManager_CoroutineRead_mA7FF57228C45FC49EB873151654259452D3B757E(__this, L_1, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
+		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
+		return;
+	}
+
+IL_0018:
+	{
+		// StartThread();
+		UduinoManager_StartThread_mC32B06EEB8CA3F57E6CB69860EF6DE64EB7FFBC2(__this, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::StartThread(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StartThread_mC32B06EEB8CA3F57E6CB69860EF6DE64EB7FFBC2 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, bool ___isForced0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_ReadPorts_mA774AF4B36D6AE963E7F86A355D43EC7C15CFDB8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral12636F2EBD87F393513DA17343140116A5D286A4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7F3B9AC26FFBE3F553F00ED6237AEF127E6D73BC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA9C1A32E67387C64F1045328FB2F8107868A897B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE36628B66A5AA40224EB21CBA4087D80BFF84984);
+		s_Il2CppMethodInitialized = true;
+	}
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (isForced && threadRestartTrials > 10)
+		bool L_0 = ___isForced0;
+		if (!L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		int32_t L_1 = __this->___threadRestartTrials_59;
+		if ((((int32_t)L_1) <= ((int32_t)((int32_t)10))))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// Log.Error("Thread cannot restart.");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD(_stringLiteralA9C1A32E67387C64F1045328FB2F8107868A897B, (bool)0, NULL);
+		// return;
+		return;
+	}
+
+IL_0019:
+	{
+		// if (Application.isPlaying && _thread == null && readingMethod == HardwareReading.Thread && !IsRunning())
+		bool L_2;
+		L_2 = Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337(NULL);
+		if (!L_2)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_3 = __this->____thread_57;
+		if (L_3)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		int32_t L_4 = __this->___readingMethod_17;
+		if (L_4)
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		bool L_5;
+		L_5 = UduinoManager_IsRunning_m05261CF3CBCF190F3325333FA4D5C321B83F10AF_inline(__this, NULL);
+		if (L_5)
+		{
+			goto IL_009e;
+		}
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// if(isForced)
+			bool L_6 = ___isForced0;
+			if (!L_6)
+			{
+				goto IL_0054_1;
+			}
+		}
+		{
+			// Log.Warning("Resarting Thread");
+			il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+			Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(_stringLiteral12636F2EBD87F393513DA17343140116A5D286A4, (bool)0, NULL);
+			// threadRestartTrials++;
+			int32_t L_7 = __this->___threadRestartTrials_59;
+			__this->___threadRestartTrials_59 = ((int32_t)il2cpp_codegen_add(L_7, 1));
+		}
+
+IL_0054_1:
+		{
+			// Log.Debug("Starting Uduino read/write thread.");
+			il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+			Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteral7F3B9AC26FFBE3F553F00ED6237AEF127E6D73BC, (bool)0, NULL);
+			// _thread = new Thread(new ThreadStart(ReadPorts));
+			ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_8 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
+			NullCheck(L_8);
+			ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_8, __this, (intptr_t)((void*)UduinoManager_ReadPorts_mA774AF4B36D6AE963E7F86A355D43EC7C15CFDB8_RuntimeMethod_var), NULL);
+			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_9 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
+			NullCheck(L_9);
+			Thread__ctor_m1FA23A179DF4F5B659689D6FA40DE903086212E2(L_9, L_8, NULL);
+			__this->____thread_57 = L_9;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->____thread_57), (void*)L_9);
+			// threadRunning = true;
+			__this->___threadRunning_58 = (bool)1;
+			// _thread.Start();
+			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_10 = __this->____thread_57;
+			NullCheck(L_10);
+			Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA(L_10, NULL);
+			// _thread.IsBackground = true;
+			Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_11 = __this->____thread_57;
+			NullCheck(L_11);
+			Thread_set_IsBackground_m45F00BD4C46F9B8A7C46A20A170B22BABB8FBA30(L_11, (bool)1, NULL);
+			// }
+			goto IL_00a9;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0096;
+		}
+		throw e;
+	}
+
+CATCH_0096:
+	{// begin catch(System.Exception)
+		// Log.Error(e);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var)));
+		Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), (bool)0, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00a9;
+	}// end catch (depth: 1)
+
+IL_009e:
+	{
+		// Log.Debug("Uduino read/write thread is already started.");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Debug_m0B3DA316003BD25A5F73A72C6850D23898E88969(_stringLiteralE36628B66A5AA40224EB21CBA4087D80BFF84984, (bool)0, NULL);
+	}
+
+IL_00a9:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::StopThread()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// threadRunning = false;
+		__this->___threadRunning_58 = (bool)0;
+		// _thread = null;
+		__this->____thread_57 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____thread_57), (void*)(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager::IsRunning()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UduinoManager_IsRunning_m05261CF3CBCF190F3325333FA4D5C321B83F10AF (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// return threadRunning;
+		bool L_0 = __this->___threadRunning_58;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_Update_m69307829E896B7C37C297DA39C29FECDE0F31495 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6580FDD695D838F3D7CB01260141941DCEBC14F7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8847398E02BC761787F968F9606E13C7F3A5518E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral96BDDFE0CD93D52933ED7BED04E10608BA31A953);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB9C5020B04A1655086BA6596E0745E3B934296FC);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	bool V_2 = false;
+	{
+		// Action tmpAction = null;
+		V_0 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)NULL;
+		// lock (_lockAsync)
+		RuntimeObject* L_0 = __this->____lockAsync_13;
+		V_1 = L_0;
+		V_2 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_002b:
+			{// begin finally (depth: 1)
+				{
+					bool L_1 = V_2;
+					if (!L_1)
+					{
+						goto IL_0034;
+					}
+				}
+				{
+					RuntimeObject* L_2 = V_1;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_2, NULL);
+				}
+
+IL_0034:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				RuntimeObject* L_3 = V_1;
+				Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_3, (&V_2), NULL);
+				// if (_callbacksAsync != null)
+				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_4 = __this->____callbacksAsync_14;
+				if (!L_4)
+				{
+					goto IL_0029_1;
+				}
+			}
+			{
+				// tmpAction = _callbacksAsync;
+				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = __this->____callbacksAsync_14;
+				V_0 = L_5;
+				// _callbacksAsync = null;
+				__this->____callbacksAsync_14 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->____callbacksAsync_14), (void*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)NULL);
+			}
+
+IL_0029_1:
+			{
+				// }
+				goto IL_0035;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0035:
+	{
+		// if (tmpAction != null) tmpAction();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = V_0;
+		if (!L_6)
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		// if (tmpAction != null) tmpAction();
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = V_0;
+		NullCheck(L_7);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(L_7, NULL);
+	}
+
+IL_003e:
+	{
+		// if (_thread != null && !isApplicationQuiting &&
+		//     _thread.ThreadState == ThreadState.Stopped)
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_8 = __this->____thread_57;
+		if (!L_8)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		bool L_9 = __this->___isApplicationQuiting_60;
+		if (L_9)
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_10 = __this->____thread_57;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = Thread_get_ThreadState_mEEA2DF3EBB42CC1B30E9B6B6732579E799A243A8(L_10, NULL);
+		if ((!(((uint32_t)L_11) == ((uint32_t)((int32_t)16)))))
+		{
+			goto IL_006a;
+		}
+	}
+	{
+		// StopThread();
+		UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91(__this, NULL);
+		// StartThread(true);
+		UduinoManager_StartThread_mC32B06EEB8CA3F57E6CB69860EF6DE64EB7FFBC2(__this, (bool)1, NULL);
+	}
+
+IL_006a:
+	{
+		// if(!ExtensionIsPresentAndActive("UduinoDevice_DesktopBluetoothLE") && autoReconnect && shouldReconnect)
+		bool L_12;
+		L_12 = UduinoManager_ExtensionIsPresentAndActive_m6020EB1547D1C8F156C2AFED71BB24ADCF963475(__this, _stringLiteral8847398E02BC761787F968F9606E13C7F3A5518E, NULL);
+		if (L_12)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		bool L_13 = __this->___autoReconnect_39;
+		if (!L_13)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		bool L_14 = __this->___shouldReconnect_41;
+		if (!L_14)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		// StartCoroutine("DiscoverWithDelay", autoReconnectDelay);
+		float L_15 = __this->___autoReconnectDelay_40;
+		float L_16 = L_15;
+		RuntimeObject* L_17 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_16);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_18;
+		L_18 = MonoBehaviour_StartCoroutine_mD754B72714F15210DDA429A096D853852FF437AB(__this, _stringLiteral96BDDFE0CD93D52933ED7BED04E10608BA31A953, L_17, NULL);
+		// shouldReconnect = false;
+		__this->___shouldReconnect_41 = (bool)0;
+		// Log.Warning("No Board detected. Reconnecting in " + autoReconnectDelay  + " seconds.");
+		float* L_19 = (&__this->___autoReconnectDelay_40);
+		String_t* L_20;
+		L_20 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_19, NULL);
+		String_t* L_21;
+		L_21 = String_Concat_m9B13B47FCB3DF61144D9647DDA05F527377251B0(_stringLiteralB9C5020B04A1655086BA6596E0745E3B934296FC, L_20, _stringLiteral6580FDD695D838F3D7CB01260141941DCEBC14F7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(L_21, (bool)0, NULL);
+	}
+
+IL_00c5:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::ReadPorts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_ReadPorts_mA774AF4B36D6AE963E7F86A355D43EC7C15CFDB8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral237E02D6A8761E49B75DCA6E3A3C7F57312A8A28);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* V_0 = NULL;
+	bool V_1 = false;
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		// if (ExtensionIsPresentAndActive("UduinoDevice_AndroidSerial"))
+		bool L_0;
+		L_0 = UduinoManager_ExtensionIsPresentAndActive_m6020EB1547D1C8F156C2AFED71BB24ADCF963475(__this, _stringLiteral237E02D6A8761E49B75DCA6E3A3C7F57312A8A28, NULL);
+		if (!L_0)
+		{
+			goto IL_00a0;
+		}
+	}
+	{
+		// AndroidJNI.AttachCurrentThread(); // Sepcific android serial related code
+		int32_t L_1;
+		L_1 = AndroidJNI_AttachCurrentThread_mD5647083E547A77F9377BDB78106D426878A00E7(NULL);
+		goto IL_00a0;
+	}
+
+IL_001b:
+	{
+		// lock (uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_2 = __this->___uduinoDevices_5;
+		V_0 = L_2;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0076:
+			{// begin finally (depth: 1)
+				{
+					bool L_3 = V_1;
+					if (!L_3)
+					{
+						goto IL_007f;
+					}
+				}
+				{
+					Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_4 = V_0;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_4, NULL);
+				}
+
+IL_007f:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_5 = V_0;
+				Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_5, (&V_1), NULL);
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_6 = __this->___uduinoDevices_5;
+				NullCheck(L_6);
+				Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_7;
+				L_7 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_6, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+				V_2 = L_7;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_0068_1:
+					{// begin finally (depth: 2)
+						Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC((&V_2), Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						goto IL_005d_2;
+					}
+
+IL_003a_2:
+					{
+						// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+						KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_8;
+						L_8 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_2), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+						V_3 = L_8;
+						// uduino.Value.WriteToArduinoLoop();
+						UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_9;
+						L_9 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_3), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+						NullCheck(L_9);
+						bool L_10;
+						L_10 = VirtualFuncInvoker0< bool >::Invoke(7 /* System.Boolean Uduino.UduinoDevice::WriteToArduinoLoop() */, L_9);
+						// uduino.Value.ReadFromArduinoLoop();
+						UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_11;
+						L_11 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_3), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+						NullCheck(L_11);
+						bool L_12;
+						L_12 = VirtualFuncInvoker1< bool, bool >::Invoke(9 /* System.Boolean Uduino.UduinoDevice::ReadFromArduinoLoop(System.Boolean) */, L_11, (bool)0);
+					}
+
+IL_005d_2:
+					{
+						// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+						bool L_13;
+						L_13 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_2), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+						if (L_13)
+						{
+							goto IL_003a_2;
+						}
+					}
+					{
+						goto IL_0080;
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0080:
+	{
+		// Thread.Sleep(threadIdleDelay);
+		int32_t L_14 = __this->___threadIdleDelay_22;
+		Thread_Sleep_m63B7D29DC735584F4D80373E48C91B34FF32D1A0(L_14, NULL);
+		// if (limitSendRate) Thread.Sleep((int)sendRateDelay / 2);
+		bool L_15 = __this->___limitSendRate_18;
+		if (!L_15)
+		{
+			goto IL_00a0;
+		}
+	}
+	{
+		// if (limitSendRate) Thread.Sleep((int)sendRateDelay / 2);
+		int32_t L_16 = __this->___sendRateDelay_30;
+		Thread_Sleep_m63B7D29DC735584F4D80373E48C91B34FF32D1A0(((int32_t)(L_16/2)), NULL);
+	}
+
+IL_00a0:
+	{
+		// while (IsRunning() && !isApplicationQuiting)
+		bool L_17;
+		L_17 = UduinoManager_IsRunning_m05261CF3CBCF190F3325333FA4D5C321B83F10AF_inline(__this, NULL);
+		if (!L_17)
+		{
+			goto IL_00b3;
+		}
+	}
+	{
+		bool L_18 = __this->___isApplicationQuiting_60;
+		if (!L_18)
+		{
+			goto IL_001b;
+		}
+	}
+
+IL_00b3:
+	{
+		// _thread = null;
+		__this->____thread_57 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____thread_57), (void*)(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::ReadWriteArduino(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_ReadWriteArduino_m43E6D13CC7332B6E100F582A41537D6BE766D0DB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// if(target != null)
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___target0;
+		if (!L_0)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// target.WriteToArduinoLoop();
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_1 = ___target0;
+		NullCheck(L_1);
+		bool L_2;
+		L_2 = VirtualFuncInvoker0< bool >::Invoke(7 /* System.Boolean Uduino.UduinoDevice::WriteToArduinoLoop() */, L_1);
+		// target.ReadFromArduinoLoop();
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_3 = ___target0;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = VirtualFuncInvoker1< bool, bool >::Invoke(9 /* System.Boolean Uduino.UduinoDevice::ReadFromArduinoLoop(System.Boolean) */, L_3, (bool)0);
+		return;
+	}
+
+IL_0013:
+	{
+		// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_5 = __this->___uduinoDevices_5;
+		NullCheck(L_5);
+		Enumerator_tCC61FEFB7462CE1AD76536FA7E2A1E53825BF494 L_6;
+		L_6 = Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E(L_5, Dictionary_2_GetEnumerator_m83640CFBD7CCE1FE84A322EE0A156F4E218CF45E_RuntimeMethod_var);
+		V_0 = L_6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_004f:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC((&V_0), Enumerator_Dispose_m8FD16FEF8523F71EACF8CC42179B195770685FBC_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0044_1;
+			}
+
+IL_0021_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				KeyValuePair_2_tC964EE27345081D689AE7A14990D5AC708166AC3 L_7;
+				L_7 = Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_inline((&V_0), Enumerator_get_Current_m49FE9774218F1E227A6E648170F85FF1BACD012A_RuntimeMethod_var);
+				V_1 = L_7;
+				// uduino.Value.WriteToArduinoLoop();
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8;
+				L_8 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_1), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+				NullCheck(L_8);
+				bool L_9;
+				L_9 = VirtualFuncInvoker0< bool >::Invoke(7 /* System.Boolean Uduino.UduinoDevice::WriteToArduinoLoop() */, L_8);
+				// uduino.Value.ReadFromArduinoLoop();
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_10;
+				L_10 = KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_inline((&V_1), KeyValuePair_2_get_Value_mDBDBA7291A3AAD06D8D8F525F906E0EADB45A20D_RuntimeMethod_var);
+				NullCheck(L_10);
+				bool L_11;
+				L_11 = VirtualFuncInvoker1< bool, bool >::Invoke(9 /* System.Boolean Uduino.UduinoDevice::ReadFromArduinoLoop(System.Boolean) */, L_10, (bool)0);
+			}
+
+IL_0044_1:
+			{
+				// foreach (KeyValuePair<string, UduinoDevice> uduino in uduinoDevices)
+				bool L_12;
+				L_12 = Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06((&V_0), Enumerator_MoveNext_m238810DE1E02A267F814035B2C88914C1CCFAE06_RuntimeMethod_var);
+				if (L_12)
+				{
+					goto IL_0021_1;
+				}
+			}
+			{
+				goto IL_005d;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_005d:
+	{
+		// }
+		return;
+	}
+}
+// System.Collections.IEnumerator Uduino.UduinoManager::CoroutineRead(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UduinoManager_CoroutineRead_mA7FF57228C45FC49EB873151654259452D3B757E (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___target0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* L_0 = (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780*)il2cpp_codegen_object_new(U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CCoroutineReadU3Ed__173__ctor_mD60DA2B0781A5B5EB321DAAAF418339314ADD1F0(L_0, 0, NULL);
+		U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
+		U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* L_2 = L_1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_3 = ___target0;
+		NullCheck(L_2);
+		L_2->___target_2 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___target_2), (void*)L_3);
+		return L_2;
+	}
+}
+// System.Void Uduino.UduinoManager::TriggerEvent(System.String,Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_TriggerEvent_m7E3AC2AB6AF3260333027BFDC72908681EDFF341 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass174_0_U3CTriggerEventU3Eb__0_m22AA48E728ED4FE3A64AAB5B6E7DA690AD136E8E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* V_0 = NULL;
+	{
+		U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* L_0 = (U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__DisplayClass174_0__ctor_m34D528D848A071D3FCB966BE91537AB00C4BC188(L_0, NULL);
+		V_0 = L_0;
+		U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* L_1 = V_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_0 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
+		U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* L_2 = V_0;
+		String_t* L_3 = ___data0;
+		NullCheck(L_2);
+		L_2->___data_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___data_1), (void*)L_3);
+		U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* L_4 = V_0;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_5 = ___device1;
+		NullCheck(L_4);
+		L_4->___device_2 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&L_4->___device_2), (void*)L_5);
+		// InvokeAsync(() =>
+		// {
+		//     if (OnDataReceived != null)
+		//         OnDataReceived(data, device);
+		//     if (OnValueReceived != null)
+		//     {
+		//         Log.Warning("OnValueReceived is deprecated. Please use OnDataRecevied instead");
+		//         OnValueReceived(data, device);
+		//     }
+		//     OnDataReceivedEvent.Invoke(data, device);
+		// });
+		U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* L_6 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_7, L_6, (intptr_t)((void*)U3CU3Ec__DisplayClass174_0_U3CTriggerEventU3Eb__0_m22AA48E728ED4FE3A64AAB5B6E7DA690AD136E8E_RuntimeMethod_var), NULL);
+		UduinoManager_InvokeAsync_m43F222CBD87FF326BA8A0725394C795527659AEB(__this, L_7, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::InvokeAsync(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_InvokeAsync_m43F222CBD87FF326BA8A0725394C795527659AEB (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___callback0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	{
+		// lock (_lockAsync)
+		RuntimeObject* L_0 = __this->____lockAsync_13;
+		V_0 = L_0;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_002a:
+			{// begin finally (depth: 1)
+				{
+					bool L_1 = V_1;
+					if (!L_1)
+					{
+						goto IL_0033;
+					}
+				}
+				{
+					RuntimeObject* L_2 = V_0;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_2, NULL);
+				}
+
+IL_0033:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			RuntimeObject* L_3 = V_0;
+			Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_3, (&V_1), NULL);
+			// _callbacksAsync += callback;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_4 = __this->____callbacksAsync_14;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = ___callback0;
+			Delegate_t* L_6;
+			L_6 = Delegate_Combine_m8B9D24CED35033C7FC56501DFE650F5CB7FF012C(L_4, L_5, NULL);
+			__this->____callbacksAsync_14 = ((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_6, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var));
+			Il2CppCodeGenWriteBarrier((void**)(&__this->____callbacksAsync_14), (void*)((Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)CastclassSealed((RuntimeObject*)L_6, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var)));
+			// }
+			goto IL_0034;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0034:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::CloseAllPorts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseAllPorts_mCACD844A6BFA39FA1E28FB353055EAB7381B2B7B (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public void CloseAllPorts() { CloseAllDevices(); }
+		UduinoManager_CloseAllDevices_m5E176430F0908AAB2E609D296B10982C1112FAE8(__this, NULL);
+		// public void CloseAllPorts() { CloseAllDevices(); }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::CloseAllDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseAllDevices_m5E176430F0908AAB2E609D296B10982C1112FAE8 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Clear_m9E4C4AC938B492C96E07EEC995D0B71F61190093_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* V_0 = NULL;
+	bool V_1 = false;
+	Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	String_t* V_3 = NULL;
+	{
+		// if (uduinoDevices.Count == 0)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000e:
+	{
+		// lock (uduinoDevices) // the lock here is creating delays when closing
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_2 = __this->___uduinoDevices_5;
+		V_0 = L_2;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0077:
+			{// begin finally (depth: 1)
+				{
+					bool L_3 = V_1;
+					if (!L_3)
+					{
+						goto IL_0080;
+					}
+				}
+				{
+					Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_4 = V_0;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_4, NULL);
+				}
+
+IL_0080:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_5 = V_0;
+				Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_5, (&V_1), NULL);
+				// List<string> devicesNames = new List<string>(uduinoDevices.Keys);
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_6 = __this->___uduinoDevices_5;
+				NullCheck(L_6);
+				KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F* L_7;
+				L_7 = Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7(L_6, Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7_RuntimeMethod_var);
+				List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_8 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+				NullCheck(L_8);
+				List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC(L_8, L_7, List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC_RuntimeMethod_var);
+				// foreach (string deviceName in devicesNames)
+				NullCheck(L_8);
+				Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 L_9;
+				L_9 = List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D(L_8, List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D_RuntimeMethod_var);
+				V_2 = L_9;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_005c_1:
+					{// begin finally (depth: 2)
+						Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7((&V_2), Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7_RuntimeMethod_var);
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						goto IL_0051_2;
+					}
+
+IL_0037_2:
+					{
+						// foreach (string deviceName in devicesNames)
+						String_t* L_10;
+						L_10 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_2), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
+						V_3 = L_10;
+						// CloseDevice(uduinoDevices[deviceName]);
+						Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_11 = __this->___uduinoDevices_5;
+						String_t* L_12 = V_3;
+						NullCheck(L_11);
+						UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_13;
+						L_13 = Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78(L_11, L_12, Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+						UduinoManager_CloseDevice_mE3CDD8284077A792BDD39FBC375A691803B344AA(__this, L_13, NULL);
+					}
+
+IL_0051_2:
+					{
+						// foreach (string deviceName in devicesNames)
+						bool L_14;
+						L_14 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_2), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
+						if (L_14)
+						{
+							goto IL_0037_2;
+						}
+					}
+					{
+						goto IL_006a_1;
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+
+IL_006a_1:
+			{
+				// uduinoDevices.Clear();
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_15 = __this->___uduinoDevices_5;
+				NullCheck(L_15);
+				Dictionary_2_Clear_m9E4C4AC938B492C96E07EEC995D0B71F61190093(L_15, Dictionary_2_Clear_m9E4C4AC938B492C96E07EEC995D0B71F61190093_RuntimeMethod_var);
+				// }
+				goto IL_0081;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0081:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::CloseDevice(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseDevice_m4F5C14A5FF222D313D28F7A5EB05EA16C7546CF1 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, String_t* ___target0, const RuntimeMethod* method) 
+{
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_0 = NULL;
+	UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* V_1 = NULL;
+	int32_t V_2 = 0;
+	UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* V_3 = NULL;
+	{
+		// if (GetBoard(target, out devices))
+		String_t* L_0 = ___target0;
+		bool L_1;
+		L_1 = UduinoManager_GetBoard_m79306B9471177C8B5943212377D7DE757F547062(__this, L_0, (&V_0), NULL);
+		if (!L_1)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_2 = V_0;
+		V_1 = L_2;
+		V_2 = 0;
+		goto IL_0020;
+	}
+
+IL_0011:
+	{
+		// foreach (UduinoDevice device in devices)
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_3 = V_1;
+		int32_t L_4 = V_2;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		V_3 = L_6;
+		// CloseDevice(device);
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_7 = V_3;
+		UduinoManager_CloseDevice_mE3CDD8284077A792BDD39FBC375A691803B344AA(__this, L_7, NULL);
+		int32_t L_8 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_0020:
+	{
+		// foreach (UduinoDevice device in devices)
+		int32_t L_9 = V_2;
+		UduinoDeviceU5BU5D_t46C0CB2E7D2DA987F1D7AB321F332AA239286196* L_10 = V_1;
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
+		{
+			goto IL_0011;
+		}
+	}
+
+IL_0026:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::CloseDevice(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_CloseDevice_mE3CDD8284077A792BDD39FBC375A691803B344AA (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Remove_m8EAAC59A0B5CA19D4216DD46D1B0D0013C15B836_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8AB05959EA4107F1F91A04CDCDE7E8F07C2F52DF);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	try
+	{// begin try (depth: 1)
+		{
+			// if (device.boardStatus == BoardStatus.Closed)
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_0 = ___device0;
+			NullCheck(L_0);
+			int32_t L_1 = L_0->___boardStatus_6;
+			if ((!(((uint32_t)L_1) == ((uint32_t)4))))
+			{
+				goto IL_000e_1;
+			}
+		}
+		{
+			// return;
+			goto IL_0115;
+		}
+
+IL_000e_1:
+		{
+			// if (stopAllOnQuit)
+			bool L_2 = __this->___stopAllOnQuit_37;
+			if (!L_2)
+			{
+				goto IL_005c_1;
+			}
+		}
+		{
+			// foreach (Pin pinTarget in pins)
+			List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_3 = __this->___pins_6;
+			NullCheck(L_3);
+			Enumerator_t63E67A9193BFDCB26EB660572F0882D5A35991C2 L_4;
+			L_4 = List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75(L_3, List_1_GetEnumerator_m9D7B8850A45D343DB5969F299069FE2B2CD0EB75_RuntimeMethod_var);
+			V_0 = L_4;
+		}
+		{
+			auto __finallyBlock = il2cpp::utils::Finally([&]
+			{
+
+FINALLY_004e_1:
+				{// begin finally (depth: 2)
+					Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA((&V_0), Enumerator_Dispose_mD7DE23A06461CAB4AB0C83A16F92677017230CBA_RuntimeMethod_var);
+					return;
+				}// end finally (depth: 2)
+			});
+			try
+			{// begin try (depth: 2)
+				{
+					goto IL_0043_2;
+				}
+
+IL_0024_2:
+				{
+					// foreach (Pin pinTarget in pins)
+					Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_5;
+					L_5 = Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_inline((&V_0), Enumerator_get_Current_m2681729CFA815B813872A6D8184A877D2F2AF80C_RuntimeMethod_var);
+					V_1 = L_5;
+					// if (pinTarget.device == device || pinTarget.device == null)
+					Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_6 = V_1;
+					NullCheck(L_6);
+					UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_7 = L_6->___device_1;
+					UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_8 = ___device0;
+					if ((((RuntimeObject*)(UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)L_7) == ((RuntimeObject*)(UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*)L_8)))
+					{
+						goto IL_003d_2;
+					}
+				}
+				{
+					Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_9 = V_1;
+					NullCheck(L_9);
+					UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_10 = L_9->___device_1;
+					if (L_10)
+					{
+						goto IL_0043_2;
+					}
+				}
+
+IL_003d_2:
+				{
+					// pinTarget.Destroy();
+					Pin_tE4F0CCB3FC8798792B03EAB920155C71D39DE970* L_11 = V_1;
+					NullCheck(L_11);
+					Pin_Destroy_mCA0AD86D0495E5FB511D01611267687D56A0621B(L_11, NULL);
+				}
+
+IL_0043_2:
+				{
+					// foreach (Pin pinTarget in pins)
+					bool L_12;
+					L_12 = Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871((&V_0), Enumerator_MoveNext_m0F9915D2982BC0A324227583EEBE6E5E37E6E871_RuntimeMethod_var);
+					if (L_12)
+					{
+						goto IL_0024_2;
+					}
+				}
+				{
+					goto IL_005c_1;
+				}
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				__finallyBlock.StoreException(e.ex);
+			}
+		}
+
+IL_005c_1:
+		{
+			// device.SendBundle("destroy");
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_13 = ___device0;
+			NullCheck(L_13);
+			UduinoDevice_SendBundle_m09E680E9F78165DD30694A6DC4CB19EEC1B201D5(L_13, _stringLiteral8AB05959EA4107F1F91A04CDCDE7E8F07C2F52DF, NULL);
+			// device.Stopping();
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_14 = ___device0;
+			NullCheck(L_14);
+			VirtualActionInvoker0::Invoke(15 /* System.Void Uduino.UduinoDevice::Stopping() */, L_14);
+			// device.Close();
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_15 = ___device0;
+			NullCheck(L_15);
+			VirtualActionInvoker0::Invoke(16 /* System.Void Uduino.UduinoDevice::Close() */, L_15);
+			// if (!isApplicationQuiting)
+			bool L_16 = __this->___isApplicationQuiting_60;
+			if (L_16)
+			{
+				goto IL_009b_1;
+			}
+		}
+		{
+			// Interface.Instance.RemoveDeviceButton(device.name);
+			Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_17;
+			L_17 = Interface_get_Instance_mB030474712C9EA79D35DB43B84EE2514C416BB89(NULL);
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_18 = ___device0;
+			NullCheck(L_18);
+			String_t* L_19 = L_18->___name_0;
+			NullCheck(L_17);
+			Interface_RemoveDeviceButton_mC71A76591FE69414F204DC0664740573ECE956FF(L_17, L_19, NULL);
+			// Interface.Instance.UduinoDisconnected(device.name);
+			Interface_t8F40A3397630E4726953E7EF8302A1BE27C35199* L_20;
+			L_20 = Interface_get_Instance_mB030474712C9EA79D35DB43B84EE2514C416BB89(NULL);
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_21 = ___device0;
+			NullCheck(L_21);
+			String_t* L_22 = L_21->___name_0;
+			NullCheck(L_20);
+			Interface_UduinoDisconnected_m9AE2A4FDC0629DC0519684332808378F6EEF142D(L_20, L_22, NULL);
+		}
+
+IL_009b_1:
+		{
+			// if (OnBoardDisconnected != null)
+			OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_23 = __this->___OnBoardDisconnected_49;
+			if (!L_23)
+			{
+				goto IL_00af_1;
+			}
+		}
+		{
+			// OnBoardDisconnected(device);
+			OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* L_24 = __this->___OnBoardDisconnected_49;
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_25 = ___device0;
+			NullCheck(L_24);
+			OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_inline(L_24, L_25, NULL);
+		}
+
+IL_00af_1:
+		{
+			// OnBoardDisconnectedEvent.Invoke(device);
+			eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63* L_26 = __this->___OnBoardDisconnectedEvent_45;
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_27 = ___device0;
+			NullCheck(L_26);
+			UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202(L_26, L_27, UnityEvent_1_Invoke_m7C2F1F7571F7C64AC8705807986C31264C695202_RuntimeMethod_var);
+			// uduinoDevices.Remove(device.name);
+			Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_28 = __this->___uduinoDevices_5;
+			UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_29 = ___device0;
+			NullCheck(L_29);
+			String_t* L_30 = L_29->___name_0;
+			NullCheck(L_28);
+			bool L_31;
+			L_31 = Dictionary_2_Remove_m8EAAC59A0B5CA19D4216DD46D1B0D0013C15B836(L_28, L_30, Dictionary_2_Remove_m8EAAC59A0B5CA19D4216DD46D1B0D0013C15B836_RuntimeMethod_var);
+			// if(uduinoDevices.Count == 0)
+			Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_32 = __this->___uduinoDevices_5;
+			NullCheck(L_32);
+			int32_t L_33;
+			L_33 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_32, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+			if (L_33)
+			{
+				goto IL_00e1_1;
+			}
+		}
+		{
+			// ManagerState = UduinoManagerState.Idle;
+			__this->___ManagerState_12 = 0;
+		}
+
+IL_00e1_1:
+		{
+			// if (!isApplicationQuiting && uduinoDevices.Count == 0)
+			bool L_34 = __this->___isApplicationQuiting_60;
+			if (L_34)
+			{
+				goto IL_010b_1;
+			}
+		}
+		{
+			Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_35 = __this->___uduinoDevices_5;
+			NullCheck(L_35);
+			int32_t L_36;
+			L_36 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_35, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+			if (L_36)
+			{
+				goto IL_010b_1;
+			}
+		}
+		{
+			// StopThread();
+			UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91(__this, NULL);
+			// if (autoReconnect) shouldReconnect = true;
+			bool L_37 = __this->___autoReconnect_39;
+			if (!L_37)
+			{
+				goto IL_010b_1;
+			}
+		}
+		{
+			// if (autoReconnect) shouldReconnect = true;
+			__this->___shouldReconnect_41 = (bool)1;
+		}
+
+IL_010b_1:
+		{
+			// }
+			goto IL_0115;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_010d;
+		}
+		throw e;
+	}
+
+CATCH_010d:
+	{// begin catch(System.Exception)
+		// Log.Error(e);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var)));
+		Log_Error_m7270ED487C93FC7DAF15CD055B556723842D79AD(((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*)), (bool)0, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0115;
+	}// end catch (depth: 1)
+
+IL_0115:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::OnApplicationQuit()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_OnApplicationQuit_mCBADFF42F24C1804854904CBAA252A4D4F72E178 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// isApplicationQuiting = true;
+		__this->___isApplicationQuiting_60 = (bool)1;
+		// FullReset();
+		UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_OnDestroy_m44BFA61CE4234167D447E352A2388A4FC411136F (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// isApplicationQuiting = true;
+		__this->___isApplicationQuiting_60 = (bool)1;
+		// FullReset();
+		UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_OnDisable_mEDAA3D2DB120F09A7E2CFED97843F4F6CDF45FA6 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// isApplicationQuiting = true;
+		__this->___isApplicationQuiting_60 = (bool)1;
+		// FullReset();
+		UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::FullReset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_FullReset_m2A538BFA089324D9A8B46265D254AFF9067856F3 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (uduinoDevices.Count != 0)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = __this->___uduinoDevices_5;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_0, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (!L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		// CloseAllDevices();
+		UduinoManager_CloseAllDevices_m5E176430F0908AAB2E609D296B10982C1112FAE8(__this, NULL);
+	}
+
+IL_0013:
+	{
+		// if (boardConnection != null)
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_2 = __this->___boardConnection_11;
+		if (!L_2)
+		{
+			goto IL_0026;
+		}
+	}
+	{
+		// boardConnection.Stop();
+		UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607* L_3 = __this->___boardConnection_11;
+		NullCheck(L_3);
+		VirtualActionInvoker0::Invoke(16 /* System.Void Uduino.UduinoConnection::Stop() */, L_3);
+	}
+
+IL_0026:
+	{
+		// StopAllCoroutines();
+		MonoBehaviour_StopAllCoroutines_m872033451D42013A99867D09337490017E9ED318(__this, NULL);
+		// DisableThread();
+		UduinoManager_DisableThread_mEC708E811500DF7AD3A20020D54A426502ABE642(__this, NULL);
+		// boardConnection = null;
+		__this->___boardConnection_11 = (UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___boardConnection_11), (void*)(UduinoConnection_t9C0526D0339DCD9B7644E83434574B540B399607*)NULL);
+		// ManagerState = UduinoManagerState.Idle;
+		__this->___ManagerState_12 = 0;
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::DisableThread()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager_DisableThread_mEC708E811500DF7AD3A20020D54A426502ABE642 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* V_0 = NULL;
+	bool V_1 = false;
+	{
+		// StopThread();
+		UduinoManager_StopThread_m2932B0697D8F7BD04202CDC14333B2066F692C91(__this, NULL);
+		// if (_thread != null)
+		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_0 = __this->____thread_57;
+		// lock (uduinoDevices)
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_1 = __this->___uduinoDevices_5;
+		V_0 = L_1;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0027:
+			{// begin finally (depth: 1)
+				{
+					bool L_2 = V_1;
+					if (!L_2)
+					{
+						goto IL_0030;
+					}
+				}
+				{
+					Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_3 = V_0;
+					Monitor_Exit_m25A154960F91391E10E4CDA245ECDF4BA94D56A9(L_3, NULL);
+				}
+
+IL_0030:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_4 = V_0;
+			Monitor_Enter_m00506757392936AA62DBE2C5FFBEE69EE920C4D4(L_4, (&V_1), NULL);
+			// _thread = null;
+			__this->____thread_57 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->____thread_57), (void*)(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)NULL);
+			// }
+			goto IL_0031;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0031:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager__ctor_m8D8933D6FA6B5D751F9183048A6F87EF338A4D24 (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m1DBE8BD6A92ED74AFCC4FB67F1D075C92A6CC1A2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m941C16BCE4E384D177FCA349A84B829532E910D3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mE3D24DBB47C13CB100A5E4DB68275BAF4D782310_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral038FF336FB6B15F86234B612AEF4AB4D5D0061BE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral237E02D6A8761E49B75DCA6E3A3C7F57312A8A28);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral397E68945FA827DF5F3E3D8D190DB565086E5C27);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47681BAF69A4BBD491EAE30F7F6C4E5799CDD6B1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral75722FDE6EDF2531ADA3000281ECEC113D27BFB3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8847398E02BC761787F968F9606E13C7F3A5518E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9BC84D5C7AFC6169940F676B23D430A6C6D6C190);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC569A13659DEEA650CCC0C43CDD68E2AA81687E0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD4BF6EF94462959607F251297B9C733A7AFBC9E9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF6720DDEF3F4DDFFF6A94D8E2807F586F194898B);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public Dictionary<string, UduinoDevice> uduinoDevices = new Dictionary<string, UduinoDevice>();
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_0 = (Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F*)il2cpp_codegen_object_new(Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Dictionary_2__ctor_m941C16BCE4E384D177FCA349A84B829532E910D3(L_0, Dictionary_2__ctor_m941C16BCE4E384D177FCA349A84B829532E910D3_RuntimeMethod_var);
+		__this->___uduinoDevices_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoDevices_5), (void*)L_0);
+		// public List<Pin> pins = new List<Pin>();
+		List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B* L_1 = (List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B*)il2cpp_codegen_object_new(List_1_tFC50DBF1BBE74945BAB39FB77362308ABD588E4B_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_mE3D24DBB47C13CB100A5E4DB68275BAF4D782310(L_1, List_1__ctor_mE3D24DBB47C13CB100A5E4DB68275BAF4D782310_RuntimeMethod_var);
+		__this->___pins_6 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___pins_6), (void*)L_1);
+		// public Dictionary<string, Action<string>> callbacksList = new Dictionary<string, Action<string>>();
+		Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D* L_2 = (Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D*)il2cpp_codegen_object_new(Dictionary_2_t599EFBA58C4F1673138C703D60976BB1FAACE83D_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Dictionary_2__ctor_m1DBE8BD6A92ED74AFCC4FB67F1D075C92A6CC1A2(L_2, Dictionary_2__ctor_m1DBE8BD6A92ED74AFCC4FB67F1D075C92A6CC1A2_RuntimeMethod_var);
+		__this->___callbacksList_7 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___callbacksList_7), (void*)L_2);
+		// public Dictionary<string, string> existingExtensionsMap = new Dictionary<string, string>()
+		// {
+		//     { "UduinoDevice_DesktopSerial", "Desktop Serial" },
+		//     { "UduinoDevice_DesktopBluetoothLE", "Desktop BLE" },
+		//     { "UduinoDevice_AndroidBluetoothLE", "Android BLE" },
+		//     { "UduinoDevice_AndroidSerial", "Android Serial" },
+		//     { "UduinoDevice_Wifi", "Wifi" },
+		// };
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_3 = (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83*)il2cpp_codegen_object_new(Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052(L_3, Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_4 = L_3;
+		NullCheck(L_4);
+		Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13(L_4, _stringLiteral9BC84D5C7AFC6169940F676B23D430A6C6D6C190, _stringLiteralF6720DDEF3F4DDFFF6A94D8E2807F586F194898B, Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_5 = L_4;
+		NullCheck(L_5);
+		Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13(L_5, _stringLiteral8847398E02BC761787F968F9606E13C7F3A5518E, _stringLiteral47681BAF69A4BBD491EAE30F7F6C4E5799CDD6B1, Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_6 = L_5;
+		NullCheck(L_6);
+		Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13(L_6, _stringLiteral397E68945FA827DF5F3E3D8D190DB565086E5C27, _stringLiteralC569A13659DEEA650CCC0C43CDD68E2AA81687E0, Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_7 = L_6;
+		NullCheck(L_7);
+		Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13(L_7, _stringLiteral237E02D6A8761E49B75DCA6E3A3C7F57312A8A28, _stringLiteral75722FDE6EDF2531ADA3000281ECEC113D27BFB3, Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_8 = L_7;
+		NullCheck(L_8);
+		Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13(L_8, _stringLiteralD4BF6EF94462959607F251297B9C733A7AFBC9E9, _stringLiteral038FF336FB6B15F86234B612AEF4AB4D5D0061BE, Dictionary_2_Add_mC78C20D5901C87AAC38F37C906FAB6946BDE5F13_RuntimeMethod_var);
+		__this->___existingExtensionsMap_8 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___existingExtensionsMap_8), (void*)L_8);
+		// public IsActiveDictionnary activeExtentionsMap = new IsActiveDictionnary();
+		IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7* L_9 = (IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7*)il2cpp_codegen_object_new(IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		IsActiveDictionnary__ctor_mDE82022306954DF532F35E6D92127D8595C444C4(L_9, NULL);
+		__this->___activeExtentionsMap_9 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___activeExtentionsMap_9), (void*)L_9);
+		// public IsPresentDictionnary presentExtentionsMap = new IsPresentDictionnary();
+		IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* L_10 = (IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F*)il2cpp_codegen_object_new(IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F_il2cpp_TypeInfo_var);
+		NullCheck(L_10);
+		IsPresentDictionnary__ctor_m29DF97F4B0DED41FBB74E2CF5653D748F47D4C6B(L_10, NULL);
+		__this->___presentExtentionsMap_10 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___presentExtentionsMap_10), (void*)L_10);
+		// private object _lockAsync = new object();
+		RuntimeObject* L_11 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(L_11, NULL);
+		__this->____lockAsync_13 = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____lockAsync_13), (void*)L_11);
+		// private int baudRate = 9600;
+		__this->___baudRate_16 = ((int32_t)9600);
+		// public int readTimeout = 30;
+		__this->___readTimeout_20 = ((int32_t)30);
+		// public int writeTimeout = 30;
+		__this->___writeTimeout_21 = ((int32_t)30);
+		// public int threadIdleDelay = 16; //16 for 60fps
+		__this->___threadIdleDelay_22 = ((int32_t)16);
+		// public bool alwaysRead = true;
+		__this->___alwaysRead_23 = (bool)1;
+		// public bool readAfterCommand = true;
+		__this->___readAfterCommand_24 = (bool)1;
+		// public int messageQueueLength = 10;
+		__this->___messageQueueLength_26 = ((int32_t)10);
+		// private int sendRateDelay = 20;
+		__this->___sendRateDelay_30 = ((int32_t)20);
+		// private int discoverTries = 10;
+		__this->___discoverTries_31 = ((int32_t)10);
+		// public bool autoDiscover = true;
+		__this->___autoDiscover_32 = (bool)1;
+		// public float delayBeforeDiscover = 0.5f;
+		__this->___delayBeforeDiscover_33 = (0.5f);
+		// public bool stopAllOnQuit = true;
+		__this->___stopAllOnQuit_37 = (bool)1;
+		// public bool autoReconnect = true;
+		__this->___autoReconnect_39 = (bool)1;
+		// public float autoReconnectDelay = 5.0f;
+		__this->___autoReconnectDelay_40 = (5.0f);
+		// private List<string> blackListedPorts = new List<string>();
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_12 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_12, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
+		__this->___blackListedPorts_42 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___blackListedPorts_42), (void*)L_12);
+		// public bool autoConnectToLastDevice = true;
+		__this->___autoConnectToLastDevice_53 = (bool)1;
+		// public int bleScanDuration = 3;
+		__this->___bleScanDuration_54 = 3;
+		// public UduinoInterfaceType interfaceType = UduinoInterfaceType.Full; // Full, Minimal, None
+		__this->___interfaceType_55 = 2;
+		// private List<UduinoWiFiSettings> uduinoWiFiBoards = new List<UduinoWiFiSettings>();
+		List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B* L_13 = (List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B*)il2cpp_codegen_object_new(List_1_t6F6BE44E91F015AE9A7977C1F903EDCEC5EA879B_il2cpp_TypeInfo_var);
+		NullCheck(L_13);
+		List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51(L_13, List_1__ctor_mD1C54E6BAB722951CF3505E1343F01AD1DA9ED51_RuntimeMethod_var);
+		__this->___uduinoWiFiBoards_56 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uduinoWiFiBoards_56), (void*)L_13);
+		// private bool threadRunning = true;
+		__this->___threadRunning_58 = (bool)1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoManager__cctor_m81960A934FA3119D975F45D540E8C3DA3A06DA50 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static UduinoManager _instance = null;
+		((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4 = (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->____instance_4), (void*)(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C*)NULL);
+		// public static string parametersDelimiter = " ";
+		((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->___parametersDelimiter_34 = _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->___parametersDelimiter_34), (void*)_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		// public static string bundleDelimiter = "-";
+		((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->___bundleDelimiter_35 = _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_StaticFields*)il2cpp_codegen_static_fields_for(UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C_il2cpp_TypeInfo_var))->___bundleDelimiter_35), (void*)_stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/BoardAlreadyExistException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoardAlreadyExistException__ctor_m666F892055104ECAA15394D08BB56F11D73DE8A6 (BoardAlreadyExistException_t8E9B8CE76045E4CCA31D37D1339844B12227F813* __this, String_t* ___msg0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public class BoardAlreadyExistException : Exception { public BoardAlreadyExistException(string msg) : base(msg) { } }
+		String_t* L_0 = ___msg0;
+		il2cpp_codegen_runtime_class_init_inline(Exception_t_il2cpp_TypeInfo_var);
+		Exception__ctor_m9B2BD92CD68916245A75109105D9071C9D430E7F(__this, L_0, NULL);
+		// public class BoardAlreadyExistException : Exception { public BoardAlreadyExistException(string msg) : base(msg) { } }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/eventValueReceived::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void eventValueReceived__ctor_m676C2EBB7C7C190B041EE18ED18A5B75FFC4F90A (eventValueReceived_t6D1E0E69AE8E61341A978DF3492ED83D01EE8D54* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_2__ctor_m28A3D88FD8CCF6460D040860D2E91EA9F36D4651_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		UnityEvent_2__ctor_m28A3D88FD8CCF6460D040860D2E91EA9F36D4651(__this, UnityEvent_2__ctor_m28A3D88FD8CCF6460D040860D2E91EA9F36D4651_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/eventBoard::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void eventBoard__ctor_m7127F7C0E5A74EFEB7BDA8434208D0373D95C21E (eventBoard_t2C8CFB0BBD1C548D6FCA8CCE05ACC2B9E748BD63* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_1__ctor_mCF260970DA256D40D604A2F89F8E7908179C91E9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		UnityEvent_1__ctor_mCF260970DA256D40D604A2F89F8E7908179C91E9(__this, UnityEvent_1__ctor_mCF260970DA256D40D604A2F89F8E7908179C91E9_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_Multicast(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* currentDelegate = reinterpret_cast<OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_Open(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___data0, ___device1, method);
+}
+void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_OpenStaticInvoker(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, ___data0, ___device1);
+}
+void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_ClosedStaticInvoker(OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	InvokerActionInvoker3< RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___data0, ___device1);
+}
+// System.Void Uduino.UduinoManager/OnValueReceivedDelegate::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnValueReceivedDelegate__ctor_mEB84C72B2B62F410C144B0AE44C31BEC7201B57D (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 2;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 1;
+		if (isOpen)
+		{
+			__this->___invoke_impl_1 = (intptr_t)&OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_Open;
+		}
+		else
+		{
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_Multicast;
+}
+// System.Void Uduino.UduinoManager/OnValueReceivedDelegate::Invoke(System.String,Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06 (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Uduino.UduinoManager/OnValueReceivedDelegate::BeginInvoke(System.String,Uduino.UduinoDevice,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OnValueReceivedDelegate_BeginInvoke_m304000A40163F88E1E81507B008F9DD0D2E20C9C (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback2, RuntimeObject* ___object3, const RuntimeMethod* method) 
+{
+	void *__d_args[3] = {0};
+	__d_args[0] = ___data0;
+	__d_args[1] = ___device1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);
+}
+// System.Void Uduino.UduinoManager/OnValueReceivedDelegate::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnValueReceivedDelegate_EndInvoke_m0D148C88E59DE19818A16B18346D05849468D16B (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_Multicast(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* currentDelegate = reinterpret_cast<OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_Open(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___data0, ___device1, method);
+}
+void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_OpenStaticInvoker(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, ___data0, ___device1);
+}
+void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_ClosedStaticInvoker(OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method)
+{
+	InvokerActionInvoker3< RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___data0, ___device1);
+}
+// System.Void Uduino.UduinoManager/OnDataReceivedDelegate::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnDataReceivedDelegate__ctor_mCC8A330689DF5BA02041E04F0036150E0ED8E997 (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 2;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 1;
+		if (isOpen)
+		{
+			__this->___invoke_impl_1 = (intptr_t)&OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_Open;
+		}
+		else
+		{
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_Multicast;
+}
+// System.Void Uduino.UduinoManager/OnDataReceivedDelegate::Invoke(System.String,Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Uduino.UduinoManager/OnDataReceivedDelegate::BeginInvoke(System.String,Uduino.UduinoDevice,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OnDataReceivedDelegate_BeginInvoke_m11AEBD584BA42EAB21046DE647DDD5392F17B93F (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback2, RuntimeObject* ___object3, const RuntimeMethod* method) 
+{
+	void *__d_args[3] = {0};
+	__d_args[0] = ___data0;
+	__d_args[1] = ___device1;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback2, (RuntimeObject*)___object3);
+}
+// System.Void Uduino.UduinoManager/OnDataReceivedDelegate::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnDataReceivedDelegate_EndInvoke_mFCDB25FEFEA8A0CC7B053582ECDA19A81E7341B0 (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_Multicast(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* currentDelegate = reinterpret_cast<OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_Open(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___device0, method);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenStaticInvoker(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, ___device0);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_ClosedStaticInvoker(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___device0);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenVirtual(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	VirtualActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), ___device0);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenInterface(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InterfaceActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___device0);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenGenericVirtual(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	GenericVirtualActionInvoker0::Invoke(method, ___device0);
+}
+void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenGenericInterface(OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	GenericInterfaceActionInvoker0::Invoke(method, ___device0);
+}
+// System.Void Uduino.UduinoManager/OnBoardConnectedDelegate::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardConnectedDelegate__ctor_mAE57DFEC17DF7496233C2E2D598DD9453A22364D (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 0;
+		if (isOpen)
+		{
+			if (__this->___method_is_virtual_12)
+			{
+				if (il2cpp_codegen_method_is_generic_instance_method((RuntimeMethod*)___method1))
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenGenericInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenGenericVirtual;
+				else
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_OpenVirtual;
+			}
+			else
+			{
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_Open;
+			}
+		}
+		else
+		{
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_Multicast;
+}
+// System.Void Uduino.UduinoManager/OnBoardConnectedDelegate::Invoke(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4 (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Uduino.UduinoManager/OnBoardConnectedDelegate::BeginInvoke(Uduino.UduinoDevice,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OnBoardConnectedDelegate_BeginInvoke_m97A3D60A772C7C08335EB7FD009AEB90B4BB068C (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback1, RuntimeObject* ___object2, const RuntimeMethod* method) 
+{
+	void *__d_args[2] = {0};
+	__d_args[0] = ___device0;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
+}
+// System.Void Uduino.UduinoManager/OnBoardConnectedDelegate::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardConnectedDelegate_EndInvoke_m61BE22DB05506ED24F422603206449641CB7B914 (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_Multicast(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* currentDelegate = reinterpret_cast<OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_Open(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___device0, method);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenStaticInvoker(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, ___device0);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_ClosedStaticInvoker(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___device0);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenVirtual(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	VirtualActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), ___device0);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenInterface(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	InterfaceActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___device0);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenGenericVirtual(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	GenericVirtualActionInvoker0::Invoke(method, ___device0);
+}
+void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenGenericInterface(OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method)
+{
+	GenericInterfaceActionInvoker0::Invoke(method, ___device0);
+}
+// System.Void Uduino.UduinoManager/OnBoardDisconnectedDelegate::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardDisconnectedDelegate__ctor_m4908EB6CB0FD10852AC106D2AA50FA0CEBFA8D28 (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 0;
+		if (isOpen)
+		{
+			if (__this->___method_is_virtual_12)
+			{
+				if (il2cpp_codegen_method_is_generic_instance_method((RuntimeMethod*)___method1))
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenGenericInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenGenericVirtual;
+				else
+					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenInterface;
+					else
+						__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_OpenVirtual;
+			}
+			else
+			{
+				__this->___invoke_impl_1 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_Open;
+			}
+		}
+		else
+		{
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_Multicast;
+}
+// System.Void Uduino.UduinoManager/OnBoardDisconnectedDelegate::Invoke(Uduino.UduinoDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Uduino.UduinoManager/OnBoardDisconnectedDelegate::BeginInvoke(Uduino.UduinoDevice,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* OnBoardDisconnectedDelegate_BeginInvoke_m31FD5D30A09FC582A0E4208B46C4457CF2D00441 (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback1, RuntimeObject* ___object2, const RuntimeMethod* method) 
+{
+	void *__d_args[2] = {0};
+	__d_args[0] = ___device0;
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
+}
+// System.Void Uduino.UduinoManager/OnBoardDisconnectedDelegate::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OnBoardDisconnectedDelegate_EndInvoke_m67A344995ADEE3D2814260C4CB32169E8B303142 (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/<DelayedDiscover>d__94::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDelayedDiscoverU3Ed__94__ctor_mCC5404B89F6577171AEC7B3AD035F76F3BDD127E (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager/<DelayedDiscover>d__94::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDelayedDiscoverU3Ed__94_System_IDisposable_Dispose_m10732F0E759717BC106729299B70D1F5D74F1464 (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager/<DelayedDiscover>d__94::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CDelayedDiscoverU3Ed__94_MoveNext_mC378C49DBF219927D9B35BE030A4AA484169DC48 (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral23008763D2D91696D0E2E050A86FACDBFEA53FA4);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_1 = __this->___U3CU3E4__this_3;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// if (delay == -1) delay = delayBeforeDiscover;
+		float L_4 = __this->___delay_2;
+		if ((!(((float)L_4) == ((float)(-1.0f)))))
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		// if (delay == -1) delay = delayBeforeDiscover;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_5 = V_1;
+		NullCheck(L_5);
+		float L_6 = L_5->___delayBeforeDiscover_33;
+		__this->___delay_2 = L_6;
+	}
+
+IL_0037:
+	{
+		// yield return new WaitForSeconds(delay);
+		float L_7 = __this->___delay_2;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_8 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_8, L_7, NULL);
+		__this->___U3CU3E2__current_1 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_8);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0051:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// if (uduinoDevices.Count == 0)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_9 = V_1;
+		NullCheck(L_9);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_10 = L_9->___uduinoDevices_5;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_10, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_11)
+		{
+			goto IL_006b;
+		}
+	}
+	{
+		// DiscoverPorts();
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_12 = V_1;
+		NullCheck(L_12);
+		UduinoManager_DiscoverPorts_m32DCFD6E0F083B859E82151A207A1B533180BF65(L_12, NULL);
+	}
+
+IL_006b:
+	{
+		// if(autoReconnect)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_13 = V_1;
+		NullCheck(L_13);
+		bool L_14 = L_13->___autoReconnect_39;
+		if (!L_14)
+		{
+			goto IL_007f;
+		}
+	}
+	{
+		// StartCoroutine("RestartIfBoardNotDetected");
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_15 = V_1;
+		NullCheck(L_15);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_16;
+		L_16 = MonoBehaviour_StartCoroutine_m10C4B693B96175C42B0FD00911E072701C220DB4(L_15, _stringLiteral23008763D2D91696D0E2E050A86FACDBFEA53FA4, NULL);
+	}
+
+IL_007f:
+	{
+		// }
+		return (bool)0;
+	}
+}
+// System.Object Uduino.UduinoManager/<DelayedDiscover>d__94::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDelayedDiscoverU3Ed__94_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m95508F1AB23820B034E65556B4A31A6470AF2D72 (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager/<DelayedDiscover>d__94::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDelayedDiscoverU3Ed__94_System_Collections_IEnumerator_Reset_m91EC5B76C30D3F56637C6D66D73B97A5E4DE3431 (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CDelayedDiscoverU3Ed__94_System_Collections_IEnumerator_Reset_m91EC5B76C30D3F56637C6D66D73B97A5E4DE3431_RuntimeMethod_var)));
+	}
+}
+// System.Object Uduino.UduinoManager/<DelayedDiscover>d__94::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CDelayedDiscoverU3Ed__94_System_Collections_IEnumerator_get_Current_m977C60D7E563738228AB9199F945441F0F7BA9ED (U3CDelayedDiscoverU3Ed__94_tB42B5A4D3A5BD3F2CCCD86329A6414D83EACA950* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRestartIfBoardNotDetectedU3Ed__95__ctor_m7C2BA58897EA88BD33660740E16ABE4B9414F16A (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRestartIfBoardNotDetectedU3Ed__95_System_IDisposable_Dispose_mDD0FB3788C9B34D4456492250E80BB4C2742B645 (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CRestartIfBoardNotDetectedU3Ed__95_MoveNext_mE9265D3D799E84DB99CE2A83A893C0D352636E74 (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// yield return new WaitForSeconds(autoReconnectDelay);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_4 = V_1;
+		NullCheck(L_4);
+		float L_5 = L_4->___autoReconnectDelay_40;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, L_5, NULL);
+		__this->___U3CU3E2__current_1 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_6);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// if (uduinoDevices.Count == 0) shouldReconnect = true;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_7 = V_1;
+		NullCheck(L_7);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_8 = L_7->___uduinoDevices_5;
+		NullCheck(L_8);
+		int32_t L_9;
+		L_9 = Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865(L_8, Dictionary_2_get_Count_m75A8C0B5C6D8779C2B9D325F9E30E834A3A63865_RuntimeMethod_var);
+		if (L_9)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		// if (uduinoDevices.Count == 0) shouldReconnect = true;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_10 = V_1;
+		NullCheck(L_10);
+		L_10->___shouldReconnect_41 = (bool)1;
+	}
+
+IL_0053:
+	{
+		// }
+		return (bool)0;
+	}
+}
+// System.Object Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRestartIfBoardNotDetectedU3Ed__95_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBE24DD915D890E41B1DA4DF15A68B9BAAB5931B9 (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRestartIfBoardNotDetectedU3Ed__95_System_Collections_IEnumerator_Reset_m546F50D94B924AC3A0DEE31647B16625FA714052 (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CRestartIfBoardNotDetectedU3Ed__95_System_Collections_IEnumerator_Reset_m546F50D94B924AC3A0DEE31647B16625FA714052_RuntimeMethod_var)));
+	}
+}
+// System.Object Uduino.UduinoManager/<RestartIfBoardNotDetected>d__95::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CRestartIfBoardNotDetectedU3Ed__95_System_Collections_IEnumerator_get_Current_m8443F19DA412CF7CA9308736ECAF29A47F7B2AA6 (U3CRestartIfBoardNotDetectedU3Ed__95_t26DF824D7553C796DB1C581937A447940845D06D* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/<AutoSendBundle>d__158::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAutoSendBundleU3Ed__158__ctor_m8D78C399578EC0481409F19CFA67D937A33D1A30 (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager/<AutoSendBundle>d__158::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAutoSendBundleU3Ed__158_System_IDisposable_Dispose_m19861D441E86757A084F4B355784130B9EAB816C (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager/<AutoSendBundle>d__158::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CAutoSendBundleU3Ed__158_MoveNext_m4351D742C9FD2C1DA44574908843ECE93E0C8387 (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* V_1 = NULL;
+	Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	String_t* V_3 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_0041;
+			}
+			case 2:
+			{
+				goto IL_0069;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0022:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+	}
+
+IL_0029:
+	{
+		// if (!LimitSendRate)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_3 = V_1;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = UduinoManager_get_LimitSendRate_mBD4B166BF7BB3B558F13D7E330584A77809364F1_inline(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		// yield return null;
+		__this->___U3CU3E2__current_1 = NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)NULL);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0041:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+	}
+
+IL_0048:
+	{
+		// yield return new WaitForSeconds(sendRateDelay / 1000.0f);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_5 = V_1;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___sendRateDelay_30;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_7 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_7, ((float)(((float)L_6)/(1000.0f))), NULL);
+		__this->___U3CU3E2__current_1 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_7);
+		__this->___U3CU3E1__state_0 = 2;
+		return (bool)1;
+	}
+
+IL_0069:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// List<string> keys = new List<string>(uduinoDevices.Keys);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_8 = V_1;
+		NullCheck(L_8);
+		Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_9 = L_8->___uduinoDevices_5;
+		NullCheck(L_9);
+		KeyCollection_t5A8FB86AFE828421693B64A4129E4E142DF6E78F* L_10;
+		L_10 = Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7(L_9, Dictionary_2_get_Keys_mD9EF280CFE407704211B9BE28FA58BAE77B784B7_RuntimeMethod_var);
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_11 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC(L_11, L_10, List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC_RuntimeMethod_var);
+		// foreach (string key in keys)
+		NullCheck(L_11);
+		Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 L_12;
+		L_12 = List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D(L_11, List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D_RuntimeMethod_var);
+		V_2 = L_12;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00af:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7((&V_2), Enumerator_Dispose_m592BCCE7B7933454DED2130C810F059F8D85B1D7_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_00a1_1;
+			}
+
+IL_0088_1:
+			{
+				// foreach (string key in keys)
+				String_t* L_13;
+				L_13 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_2), Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var);
+				V_3 = L_13;
+				// uduinoDevices[key].SendAllBundles();
+				UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_14 = V_1;
+				NullCheck(L_14);
+				Dictionary_2_t8EFAF65A37248A44F69EEAF708194DA8BC58608F* L_15 = L_14->___uduinoDevices_5;
+				String_t* L_16 = V_3;
+				NullCheck(L_15);
+				UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_17;
+				L_17 = Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78(L_15, L_16, Dictionary_2_get_Item_m5CF88FF6423020A9CF3E88A1B22AE49FB1CCAC78_RuntimeMethod_var);
+				NullCheck(L_17);
+				UduinoDevice_SendAllBundles_mAE0BC65CC9774BB5EE415A4038660B3DA7F2CBF3(L_17, NULL);
+			}
+
+IL_00a1_1:
+			{
+				// foreach (string key in keys)
+				bool L_18;
+				L_18 = Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED((&V_2), Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED_RuntimeMethod_var);
+				if (L_18)
+				{
+					goto IL_0088_1;
+				}
+			}
+			{
+				goto IL_0029;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+	il2cpp_codegen_no_return();
+}
+// System.Object Uduino.UduinoManager/<AutoSendBundle>d__158::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAutoSendBundleU3Ed__158_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5BCC91B0E37B98FD040F8972A70256A72A8E1482 (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager/<AutoSendBundle>d__158::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAutoSendBundleU3Ed__158_System_Collections_IEnumerator_Reset_m78AEB46D8407B72479B106AE8D98EE02C62C1A5A (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CAutoSendBundleU3Ed__158_System_Collections_IEnumerator_Reset_m78AEB46D8407B72479B106AE8D98EE02C62C1A5A_RuntimeMethod_var)));
+	}
+}
+// System.Object Uduino.UduinoManager/<AutoSendBundle>d__158::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAutoSendBundleU3Ed__158_System_Collections_IEnumerator_get_Current_mF9D7E35FC12E0D345F8BCA68598E0C035923610B (U3CAutoSendBundleU3Ed__158_t17A4A19A7887C6DC9A379EBEE7427A39EA88C3B0* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/<CoroutineRead>d__173::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCoroutineReadU3Ed__173__ctor_mD60DA2B0781A5B5EB321DAAAF418339314ADD1F0 (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___U3CU3E1__state0;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager/<CoroutineRead>d__173::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCoroutineReadU3Ed__173_System_IDisposable_Dispose_m27E6AC4F8C31E2360CBE7EB7751E66544EA3571B (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean Uduino.UduinoManager/<CoroutineRead>d__173::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCoroutineReadU3Ed__173_MoveNext_m63F731E33699A086E4355C9BFFE4B517438D487F (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_1 = __this->___U3CU3E4__this_3;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_0073;
+			}
+			case 2:
+			{
+				goto IL_009d;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0022:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+	}
+
+IL_0029:
+	{
+		// if (target != null)
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_3 = __this->___target_2;
+		if (!L_3)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		// target.WriteToArduinoLoop();
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_4 = __this->___target_2;
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = VirtualFuncInvoker0< bool >::Invoke(7 /* System.Boolean Uduino.UduinoDevice::WriteToArduinoLoop() */, L_4);
+		// target.ReadFromArduinoLoop();
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_6 = __this->___target_2;
+		NullCheck(L_6);
+		bool L_7;
+		L_7 = VirtualFuncInvoker1< bool, bool >::Invoke(9 /* System.Boolean Uduino.UduinoDevice::ReadFromArduinoLoop(System.Boolean) */, L_6, (bool)0);
+	}
+
+IL_004a:
+	{
+		// if (limitSendRate)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_8 = V_1;
+		NullCheck(L_8);
+		bool L_9 = L_8->___limitSendRate_18;
+		if (!L_9)
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		// yield return new WaitForSeconds(sendRateDelay / 1000.0f);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_10 = V_1;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->___sendRateDelay_30;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_12 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_12, ((float)(((float)L_11)/(1000.0f))), NULL);
+		__this->___U3CU3E2__current_1 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_12);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0073:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		goto IL_0029;
+	}
+
+IL_007c:
+	{
+		// yield return new WaitForSeconds(threadIdleDelay/1000.0f);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_13 = V_1;
+		NullCheck(L_13);
+		int32_t L_14 = L_13->___threadIdleDelay_22;
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_15 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_15);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_15, ((float)(((float)L_14)/(1000.0f))), NULL);
+		__this->___U3CU3E2__current_1 = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_15);
+		__this->___U3CU3E1__state_0 = 2;
+		return (bool)1;
+	}
+
+IL_009d:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// while (true)
+		goto IL_0029;
+	}
+}
+// System.Object Uduino.UduinoManager/<CoroutineRead>d__173::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCoroutineReadU3Ed__173_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A77412D00611DB223923590C3361F233CFF171C (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoManager/<CoroutineRead>d__173::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCoroutineReadU3Ed__173_System_Collections_IEnumerator_Reset_mD5C4EDD3F1CD015E293A7A91EB55181A4A2FE5F0 (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CCoroutineReadU3Ed__173_System_Collections_IEnumerator_Reset_mD5C4EDD3F1CD015E293A7A91EB55181A4A2FE5F0_RuntimeMethod_var)));
+	}
+}
+// System.Object Uduino.UduinoManager/<CoroutineRead>d__173::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCoroutineReadU3Ed__173_System_Collections_IEnumerator_get_Current_m83FD71A9322855CAFC394868629C834C218D3C51 (U3CCoroutineReadU3Ed__173_t5027E09DF57970A7965C290BDED019BEA2501780* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.UduinoManager/<>c__DisplayClass174_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass174_0__ctor_m34D528D848A071D3FCB966BE91537AB00C4BC188 (U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Void Uduino.UduinoManager/<>c__DisplayClass174_0::<TriggerEvent>b__0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass174_0_U3CTriggerEventU3Eb__0_m22AA48E728ED4FE3A64AAB5B6E7DA690AD136E8E (U3CU3Ec__DisplayClass174_0_t2F73EBD87E2F87A349D1206444C95049FFB0C3BA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_2_Invoke_m649C6354CD4D979E508090E6959598DFC82BB9D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6BB2958328AF858E6A131F304F1356AF24ED6B62);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (OnDataReceived != null)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_0 = __this->___U3CU3E4__this_0;
+		NullCheck(L_0);
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_1 = L_0->___OnDataReceived_47;
+		if (!L_1)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// OnDataReceived(data, device);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_2 = __this->___U3CU3E4__this_0;
+		NullCheck(L_2);
+		OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* L_3 = L_2->___OnDataReceived_47;
+		String_t* L_4 = __this->___data_1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_5 = __this->___device_2;
+		NullCheck(L_3);
+		OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_inline(L_3, L_4, L_5, NULL);
+	}
+
+IL_0029:
+	{
+		// if (OnValueReceived != null)
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_6 = __this->___U3CU3E4__this_0;
+		NullCheck(L_6);
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_7 = L_6->___OnValueReceived_46;
+		if (!L_7)
+		{
+			goto IL_005d;
+		}
+	}
+	{
+		// Log.Warning("OnValueReceived is deprecated. Please use OnDataRecevied instead");
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		Log_Warning_m6DCB39FB55894577E86F5FF7E4DDC1A58C3A2DA8(_stringLiteral6BB2958328AF858E6A131F304F1356AF24ED6B62, (bool)0, NULL);
+		// OnValueReceived(data, device);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_8 = __this->___U3CU3E4__this_0;
+		NullCheck(L_8);
+		OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* L_9 = L_8->___OnValueReceived_46;
+		String_t* L_10 = __this->___data_1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_11 = __this->___device_2;
+		NullCheck(L_9);
+		OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_inline(L_9, L_10, L_11, NULL);
+	}
+
+IL_005d:
+	{
+		// OnDataReceivedEvent.Invoke(data, device);
+		UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* L_12 = __this->___U3CU3E4__this_0;
+		NullCheck(L_12);
+		eventValueReceived_t6D1E0E69AE8E61341A978DF3492ED83D01EE8D54* L_13 = L_12->___OnDataReceivedEvent_43;
+		String_t* L_14 = __this->___data_1;
+		UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* L_15 = __this->___device_2;
+		NullCheck(L_13);
+		UnityEvent_2_Invoke_m649C6354CD4D979E508090E6959598DFC82BB9D4(L_13, L_14, L_15, UnityEvent_2_Invoke_m649C6354CD4D979E508090E6959598DFC82BB9D4_RuntimeMethod_var);
+		// });
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Uduino.UduinoVersion::getVersion()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoVersion_getVersion_m687281B5392A04216C7CB1FFAD05431A189AC808 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return major + "." + minor + "." + patch;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
+		il2cpp_codegen_runtime_class_init_inline(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___major_0), NULL);
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_2);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = L_1;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
+		String_t* L_5;
+		L_5 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___minor_1), NULL);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_5);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_4;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_6;
+		String_t* L_8;
+		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___patch_2), NULL);
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_8);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_8);
+		String_t* L_9;
+		L_9 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_7, NULL);
+		return L_9;
+	}
+}
+// System.String Uduino.UduinoVersion::lastUpdate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UduinoVersion_lastUpdate_m9CC3C81F35B083CF796F68CEEB2D6E0FA16711B8 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return update;
+		il2cpp_codegen_runtime_class_init_inline(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___update_3;
+		return L_0;
+	}
+}
+// System.Void Uduino.UduinoVersion::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UduinoVersion__cctor_mDA54E9963892A8D473757549EA1B9CB9DED03A50 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2C0EE1D8EBBFA9779231D00E2F504DC2FF9E69DB);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// static int major = 3;
+		((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___major_0 = 3;
+		// static int minor = 5;
+		((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___minor_1 = 5;
+		// static int patch = 0;
+		((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___patch_2 = 0;
+		// static string update = "Feb 2022";
+		((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___update_3 = _stringLiteral2C0EE1D8EBBFA9779231D00E2F504DC2FF9E69DB;
+		Il2CppCodeGenWriteBarrier((void**)(&((UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_StaticFields*)il2cpp_codegen_static_fields_for(UduinoVersion_t1E2AB7180B13F12A025573F33857F2DD59D0A948_il2cpp_TypeInfo_var))->___update_3), (void*)_stringLiteral2C0EE1D8EBBFA9779231D00E2F504DC2FF9E69DB);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.IsPresentDictionnary::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsPresentDictionnary__ctor_m29DF97F4B0DED41FBB74E2CF5653D748F47D4C6B (IsPresentDictionnary_tAD906AD4E1D4A7346FC37DA72D21D4945C56D44F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3(__this, SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Uduino.IsActiveDictionnary::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsActiveDictionnary__ctor_mDE82022306954DF532F35E6D92127D8595C444C4 (IsActiveDictionnary_t8F89621BA5B83DD3E09AF61E47C658155AC1EAC7* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3(__this, SerializableDictionary_2__ctor_m8C67EA695DB8C7A2FBBE8B765DE7D8323C44DDE3_RuntimeMethod_var);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return m_OnClick; }
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_0 = __this->___m_OnClick_20;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void CanvasScaler_set_dynamicPixelsPerUnit_m7A081D5FD963F751140DCF1E5190ED4E51308CA2_inline (CanvasScaler_t3BC095205EAD308CF3EAC27136A73387AC32FC3B* __this, float ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public float dynamicPixelsPerUnit { get { return m_DynamicPixelsPerUnit; } set { m_DynamicPixelsPerUnit = value; } }
+		float L_0 = ___value0;
+		__this->___m_DynamicPixelsPerUnit_14 = L_0;
+		// public float dynamicPixelsPerUnit { get { return m_DynamicPixelsPerUnit; } set { m_DynamicPixelsPerUnit = value; } }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mBF96B603B41BED9BAFAA10CE8D946D24260F9729_inline (const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (0.0f), (0.0f), (1.0f), /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_0 = L_0;
+		float L_1 = ___y1;
+		__this->___y_1 = L_1;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___x0;
+		__this->___x_2 = L_0;
+		float L_1 = ___y1;
+		__this->___y_3 = L_1;
+		float L_2 = ___z2;
+		__this->___z_4 = L_2;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Log_SetLogLevel_mAFB681C6D7A7DD1C220E4D4C1B9BA0E67F8C566F_inline (int32_t ___level0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// _debugLevel = level;
+		int32_t L_0 = ___level0;
+		il2cpp_codegen_runtime_class_init_inline(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var);
+		((Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_StaticFields*)il2cpp_codegen_static_fields_for(Log_tBCB8EC1B4CCA1914BD07B0139181AAEBF878C9CF_il2cpp_TypeInfo_var))->____debugLevel_0 = L_0;
+		// }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnBoardConnectedDelegate_Invoke_m3385E7D15B65841CC9F8BF4A98B37828B8797CF4_inline (OnBoardConnectedDelegate_tAC40A35242306D17BF0991B94EB6C1AE5AAC4C08* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* UduinoDevice_getIdentity_mF3394683CBF93A4755CBD11A6A8337CAB53063E4_inline (UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* __this, const RuntimeMethod* method) 
+{
+	{
+		// return identity;
+		String_t* L_0 = __this->___identity_13;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool UduinoManager_IsRunning_m05261CF3CBCF190F3325333FA4D5C321B83F10AF_inline (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// return threadRunning;
+		bool L_0 = __this->___threadRunning_58;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnBoardDisconnectedDelegate_Invoke_mE536F2515C632077F3AA2A7163881312CFD8F26A_inline (OnBoardDisconnectedDelegate_tDA561B6285115071F196A25A67D33721B94D44C5* __this, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___device0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool UduinoManager_get_LimitSendRate_mBD4B166BF7BB3B558F13D7E330584A77809364F1_inline (UduinoManager_tE3C3794B0E41DFB848F0D54AC17CBBC782EAC32C* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return limitSendRate; }
+		bool L_0 = __this->___limitSendRate_18;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnDataReceivedDelegate_Invoke_m47894B6E7A5A8AA4343CA37DE51101482DFA030A_inline (OnDataReceivedDelegate_tFFF9F5F290C600518CBAD859C00BFF568ECE346B* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OnValueReceivedDelegate_Invoke_mCDBDDCC8170E7CEFAB37044C92F0BE34CC05CF06_inline (OnValueReceivedDelegate_tF52A83C58042A29C0A7AEEA1815D1EF37A32EFEA* __this, String_t* ___data0, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0* ___device1, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, UduinoDevice_t878A9654D03A80F0BE0A1013A8DB50F87B8DF6B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___data0, ___device1, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) 
+{
+	{
+		KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 L_0 = (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___item0;
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___r0;
+		__this->___r_0 = L_0;
+		float L_1 = ___g1;
+		__this->___g_1 = L_1;
+		float L_2 = ___b2;
+		__this->___b_2 = L_2;
+		float L_3 = ___a3;
+		__this->___a_3 = L_3;
+		return;
+	}
+}

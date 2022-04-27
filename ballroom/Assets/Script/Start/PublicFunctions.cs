@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using Uduino;
+using UnityEngine.InputSystem.Controls;
 
 public class PublicFunctions : MonoBehaviour
 {
@@ -16,46 +19,93 @@ public class PublicFunctions : MonoBehaviour
     [Header("旋转速度")] public float rotateSpeed = 5;
     [Header("漂浮速度")] public float floatSpeed = 5;
     
+    //摄像机
     private GameObject Myavatar;
     private GameObject myCamera;
+    private GameObject XROrinign;
     private Transform MyavatarTransform;
+    
+    //Uduino
+    // private UduinoManager manager;
+    // private float value;
+    private GameObject Script;
 
     void Start()
     {
-        
-        
+        // UduinoManager.Instance.Read("Left");
+        // UduinoManager.Instance.Read("Right");
+        // manager = UduinoManager.Instance;
+        // // manager = UduinoManager.Find("Uduino");
+        // GameObject eventDontWant = GameObject.Find("Uduino/UduinoInterface/EventSystem");
+        // Destroy(eventDontWant);
+        // // manager.SetBoardType("Generic ESP32");
+        // manager.pinMode(32,PinMode.Input);
+
     }
-    void OnGUI()
-    {
-        //left
-        for (int i = 0; i < 5; i++)
-        {
-            fingers[i] = GUI.HorizontalSlider(new Rect(85, 25*(i+2), 100, 30), fingers[i], 0.0F, sliderLength);
-        }
-        //right
-        for (int i = 5; i < 10; i++)
-        {
-            fingers[i] = GUI.HorizontalSlider(new Rect(200, 25*(i-3), 100, 30), fingers[i], 0.0F, sliderLength);
-        }
+     void OnGUI()
+     {
+        // left
+         // for (int i = 0; i < 5; i++)
+         // {
+         //     // fingers[i] = Script.GetComponent<UduinoReceive1>().fingerValue[1];
+         //     fingers[i] = GUI.HorizontalSlider(new Rect(85, 25*(i+2), 100, 30), fingers[i], 0.0F, sliderLength);
+         // }
+        
+         //right
+         for (int i = 5; i < 10; i++)
+         {
+             fingers[i] = GUI.HorizontalSlider(new Rect(200, 25*(i-3), 100, 30), fingers[i], 0.0F, sliderLength);
+             
+         }
+        
+         
+         // fingers[5] = GUI.HorizontalSlider(new Rect(85, 200, 100, 30), fingers[5], 0.0F, sliderLength);
+         // fingers[6] = GUI.HorizontalSlider(new Rect(85, 200, 100, 30), fingers[6], 0.0F, sliderLength);
+         // fingers[7] = GUI.HorizontalSlider(new Rect(85, 200, 100, 30), fingers[7], 0.0F, sliderLength);
+         // fingers[8] = GUI.HorizontalSlider(new Rect(85, 200, 100, 30), fingers[8], 0.0F, sliderLength);
+         // fingers[9] = GUI.HorizontalSlider(new Rect(85, 200, 100, 30), fingers[9], 0.0F, sliderLength);
+
+
+
+
 
     }
     void Awake()
     {
         // DontDestroyOnLoad(this);
+        //摄像机
         Myavatar = GameObject.Find("avatar");
         myCamera = GameObject.Find("Main Camera");
+        XROrinign = GameObject.Find("XR Origin");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
+        Script = GameObject.Find("Script");
 
     }
 
     void Update()
     {
+        
         //摄像机移动
-        myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
-            MyavatarTransform.position.z - cameraDistance);
-        
-        myCamera.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
-        
+        // myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
+        //     MyavatarTransform.position.z - cameraDistance);
+
+        XROrinign.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
+
+        // value = manager.analogRead(32) / 1000f;
+        for (int i = 5; i < 10; i++)
+        {
+            fingers[i] = Script.GetComponent<UduinoReceive>().fingerValue[i];
+            
+            if (fingers[i] > 10)
+            {
+                fingers[i] = 10;
+            }
+            if (fingers[i] < 0)
+            {
+                fingers[i] = 0;
+            }
+
+        }
         
 
     }
@@ -64,10 +114,10 @@ public class PublicFunctions : MonoBehaviour
     {
 
         
-        float moveRadial = fingers[1] - sliderLength / 2;
-        float moveLateral = fingers[0] - sliderLength / 2;
+        float moveRadial = fingers[6] - sliderLength / 2;//控制前后移动的手指
+        float moveLateral = fingers[5] - sliderLength / 2;//控制左右移动的手指
         float moveNormaliazeRate;
-        float floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;
+        float floatValue = (fingers[2] + fingers[3] + fingers[4]) / 3 - sliderLength / 2;//控制漂浮的手指
         
         
         if (-moveTolerance / 3 < floatValue && floatValue < moveTolerance / 3)
@@ -94,8 +144,8 @@ public class PublicFunctions : MonoBehaviour
 
         if(option == "Walk")
         {
-            MyavatarTransform.Translate(moveLateral / 100 * moveNormaliazeRate * moveSpeed, 0,
-                moveRadial / 100 * moveNormaliazeRate * moveSpeed);
+            MyavatarTransform.Translate(moveLateral / 100  * moveSpeed, 0,
+                moveRadial / 100  * moveSpeed);//*moveNormaliazeRate
         }
 
         if (option == "Float")

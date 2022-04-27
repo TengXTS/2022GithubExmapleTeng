@@ -19,7 +19,16 @@ public class Struggle : MonoBehaviour
 
     private bool ifInLight;
     private bool ifFloat = false;
-
+    
+    
+    private GameObject Myavatar;
+    private GameObject myCamera;
+    private GameObject XROrinign;
+    private Transform MyavatarTransform;
+    private float cameraHight = -1f;
+    private float cameraHightSpeed = 0.0003f;
+    private float cameraDistance = -11f;
+    private float cameraDistanceSpeed = 0.0003f;
 
 
     void Start()
@@ -41,15 +50,35 @@ public class Struggle : MonoBehaviour
 
         }
         
+        Myavatar = GameObject.Find("avatar");
+        myCamera = GameObject.Find("Main Camera");
+        XROrinign = GameObject.Find("XR Origin");
+        MyavatarTransform = Myavatar.GetComponent<Transform>();
+        
     }
     
     // Update is called once per frame
     void Update()
     {
+        //摄像机
+        StartCoroutine(ExampleCoroutine());
+
+        cameraHight += cameraHightSpeed;
+        cameraDistance += cameraDistanceSpeed;
+        
+        XROrinign.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
+            MyavatarTransform.position.z + cameraDistance);
+        if (cameraHight >= 2)
+        {
+            StopAllCoroutines();
+            cameraHightSpeed = 0;
+            cameraDistanceSpeed = 0;
+
+        }
         
         
 //挣扎判定main。目前是转两圈，如果要加圈数要全部改。
-        for (int i = 0; i < 10; i++)
+        for (int i = 5; i < 10; i++)
         {
             if(fingers[i] >= sliderLength - 0.5 )
             {
@@ -77,11 +106,11 @@ public class Struggle : MonoBehaviour
 
         }
 
-        if (marksFinal[0] == true && ifFloat == false)
+        if (marksFinal[5] == true && ifFloat == false)//这个index指具体哪个手指
         {
             this.GetComponent<Rigidbody>().useGravity = true;
             publicFunctions.Move("Walk");
-            publicFunctions.Rotate();
+            // publicFunctions.Rotate();
             // Move();
             // Rotate();
         }
@@ -102,6 +131,13 @@ public class Struggle : MonoBehaviour
         
 
         
+    }
+    
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        cameraHightSpeed += 0.000125f;
+        cameraDistanceSpeed += 0.0005f;
     }
     
 
