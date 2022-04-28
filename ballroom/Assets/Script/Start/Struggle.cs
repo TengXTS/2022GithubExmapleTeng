@@ -60,6 +60,11 @@ public class Struggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        GameObject LeftForeArm = GameObject.Find("LeftForeArm__13");
+        LeftForeArm.GetComponent<Transform>().Rotate(Mathf.Deg2Rad * (fingers[6] - sliderLength / 2), 0f, 0f, Space.Self);
+           
+        
         //摄像机
         StartCoroutine(ExampleCoroutine());
 
@@ -110,7 +115,7 @@ public class Struggle : MonoBehaviour
         {
             this.GetComponent<Rigidbody>().useGravity = true;
             publicFunctions.Move("Walk");
-            // publicFunctions.Rotate();
+            // publicFunctions.Rotate();//不接受数字时使用rotation会导致转圈。使用rotation暂时不使用
             // Move();
             // Rotate();
         }

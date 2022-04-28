@@ -94,7 +94,7 @@ public class PublicFunctions : MonoBehaviour
         // value = manager.analogRead(32) / 1000f;
         for (int i = 5; i < 10; i++)
         {
-            fingers[i] = Script.GetComponent<UduinoReceive>().fingerValue[i];
+            // fingers[i] = Script.GetComponent<UduinoReceive>().fingerValue[i];
             
             if (fingers[i] > 10)
             {
