@@ -23,7 +23,6 @@ using System.Linq;
 //各种设置指南：
 //导入新avatar模型时注意：在import/mesh设置中开启read/write；gameobject及各关节命名要与目前的保持一致；取消c4d摄像头
 //element使用的material要开启GPU instance，element的gameobject要全部拖入本脚本的elementList
-//除了handsOnGround之外，不要在命名中包含Arm，Hand，Thumb等（tag列表里那些）
 
 public class Main : MonoBehaviour
 {
