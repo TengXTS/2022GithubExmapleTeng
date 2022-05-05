@@ -6406,7 +6406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: activeExtentionsMap.values.Array.data[0]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: activeExtentionsMap.values.Array.data[1]
@@ -6546,7 +6546,7 @@ MonoBehaviour:
   moveTolerance: 1
   cameraHight: -1
   cameraDistance: -20
-  cameraRotationX: 0
+  cameraRotationX: 45
   moveSpeed: 0.2
   rotateSpeed: 5
   floatSpeed: 5
@@ -7600,10 +7600,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatSpeed: 0.2
-  fingerSpeed: 10
-  handSpeed: 10
-  armRollSpeed: 10
-  armSpeed: 10
+  fingerSpeed: 1
+  handSpeed: 1
+  armRollSpeed: 1
+  armSpeed: 1
 --- !u!136 &1962497822
 CapsuleCollider:
   m_ObjectHideFlags: 0

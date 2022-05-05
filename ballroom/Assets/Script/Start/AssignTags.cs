@@ -30,7 +30,7 @@ public class AssignTags : MonoBehaviour
             {
                 gos[i].tag = "pinky";
             }
-            else if (gos[i].name.Contains("Hand"))
+            else if (gos[i].name.Contains("Hand_"))
             {
                 gos[i].tag = "hand";
             }
@@ -38,7 +38,7 @@ public class AssignTags : MonoBehaviour
             {
                 gos[i].tag = "armRoll";
             }
-            else if (gos[i].name.Contains("Arm_"))
+            else if (gos[i].name.Contains("ForeArm_"))
             {
                 gos[i].tag = "arm";
             }

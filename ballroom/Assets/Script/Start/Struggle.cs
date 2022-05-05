@@ -8,30 +8,30 @@ using UnityEngine.UIElements;
 
 public class Struggle : MonoBehaviour
 {
-    
-    [Range(0,1)]
-    public float floatSpeed = 0.2f;
+
+    [Range(0, 1)] public float floatSpeed = 0.2f;
     private float[] fingers = new float[10];
     private float sliderLength;
     private PublicFunctions publicFunctions;
-    
+
     //控制大手骨骼
+    public int limitedAngle = 30;
     public float fingerSpeed = 1f;
     public float handSpeed = 1f;
     public float armRollSpeed = 1f;
     public float armSpeed = 1f;
 
 
-    
+
     //挣扎判定
-    private bool[,] marks = new bool[10,3];
-    private bool[] marksFinal = {false,false,false,false,false,false,false,false,false,false};
-    private bool[] marksFinalTrue = {true, true,true, true,true, true,true, true,true, true};
+    private bool[,] marks = new bool[10, 3];
+    private bool[] marksFinal = {false, false, false, false, false, false, false, false, false, false};
+    private bool[] marksFinalTrue = {true, true, true, true, true, true, true, true, true, true};
 
     private bool ifInLight;
     private bool ifFloat = false;
-    
-    
+
+
     private GameObject Myavatar;
     private GameObject myCamera;
     private GameObject XROrinign;
@@ -40,9 +40,9 @@ public class Struggle : MonoBehaviour
     private float cameraHightSpeed = 0.0003f;
     private float cameraDistance = -11f;
     private float cameraDistanceSpeed = 0.0003f;
-    
-  
-    
+
+
+
     // class HandRotate
     // //slerp可以很好地限制角度，但是要取得：通过将一根大拇指的合理范围（两个world四元数）转化为local数值，打印出这个数值并手动输入start和end。slerp后，再乘每个大拇指的local向上方向的world数值，
     // {
@@ -66,43 +66,91 @@ public class Struggle : MonoBehaviour
     //
     // }
 
+    private Vector3[] startAngles = new Vector3[8 * 14];
+    private GameObject[] allJoints = new GameObject[8 * 14];
+  
+    
+
     void Start()
     {
         publicFunctions = GameObject.Find("Script").GetComponent<PublicFunctions>();
-        
+
         fingers = publicFunctions.fingers;
         sliderLength = publicFunctions.sliderLength;
-   
+
         //挣扎判定，
-        for(int i = 0; i < 10; i++)
+        for (int i = 0; i < 10; i++)
         {
             for (int j = 0; j < 3; j++)
             {
                 marks[i, j] = false;
             }
+
             //手指中位
             fingers[i] = sliderLength / 2;
 
         }
-        
+
         Myavatar = GameObject.Find("avatar");
         myCamera = GameObject.Find("Main Camera");
         XROrinign = GameObject.Find("XR Origin");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
+
+        GameObject[] tag_0 = GameObject.FindGameObjectsWithTag("thumb");
+        GameObject[] tag_1 = GameObject.FindGameObjectsWithTag("index");
+        GameObject[] tag_2 = GameObject.FindGameObjectsWithTag("middle");
+        GameObject[] tag_3 = GameObject.FindGameObjectsWithTag("ring");
+        GameObject[] tag_4 = GameObject.FindGameObjectsWithTag("pinky");
+        GameObject[] tag_5 = GameObject.FindGameObjectsWithTag("hand");
+        GameObject[] tag_6 = GameObject.FindGameObjectsWithTag("armRoll");
+        GameObject[] tag_7 = GameObject.FindGameObjectsWithTag("arm");
+
+
+        allJoints = tag_0.Concat(tag_1).Concat(tag_2).Concat(tag_3).Concat(tag_4).Concat(tag_5).Concat(tag_6)
+            .Concat(tag_7).ToArray();
         
-       
-        
+        // Debug.Log("70"+allJoints[70].name);
+
+        for (int i = 0; i < 8 * 14; i++)
+        {
+            startAngles[i] = allJoints[i].GetComponent<Transform>().localRotation.eulerAngles;
+            startAngles[i].y = startAngles[i].y > 180 ? startAngles[i].y - 360 : startAngles[i].y < -180 ? startAngles[i].y + 360 : startAngles[i].y;
+        }
+
+
     }
 
-    void HandRotate(string tag, float FingerValue, float speed)
+    void HandRotate(string tag, float FingerValue, float speed, int index)
     {
-        foreach (GameObject finger in GameObject.FindGameObjectsWithTag(tag))
+        for (int i = 0; i < 14; i++)
         {
-            Transform fingerTrans = finger.GetComponent<Transform>();
-            fingerTrans.RotateAround(fingerTrans.position, -fingerTrans.up,
-                (FingerValue - sliderLength / 2) * Time.deltaTime * speed);
+            Transform fingerTrans = allJoints[14 * index + i].GetComponent<Transform>();
+        
+
+            // fingerTrans.RotateAround(fingerTrans.position, -fingerTrans.up,
+            //     (FingerValue - sliderLength / 2) * Time.deltaTime * speed);
+            // fingerTrans.localRotation = Quaternion.Euler( new Vector3(
+            //     fingerTrans.localRotation.x + (FingerValue - sliderLength / 2), 0, 0));
+            
+            // 当右手值大于0，变回最小值；当左手值小于0，变回最大值；
+            Vector3 currentRotation = fingerTrans.localRotation.eulerAngles;
+            currentRotation.y = currentRotation.y > 180 ? currentRotation.y - 360 : currentRotation.y < -180 ? currentRotation.y + 360 : currentRotation.y;
+
+            currentRotation.y += (FingerValue - sliderLength / 2) * speed;
+            currentRotation.y  = Mathf.Clamp(currentRotation.y, startAngles[14 * index + i].y - limitedAngle ,
+                startAngles[14 * index + i].y + limitedAngle);
+            fingerTrans.localRotation = Quaternion.Euler(currentRotation);
+            
+            Debug.Log(allJoints[14 * index + i].name);
+            Debug.Log(14 * index + i);
+            Debug.Log(currentRotation.y);
         }
+
     }
+
+
+
+
 
 
     
@@ -112,24 +160,17 @@ public class Struggle : MonoBehaviour
 
 
         //地面手运动
-        // foreach (GameObject finger in GameObject.FindGameObjectsWithTag("thumb"))
-        // {
-        //     Transform fingerTrans = finger.GetComponent<Transform>();
-        //     fingerTrans.RotateAround(fingerTrans.position, -fingerTrans.up,
-        //         (fingers[5] - sliderLength / 2) * Time.deltaTime * 10 );
-            // Quaternion referQ = fingerTrans.parent.GetComponent<Transform>().rotation;
-            // float degree = Quaternion.Angle(fingerTrans.rotation, referQ);
-        // }
-        // HandRotate.Rotate("thumb",fingers[5],5000,new Quaternion(0.252590299f,-0.197640359f,-0.559742451f,0.764084399f),new Quaternion(0.511026144f,0.237734988f,-0.340537012f,0.752574801f),sliderLength);
+        HandRotate("thumb", fingers[5], fingerSpeed,0);
+        HandRotate("index", fingers[6], fingerSpeed,1);
+        HandRotate("middle", fingers[7], fingerSpeed,2);
+        HandRotate("ring", fingers[8], fingerSpeed,3);
+        HandRotate("pinky", fingers[9], fingerSpeed,4);
+        HandRotate("hand", fingers[7], handSpeed,5);
+        // HandRotate("armRoll", fingers[7], armRollSpeed,6);
+        HandRotate("arm", fingers[9], armSpeed,7);
         
-        HandRotate("thumb", fingers[5], fingerSpeed);
-        HandRotate("index", fingers[6], fingerSpeed);
-        HandRotate("middle", fingers[7], fingerSpeed);
-        HandRotate("ring", fingers[8], fingerSpeed);
-        HandRotate("pinky", fingers[9], fingerSpeed);
-        HandRotate("hand", fingers[5], handSpeed);
-        HandRotate("armRoll", fingers[7], armRollSpeed);
-        HandRotate("arm", fingers[9], armSpeed);
+        
+        
 
 
         //摄像机//前三行为是否向前推进

@@ -46,7 +46,7 @@ public class UduinoReceive : MonoBehaviour
         if (uduinoBoardR != null)
         {
 
-            fingerValue[5] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,39) ,0,2200,0,10);//大拇指
+            fingerValue[5] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,39) ,2200,0,0,10);//大拇指
             fingerValue[6] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,34) ,2000,4095,0,10);//食指
             fingerValue[7] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,35) ,1400,4095,0,10);//食指
             fingerValue[8] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,32) ,1000,3000,0,10);//食指
