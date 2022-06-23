@@ -23,8 +23,8 @@ public class PublicFunctions : MonoBehaviour
     
     //摄像机
     private GameObject Myavatar;
-    private GameObject myCamera;
-    private GameObject XROrinign;
+    // private GameObject myCamera;
+    // private GameObject XROrinign;
     private Transform MyavatarTransform;
     
     //Uduino
@@ -77,8 +77,8 @@ public class PublicFunctions : MonoBehaviour
         // DontDestroyOnLoad(this);
         //摄像机
         Myavatar = GameObject.Find("avatar");
-        myCamera = GameObject.Find("Main Camera");
-        XROrinign = GameObject.Find("XR Origin");
+        // myCamera = GameObject.Find("Main Camera");
+        // XROrinign = GameObject.Find("XR Origin");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
         Script = GameObject.Find("Script");
 
@@ -91,7 +91,7 @@ public class PublicFunctions : MonoBehaviour
         // myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
         //     MyavatarTransform.position.z - cameraDistance);
 
-        XROrinign.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
+        // XROrinign.GetComponent<Transform>().rotation = Quaternion.Euler(cameraRotationX, 0,0);
 
         //test wifi用的字
         // GameObject text = GameObject.Find("Text (TMP)");

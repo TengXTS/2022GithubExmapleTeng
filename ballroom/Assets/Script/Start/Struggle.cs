@@ -125,14 +125,6 @@ public class Struggle : MonoBehaviour
         for (int i = 0; i < 14; i++)
         {
             Transform fingerTrans = allJoints[14 * index + i].GetComponent<Transform>();
-        
-
-            // fingerTrans.RotateAround(fingerTrans.position, -fingerTrans.up,
-            //     (FingerValue - sliderLength / 2) * Time.deltaTime * speed);
-            // fingerTrans.localRotation = Quaternion.Euler( new Vector3(
-            //     fingerTrans.localRotation.x + (FingerValue - sliderLength / 2), 0, 0));
-            
-            // 当右手值大于0，变回最小值；当左手值小于0，变回最大值；
             Vector3 currentRotation = fingerTrans.localRotation.eulerAngles;
             currentRotation.y = currentRotation.y > 180 ? currentRotation.y - 360 : currentRotation.y < -180 ? currentRotation.y + 360 : currentRotation.y;
 
@@ -140,10 +132,10 @@ public class Struggle : MonoBehaviour
             currentRotation.y  = Mathf.Clamp(currentRotation.y, startAngles[14 * index + i].y - limitedAngle ,
                 startAngles[14 * index + i].y + limitedAngle);
             fingerTrans.localRotation = Quaternion.Euler(currentRotation);
-            
-            Debug.Log(allJoints[14 * index + i].name);
-            Debug.Log(14 * index + i);
-            Debug.Log(currentRotation.y);
+            //
+            // Debug.Log(allJoints[14 * index + i].name);
+            // Debug.Log(14 * index + i);
+            // Debug.Log(currentRotation.y);
         }
 
     }
@@ -181,11 +173,12 @@ public class Struggle : MonoBehaviour
         
         XROrinign.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + cameraHight,
             MyavatarTransform.position.z + cameraDistance);
-        if (cameraHight >= 1.3)
+        if (cameraHight >= 2.2)
         {
             StopAllCoroutines();
             cameraHightSpeed = 0;
             cameraDistanceSpeed = 0;
+            GameObject.Find("avatar/bodyMesh").GetComponent<SkinnedMeshRenderer>().enabled = false;
 
         }
         
@@ -219,7 +212,7 @@ public class Struggle : MonoBehaviour
 
         }
 
-        if (marksFinal[5] == true && ifFloat == false)//这个index指具体哪个手指
+        if (marksFinal[5] && marksFinal[6] && ifFloat == false)//这个index指具体哪个手指
         {
             this.GetComponent<Rigidbody>().useGravity = true;
             publicFunctions.Move("Walk");
@@ -249,7 +242,7 @@ public class Struggle : MonoBehaviour
     IEnumerator ExampleCoroutine()
     {
         yield return new WaitForSeconds(4f);
-        cameraHightSpeed += 0.000125f;
+        cameraHightSpeed += 0.0002f;
         cameraDistanceSpeed += 0.0007f;
     }
     

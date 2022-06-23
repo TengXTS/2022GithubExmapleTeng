@@ -5,7 +5,7 @@ using Image = UnityEngine.UI.Image;
 
 public class NextScene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float inflateSpeed = 0.01f;
     private bool enter = false;
 
     private Image whiteLight;
@@ -43,7 +43,7 @@ public class NextScene : MonoBehaviour
             c.a += 0.04f;
             whiteLight.color = c;
             // Debug.Log("scene1"+c.a);
-            this.GetComponent<Transform>().localScale = this.GetComponent<Transform>().localScale + new Vector3(0.01f,0.01f,0.01f);
+            this.GetComponent<Transform>().localScale = this.GetComponent<Transform>().localScale + new Vector3(inflateSpeed,inflateSpeed,inflateSpeed);
 
             
             yield return new WaitForSeconds(1f);

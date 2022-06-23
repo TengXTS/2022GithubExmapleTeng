@@ -31,11 +31,11 @@ public class UduinoReceive : MonoBehaviour
         if(device.name == "uduinoBoardL") {
             uduinoBoardL = device;
             // UduinoManager.Instance.pinMode(uduinoBoardL,39,PinMode.Input);
-            // UduinoManager.Instance.pinMode(uduinoBoardL,39,PinMode.Input);//小拇指
-            // UduinoManager.Instance.pinMode(uduinoBoardL,34,PinMode.Input);//无名指
-            // UduinoManager.Instance.pinMode(uduinoBoardL,35,PinMode.Input);//中指
-            // UduinoManager.Instance.pinMode(uduinoBoardL,32,PinMode.Input);//食指
-            // UduinoManager.Instance.pinMode(uduinoBoardL,33,PinMode.Input);//大拇指
+            UduinoManager.Instance.pinMode(uduinoBoardL,39,PinMode.Input);//小拇指
+            UduinoManager.Instance.pinMode(uduinoBoardL,34,PinMode.Input);//无名指
+            UduinoManager.Instance.pinMode(uduinoBoardL,35,PinMode.Input);//中指
+            UduinoManager.Instance.pinMode(uduinoBoardL,32,PinMode.Input);//食指
+            UduinoManager.Instance.pinMode(uduinoBoardL,33,PinMode.Input);//大拇指
         }
     }
 
@@ -60,6 +60,11 @@ public class UduinoReceive : MonoBehaviour
         if (uduinoBoardL != null)
         {
             // fingerValue[0] = Remap(UduinoManager.Instance.analogRead(uduinoBoardR,39),2100,4095,0,10);//大拇指
+            fingerValue[0] = Remap(UduinoManager.Instance.analogRead(uduinoBoardL,39) ,2200,0,0,10);//大拇指
+            fingerValue[1] = Remap(UduinoManager.Instance.analogRead(uduinoBoardL,34) ,2000,4095,0,10);//食指
+            fingerValue[2] = Remap(UduinoManager.Instance.analogRead(uduinoBoardL,35) ,1400,4095,0,10);//食指
+            fingerValue[3] = Remap(UduinoManager.Instance.analogRead(uduinoBoardL,32) ,1000,3000,0,10);//食指
+            fingerValue[4] = Remap(UduinoManager.Instance.analogRead(uduinoBoardL,33) ,2900,4095,0,10);//食指
        
             // Debug.Log("left"+UduinoManager.Instance.analogRead(uduinoBoardR,39));
         }

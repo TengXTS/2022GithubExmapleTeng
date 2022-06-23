@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random=UnityEngine.Random;
+using UnityEngine.SceneManagement;
 using System.Linq;
 
 // using Image = UnityEngine.UI.Image;
@@ -92,8 +93,12 @@ public class Main : MonoBehaviour
     private Vector3[] scale;
     //摄像机
     private GameObject Myavatar;
-    private GameObject myCamera;
+    // private GameObject myCamera;
     private Transform MyavatarTransform;
+    
+    public Material skybox;
+
+
 
     
 
@@ -101,8 +106,9 @@ public class Main : MonoBehaviour
     void Start()
     {
         Myavatar = GameObject.Find("avatar");
-        myCamera = GameObject.Find("Main Camera");
+        // myCamera = GameObject.Find("Main Camera");
         MyavatarTransform = Myavatar.GetComponent<Transform>();
+
 
         publicFunctions = GameObject.Find("Script").GetComponent<PublicFunctions>();
         fingers = publicFunctions.fingers;
@@ -154,23 +160,27 @@ public class Main : MonoBehaviour
             element.GetComponent<Collider>().isTrigger = true;
         }
 
-
+   
     }
     
     
 
     void Update()
     {
-        myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + 2,
-            MyavatarTransform.position.z + 1);
+        // myCamera.GetComponent<Transform>().position = new Vector3(MyavatarTransform.position.x, MyavatarTransform.position.y + 2,
+        //     MyavatarTransform.position.z + 1);
   
             LimbControl();
             publicFunctions.Move("Float");
             publicFunctions.Rotate();
             AddElements();
-        
-        
-     
+            
+            
+            StartCoroutine(ExampleCoroutine());
+
+            float hue = fingers[0] / 10;
+            skybox.SetColor("_Tint", Color.HSVToRGB(hue, 0.5f, 0.5f)); 
+
     }
 
 
@@ -185,28 +195,28 @@ public class Main : MonoBehaviour
 
         bool anyCollision = false;
 
-        //元素切换
-        foreach (var element in elementList)
-        {
-            string colliderName = element.GetComponent<TriggerDetact>().colliderName;
-            bool ifCollision = element.GetComponent<TriggerDetact>().ifCollision;//只有最后一个element的值是有效的。我想要的：任意一个为真则为真
-            if (colliderName != null)
-            {
-                // Debug.Log(colliderName);
-                //目前暂时是变成和标记物一样的东西，之后可能需要不一样的
-                mesh = GameObject.Find(colliderName).GetComponent<MeshFilter>().mesh;
-            }
-            //检测是否有任何碰撞发生
-            if (ifCollision == true)
-            {
-                anyCollision = true;
-            }
-        }
-
-        if (anyCollision == true)
-        {
-            Graphics.DrawMeshInstanced(mesh, 0, material, matrices, verticesAmount, block);
-        }
+        // 元素切换
+         foreach (var element in elementList)
+         {
+             string colliderName = element.GetComponent<TriggerDetact>().colliderName;
+             bool ifCollision = element.GetComponent<TriggerDetact>().ifCollision;//只有最后一个element的值是有效的。我想要的：任意一个为真则为真
+             if (colliderName != null)
+             {
+                 // Debug.Log(colliderName);
+                 //目前暂时是变成和标记物一样的东西，之后可能需要不一样的
+                 mesh = GameObject.Find(colliderName).GetComponent<MeshFilter>().mesh;
+             }
+             //检测是否有任何碰撞发生
+             if (ifCollision == true)
+             {
+                 anyCollision = true;
+             }
+         }
+        
+         if (anyCollision == true)
+         {
+             Graphics.DrawMeshInstanced(mesh, 0, material, matrices, verticesAmount, block);
+         }
 //使用两个draw，先试试上下扫描变换
 //矩阵中，去掉y大的位置，阈值随时间变化
     }
@@ -235,6 +245,19 @@ public class Main : MonoBehaviour
         
         
     }
+
+
+
+    IEnumerator ExampleCoroutine()
+    {
+        if (35 < MyavatarTransform.position.z && MyavatarTransform.position.z < 38 && -1.2f < MyavatarTransform.position.x && MyavatarTransform.position.x < -0.3f)
+        {
+            Debug.Log("1111");
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene("Ballroom1");
+        }
+    }
+    
 
 
 }
